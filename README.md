@@ -16,8 +16,6 @@ Know a project that belongs here? [Open an issue using the "Add new entry" templ
 
 ## Navigation
 
-- [SAP MCP Servers and SAP AI Skills (Open Source, GitHub)](#sap-mcp-servers-and-sap-ai-skills-open-source-github)
-  - [Navigation](#navigation)
 - [SAP MCP Server](#sap-mcp-server)
 - [SAP Community MCP Servers](#sap-community-mcp-servers)
   - [SAP Docs MCP Server](#sap-docs-mcp-server)
