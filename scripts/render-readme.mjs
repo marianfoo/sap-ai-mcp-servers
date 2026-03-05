@@ -75,13 +75,13 @@ function renderTable(entries, repoMetadata, opts = {}) {
     return lines.join('\n');
   }
 
-  lines.push('| Name | Repository | Purpose | Notes | License | Stars | Last Change |');
-  lines.push('| --- | --- | --- | --- | --- | ---: | --- |');
+  lines.push('| Name | Repository | Purpose | License | Stars | Last Change |');
+  lines.push('| --- | --- | --- | --- | ---: | --- |');
 
   for (const row of rows) {
     const { entry, meta } = row;
     lines.push(
-      `| ${entry.name} | ${repositoryLink(entry, meta)} | ${entry.purpose} | ${entry.notes} | ${formatLicense(meta?.license)} | ${formatStars(meta?.stars)} | ${formatDate(meta?.lastChange)} |`
+      `| ${entry.name} | ${repositoryLink(entry, meta)} | ${entry.purpose} | ${formatLicense(meta?.license)} | ${formatStars(meta?.stars)} | ${formatDate(meta?.lastChange)} |`
     );
   }
 
