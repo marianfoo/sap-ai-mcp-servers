@@ -84,3 +84,5 @@ body:
           required: true
         - label: The project is SAP-related (MCP server, AI skill, or adjacent developer tool)
           required: true
+        - label: The repository has an open-source license
+          required: true
