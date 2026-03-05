@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-03-05T09:50:53.894Z",
+  "generatedAt": "2026-03-05T09:58:05.634Z",
   "sourceCatalog": "data/catalog.json",
   "repoCount": 52,
   "tokenUsed": true,
   "repoMetadata": {
     "1nbuc/mcp-integration-suite": {
       "repo": "1nbuc/mcp-integration-suite",
-      "source": "html",
+      "source": "api",
       "exists": true,
       "fork": false,
       "parent": null,
       "stars": 15,
-      "lastChange": "2025-12-24T22:29:37Z",
-      "archived": null,
+      "lastChange": "2025-12-24T22:29:38Z",
+      "archived": false,
       "license": null,
       "description": null,
       "htmlUrl": "https://github.com/1nbuc/mcp-integration-suite"
@@ -583,7 +583,7 @@
       "fork": false,
       "parent": null,
       "stars": 130,
-      "lastChange": "2026-03-05T09:49:55Z",
+      "lastChange": "2026-03-05T09:57:21Z",
       "archived": false,
       "license": "Apache-2.0",
       "description": "Enable community collaboration to jointly promote and facilitate best in class tooling capabilities",
