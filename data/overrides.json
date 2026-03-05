@@ -1,0 +1,23 @@
+{
+  "_comment": "Manual overrides for repo metadata. Fields set here are never overwritten by automated enrichment. Use this for repos where GitHub API / HTML parsing cannot detect the correct value (e.g. license declared only in README).",
+  "repos": {
+    "oisee/vibing-steampunk": {
+      "license": "MIT"
+    },
+    "fgalastri/MCP_ABAP": {
+      "license": "MIT"
+    },
+    "buettnerjulian/abap-adt-mcp": {
+      "license": "MIT"
+    },
+    "SaurabhVC/ABAPDocMCP": {
+      "license": "MIT"
+    },
+    "GutjahrAI/sap-odata-mcp-server": {
+      "license": "MIT"
+    },
+    "weiserman/rap-skills": {
+      "license": "MIT"
+    }
+  }
+}

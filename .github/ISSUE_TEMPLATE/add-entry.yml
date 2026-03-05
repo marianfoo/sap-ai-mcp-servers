@@ -1,0 +1,86 @@
+name: Add new entry
+description: Suggest a new MCP server, skill, or adjacent tool to be added to the list.
+title: "[Add] "
+labels: ["new entry"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a new entry! Please fill in the details below.
+        All fields marked with * are required.
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category *
+      description: Which section of the list does this belong to?
+      options:
+        - SAP MCP Server
+        - SAP Docs MCP Server
+        - ABAP and ADT MCP Server
+        - SAP Integration
+        - SAP Datasphere
+        - SAP OData / Gateway / Graph MCP Server
+        - SAP GUI
+        - SAP HANA
+        - SAP Related Skills
+        - Adjacent SAP AI Developer Tools
+    validations:
+      required: true
+
+  - type: input
+    id: name
+    attributes:
+      label: Display name *
+      description: Short, human-readable name for the entry shown in the table.
+      placeholder: e.g. My SAP MCP Server
+    validations:
+      required: true
+
+  - type: input
+    id: repo
+    attributes:
+      label: GitHub repository *
+      description: Repository in `owner/repo` format. Leave blank if this is a non-GitHub URL (fill in the URL field below instead).
+      placeholder: e.g. myorg/my-sap-mcp-server
+    validations:
+      required: false
+
+  - type: input
+    id: url
+    attributes:
+      label: URL (non-GitHub only)
+      description: Only fill this in if the entry is NOT a GitHub repository (e.g. official documentation page).
+      placeholder: e.g. https://docs.example.com/my-tool
+    validations:
+      required: false
+
+  - type: input
+    id: purpose
+    attributes:
+      label: Purpose *
+      description: One concise sentence describing what the tool does. No trailing period needed.
+      placeholder: e.g. Exposes SAP BTP services as MCP tools
+    validations:
+      required: true
+
+  - type: input
+    id: notes
+    attributes:
+      label: Notes
+      description: Any extra context, caveats, or notable characteristics (optional).
+      placeholder: e.g. Requires BTP destination configuration
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: The repository is publicly accessible on GitHub (or the URL is publicly reachable)
+          required: true
+        - label: The repository is NOT a fork of an existing entry already in the list
+          required: true
+        - label: The project is SAP-related (MCP server, AI skill, or adjacent developer tool)
+          required: true

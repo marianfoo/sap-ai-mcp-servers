@@ -1,0 +1,11 @@
+{
+  "name": "sap-mcp-list",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Generated SAP MCP server and SAP AI skills overview",
+  "scripts": {
+    "update:data": "node scripts/enrich-data.mjs",
+    "build:readme": "node scripts/render-readme.mjs",
+    "build": "npm run update:data && npm run build:readme"
+  }
+}
