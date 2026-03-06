@@ -37,6 +37,13 @@
         },
         {
           "type": "SAP",
+          "name": "UI5 Web Components MCP Server",
+          "repo": "UI5/webcomponents-mcp-server",
+          "purpose": "AI-assisted development with UI5 Web Components (component API, guidelines, docs).",
+          "notes": "Tools: get_component_api, get_guidelines, list_docs, get_doc. Supports @ui5/webcomponents, @ui5/webcomponents-fiori, @ui5/webcomponents-ai."
+        },
+        {
+          "type": "SAP",
           "name": "SAP MDK MCP Server",
           "repo": "SAP/mdk-mcp-server",
           "purpose": "AI-assisted SAP Mobile Development Kit workflows.",
