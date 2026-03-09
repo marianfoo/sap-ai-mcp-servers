@@ -163,8 +163,8 @@
           "type": "Community SAP",
           "name": "ABAP Accelerator MCP Server",
           "repo": "aws-solutions-library-samples/guidance-for-deploying-sap-abap-accelerator-for-amazon-q-developer",
-          "purpose": "ABAP development assistant tools via MCP.",
-          "notes": "AWS solution sample for Amazon Q workflows."
+          "purpose": "Enterprise-grade MCP server for SAP ABAP: create, test, document, and transform ABAP code via Amazon Q Developer and Kiro.",
+          "notes": "15 tools: connection status, object CRUD, syntax check, activation, ATC, unit tests, transports, migration analysis. Local (Docker) or ECS Fargate deployment. Principal propagation + OAuth for multi-user."
         },
         {
           "type": "Community SAP",
