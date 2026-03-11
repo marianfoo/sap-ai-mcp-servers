@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-03-11T08:12:01.094Z",
+  "generatedAt": "2026-03-11T08:48:07.283Z",
   "sourceCatalog": "data/catalog.json",
-  "repoCount": 56,
+  "repoCount": 57,
   "tokenUsed": true,
   "repoMetadata": {
     "1nbuc/mcp-integration-suite": {
@@ -413,7 +413,7 @@
       "exists": true,
       "fork": false,
       "parent": null,
-      "stars": 94,
+      "stars": 95,
       "lastChange": "2025-09-09T16:31:54Z",
       "archived": false,
       "license": "MIT",
@@ -609,7 +609,7 @@
       "fork": false,
       "parent": null,
       "stars": 25,
-      "lastChange": "2026-03-11T02:29:20Z",
+      "lastChange": "2026-03-11T08:20:32Z",
       "archived": false,
       "license": "Apache-2.0",
       "description": "Model Context Protocol (MCP) server for AI-assisted development (\"vibe coding\") of MDK applications.",
@@ -622,7 +622,7 @@
       "fork": false,
       "parent": null,
       "stars": 130,
-      "lastChange": "2026-03-11T06:55:11Z",
+      "lastChange": "2026-03-11T08:40:26Z",
       "archived": false,
       "license": "Apache-2.0",
       "description": "Enable community collaboration to jointly promote and facilitate best in class tooling capabilities",
@@ -653,6 +653,19 @@
       "license": "GPL-3.0",
       "description": "Production-ready Claude Code skills for SAP development - 35 skills covering BTP, CAP, Fiori, ABAP, HANA, Analytics Cloud, and more",
       "htmlUrl": "https://github.com/secondsky/sap-skills"
+    },
+    "SYNTAAI/sap-security-mcp": {
+      "repo": "SYNTAAI/sap-security-mcp",
+      "source": "api",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": 1,
+      "lastChange": "2026-03-10T04:22:33Z",
+      "archived": false,
+      "license": "Apache-2.0",
+      "description": "sap-security-mcp",
+      "htmlUrl": "https://github.com/SYNTAAI/sap-security-mcp"
     },
     "toni-ramchandani/sapient-mcp": {
       "repo": "toni-ramchandani/sapient-mcp",
