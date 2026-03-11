@@ -439,6 +439,13 @@
     },
     {
       "type": "Community SAP",
+      "name": "SyntaAI SAP Security MCP Server",
+      "repo": "SYNTAAI/sap-security-mcp",
+      "purpose": "SAP security analysis and compliance auditing via MCP. 19 read-only tools for user access reviews, SoD violation checks, critical authorization detection, compliance reporting (SOX, GDPR, ISO 27001, NIST), RFC security analysis, password policy audits, and role/authorization review.",
+      "notes": "First SAP security-focused MCP server. OAuth 2.0 with PKCE. Connects to SAP via OData APIs. Live server at https://mcp.syntaai.com/mcp."
+    },
+    {
+      "type": "Community SAP",
       "name": "SAP SuccessFactors MCP Server",
       "repo": "aiadiguru2025/sf-mcp",
       "purpose": "SuccessFactors HR operations via MCP tools.",
