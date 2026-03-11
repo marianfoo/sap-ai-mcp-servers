@@ -21,6 +21,7 @@ Know a project that belongs here? [Open an issue using the "Add new entry" templ
   - [SAP Docs MCP Server](#sap-docs-mcp-server)
   - [ABAP and ADT MCP Server](#abap-and-adt-mcp-server)
   - [SAP Integration](#sap-integration)
+  - [OData MCP Proxy ecosystem](#odata-mcp-proxy-ecosystem)
   - [SAP Datasphere](#sap-datasphere)
   - [SAP OData Gateway Graph MCP Server](#sap-odata-gateway-graph-mcp-server)
   - [SAP GUI](#sap-gui)
@@ -45,6 +46,10 @@ Know a project that belongs here? [Open an issue using the "Add new entry" templ
 ## SAP Integration
 
 {{CATEGORY:sap-integration}}
+
+## OData MCP Proxy ecosystem
+
+{{CATEGORY:odata-mcp-proxy-ecosystem}}
 
 ## SAP Datasphere
 

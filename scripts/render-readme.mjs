@@ -114,7 +114,10 @@ async function renderReadme() {
   for (let i = 0; i < categoryCount; i++) {
     const category = catalog.categories[i];
     const placeholder = `{{CATEGORY:${category.id}}}`;
-    rendered = rendered.replaceAll(placeholder, renderTable(category.entries || [], repoMetadata));
+    const table = renderTable(category.entries || [], repoMetadata);
+    const description = category.description && String(category.description).trim();
+    const block = description ? `${description}\n\n${table}` : table;
+    rendered = rendered.replaceAll(placeholder, block);
     process.stdout.write(`  Rendered category: ${category.id}\n`);
   }
 

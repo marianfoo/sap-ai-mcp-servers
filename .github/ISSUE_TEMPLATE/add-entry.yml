@@ -19,6 +19,7 @@ body:
         - SAP Docs MCP Server
         - ABAP and ADT MCP Server
         - SAP Integration
+        - OData MCP Proxy ecosystem
         - SAP Datasphere
         - SAP OData / Gateway / Graph MCP Server
         - SAP GUI

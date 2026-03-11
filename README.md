@@ -21,6 +21,7 @@ Know a project that belongs here? [Open an issue using the "Add new entry" templ
   - [SAP Docs MCP Server](#sap-docs-mcp-server)
   - [ABAP and ADT MCP Server](#abap-and-adt-mcp-server)
   - [SAP Integration](#sap-integration)
+  - [OData MCP Proxy ecosystem](#odata-mcp-proxy-ecosystem)
   - [SAP Datasphere](#sap-datasphere)
   - [SAP OData Gateway Graph MCP Server](#sap-odata-gateway-graph-mcp-server)
   - [SAP GUI](#sap-gui)
@@ -55,8 +56,8 @@ Know a project that belongs here? [Open an issue using the "Add new entry" templ
 | Name | Repository | Purpose | License | Stars | Last Change |
 | --- | --- | --- | --- | ---: | --- |
 | Vibing Steampunk | [oisee/vibing-steampunk](https://github.com/oisee/vibing-steampunk) | ADT-to-MCP bridge for ABAP and AMDP workflows. | MIT | 181 | 2026-03-01 |
+| MCP ABAP (abap-adt-api wrapper) | [mario-andreschak/mcp-abap-abap-adt-api](https://github.com/mario-andreschak/mcp-abap-abap-adt-api) | ABAP operations through wrapped ADT API layer. | MIT | 94 | 2025-02-27 |
 | MCP ABAP ADT Server | [mario-andreschak/mcp-abap-adt](https://github.com/mario-andreschak/mcp-abap-adt) | ABAP system interaction via ADT APIs. | MIT | 94 | 2025-09-09 |
-| MCP ABAP (abap-adt-api wrapper) | [mario-andreschak/mcp-abap-abap-adt-api](https://github.com/mario-andreschak/mcp-abap-abap-adt-api) | ABAP operations through wrapped ADT API layer. | MIT | 93 | 2025-02-27 |
 | ABAP MCP Server SDK | [abap-ai/mcp](https://github.com/abap-ai/mcp) | Build MCP servers directly in ABAP. | MIT | 59 | 2025-07-20 |
 | ABAP Accelerator MCP Server | [aws-solutions-library-samples/guidance-for-deploying-sap-abap-accelerator-for-amazon-q-developer](https://github.com/aws-solutions-library-samples/guidance-for-deploying-sap-abap-accelerator-for-amazon-q-developer) | Enterprise-grade MCP server for SAP ABAP: create, test, document, and transform ABAP code via Amazon Q Developer and Kiro. | MIT-0 | 21 | 2026-03-05 |
 | mcp-abap-adt | [fr0ster/mcp-abap-adt](https://github.com/fr0ster/mcp-abap-adt) | ABAP ADT MCP server with CRUD and cloud/on-prem support. | MIT | 16 | 2026-03-11 |
@@ -73,8 +74,18 @@ Know a project that belongs here? [Open an issue using the "Add new entry" templ
 | --- | --- | --- | --- | ---: | --- |
 | MCP Integration Suite | [1nbuc/mcp-integration-suite](https://github.com/1nbuc/mcp-integration-suite) | General SAP Integration Suite/CPI operations. | **NO LICENSE FOUND** | 16 | 2025-12-24 |
 | CPI MCP Server | [vadimklimov/cpi-mcp-server](https://github.com/vadimklimov/cpi-mcp-server) | SAP Cloud Integration operations via MCP. | MIT | 12 | 2026-03-01 |
-| OData MCP Proxy | [lemaiwo/odata-mcp-proxy](https://github.com/lemaiwo/odata-mcp-proxy) | BTP destination-driven proxy from OData/REST to MCP. | MIT | 5 | 2026-03-09 |
 | MCP Trading Partner Management | [1nbuc/mcp-is-tpm](https://github.com/1nbuc/mcp-is-tpm) | SAP Integration Suite TPM workflows. | **NO LICENSE FOUND** | 0 | 2025-07-04 |
+
+## OData MCP Proxy ecosystem
+
+[odata-mcp-proxy](https://github.com/lemaiwo/odata-mcp-proxy) is the foundation: a config-driven MCP server exposing OData/REST APIs as MCP tools. BTP MCP Server, CI MCP Server, and AI Core MCP Server are config-only consumers (single JSON + BTP destinations). No custom code required.
+
+| Name | Repository | Purpose | License | Stars | Last Change |
+| --- | --- | --- | --- | ---: | --- |
+| OData MCP Proxy | [lemaiwo/odata-mcp-proxy](https://github.com/lemaiwo/odata-mcp-proxy) | Config-driven MCP server exposing OData/REST APIs as MCP tools; BTP destinations, dual transport (stdio/HTTP). | MIT | 5 | 2026-03-09 |
+| AI Core MCP Server | [lemaiwo/ai-core-mcp-server](https://github.com/lemaiwo/ai-core-mcp-server) | SAP AI Core lifecycle and admin APIs as MCP tools. | MIT | 2 | 2026-03-09 |
+| BTP MCP Server | [lemaiwo/btp-mcp-server](https://github.com/lemaiwo/btp-mcp-server) | BTP Core Services (accounts, entitlements, provisioning) as MCP tools. | MIT | 1 | 2026-03-09 |
+| CI MCP Server | [lemaiwo/ci-mcp-server](https://github.com/lemaiwo/ci-mcp-server) | SAP Cloud Integration (CPI) OData API as MCP tools. | MIT | 1 | 2026-03-09 |
 
 ## SAP Datasphere
 

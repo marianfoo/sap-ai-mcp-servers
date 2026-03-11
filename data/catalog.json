@@ -206,13 +206,41 @@
           "repo": "vadimklimov/cpi-mcp-server",
           "purpose": "SAP Cloud Integration operations via MCP.",
           "notes": "Go-based implementation with binary releases."
-        },
+        }
+      ]
+    },
+    {
+      "id": "odata-mcp-proxy-ecosystem",
+      "title": "OData MCP Proxy ecosystem",
+      "description": "[odata-mcp-proxy](https://github.com/lemaiwo/odata-mcp-proxy) is the foundation: a config-driven MCP server exposing OData/REST APIs as MCP tools. BTP MCP Server, CI MCP Server, and AI Core MCP Server are config-only consumers (single JSON + BTP destinations). No custom code required.",
+      "entries": [
         {
           "type": "Community SAP",
           "name": "OData MCP Proxy",
           "repo": "lemaiwo/odata-mcp-proxy",
-          "purpose": "BTP destination-driven proxy from OData/REST to MCP.",
-          "notes": "Integration Suite/OData admin API bridging pattern."
+          "purpose": "Config-driven MCP server exposing OData/REST APIs as MCP tools; BTP destinations, dual transport (stdio/HTTP).",
+          "notes": "Foundation; consumable as npm package."
+        },
+        {
+          "type": "Community SAP",
+          "name": "BTP MCP Server",
+          "repo": "lemaiwo/btp-mcp-server",
+          "purpose": "BTP Core Services (accounts, entitlements, provisioning) as MCP tools.",
+          "notes": "Config: btp-admin-api-config.json; uses odata-mcp-proxy."
+        },
+        {
+          "type": "Community SAP",
+          "name": "CI MCP Server",
+          "repo": "lemaiwo/ci-mcp-server",
+          "purpose": "SAP Cloud Integration (CPI) OData API as MCP tools.",
+          "notes": "Config: ci-api-config.json; uses odata-mcp-proxy."
+        },
+        {
+          "type": "Community SAP",
+          "name": "AI Core MCP Server",
+          "repo": "lemaiwo/ai-core-mcp-server",
+          "purpose": "SAP AI Core lifecycle and admin APIs as MCP tools.",
+          "notes": "Config: ai-core-api-config.json; uses odata-mcp-proxy."
         }
       ]
     },

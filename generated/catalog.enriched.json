@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-03-11T06:16:40.106Z",
+  "generatedAt": "2026-03-11T08:12:01.094Z",
   "sourceCatalog": "data/catalog.json",
-  "repoCount": 53,
+  "repoCount": 56,
   "tokenUsed": true,
   "repoMetadata": {
     "1nbuc/mcp-integration-suite": {
@@ -277,6 +277,32 @@
       "description": "SAP Claude Code Skills for addon development projects",
       "htmlUrl": "https://github.com/KEIDAI-TechTime/sap-claude-skills"
     },
+    "lemaiwo/ai-core-mcp-server": {
+      "repo": "lemaiwo/ai-core-mcp-server",
+      "source": "api",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": 2,
+      "lastChange": "2026-03-09T23:04:25Z",
+      "archived": false,
+      "license": "MIT",
+      "description": null,
+      "htmlUrl": "https://github.com/lemaiwo/ai-core-mcp-server"
+    },
+    "lemaiwo/btp-mcp-server": {
+      "repo": "lemaiwo/btp-mcp-server",
+      "source": "api",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": 1,
+      "lastChange": "2026-03-09T22:52:00Z",
+      "archived": false,
+      "license": "MIT",
+      "description": null,
+      "htmlUrl": "https://github.com/lemaiwo/btp-mcp-server"
+    },
     "lemaiwo/btp-sap-odata-to-mcp-server": {
       "repo": "lemaiwo/btp-sap-odata-to-mcp-server",
       "source": "api",
@@ -289,6 +315,19 @@
       "license": "MIT",
       "description": "BTP CloudFoundry Node.js MCP server for SAP OData services integration",
       "htmlUrl": "https://github.com/lemaiwo/btp-sap-odata-to-mcp-server"
+    },
+    "lemaiwo/ci-mcp-server": {
+      "repo": "lemaiwo/ci-mcp-server",
+      "source": "api",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": 1,
+      "lastChange": "2026-03-09T22:58:58Z",
+      "archived": false,
+      "license": "MIT",
+      "description": null,
+      "htmlUrl": "https://github.com/lemaiwo/ci-mcp-server"
     },
     "lemaiwo/odata-mcp-proxy": {
       "repo": "lemaiwo/odata-mcp-proxy",
@@ -361,7 +400,7 @@
       "exists": true,
       "fork": false,
       "parent": null,
-      "stars": 93,
+      "stars": 94,
       "lastChange": "2025-02-27T06:04:40Z",
       "archived": false,
       "license": "MIT",
@@ -583,7 +622,7 @@
       "fork": false,
       "parent": null,
       "stars": 130,
-      "lastChange": "2026-03-11T05:49:27Z",
+      "lastChange": "2026-03-11T06:55:11Z",
       "archived": false,
       "license": "Apache-2.0",
       "description": "Enable community collaboration to jointly promote and facilitate best in class tooling capabilities",
