@@ -179,6 +179,13 @@
           "repo": "SaurabhVC/ABAPDocMCP",
           "purpose": "Generate WRICEF technical specs from transport content.",
           "notes": "Specialized ADT-based documentation flow."
+        },
+        {
+          "type": "Community SAP",
+          "name": "MCP server for SAP Cloudification Repository",
+          "repo": "ClementRingot/sap-released-objects-mcp-server",
+          "purpose": "Gives AI agents real-time knowledge of which SAP objects are released for ABAP Cloud / Clean Core — and what to use instead when they're not.",
+          "notes": "Live server at sap-released-objects-mcp-server-production.up.railway.app/mcp."
         }
       ]
     },

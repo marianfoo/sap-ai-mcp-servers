@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-03-18T06:23:39.962Z",
+  "generatedAt": "2026-03-18T05:39:28.097Z",
   "sourceCatalog": "data/catalog.json",
-  "repoCount": 57,
+  "repoCount": 58,
   "tokenUsed": true,
   "repoMetadata": {
     "1nbuc/mcp-integration-suite": {
@@ -107,6 +107,19 @@
       "license": "MIT",
       "description": null,
       "htmlUrl": "https://github.com/chandrashekhar-mahajan/abap-mcp-server"
+    },
+    "ClementRingot/sap-released-objects-mcp-server": {
+      "repo": "ClementRingot/sap-released-objects-mcp-server",
+      "source": "api",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": 14,
+      "lastChange": "2026-03-14T22:45:50Z",
+      "archived": false,
+      "license": "MIT",
+      "description": "MCP server for SAP Cloudification Repository - Clean Core Level A/B/C/D filtering",
+      "htmlUrl": "https://github.com/ClementRingot/sap-released-objects-mcp-server"
     },
     "CostingGeek/sap-mcp": {
       "repo": "CostingGeek/sap-mcp",

@@ -16,6 +16,9 @@ Know a project that belongs here? [Open an issue using the "Add new entry" templ
 
 ## Navigation
 
+- [SAP MCP Servers and SAP AI Skills (Open Source, GitHub)](#sap-mcp-servers-and-sap-ai-skills-open-source-github)
+  - [Add a missing entry](#add-a-missing-entry)
+  - [Navigation](#navigation)
 - [SAP MCP Server](#sap-mcp-server)
 - [SAP Community MCP Servers](#sap-community-mcp-servers)
   - [SAP Docs MCP Server](#sap-docs-mcp-server)
@@ -61,6 +64,7 @@ Know a project that belongs here? [Open an issue using the "Add new entry" templ
 | ABAP MCP Server SDK | [abap-ai/mcp](https://github.com/abap-ai/mcp) | Build MCP servers directly in ABAP. | MIT | 59 | 2025-07-20 |
 | ABAP Accelerator MCP Server | [aws-solutions-library-samples/guidance-for-deploying-sap-abap-accelerator-for-amazon-q-developer](https://github.com/aws-solutions-library-samples/guidance-for-deploying-sap-abap-accelerator-for-amazon-q-developer) | Enterprise-grade MCP server for SAP ABAP: create, test, document, and transform ABAP code via Amazon Q Developer and Kiro. | MIT-0 | 23 | 2026-03-11 |
 | mcp-abap-adt | [fr0ster/mcp-abap-adt](https://github.com/fr0ster/mcp-abap-adt) | ABAP ADT MCP server with CRUD and cloud/on-prem support. | MIT | 22 | 2026-03-14 |
+| MCP server for SAP Cloudification Repository | [ClementRingot/sap-released-objects-mcp-server](https://github.com/ClementRingot/sap-released-objects-mcp-server) | Gives AI agents real-time knowledge of which SAP objects are released for ABAP Cloud / Clean Core — and what to use instead when they're not. | MIT | 14 | 2026-03-14 |
 | erpl-adt | [DataZooDE/erpl-adt](https://github.com/DataZooDE/erpl-adt) | CLI plus MCP exposure for ABAP ADT operations. | Apache-2.0 | 5 | 2026-03-08 |
 | MCP ABAP (Validation + Metadata) | [fgalastri/MCP_ABAP](https://github.com/fgalastri/MCP_ABAP) | ABAP validation and metadata tool surface. | MIT | 2 | 2025-08-24 |
 | mcp-abap-adt (workskong) | [workskong/mcp-abap-adt](https://github.com/workskong/mcp-abap-adt) | Lightweight ADT adapter for ABAP metadata and source. | MIT | 2 | 2025-11-04 |
