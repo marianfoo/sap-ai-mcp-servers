@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-20T06:18:01.749Z",
+  "generatedAt": "2026-03-20T08:45:52.157Z",
   "sourceCatalog": "data/catalog.json",
   "repoCount": 59,
   "tokenUsed": true,
@@ -186,19 +186,6 @@
       "description": "MCP server for SAP BTP ABAP Cloud and On-Premise ECC/S/4HANA ABAP ADT with full CRUD, JWT/XSUAA, and service-key auth.",
       "htmlUrl": "https://github.com/fr0ster/mcp-abap-adt"
     },
-    "gregorwolf/cloud-alm-itsm-mcp": {
-      "repo": "gregorwolf/cloud-alm-itsm-mcp",
-      "source": "api",
-      "exists": true,
-      "fork": false,
-      "parent": null,
-      "stars": 2,
-      "lastChange": "2026-03-19T20:54:03Z",
-      "archived": false,
-      "license": null,
-      "description": "SAP Cloud ALM ITSM API MCP Server",
-      "htmlUrl": "https://github.com/gregorwolf/cloud-alm-itsm-mcp"
-    },
     "gavdilabs/cap-mcp-plugin": {
       "repo": "gavdilabs/cap-mcp-plugin",
       "source": "api",
@@ -211,6 +198,19 @@
       "license": "Apache-2.0",
       "description": "MCP (Model Context Protocol) server plugin for CAP NodeJS",
       "htmlUrl": "https://github.com/gavdilabs/cap-mcp-plugin"
+    },
+    "gregorwolf/cloud-alm-itsm-mcp": {
+      "repo": "gregorwolf/cloud-alm-itsm-mcp",
+      "source": "api",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": 2,
+      "lastChange": "2026-03-19T20:54:03Z",
+      "archived": false,
+      "license": null,
+      "description": "SAP Cloud ALM ITSM API MCP Server",
+      "htmlUrl": "https://github.com/gregorwolf/cloud-alm-itsm-mcp"
     },
     "GutjahrAI/sap-odata-mcp-py": {
       "repo": "GutjahrAI/sap-odata-mcp-py",
@@ -569,7 +569,7 @@
       "exists": true,
       "fork": false,
       "parent": null,
-      "stars": 213,
+      "stars": 214,
       "lastChange": "2026-03-20T05:31:15Z",
       "archived": false,
       "license": "MIT",
@@ -648,7 +648,7 @@
       "fork": false,
       "parent": null,
       "stars": 131,
-      "lastChange": "2026-03-20T03:30:48Z",
+      "lastChange": "2026-03-20T08:29:27Z",
       "archived": false,
       "license": "Apache-2.0",
       "description": "Enable community collaboration to jointly promote and facilitate best in class tooling capabilities",

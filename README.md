@@ -26,7 +26,6 @@ Know a project that belongs here? [Open an issue using the "Add new entry" templ
   - [SAP OData Gateway Graph MCP Server](#sap-odata-gateway-graph-mcp-server)
   - [SAP GUI](#sap-gui)
   - [SAP HANA](#sap-hana)
-  - [SAP Cloud ALM](#sap-cloud-alm)
   - [SAP Related Skills](#sap-related-skills)
   - [Adjacent SAP AI Developer Tools](#adjacent-sap-ai-developer-tools)
 
@@ -56,7 +55,7 @@ Know a project that belongs here? [Open an issue using the "Add new entry" templ
 
 | Name | Repository | Purpose | License | Stars | Last Change |
 | --- | --- | --- | --- | ---: | --- |
-| Vibing Steampunk | [oisee/vibing-steampunk](https://github.com/oisee/vibing-steampunk) | ADT-to-MCP bridge for ABAP and AMDP workflows. | MIT | 213 | 2026-03-20 |
+| Vibing Steampunk | [oisee/vibing-steampunk](https://github.com/oisee/vibing-steampunk) | ADT-to-MCP bridge for ABAP and AMDP workflows. | MIT | 214 | 2026-03-20 |
 | MCP ABAP (abap-adt-api wrapper) | [mario-andreschak/mcp-abap-abap-adt-api](https://github.com/mario-andreschak/mcp-abap-abap-adt-api) | ABAP operations through wrapped ADT API layer. | MIT | 99 | 2025-02-27 |
 | MCP ABAP ADT Server | [mario-andreschak/mcp-abap-adt](https://github.com/mario-andreschak/mcp-abap-adt) | ABAP system interaction via ADT APIs. | MIT | 96 | 2025-09-09 |
 | ABAP MCP Server SDK | [abap-ai/mcp](https://github.com/abap-ai/mcp) | Build MCP servers directly in ABAP. | MIT | 59 | 2025-07-20 |
@@ -123,12 +122,6 @@ Know a project that belongs here? [Open an issue using the "Add new entry" templ
 | Name | Repository | Purpose | License | Stars | Last Change |
 | --- | --- | --- | --- | ---: | --- |
 | HANA MCP Server | [HatriGt/hana-mcp-server](https://github.com/HatriGt/hana-mcp-server) | MCP integration for SAP HANA and HANA Cloud. | MIT | 38 | 2026-03-16 |
-
-## SAP Cloud ALM
-
-| Name | Repository | Purpose | License | Stars | Last Change |
-| --- | --- | --- | --- | ---: | --- |
-| SAP Cloud ALM ITSM MCP Server | [gregorwolf/cloud-alm-itsm-mcp](https://github.com/gregorwolf/cloud-alm-itsm-mcp) | Query installations within SAP Cloud ALM ITSM API with filtering and search. | **NO LICENSE FOUND** | 2 | 2026-03-19 |
 
 ## SAP Related Skills
 
