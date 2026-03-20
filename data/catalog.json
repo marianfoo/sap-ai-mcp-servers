@@ -379,6 +379,19 @@
           "notes": "Direct HANA-focused MCP server."
         }
       ]
+    },
+    {
+      "id": "sap-cloud-alm",
+      "title": "SAP Cloud ALM",
+      "entries": [
+        {
+          "type": "Community SAP",
+          "name": "SAP Cloud ALM ITSM MCP Server",
+          "repo": "gregorwolf/cloud-alm-itsm-mcp",
+          "purpose": "Query installations within SAP Cloud ALM ITSM API with filtering and search.",
+          "notes": "OAuth 2.0 client credentials auth. Tools: get_installations, filter by system type/customer/product, full-text search."
+        }
+      ]
     }
   ],
   "cdata": {
