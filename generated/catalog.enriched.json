@@ -1,7 +1,7 @@
 {
   "generatedAt": "2026-03-20T06:18:01.749Z",
   "sourceCatalog": "data/catalog.json",
-  "repoCount": 58,
+  "repoCount": 59,
   "tokenUsed": true,
   "repoMetadata": {
     "1nbuc/mcp-integration-suite": {
@@ -185,6 +185,19 @@
       "license": "MIT",
       "description": "MCP server for SAP BTP ABAP Cloud and On-Premise ECC/S/4HANA ABAP ADT with full CRUD, JWT/XSUAA, and service-key auth.",
       "htmlUrl": "https://github.com/fr0ster/mcp-abap-adt"
+    },
+    "gregorwolf/cloud-alm-itsm-mcp": {
+      "repo": "gregorwolf/cloud-alm-itsm-mcp",
+      "source": "api",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": 2,
+      "lastChange": "2026-03-19T20:54:03Z",
+      "archived": false,
+      "license": null,
+      "description": "SAP Cloud ALM ITSM API MCP Server",
+      "htmlUrl": "https://github.com/gregorwolf/cloud-alm-itsm-mcp"
     },
     "gavdilabs/cap-mcp-plugin": {
       "repo": "gavdilabs/cap-mcp-plugin",
