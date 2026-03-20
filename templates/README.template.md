@@ -26,6 +26,7 @@ Know a project that belongs here? [Open an issue using the "Add new entry" templ
   - [SAP OData Gateway Graph MCP Server](#sap-odata-gateway-graph-mcp-server)
   - [SAP GUI](#sap-gui)
   - [SAP HANA](#sap-hana)
+  - [SAP Cloud ALM](#sap-cloud-alm)
   - [SAP Related Skills](#sap-related-skills)
   - [Adjacent SAP AI Developer Tools](#adjacent-sap-ai-developer-tools)
 
@@ -66,6 +67,10 @@ Know a project that belongs here? [Open an issue using the "Add new entry" templ
 ## SAP HANA
 
 {{CATEGORY:sap-hana}}
+
+## SAP Cloud ALM
+
+{{CATEGORY:sap-cloud-alm}}
 
 ## SAP Related Skills
 

@@ -26,6 +26,7 @@ Know a project that belongs here? [Open an issue using the "Add new entry" templ
   - [SAP OData Gateway Graph MCP Server](#sap-odata-gateway-graph-mcp-server)
   - [SAP GUI](#sap-gui)
   - [SAP HANA](#sap-hana)
+  - [SAP Cloud ALM](#sap-cloud-alm)
   - [SAP Related Skills](#sap-related-skills)
   - [Adjacent SAP AI Developer Tools](#adjacent-sap-ai-developer-tools)
 
@@ -122,6 +123,12 @@ Know a project that belongs here? [Open an issue using the "Add new entry" templ
 | Name | Repository | Purpose | License | Stars | Last Change |
 | --- | --- | --- | --- | ---: | --- |
 | HANA MCP Server | [HatriGt/hana-mcp-server](https://github.com/HatriGt/hana-mcp-server) | MCP integration for SAP HANA and HANA Cloud. | MIT | 38 | 2026-03-16 |
+
+## SAP Cloud ALM
+
+| Name | Repository | Purpose | License | Stars | Last Change |
+| --- | --- | --- | --- | ---: | --- |
+| SAP Cloud ALM ITSM MCP Server | [gregorwolf/cloud-alm-itsm-mcp](https://github.com/gregorwolf/cloud-alm-itsm-mcp) | Query installations within SAP Cloud ALM ITSM API with filtering and search. | **NO LICENSE FOUND** | 2 | 2026-03-19 |
 
 ## SAP Related Skills
 
