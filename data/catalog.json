@@ -420,6 +420,19 @@
           "notes": "OAuth 2.0 client credentials auth. Tools: get_installations, filter by system type/customer/product, full-text search."
         }
       ]
+    },
+    {
+      "id": "sap-skills",
+      "title": "SAP Skills",
+      "entries": [
+        {
+          "type": "SAP",
+          "name": "SAP AI Skills Library",
+          "repo": "SAP/ai-skills-library",
+          "purpose": "SAP-maintained library of AI skills for digital assistants — discover, search, filter, and install via a skills CLI.",
+          "notes": "Supports Claude Code, Codex, Cursor, OpenCode, and other agents. Initial skill: sap-fiori-guidelines."
+        }
+      ]
     }
   ],
   "cdata": {

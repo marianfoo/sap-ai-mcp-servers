@@ -4,6 +4,10 @@ This file lists **only newly added repositories** (or other catalog entries with
 
 Dates use the commit date from `git log` on `data/catalog.json`.
 
+## 2026-05-11
+
+- New category **SAP Skills** with [`SAP/ai-skills-library`](https://github.com/SAP/ai-skills-library) — SAP-maintained AI skills library installable via a skills CLI (Claude Code, Codex, Cursor, OpenCode).
+
 ## 2026-04-21
 
 - [`dnic-dev/bw-modeling-mcp`](https://github.com/dnic-dev/bw-modeling-mcp) — BW Modeling MCP Server for SAP BW/4HANA

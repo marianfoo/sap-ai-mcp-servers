@@ -19,6 +19,7 @@ Know a project that belongs here? [Open an issue using the "Add new entry" templ
 ## Navigation
 
 - [SAP MCP Server](#sap-mcp-server)
+- [SAP Skills](#sap-skills)
 - [SAP Community MCP Servers](#sap-community-mcp-servers)
   - [SAP Docs MCP Server](#sap-docs-mcp-server)
   - [ABAP and ADT MCP Server](#abap-and-adt-mcp-server)
@@ -35,6 +36,10 @@ Know a project that belongs here? [Open an issue using the "Add new entry" templ
 # SAP MCP Server
 
 {{CATEGORY:sap-mcp-server}}
+
+# SAP Skills
+
+{{CATEGORY:sap-skills}}
 
 # SAP Community MCP Servers
 
