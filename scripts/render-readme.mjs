@@ -43,13 +43,20 @@ function repositoryLink(entry, meta) {
   return `[${label}](${url})`;
 }
 
+function resolveMeta(entry, repoMetadata) {
+  if (entry.repo) return repoMetadata[entry.repo] || null;
+  const { license = null, stars = null, lastChange = null } = entry;
+  if (license === null && stars === null && lastChange === null) return null;
+  return { license, stars, lastChange, fork: false, htmlUrl: entry.url || null };
+}
+
 function renderTable(entries, repoMetadata, opts = {}) {
   const lines = [];
   const rows = [];
   const excludedForks = [];
 
   for (const entry of entries) {
-    const meta = entry.repo ? repoMetadata[entry.repo] || null : null;
+    const meta = resolveMeta(entry, repoMetadata);
 
     if (entry.repo && meta?.fork) {
       excludedForks.push({ entry, meta });

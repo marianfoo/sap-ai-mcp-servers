@@ -1,4 +1,4 @@
-# SAP MCP Servers and SAP AI Skills (Open Source, GitHub)
+# SAP MCP Servers and SAP AI Skills (Open Source)
 
 Comprehensive list of SAP-related MCP servers and SAP AI development skills repositories.
 
@@ -8,9 +8,10 @@ Comprehensive list of SAP-related MCP servers and SAP AI development skills repo
 > Last generated: **2026-05-12**
 >
 > Scope:
-> - Open source or source-available repositories on GitHub
+> - Open source or source-available repositories — primarily GitHub, with non-GitHub git hosts (Gitea, GitLab, etc.) also accepted
 > - SAP-related MCP servers, MCP SDKs, and adjacent SAP AI developer assets
 > - Forks are excluded automatically from rendered tables
+> - Non-GitHub entries are listed without auto-fetched metadata (stars, license, last change)
 
 ## Add a missing entry
 
@@ -81,6 +82,7 @@ Know a project that belongs here? [Open an issue using the "Add new entry" templ
 | ABAP ADT MCP Server (buettnerjulian) | [buettnerjulian/abap-adt-mcp](https://github.com/buettnerjulian/abap-adt-mcp) | ABAP ADT MCP with object, metadata and analysis tools. | MIT | 1 | 2025-08-11 |
 | ABAP MCP Server (chandrashekhar-mahajan) | [chandrashekhar-mahajan/abap-mcp-server](https://github.com/chandrashekhar-mahajan/abap-mcp-server) | ABAP ADT REST based MCP tooling for development operations. | MIT | 0 | 2026-03-05 |
 | ABAPDocMCP | [SaurabhVC/ABAPDocMCP](https://github.com/SaurabhVC/ABAPDocMCP) | Generate WRICEF technical specs from transport content. | MIT | 0 | 2026-02-18 |
+| Erhan Keseli Eclipse MCP | [git.epod.dev/erhan/epod-adt-mcp-updatesite](https://git.epod.dev/erhan/epod-adt-mcp-updatesite) | Lets Claude or Codex use Eclipse ADT as an MCP server with SSO-based authentication. | **NO LICENSE FOUND** | - | - |
 
 ## SAP Integration
 

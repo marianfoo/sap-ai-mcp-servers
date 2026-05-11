@@ -1,4 +1,4 @@
-# SAP MCP Servers and SAP AI Skills (Open Source, GitHub)
+# SAP MCP Servers and SAP AI Skills (Open Source)
 
 Comprehensive list of SAP-related MCP servers and SAP AI development skills repositories.
 
@@ -8,9 +8,10 @@ Comprehensive list of SAP-related MCP servers and SAP AI development skills repo
 > Last generated: **{{LAST_UPDATED}}**
 >
 > Scope:
-> - Open source or source-available repositories on GitHub
+> - Open source or source-available repositories — primarily GitHub, with non-GitHub git hosts (Gitea, GitLab, etc.) also accepted
 > - SAP-related MCP servers, MCP SDKs, and adjacent SAP AI developer assets
 > - Forks are excluded automatically from rendered tables
+> - Non-GitHub entries are listed without auto-fetched metadata (stars, license, last change)
 
 ## Add a missing entry
 

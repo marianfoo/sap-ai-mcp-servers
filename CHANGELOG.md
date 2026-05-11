@@ -1,11 +1,12 @@
 # Changelog — new catalog entries
 
-This file lists **only newly added repositories** (or other catalog entries with a `repo`) to [`data/catalog.json`](data/catalog.json). Metadata-only updates, README/template changes, and automated star/license refreshes are omitted.
+This file lists **only newly added repositories** (or other catalog entries with a `repo`/`url`) in [`data/catalog.json`](data/catalog.json). Metadata-only updates, README/template changes, and automated star/license refreshes are omitted.
 
 Dates use the commit date from `git log` on `data/catalog.json`.
 
 ## 2026-05-11
 
+- [`git.epod.dev/erhan/epod-adt-mcp-updatesite`](https://git.epod.dev/erhan/epod-adt-mcp-updatesite) — Erhan Keseli Eclipse MCP (Eclipse ADT MCP server with SSO; first non-GitHub git host in this list).
 - New category **SAP Skills** with [`SAP/ai-skills-library`](https://github.com/SAP/ai-skills-library) — SAP-maintained AI skills library installable via a skills CLI (Claude Code, Codex, Cursor, OpenCode).
 
 ## 2026-04-21

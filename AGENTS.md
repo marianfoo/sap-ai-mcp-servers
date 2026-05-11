@@ -102,6 +102,24 @@ Append a new object to the `entries` array of the correct category (or to `skill
 }
 ```
 
+**Non-GitHub git repository** (Gitea, GitLab, Bitbucket, self-hosted, etc.):
+
+```json
+{
+  "type": "Community SAP",
+  "name": "Example Non-GitHub MCP",
+  "url": "https://git.example.dev/owner/repo",
+  "linkLabel": "git.example.dev/owner/repo",
+  "purpose": "What it does.",
+  "notes": "Hosted on a non-GitHub git server. Metadata is not auto-fetched.",
+  "license": "MIT",
+  "lastChange": "2026-04-26",
+  "stars": 12
+}
+```
+
+For non-GitHub entries you can optionally include inline `license`, `lastChange` (ISO date), and `stars` (integer). These render into the table the same way as fetched GitHub metadata. Leave them out if you don't have a reliable value — the columns will show `-` and `NO LICENSE FOUND`. The enrichment script does not touch these fields; treat them as a one-time manual snapshot.
+
 ### Field reference
 
 | Field | Required | Description |
@@ -115,6 +133,9 @@ Append a new object to the `entries` array of the correct category (or to `skill
 | `displayUrl` | no | Override the link URL (use with `repoPath` for monorepos) |
 | `url` | no | Use instead of `repo` for non-GitHub entries |
 | `linkLabel` | no | Custom link label when using `url` |
+| `license` | no | Inline license for `url` entries (e.g. `MIT`). Ignored for `repo` entries. |
+| `lastChange` | no | Inline last-change date for `url` entries (ISO 8601). Ignored for `repo` entries. |
+| `stars` | no | Inline star count for `url` entries (integer). Ignored for `repo` entries. |
 
 ### Step 3 — Update CHANGELOG.md (new GitHub repos only)
 

@@ -207,6 +207,14 @@
           "repo": "dnic-dev/bw-modeling-mcp",
           "purpose": "Read, create, and modify SAP BW/4HANA objects directly in a live system via the internal BWMT REST API.",
           "notes": "First MCP server targeting SAP BW/4HANA modeling. Works with all BW/4HANA versions; partial support for BW 7.5 on HANA planned. Combines well with ADT MCP servers for ABAP/AMDP routine development."
+        },
+        {
+          "type": "Community SAP",
+          "name": "Erhan Keseli Eclipse MCP",
+          "url": "https://git.epod.dev/erhan/epod-adt-mcp-updatesite",
+          "linkLabel": "git.epod.dev/erhan/epod-adt-mcp-updatesite",
+          "purpose": "Lets Claude or Codex use Eclipse ADT as an MCP server with SSO-based authentication.",
+          "notes": "Hosted on a non-GitHub git server (git.epod.dev). Metadata (license, stars, last change) is not auto-fetched; submitter confirmed an open-source license on submission."
         }
       ]
     },

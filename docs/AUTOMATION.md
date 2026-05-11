@@ -45,6 +45,14 @@ References:
 - `GET /repos/{owner}/{repo}/license` (repository license endpoint)
 - GitHub REST API docs for licenses (`Licensee` + SPDX behavior)
 
+## Non-GitHub Entries
+
+Entries hosted outside GitHub (Gitea, GitLab, Bitbucket, documentation pages, etc.) use `url` + `linkLabel` instead of `repo`. The enrichment script only fetches GitHub metadata, so non-GitHub entries are never auto-enriched.
+
+If a non-GitHub git repo has a known license, last change date, or star count, the catalog entry can carry them inline as `license`, `lastChange`, and `stars` fields (see `AGENTS.md` for an example). The renderer reads these directly when no `repo` is set. Leave them out when you can't verify the value — the table will fall back to `-` and `NO LICENSE FOUND`.
+
+Why no Gitea/GitLab fetcher? Each non-GitHub host needs its own API client and auth story, and self-hosted instances often block outbound bots. Inline manual metadata is the lowest-overhead option until enough non-GitHub entries accumulate to justify a dedicated fetcher.
+
 ## Manual Overrides
 
 Some repositories declare their license only in a README or other non-standard location that automated detection cannot parse. For these cases, metadata can be manually fixed in:

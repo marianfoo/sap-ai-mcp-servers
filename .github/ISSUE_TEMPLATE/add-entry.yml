@@ -9,6 +9,9 @@ body:
         Thanks for suggesting a new entry! Please fill in the details below.
         All fields marked with * are required.
 
+        Fill in **either** the GitHub repository field **or** the non-GitHub URL field — not both.
+        GitHub entries get auto-enriched (stars, license, last change). Non-GitHub entries are listed but not enriched.
+
   - type: dropdown
     id: category
     attributes:
@@ -41,8 +44,8 @@ body:
   - type: input
     id: repo
     attributes:
-      label: GitHub repository *
-      description: Repository in `owner/repo` format. Leave blank if this is a non-GitHub URL (fill in the URL field below instead).
+      label: GitHub repository
+      description: Repository in `owner/repo` format. Leave blank if the project lives on a non-GitHub host (use the URL field below instead).
       placeholder: e.g. myorg/my-sap-mcp-server
     validations:
       required: false
@@ -50,9 +53,9 @@ body:
   - type: input
     id: url
     attributes:
-      label: URL (non-GitHub only)
-      description: Only fill this in if the entry is NOT a GitHub repository (e.g. official documentation page).
-      placeholder: e.g. https://docs.example.com/my-tool
+      label: Non-GitHub URL
+      description: Full URL for entries hosted outside GitHub (e.g. Gitea, GitLab, Bitbucket, or an official documentation page). Use this OR the GitHub field above, not both.
+      placeholder: e.g. https://git.example.dev/owner/repo
     validations:
       required: false
 
@@ -79,7 +82,7 @@ body:
     attributes:
       label: Checklist
       options:
-        - label: The repository is publicly accessible on GitHub (or the URL is publicly reachable)
+        - label: The repository or URL is publicly reachable without authentication
           required: true
         - label: The repository is NOT a fork of an existing entry already in the list
           required: true
