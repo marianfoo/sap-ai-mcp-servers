@@ -21,7 +21,9 @@ Know a project that belongs here? [Open an issue using the "Add new entry" templ
 
 - [SAP MCP Server](#sap-mcp-server)
 - [SAP Skills](#sap-skills)
+- [SAP Claude Plugins](#sap-claude-plugins)
 - [SAP Community MCP Servers](#sap-community-mcp-servers)
+  - [Community SAP MCP Server](#community-sap-mcp-server)
   - [SAP Docs MCP Server](#sap-docs-mcp-server)
   - [ABAP and ADT MCP Server](#abap-and-adt-mcp-server)
   - [SAP Integration](#sap-integration)
@@ -43,7 +45,15 @@ Know a project that belongs here? [Open an issue using the "Add new entry" templ
 
 {{CATEGORY:sap-skills}}
 
+# SAP Claude Plugins
+
+{{SAP_CLAUDE_PLUGINS_TABLE}}
+
 # SAP Community MCP Servers
+
+## Community SAP MCP Server
+
+{{CATEGORY:community-sap-mcp-server}}
 
 ## SAP Docs MCP Server
 
@@ -87,7 +97,7 @@ Know a project that belongs here? [Open an issue using the "Add new entry" templ
 
 ## SAP Claude Plugins and Skills
 
-{{CLAUDE_PLUGINS_TABLE}}
+{{COMMUNITY_CLAUDE_PLUGINS_TABLE}}
 
 ## Adjacent SAP AI Developer Tools
 

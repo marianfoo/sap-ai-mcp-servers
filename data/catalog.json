@@ -48,13 +48,6 @@
           "repo": "SAP/mdk-mcp-server",
           "purpose": "AI-assisted SAP Mobile Development Kit workflows.",
           "notes": "MDK-focused MCP server."
-        },
-        {
-          "type": "Community SAP",
-          "name": "SAP MCP Server (MarkWuRY168)",
-          "repo": "MarkWuRY168/SAP_MCP",
-          "purpose": "Publish configurable SAP system tools through MCP services and a web management interface.",
-          "notes": "Python/FastAPI implementation with tool discovery, execution, service status, logging, and SAP connection configuration."
         }
       ]
     },
@@ -96,6 +89,19 @@
           "repo": "nickels/sap-ai-docs-mcp",
           "purpose": "Semantic search across SAP AI Core docs.",
           "notes": "Documentation-focused MCP server."
+        }
+      ]
+    },
+    {
+      "id": "community-sap-mcp-server",
+      "title": "Community SAP MCP Server",
+      "entries": [
+        {
+          "type": "Community SAP",
+          "name": "SAP MCP Server (MarkWuRY168)",
+          "repo": "MarkWuRY168/SAP_MCP",
+          "purpose": "Publish configurable SAP system tools through MCP services and a web management interface.",
+          "notes": "Python/FastAPI implementation with tool discovery, execution, service status, logging, and SAP connection configuration."
         }
       ]
     },
@@ -467,6 +473,13 @@
           "repo": "SAP/ai-skills-library",
           "purpose": "SAP-maintained library of AI skills for digital assistants — discover, search, filter, and install via a skills CLI.",
           "notes": "Supports Claude Code, Codex, Cursor, OpenCode, and other agents. Initial skill: sap-fiori-guidelines."
+        },
+        {
+          "type": "SAP",
+          "name": "CAP Agentic Engineered Skills",
+          "repo": "SAP-samples/cap-agentic-engineered",
+          "purpose": "Provide reusable MCP-routing AGENTS.md and SAP skills for CAP and Fiori Elements agentic development.",
+          "notes": "Reference Financial Risk Analyzer app built with Claude Code; skills route agents to CAP, Fiori, and UI5 MCP servers."
         }
       ]
     }
@@ -476,13 +489,6 @@
     "sapWrappers": []
   },
   "skills": [
-    {
-      "type": "SAP",
-      "name": "CAP Agentic Engineered Skills",
-      "repo": "SAP-samples/cap-agentic-engineered",
-      "purpose": "Provide reusable MCP-routing AGENTS.md and SAP skills for CAP and Fiori Elements agentic development.",
-      "notes": "Reference Financial Risk Analyzer app built with Claude Code; skills route agents to CAP, Fiori, and UI5 MCP servers."
-    },
     {
       "type": "Community SAP",
       "name": "SAP Power for Kiro",

@@ -50,6 +50,7 @@ Run `npm run build` to execute the full pipeline locally.
 Each `categories` entry has an `id` and `title`. Current category IDs:
 
 - `sap-mcp-server` — Official SAP MCP servers
+- `community-sap-mcp-server` — Community general SAP MCP servers
 - `sap-docs-mcp-server` — SAP documentation MCP servers
 - `abap-and-adt-mcp-server` — ABAP/ADT MCP servers
 - `sap-integration` — SAP Integration Suite / CPI

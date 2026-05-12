@@ -19,6 +19,9 @@ body:
       description: Which section of the list does this belong to?
       options:
         - SAP MCP Server
+        - SAP Skills
+        - SAP Claude Plugins
+        - Community SAP MCP Server
         - SAP Docs MCP Server
         - ABAP and ADT MCP Server
         - SAP Integration

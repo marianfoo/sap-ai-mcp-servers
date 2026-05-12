@@ -100,6 +100,10 @@ function renderTable(entries, repoMetadata, opts = {}) {
   return lines.join('\n');
 }
 
+function entriesByType(entries, type) {
+  return (entries || []).filter((entry) => entry.type === type);
+}
+
 async function renderReadme() {
   console.log('Rendering README...');
   const [catalogRaw, enrichedRaw, templateRaw] = await Promise.all([
@@ -129,7 +133,14 @@ async function renderReadme() {
   }
 
   rendered = rendered.replaceAll('{{SKILLS_TABLE}}', renderTable(catalog.skills || [], repoMetadata));
-  rendered = rendered.replaceAll('{{CLAUDE_PLUGINS_TABLE}}', renderTable(catalog.claudePlugins || [], repoMetadata));
+  rendered = rendered.replaceAll(
+    '{{SAP_CLAUDE_PLUGINS_TABLE}}',
+    renderTable(entriesByType(catalog.claudePlugins, 'SAP'), repoMetadata)
+  );
+  rendered = rendered.replaceAll(
+    '{{COMMUNITY_CLAUDE_PLUGINS_TABLE}}',
+    renderTable(entriesByType(catalog.claudePlugins, 'Community SAP'), repoMetadata)
+  );
   rendered = rendered.replaceAll('{{ADJACENT_TABLE}}', renderTable(catalog.adjacentTools || [], repoMetadata));
 
   await fs.writeFile(README_PATH, rendered.trimEnd() + '\n', 'utf8');

@@ -21,7 +21,9 @@ Know a project that belongs here? [Open an issue using the "Add new entry" templ
 
 - [SAP MCP Server](#sap-mcp-server)
 - [SAP Skills](#sap-skills)
+- [SAP Claude Plugins](#sap-claude-plugins)
 - [SAP Community MCP Servers](#sap-community-mcp-servers)
+  - [Community SAP MCP Server](#community-sap-mcp-server)
   - [SAP Docs MCP Server](#sap-docs-mcp-server)
   - [ABAP and ADT MCP Server](#abap-and-adt-mcp-server)
   - [SAP Integration](#sap-integration)
@@ -39,20 +41,32 @@ Know a project that belongs here? [Open an issue using the "Add new entry" templ
 
 | Name | Repository | Purpose | License | Stars | Last Change |
 | --- | --- | --- | --- | ---: | --- |
-| SAP Fiori MCP Server | [SAP/open-ux-tools/packages/fiori-mcp-server](https://github.com/SAP/open-ux-tools/tree/main/packages/fiori-mcp-server) | Fiori app generation and modification workflows. | Apache-2.0 | 145 | 2026-05-11 |
+| SAP Fiori MCP Server | [SAP/open-ux-tools/packages/fiori-mcp-server](https://github.com/SAP/open-ux-tools/tree/main/packages/fiori-mcp-server) | Fiori app generation and modification workflows. | Apache-2.0 | 145 | 2026-05-12 |
 | CAP MCP Server | [cap-js/mcp-server](https://github.com/cap-js/mcp-server) | AI-assisted CAP development with CDS-aware context. | Apache-2.0 | 95 | 2026-05-04 |
 | UI5 MCP Server | [UI5/mcp-server](https://github.com/UI5/mcp-server) | UI5-aware development support for OpenUI5 and SAPUI5. | Apache-2.0 | 83 | 2026-05-11 |
 | SAP MDK MCP Server | [SAP/mdk-mcp-server](https://github.com/SAP/mdk-mcp-server) | AI-assisted SAP Mobile Development Kit workflows. | Apache-2.0 | 30 | 2026-05-11 |
 | UI5 Web Components MCP Server | [UI5/webcomponents-mcp-server](https://github.com/UI5/webcomponents-mcp-server) | AI-assisted development with UI5 Web Components (component API, guidelines, docs). | Apache-2.0 | 18 | 2026-03-16 |
-| SAP MCP Server (MarkWuRY168) | [MarkWuRY168/SAP_MCP](https://github.com/MarkWuRY168/SAP_MCP) | Publish configurable SAP system tools through MCP services and a web management interface. | MIT | 1 | 2026-03-11 |
 
 # SAP Skills
 
 | Name | Repository | Purpose | License | Stars | Last Change |
 | --- | --- | --- | --- | ---: | --- |
+| CAP Agentic Engineered Skills | [SAP-samples/cap-agentic-engineered](https://github.com/SAP-samples/cap-agentic-engineered) | Provide reusable MCP-routing AGENTS.md and SAP skills for CAP and Fiori Elements agentic development. | Apache-2.0 | 2 | 2026-04-30 |
 | SAP AI Skills Library | [SAP/ai-skills-library](https://github.com/SAP/ai-skills-library) | SAP-maintained library of AI skills for digital assistants — discover, search, filter, and install via a skills CLI. | Apache-2.0 | 2 | 2026-05-11 |
 
+# SAP Claude Plugins
+
+| Name | Repository | Purpose | License | Stars | Last Change |
+| --- | --- | --- | --- | ---: | --- |
+| UI5 Plugins for Claude | [UI5/plugins-claude](https://github.com/UI5/plugins-claude) | Provide UI5-specific Claude Code plugins for project creation, UI5 error fixing, and framework guidance. | Apache-2.0 | 14 | 2026-05-11 |
+
 # SAP Community MCP Servers
+
+## Community SAP MCP Server
+
+| Name | Repository | Purpose | License | Stars | Last Change |
+| --- | --- | --- | --- | ---: | --- |
+| SAP MCP Server (MarkWuRY168) | [MarkWuRY168/SAP_MCP](https://github.com/MarkWuRY168/SAP_MCP) | Publish configurable SAP system tools through MCP services and a web management interface. | MIT | 1 | 2026-03-11 |
 
 ## SAP Docs MCP Server
 
@@ -71,7 +85,7 @@ Know a project that belongs here? [Open an issue using the "Add new entry" templ
 | Vibing Steampunk | [oisee/vibing-steampunk](https://github.com/oisee/vibing-steampunk) | ADT-to-MCP bridge for ABAP and AMDP workflows. | MIT | 335 | 2026-04-15 |
 | MCP ABAP (abap-adt-api wrapper) | [mario-andreschak/mcp-abap-abap-adt-api](https://github.com/mario-andreschak/mcp-abap-abap-adt-api) | ABAP operations through wrapped ADT API layer. | MIT | 132 | 2025-02-27 |
 | MCP ABAP ADT Server | [mario-andreschak/mcp-abap-adt](https://github.com/mario-andreschak/mcp-abap-adt) | ABAP system interaction via ADT APIs. | MIT | 125 | 2025-09-09 |
-| ARC-1 SAP ADT MCP Server | [marianfoo/arc-1](https://github.com/marianfoo/arc-1) | Secure-by-default, enterprise-ready SAP ABAP MCP server for developer IDEs, Microsoft Copilot, and any MCP client via BTP OAuth and the ADT REST API. | MIT | 73 | 2026-05-12 |
+| ARC-1 SAP ADT MCP Server | [marianfoo/arc-1](https://github.com/marianfoo/arc-1) | Secure-by-default, enterprise-ready SAP ABAP MCP server for developer IDEs, Microsoft Copilot, and any MCP client via BTP OAuth and the ADT REST API. | MIT | 74 | 2026-05-12 |
 | ABAP MCP Server SDK | [abap-ai/mcp](https://github.com/abap-ai/mcp) | Build MCP servers directly in ABAP. | MIT | 68 | 2025-07-20 |
 | mcp-abap-adt | [fr0ster/mcp-abap-adt](https://github.com/fr0ster/mcp-abap-adt) | ABAP ADT MCP server with CRUD and cloud/on-prem support. | MIT | 47 | 2026-04-25 |
 | ABAP Accelerator MCP Server | [aws-solutions-library-samples/guidance-for-deploying-sap-abap-accelerator-for-amazon-q-developer](https://github.com/aws-solutions-library-samples/guidance-for-deploying-sap-abap-accelerator-for-amazon-q-developer) | Enterprise-grade MCP server for SAP ABAP: create, test, document, and transform ABAP code via Amazon Q Developer and Kiro. | MIT-0 | 41 | 2026-05-08 |
@@ -155,7 +169,6 @@ Know a project that belongs here? [Open an issue using the "Add new entry" templ
 | Name | Repository | Purpose | License | Stars | Last Change |
 | --- | --- | --- | --- | ---: | --- |
 | SAP Power for Kiro | [mfigueir/sap-power](https://github.com/mfigueir/sap-power) | SAP development knowledge package for Kiro IDE. | GPL-3.0 | 6 | 2026-01-20 |
-| CAP Agentic Engineered Skills | [SAP-samples/cap-agentic-engineered](https://github.com/SAP-samples/cap-agentic-engineered) | Provide reusable MCP-routing AGENTS.md and SAP skills for CAP and Fiori Elements agentic development. | Apache-2.0 | 2 | 2026-04-30 |
 
 ## SAP Claude Plugins and Skills
 
@@ -166,7 +179,6 @@ Know a project that belongs here? [Open an issue using the "Add new entry" templ
 | SAP OData Explorer Skill | [one-kash/sap-odata-explorer](https://github.com/openkash/sap-odata-explorer) | Claude skill for SAP OData endpoint exploration. | MIT | 19 | 2026-03-24 |
 | SAP Datasphere Plugin for Claude | [MarioDeFelipe/sap-datasphere-plugin-for-claude-cowork](https://github.com/MarioDeFelipe/sap-datasphere-plugin-for-claude-cowork) | Provide Claude skills and MCP configuration for SAP Datasphere exploration, modeling, administration, and governance workflows. | MIT | 18 | 2026-05-08 |
 | RAP Skills | [weiserman/rap-skills](https://github.com/weiserman/rap-skills) | SAP RAP-focused Claude Code skills. | MIT | 14 | 2026-02-24 |
-| UI5 Plugins for Claude | [UI5/plugins-claude](https://github.com/UI5/plugins-claude) | Provide UI5-specific Claude Code plugins for project creation, UI5 error fixing, and framework guidance. | Apache-2.0 | 14 | 2026-05-11 |
 | sapcli Claude Code Plugin | [jfilak/sapcli-claude-plugin](https://github.com/jfilak/sapcli-claude-plugin) | Expose ABAP system exploration and development agents for Claude Code on top of sapcli. | Apache-2.0 | 11 | 2026-05-06 |
 | SAP Commerce Skill | [Emenowicz/sap-commerce-skill](https://github.com/Emenowicz/sap-commerce-skill) | Provide SAP Commerce Cloud and Hybris development guidance, templates, and utilities for AI coding agents. | MIT | 7 | 2026-03-19 |
 | SAP Claude Skills | [KEIDAI-TechTime/sap-claude-skills](https://github.com/KEIDAI-TechTime/sap-claude-skills) | SAP add-on development skill bundles for Claude workflows. | **NO LICENSE FOUND** | 1 | 2026-03-03 |
