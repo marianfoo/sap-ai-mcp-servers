@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-05-12T06:57:51.006Z",
+  "generatedAt": "2026-05-12T07:20:50.786Z",
   "sourceCatalog": "data/catalog.json",
-  "repoCount": 64,
+  "repoCount": 75,
   "tokenUsed": true,
   "repoMetadata": {
     "1nbuc/mcp-integration-suite": {
@@ -68,6 +68,32 @@
       "license": "MIT-0",
       "description": "ABAP Accelerator is an MCP server that helps organizations create, test, document, and transform SAP ABAP code faster and with higher code accuracy.",
       "htmlUrl": "https://github.com/aws-solutions-library-samples/guidance-for-deploying-sap-abap-accelerator-for-amazon-q-developer"
+    },
+    "babamba2/abap-mcp-adt-powerup": {
+      "repo": "babamba2/abap-mcp-adt-powerup",
+      "source": "api",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": 2,
+      "lastChange": "2026-04-29T01:48:17Z",
+      "archived": false,
+      "license": "MIT",
+      "description": "Powerup mcp server",
+      "htmlUrl": "https://github.com/babamba2/abap-mcp-adt-powerup"
+    },
+    "babamba2/superclaude-for-sap": {
+      "repo": "babamba2/superclaude-for-sap",
+      "source": "api",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": 26,
+      "lastChange": "2026-04-29T02:24:31Z",
+      "archived": false,
+      "license": "MIT",
+      "description": "SuperClaude for SAP — Claude Code plugin for SAP On-Premise S/4HANA ABAP development (24 agents, 14 skills, 150+ MCP tools)",
+      "htmlUrl": "https://github.com/babamba2/superclaude-for-sap"
     },
     "buettnerjulian/abap-adt-mcp": {
       "repo": "buettnerjulian/abap-adt-mcp",
@@ -186,6 +212,19 @@
       "description": null,
       "htmlUrl": "https://github.com/eclipse-copilot/eclipse-copilot"
     },
+    "Emenowicz/sap-commerce-skill": {
+      "repo": "Emenowicz/sap-commerce-skill",
+      "source": "api",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": 7,
+      "lastChange": "2026-03-19T11:42:59Z",
+      "archived": false,
+      "license": "MIT",
+      "description": "SAP Commerce Cloud (Hybris) skill for Claude Code - type system, service layer, ImpEx, FlexibleSearch, OCC API, accelerators",
+      "htmlUrl": "https://github.com/Emenowicz/sap-commerce-skill"
+    },
     "fgalastri/MCP_ABAP": {
       "repo": "fgalastri/MCP_ABAP",
       "source": "api",
@@ -277,6 +316,19 @@
       "description": "SAP HANA MCP server — Enterprise Model Context Protocol server for SAP HANA. Use with Claude Code, VS Code. npm: hana-mcp-server",
       "htmlUrl": "https://github.com/HatriGt/hana-mcp-server"
     },
+    "Hochfrequenz/sap-mcp-config": {
+      "repo": "Hochfrequenz/sap-mcp-config",
+      "source": "api",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": 0,
+      "lastChange": "2026-05-05T04:30:54Z",
+      "archived": false,
+      "license": "MIT",
+      "description": "Shared Go+Python models for credentials used by MCP servers that connect to SAP",
+      "htmlUrl": "https://github.com/Hochfrequenz/sap-mcp-config"
+    },
     "jduncan8142/sap_gui_mcp": {
       "repo": "jduncan8142/sap_gui_mcp",
       "source": "api",
@@ -315,6 +367,19 @@
       "license": "Apache-2.0",
       "description": "Command Line Interface for interaction with SAP tools",
       "htmlUrl": "https://github.com/jfilak/sapcli"
+    },
+    "jfilak/sapcli-claude-plugin": {
+      "repo": "jfilak/sapcli-claude-plugin",
+      "source": "api",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": 11,
+      "lastChange": "2026-05-06T13:50:04Z",
+      "archived": false,
+      "license": "Apache-2.0",
+      "description": "Claude plugin with ABAP and SAP agents and skills using sapcli",
+      "htmlUrl": "https://github.com/jfilak/sapcli-claude-plugin"
     },
     "JumenEngels/sap_analytics_cloud_mcp": {
       "repo": "JumenEngels/sap_analytics_cloud_mcp",
@@ -537,6 +602,32 @@
       "description": "SAP Datasphere MCP Server - AI-powered access to SAP Datasphere APIs",
       "htmlUrl": "https://github.com/MarioDeFelipe/sap-datasphere-mcp"
     },
+    "MarioDeFelipe/sap-datasphere-plugin-for-claude-cowork": {
+      "repo": "MarioDeFelipe/sap-datasphere-plugin-for-claude-cowork",
+      "source": "api",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": 18,
+      "lastChange": "2026-05-08T10:09:33Z",
+      "archived": false,
+      "license": "MIT",
+      "description": "SAP Datasphere Plugin for Claude Cowork",
+      "htmlUrl": "https://github.com/MarioDeFelipe/sap-datasphere-plugin-for-claude-cowork"
+    },
+    "MarkWuRY168/SAP_MCP": {
+      "repo": "MarkWuRY168/SAP_MCP",
+      "source": "api",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": 1,
+      "lastChange": "2026-03-11T04:08:55Z",
+      "archived": false,
+      "license": "MIT",
+      "description": "An MCP that can publish SAP system tools",
+      "htmlUrl": "https://github.com/MarkWuRY168/SAP_MCP"
+    },
     "mfigueir/sap-power": {
       "repo": "mfigueir/sap-power",
       "source": "api",
@@ -641,6 +732,32 @@
       "description": "Query SAP OData endpoints in plain English using AI. Claude Code skill.",
       "htmlUrl": "https://github.com/openkash/sap-odata-explorer"
     },
+    "pmankineni/mcp-datasphere-tools": {
+      "repo": "pmankineni/mcp-datasphere-tools",
+      "source": "api",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": 0,
+      "lastChange": "2026-03-13T14:03:21Z",
+      "archived": false,
+      "license": "ISC",
+      "description": null,
+      "htmlUrl": "https://github.com/pmankineni/mcp-datasphere-tools"
+    },
+    "prudvigit/mcp-sap-cpi": {
+      "repo": "prudvigit/mcp-sap-cpi",
+      "source": "api",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": 0,
+      "lastChange": "2026-03-13T14:37:34Z",
+      "archived": false,
+      "license": "MIT",
+      "description": "MCP for SAP CPI",
+      "htmlUrl": "https://github.com/prudvigit/mcp-sap-cpi"
+    },
     "rahulsethi/SAPBDCMCP": {
       "repo": "rahulsethi/SAPBDCMCP",
       "source": "api",
@@ -666,6 +783,19 @@
       "license": "MIT",
       "description": "MCP Server for SAP Datasphere",
       "htmlUrl": "https://github.com/rahulsethi/SAPDatasphereMCP"
+    },
+    "SAP-samples/cap-agentic-engineered": {
+      "repo": "SAP-samples/cap-agentic-engineered",
+      "source": "api",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": 2,
+      "lastChange": "2026-04-30T19:14:10Z",
+      "archived": false,
+      "license": "Apache-2.0",
+      "description": "Reference CAP + Fiori Elements application showing how AI coding agents produce higher-quality SAP applications when grounded by SAP MCP servers (CAP, Fiori, UI5). Includes a reusable AGENTS.md, MCP skills, and a working Financial Risk Analyzer built entirely by Claude Code.",
+      "htmlUrl": "https://github.com/SAP-samples/cap-agentic-engineered"
     },
     "SAP-samples/teched2025-CA261": {
       "repo": "SAP-samples/teched2025-CA261",
@@ -783,6 +913,19 @@
       "license": "Apache-2.0",
       "description": "The UI5 MCP server improves the developer experience when working with agentic AI and the UI5 framework.",
       "htmlUrl": "https://github.com/UI5/mcp-server"
+    },
+    "UI5/plugins-claude": {
+      "repo": "UI5/plugins-claude",
+      "source": "api",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": 14,
+      "lastChange": "2026-05-11T22:58:10Z",
+      "archived": false,
+      "license": "Apache-2.0",
+      "description": "SAPUI5 / OpenUI5 plugin for Claude",
+      "htmlUrl": "https://github.com/UI5/plugins-claude"
     },
     "UI5/webcomponents-mcp-server": {
       "repo": "UI5/webcomponents-mcp-server",

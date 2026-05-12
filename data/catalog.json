@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "SAP MCP Servers (Open Source, GitHub)",
+    "title": "SAP MCP Servers, AI Skills, and Claude Plugins (Open Source, GitHub)",
     "timezone": "Europe/Berlin",
     "notes": [
       "Only non-fork repositories are included in generated output.",
@@ -48,6 +48,13 @@
           "repo": "SAP/mdk-mcp-server",
           "purpose": "AI-assisted SAP Mobile Development Kit workflows.",
           "notes": "MDK-focused MCP server."
+        },
+        {
+          "type": "Community SAP",
+          "name": "SAP MCP Server (MarkWuRY168)",
+          "repo": "MarkWuRY168/SAP_MCP",
+          "purpose": "Publish configurable SAP system tools through MCP services and a web management interface.",
+          "notes": "Python/FastAPI implementation with tool discovery, execution, service status, logging, and SAP connection configuration."
         }
       ]
     },
@@ -161,6 +168,13 @@
         },
         {
           "type": "Community SAP",
+          "name": "MCP ABAP ADT Powerup",
+          "repo": "babamba2/abap-mcp-adt-powerup",
+          "purpose": "Expose comprehensive ABAP ADT development, diagnostics, and object management workflows through MCP.",
+          "notes": "Powerup MCP server used by SuperClaude for SAP; supports ABAP Cloud, S/4HANA, ECC, stdio, HTTP/SSE, and hundreds of tools."
+        },
+        {
+          "type": "Community SAP",
           "name": "Vibing Steampunk",
           "repo": "oisee/vibing-steampunk",
           "purpose": "ADT-to-MCP bridge for ABAP and AMDP workflows.",
@@ -242,6 +256,13 @@
           "repo": "vadimklimov/cpi-mcp-server",
           "purpose": "SAP Cloud Integration operations via MCP.",
           "notes": "Go-based implementation with binary releases."
+        },
+        {
+          "type": "Community SAP",
+          "name": "SAP CPI MCP Server (prudvigit)",
+          "repo": "prudvigit/mcp-sap-cpi",
+          "purpose": "Monitor and manage SAP Cloud Integration messages, iFlows, security artifacts, and runtime status via MCP.",
+          "notes": "Supports BTP Process Integration Runtime service-key authentication, deploy/undeploy tools, and CPI health checks."
         }
       ]
     },
@@ -290,6 +311,13 @@
           "repo": "MarioDeFelipe/sap-datasphere-mcp",
           "purpose": "Feature-rich Datasphere API interaction via MCP.",
           "notes": "Broad tool surface, tenant-focused operations."
+        },
+        {
+          "type": "Community SAP",
+          "name": "SAP Datasphere MCP Tools",
+          "repo": "pmankineni/mcp-datasphere-tools",
+          "purpose": "Expose SAP Datasphere exploration, querying, modeling, administration, and audit workflows via MCP.",
+          "notes": "TypeScript implementation with 49 tools, mock data mode, OAuth client credentials, and handler-based architecture."
         },
         {
           "type": "Community SAP",
@@ -449,6 +477,22 @@
   },
   "skills": [
     {
+      "type": "SAP",
+      "name": "CAP Agentic Engineered Skills",
+      "repo": "SAP-samples/cap-agentic-engineered",
+      "purpose": "Provide reusable MCP-routing AGENTS.md and SAP skills for CAP and Fiori Elements agentic development.",
+      "notes": "Reference Financial Risk Analyzer app built with Claude Code; skills route agents to CAP, Fiori, and UI5 MCP servers."
+    },
+    {
+      "type": "Community SAP",
+      "name": "SAP Power for Kiro",
+      "repo": "mfigueir/sap-power",
+      "purpose": "SAP development knowledge package for Kiro IDE.",
+      "notes": "Similar scope to sap-skills-power, check overlap before adoption."
+    }
+  ],
+  "claudePlugins": [
+    {
       "type": "Community SAP",
       "name": "SAP Skills for Claude Code",
       "repo": "secondsky/sap-skills",
@@ -471,17 +515,45 @@
     },
     {
       "type": "Community SAP",
-      "name": "SAP Power for Kiro",
-      "repo": "mfigueir/sap-power",
-      "purpose": "SAP development knowledge package for Kiro IDE.",
-      "notes": "Similar scope to sap-skills-power, check overlap before adoption."
-    },
-    {
-      "type": "Community SAP",
       "name": "SAP OData Explorer Skill",
       "repo": "one-kash/sap-odata-explorer",
       "purpose": "Claude skill for SAP OData endpoint exploration.",
       "notes": "Skill-style tooling, not an MCP server."
+    },
+    {
+      "type": "Community SAP",
+      "name": "SuperClaude for SAP",
+      "repo": "babamba2/superclaude-for-sap",
+      "purpose": "Provide a Claude Code plugin for SAP ABAP development across ECC, S/4HANA, and ABAP Cloud systems.",
+      "notes": "Ships specialized SAP agents, workflow skills, hooks, model routing, and MCP setup around abap-mcp-adt-powerup."
+    },
+    {
+      "type": "SAP",
+      "name": "UI5 Plugins for Claude",
+      "repo": "UI5/plugins-claude",
+      "purpose": "Provide UI5-specific Claude Code plugins for project creation, UI5 error fixing, and framework guidance.",
+      "notes": "Official UI5 Claude plugin repository with UI5 and UI5 TypeScript conversion plugins."
+    },
+    {
+      "type": "Community SAP",
+      "name": "SAP Datasphere Plugin for Claude",
+      "repo": "MarioDeFelipe/sap-datasphere-plugin-for-claude-cowork",
+      "purpose": "Provide Claude skills and MCP configuration for SAP Datasphere exploration, modeling, administration, and governance workflows.",
+      "notes": "Claude plugin/skill pack powered by a Datasphere MCP server and extensive reference content."
+    },
+    {
+      "type": "Community SAP",
+      "name": "sapcli Claude Code Plugin",
+      "repo": "jfilak/sapcli-claude-plugin",
+      "purpose": "Expose ABAP system exploration and development agents for Claude Code on top of sapcli.",
+      "notes": "Claude Code plugin with ABAP explorer/developer agents and an ABAP system-info skill."
+    },
+    {
+      "type": "Community SAP",
+      "name": "SAP Commerce Skill",
+      "repo": "Emenowicz/sap-commerce-skill",
+      "purpose": "Provide SAP Commerce Cloud and Hybris development guidance, templates, and utilities for AI coding agents.",
+      "notes": "Claude-compatible skill pack covering type system, service layer, ImpEx, FlexibleSearch, OCC APIs, accelerators, and Backoffice."
     }
   ],
   "adjacentTools": [
@@ -526,6 +598,13 @@
       "repo": "jfilak/sapcli",
       "purpose": "Python CLI for SAP ADT and RFC operations: ABAP unit tests, ATC checks, transports, gCTS, abapGit install, and more.",
       "notes": "Useful companion to ABAP MCP workflows for CI automation."
+    },
+    {
+      "type": "Community SAP",
+      "name": "SAP MCP Config",
+      "repo": "Hochfrequenz/sap-mcp-config",
+      "purpose": "Provide shared Go and Python models for SAP credentials used by MCP servers.",
+      "notes": "Adjacent library for SAP MCP server authors; centralizes credential file parsing, validation, and masking."
     },
     {
       "type": "Community SAP",

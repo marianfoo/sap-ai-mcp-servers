@@ -1,5 +1,5 @@
 name: Add new entry
-description: Suggest a new MCP server, skill, or adjacent tool to be added to the list.
+description: Suggest a new MCP server, skill, Claude plugin, or adjacent tool to be added to the list.
 title: "[Add] "
 labels: ["new entry"]
 body:
@@ -27,7 +27,9 @@ body:
         - SAP OData / Gateway / Graph MCP Server
         - SAP GUI
         - SAP HANA
-        - SAP Related Skills
+        - SAP Cloud ALM
+        - SAP AI Skills and Prompt Packs
+        - SAP Claude Plugins and Skills
         - Adjacent SAP AI Developer Tools
     validations:
       required: true
@@ -86,7 +88,7 @@ body:
           required: true
         - label: The repository is NOT a fork of an existing entry already in the list
           required: true
-        - label: The project is SAP-related (MCP server, AI skill, or adjacent developer tool)
+        - label: The project is SAP-related (MCP server, AI skill, Claude plugin, or adjacent developer tool)
           required: true
         - label: The repository has an open-source license
           required: true

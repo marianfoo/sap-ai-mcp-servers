@@ -4,6 +4,20 @@ This file lists **only newly added repositories** (or other catalog entries with
 
 Dates use the commit date from `git log` on `data/catalog.json`.
 
+## 2026-05-12
+
+- [`UI5/plugins-claude`](https://github.com/UI5/plugins-claude) — UI5 Plugins for Claude, listed under the new SAP Claude Plugins and Skills section
+- [`prudvigit/mcp-sap-cpi`](https://github.com/prudvigit/mcp-sap-cpi) — SAP CPI MCP Server
+- [`pmankineni/mcp-datasphere-tools`](https://github.com/pmankineni/mcp-datasphere-tools) — SAP Datasphere MCP Tools
+- [`MarioDeFelipe/sap-datasphere-plugin-for-claude-cowork`](https://github.com/MarioDeFelipe/sap-datasphere-plugin-for-claude-cowork) — SAP Datasphere Plugin for Claude
+- [`jfilak/sapcli-claude-plugin`](https://github.com/jfilak/sapcli-claude-plugin) — sapcli Claude Code Plugin
+- [`Emenowicz/sap-commerce-skill`](https://github.com/Emenowicz/sap-commerce-skill) — SAP Commerce Skill
+- [`babamba2/superclaude-for-sap`](https://github.com/babamba2/superclaude-for-sap) — SuperClaude for SAP Claude Code plugin
+- [`babamba2/abap-mcp-adt-powerup`](https://github.com/babamba2/abap-mcp-adt-powerup) — MCP ABAP ADT Powerup
+- [`SAP-samples/cap-agentic-engineered`](https://github.com/SAP-samples/cap-agentic-engineered) — CAP Agentic Engineered Skills
+- [`MarkWuRY168/SAP_MCP`](https://github.com/MarkWuRY168/SAP_MCP) — SAP MCP Server
+- [`Hochfrequenz/sap-mcp-config`](https://github.com/Hochfrequenz/sap-mcp-config) — SAP MCP Config
+
 ## 2026-05-11
 
 - [`git.epod.dev/erhan/epod-adt-mcp-updatesite`](https://git.epod.dev/erhan/epod-adt-mcp-updatesite) — Erhan Keseli Eclipse MCP (Eclipse ADT MCP server with SSO; first non-GitHub git host in this list).

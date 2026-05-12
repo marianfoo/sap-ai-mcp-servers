@@ -97,6 +97,7 @@ function collectRepos(catalog) {
   collect(catalog.cdata?.generic);
   collect(catalog.cdata?.sapWrappers);
   collect(catalog.skills);
+  collect(catalog.claudePlugins);
   collect(catalog.adjacentTools);
 
   return Array.from(repos).sort((a, b) => a.localeCompare(b));
