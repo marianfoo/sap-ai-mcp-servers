@@ -102,6 +102,13 @@
           "repo": "MarkWuRY168/SAP_MCP",
           "purpose": "Publish configurable SAP system tools through MCP services and a web management interface.",
           "notes": "Python/FastAPI implementation with tool discovery, execution, service status, logging, and SAP connection configuration."
+        },
+        {
+          "type": "Community SAP",
+          "name": "SAP FocusedRun MCP",
+          "repo": "derekvincent/mcp-sap-focusedrun",
+          "purpose": "Expose SAP Focused Run LMDB API endpoints with search and filtering via MCP.",
+          "notes": "FastMCP Python server for Focused Run hosts, systems, databases, cloud tenants, technical instances, ABAP clients, software components, and product versions."
         }
       ]
     },

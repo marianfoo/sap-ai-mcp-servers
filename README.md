@@ -67,6 +67,7 @@ Know a project that belongs here? [Open an issue using the "Add new entry" templ
 | Name | Repository | Purpose | License | Stars | Last Change |
 | --- | --- | --- | --- | ---: | --- |
 | SAP MCP Server (MarkWuRY168) | [MarkWuRY168/SAP_MCP](https://github.com/MarkWuRY168/SAP_MCP) | Publish configurable SAP system tools through MCP services and a web management interface. | MIT | 1 | 2026-03-11 |
+| SAP FocusedRun MCP | [derekvincent/mcp-sap-focusedrun](https://github.com/derekvincent/mcp-sap-focusedrun) | Expose SAP Focused Run LMDB API endpoints with search and filtering via MCP. | Apache-2.0 | 0 | 2026-05-03 |
 
 ## SAP Docs MCP Server
 

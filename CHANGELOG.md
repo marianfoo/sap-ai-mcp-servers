@@ -16,6 +16,7 @@ Dates use the commit date from `git log` on `data/catalog.json`.
 - [`babamba2/abap-mcp-adt-powerup`](https://github.com/babamba2/abap-mcp-adt-powerup) — MCP ABAP ADT Powerup
 - [`SAP-samples/cap-agentic-engineered`](https://github.com/SAP-samples/cap-agentic-engineered) — CAP Agentic Engineered Skills
 - [`MarkWuRY168/SAP_MCP`](https://github.com/MarkWuRY168/SAP_MCP) — SAP MCP Server
+- [`derekvincent/mcp-sap-focusedrun`](https://github.com/derekvincent/mcp-sap-focusedrun) — SAP FocusedRun MCP
 - [`Hochfrequenz/sap-mcp-config`](https://github.com/Hochfrequenz/sap-mcp-config) — SAP MCP Config
 
 ## 2026-05-11

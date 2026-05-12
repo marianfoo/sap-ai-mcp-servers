@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-05-12T07:41:07.986Z",
+  "generatedAt": "2026-05-12T07:46:45.811Z",
   "sourceCatalog": "data/catalog.json",
-  "repoCount": 75,
+  "repoCount": 76,
   "tokenUsed": true,
   "repoMetadata": {
     "1nbuc/mcp-integration-suite": {
@@ -185,6 +185,19 @@
       "license": "Apache-2.0",
       "description": "CLI and MCP server for the SAP ADT REST API — search, read/write ABAP source, run tests, manage transports. No Eclipse, no RFC SDK, no JVM.",
       "htmlUrl": "https://github.com/DataZooDE/erpl-adt"
+    },
+    "derekvincent/mcp-sap-focusedrun": {
+      "repo": "derekvincent/mcp-sap-focusedrun",
+      "source": "api",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": 0,
+      "lastChange": "2026-05-03T17:34:21Z",
+      "archived": false,
+      "license": "Apache-2.0",
+      "description": "An MCP server for interacting with SAP FocusedRun.",
+      "htmlUrl": "https://github.com/derekvincent/mcp-sap-focusedrun"
     },
     "dnic-dev/bw-modeling-mcp": {
       "repo": "dnic-dev/bw-modeling-mcp",
