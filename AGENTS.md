@@ -6,7 +6,7 @@ This file explains how the repository works and how to make changes to it correc
 
 ## What this repo does
 
-This is a **curated, auto-generated list** of SAP-related MCP servers, AI skills, and adjacent developer tools hosted on GitHub.
+This is a **curated, auto-generated list** of SAP-related MCP servers, AI skills, Claude plugins, and adjacent developer tools hosted on GitHub.
 
 The `README.md` is **never edited by hand**. It is always generated from structured data via scripts. The pipeline is:
 
@@ -38,12 +38,13 @@ Run `npm run build` to execute the full pipeline locally.
 
 ### Step 1 — Choose the right section
 
-`catalog.json` has three top-level arrays:
+`catalog.json` has four top-level arrays:
 
 | Key | What goes here |
 |---|---|
 | `categories` | MCP servers, grouped by topic (ABAP/ADT, OData, Docs, etc.) |
-| `skills` | AI skill files / prompt packs (Claude Code skills, Kiro packs, etc.) |
+| `skills` | Non-Claude AI skill files / prompt packs (Kiro packs, etc.) |
+| `claudePlugins` | Claude Code plugins and Claude-compatible SAP skill packs |
 | `adjacentTools` | Useful non-MCP tools adjacent to the SAP AI dev ecosystem |
 
 Each `categories` entry has an `id` and `title`. Current category IDs:
@@ -61,7 +62,7 @@ Each `categories` entry has an `id` and `title`. Current category IDs:
 
 ### Step 2 — Add the entry object
 
-Append a new object to the `entries` array of the correct category (or to `skills` / `adjacentTools`).
+Append a new object to the `entries` array of the correct category (or to `skills` / `claudePlugins` / `adjacentTools`).
 
 **Standard GitHub repo entry:**
 
@@ -118,7 +119,7 @@ Append a new object to the `entries` array of the correct category (or to `skill
 
 ### Step 3 — Update CHANGELOG.md (new GitHub repos only)
 
-The README links to [`CHANGELOG.md`](CHANGELOG.md) at the top so readers can see **when new repositories were added**. Whenever you add a catalog entry that includes a `repo` field (including `skills` / `adjacentTools` entries that point at GitHub), append a line to `CHANGELOG.md`:
+The README links to [`CHANGELOG.md`](CHANGELOG.md) at the top so readers can see **when new repositories were added**. Whenever you add a catalog entry that includes a `repo` field (including `skills` / `claudePlugins` / `adjacentTools` entries that point at GitHub), append a line to `CHANGELOG.md`:
 
 1. Use the **commit date** (or today’s date if you are about to commit) as the section heading: `## YYYY-MM-DD`.
 2. If that date already has a section, add a bullet under it; otherwise create a new `## YYYY-MM-DD` section **above** older dates (newest first).

@@ -1,6 +1,6 @@
-# SAP MCP Servers and SAP AI Skills (Open Source, GitHub)
+# SAP MCP Servers, SAP AI Skills, and Claude Plugins (Open Source, GitHub)
 
-Comprehensive list of SAP-related MCP servers and SAP AI development skills repositories.
+Comprehensive list of SAP-related MCP servers, SAP AI development skills, and Claude plugin repositories.
 
 **New repositories:** [CHANGELOG.md](CHANGELOG.md) — dates when entries were added to this list.
 
@@ -9,7 +9,7 @@ Comprehensive list of SAP-related MCP servers and SAP AI development skills repo
 >
 > Scope:
 > - Open source or source-available repositories on GitHub
-> - SAP-related MCP servers, MCP SDKs, and adjacent SAP AI developer assets
+> - SAP-related MCP servers, MCP SDKs, Claude plugins/skills, and adjacent SAP AI developer assets
 > - Forks are excluded automatically from rendered tables
 
 ## Add a missing entry
@@ -29,7 +29,8 @@ Know a project that belongs here? [Open an issue using the "Add new entry" templ
   - [SAP GUI](#sap-gui)
   - [SAP HANA](#sap-hana)
   - [SAP Cloud ALM](#sap-cloud-alm)
-  - [SAP Related Skills](#sap-related-skills)
+  - [SAP AI Skills and Prompt Packs](#sap-ai-skills-and-prompt-packs)
+  - [SAP Claude Plugins and Skills](#sap-claude-plugins-and-skills)
   - [Adjacent SAP AI Developer Tools](#adjacent-sap-ai-developer-tools)
 
 # SAP MCP Server
@@ -74,9 +75,13 @@ Know a project that belongs here? [Open an issue using the "Add new entry" templ
 
 {{CATEGORY:sap-cloud-alm}}
 
-## SAP Related Skills
+## SAP AI Skills and Prompt Packs
 
 {{SKILLS_TABLE}}
+
+## SAP Claude Plugins and Skills
+
+{{CLAUDE_PLUGINS_TABLE}}
 
 ## Adjacent SAP AI Developer Tools
 

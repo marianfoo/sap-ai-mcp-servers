@@ -122,6 +122,7 @@ async function renderReadme() {
   }
 
   rendered = rendered.replaceAll('{{SKILLS_TABLE}}', renderTable(catalog.skills || [], repoMetadata));
+  rendered = rendered.replaceAll('{{CLAUDE_PLUGINS_TABLE}}', renderTable(catalog.claudePlugins || [], repoMetadata));
   rendered = rendered.replaceAll('{{ADJACENT_TABLE}}', renderTable(catalog.adjacentTools || [], repoMetadata));
 
   await fs.writeFile(README_PATH, rendered.trimEnd() + '\n', 'utf8');

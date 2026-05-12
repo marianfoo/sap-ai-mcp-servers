@@ -24,6 +24,15 @@
     },
     "kts982/mcp-sap-gui": {
       "license": "MIT"
+    },
+    "prudvigit/mcp-sap-cpi": {
+      "license": "MIT"
+    },
+    "pmankineni/mcp-datasphere-tools": {
+      "license": "ISC"
+    },
+    "jfilak/sapcli-claude-plugin": {
+      "license": "Apache-2.0"
     }
   }
 }
