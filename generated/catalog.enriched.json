@@ -927,8 +927,8 @@
       "description": "The UI5 MCP server improves the developer experience when working with agentic AI and the UI5 framework.",
       "htmlUrl": "https://github.com/UI5/mcp-server"
     },
-    "UI5/plugins-claude": {
-      "repo": "UI5/plugins-claude",
+    "UI5/plugins-coding-agents": {
+      "repo": "UI5/plugins-coding-agents",
       "source": "api",
       "exists": true,
       "fork": false,
@@ -937,7 +937,7 @@
       "lastChange": "2026-05-22T11:41:54Z",
       "archived": false,
       "license": "Apache-2.0",
-      "description": "SAPUI5 / OpenUI5 plugin for Claude",
+      "description": "SAPUI5 / OpenUI5 plugins for coding agents",
       "htmlUrl": "https://github.com/UI5/plugins-coding-agents"
     },
     "UI5/webcomponents-mcp-server": {

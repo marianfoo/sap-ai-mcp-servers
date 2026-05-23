@@ -58,7 +58,7 @@ Know a project that belongs here? [Open an issue using the "Add new entry" templ
 
 | Name | Repository | Purpose | License | Stars | Last Change |
 | --- | --- | --- | --- | ---: | --- |
-| UI5 Plugins for Claude | [UI5/plugins-claude](https://github.com/UI5/plugins-coding-agents) | Provide UI5-specific Claude Code plugins for project creation, UI5 error fixing, and framework guidance. | Apache-2.0 | 14 | 2026-05-22 |
+| UI5 Plugins for Coding Agents | [UI5/plugins-coding-agents](https://github.com/UI5/plugins-coding-agents) | Provide UI5-specific plugins for coding agents — project creation, UI5 error fixing, and framework guidance. | Apache-2.0 | 14 | 2026-05-22 |
 
 # SAP Community MCP Servers
 
@@ -176,6 +176,7 @@ Know a project that belongs here? [Open an issue using the "Add new entry" templ
 | Name | Repository | Purpose | License | Stars | Last Change |
 | --- | --- | --- | --- | ---: | --- |
 | SAP Skills for Claude Code | [secondsky/sap-skills](https://github.com/secondsky/sap-skills) | Large SAP skill set for Claude Code across CAP, Fiori, ABAP and BTP. | GPL-3.0 | 289 | 2026-04-29 |
+| ARC-1 SAP Skills | [marianfoo/arc-1/skills](https://github.com/marianfoo/arc-1/tree/main/skills) | ABAP development skills for coding agents: RAP service scaffolding, unit test generation, code explanation, Clean Core audits, and legacy migration. | MIT | 93 | 2026-05-22 |
 | SuperClaude for SAP | [babamba2/superclaude-for-sap](https://github.com/babamba2/superclaude-for-sap) | Provide a Claude Code plugin for SAP ABAP development across ECC, S/4HANA, and ABAP Cloud systems. | MIT | 30 | 2026-04-29 |
 | SAP Datasphere Plugin for Claude | [MarioDeFelipe/sap-datasphere-plugin-for-claude-cowork](https://github.com/MarioDeFelipe/sap-datasphere-plugin-for-claude-cowork) | Provide Claude skills and MCP configuration for SAP Datasphere exploration, modeling, administration, and governance workflows. | MIT | 21 | 2026-05-08 |
 | SAP OData Explorer Skill | [one-kash/sap-odata-explorer](https://github.com/openkash/sap-odata-explorer) | Claude skill for SAP OData endpoint exploration. | MIT | 19 | 2026-03-24 |

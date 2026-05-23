@@ -4,6 +4,11 @@ This file lists **only newly added repositories** (or other catalog entries with
 
 Dates use the commit date from `git log` on `data/catalog.json`.
 
+## 2026-05-23
+
+- [`marianfoo/arc-1/skills`](https://github.com/marianfoo/arc-1/tree/main/skills) — ARC-1 SAP Skills (16 ABAP development skills for coding agents)
+- `UI5/plugins-claude` renamed to [`UI5/plugins-coding-agents`](https://github.com/UI5/plugins-coding-agents) — UI5 Plugins for Coding Agents
+
 ## 2026-05-12
 
 - [`UI5/plugins-claude`](https://github.com/UI5/plugins-claude) — UI5 Plugins for Claude, listed under the new SAP Claude Plugins and Skills section

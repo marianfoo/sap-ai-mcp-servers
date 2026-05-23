@@ -542,10 +542,10 @@
     },
     {
       "type": "SAP",
-      "name": "UI5 Plugins for Claude",
-      "repo": "UI5/plugins-claude",
-      "purpose": "Provide UI5-specific Claude Code plugins for project creation, UI5 error fixing, and framework guidance.",
-      "notes": "Official UI5 Claude plugin repository with UI5 and UI5 TypeScript conversion plugins."
+      "name": "UI5 Plugins for Coding Agents",
+      "repo": "UI5/plugins-coding-agents",
+      "purpose": "Provide UI5-specific plugins for coding agents — project creation, UI5 error fixing, and framework guidance.",
+      "notes": "Official UI5 plugin repository for coding agents (Claude Code, etc.) with UI5 and UI5 TypeScript conversion plugins."
     },
     {
       "type": "Community SAP",
@@ -567,6 +567,15 @@
       "repo": "Emenowicz/sap-commerce-skill",
       "purpose": "Provide SAP Commerce Cloud and Hybris development guidance, templates, and utilities for AI coding agents.",
       "notes": "Claude-compatible skill pack covering type system, service layer, ImpEx, FlexibleSearch, OCC APIs, accelerators, and Backoffice."
+    },
+    {
+      "type": "Community SAP",
+      "name": "ARC-1 SAP Skills",
+      "repo": "marianfoo/arc-1",
+      "repoPath": "skills",
+      "displayUrl": "https://github.com/marianfoo/arc-1/tree/main/skills",
+      "purpose": "ABAP development skills for coding agents: RAP service scaffolding, unit test generation, code explanation, Clean Core audits, and legacy migration.",
+      "notes": "16 skills covering ABAP/RAP code generation, CDS tests, SEGW-to-RAP migration, UI5 modernization, Clean Core ATC audits, unused code detection, and session analysis. Designed for use with the ARC-1 MCP server."
     }
   ],
   "adjacentTools": [
