@@ -152,6 +152,7 @@ Know a project that belongs here? [Open an issue using the "Add new entry" templ
 | SAPient MCP | [toni-ramchandani/sapient-mcp](https://github.com/toni-ramchandani/sapient-mcp) | RoboSAPiens-based SAP GUI automation server. | **NO LICENSE FOUND** | 8 | 2026-02-24 |
 | MCP SAP GUI (Scripting API) | [kts982/mcp-sap-gui](https://github.com/kts982/mcp-sap-gui) | Full SAP GUI for Windows automation via Scripting API — 52 MCP tools for screen discovery, navigation, field I/O, table and tree operations, and screenshot capture. | MIT | 7 | 2026-05-30 |
 | sap_gui_mcp | [jduncan8142/sap_gui_mcp](https://github.com/jduncan8142/sap_gui_mcp) | SAP GUI Scripting API exposed via FastMCP. | MIT | 1 | 2025-12-01 |
+| sapgui.mcp | [Hochfrequenz/sapgui.mcp](https://github.com/Hochfrequenz/sapgui.mcp) | SAP GUI Scripting API and/or SAP Web GUI exposed via FastMCP (.exe or .py or docker available) | MIT | 1 | 2026-05-31 |
 
 ## SAP HANA
 
