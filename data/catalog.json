@@ -237,6 +237,13 @@
         },
         {
           "type": "Community SAP",
+          "name": "aibap.mcp",
+          "repo": "Hochfrequenz/aibap.mcp",
+          "purpose": "Expose the SAP ABAP ADT REST API as an MCP server for on-prem ECC and S/4HANA, covering source editing, debugging, transports, ATC, and customizing/package export.",
+          "notes": "Go binary with no runtime dependencies; 68 tools across 13 groups; OAuth2/SAML/Basic auth; exports packages in abapGit format and customizing tables as SQLite; BYO hook for SAP-GUI-only operations."
+        },
+        {
+          "type": "Community SAP",
           "name": "Erhan Keseli Eclipse MCP",
           "url": "https://git.epod.dev/erhan/epod-adt-mcp-updatesite",
           "linkLabel": "git.epod.dev/erhan/epod-adt-mcp-updatesite",
@@ -494,6 +501,13 @@
           "repo": "SAP-samples/cap-agentic-engineered",
           "purpose": "Provide reusable MCP-routing AGENTS.md and SAP skills for CAP and Fiori Elements agentic development.",
           "notes": "Reference Financial Risk Analyzer app built with Claude Code; skills route agents to CAP, Fiori, and UI5 MCP servers."
+        },
+        {
+          "type": "Community SAP",
+          "name": "SAP API Policy Skill",
+          "repo": "marianfoo/sap-api-policy-skill",
+          "purpose": "Assess whether an SAP API usage scenario aligns with the SAP API Policy, using evidence gathered from official SAP sources.",
+          "notes": "Cross-agent skill (Claude, Cursor, Codex, and others) installable via the skills CLI; returns confidence-rated, sourced verdicts and is explicitly not legal advice."
         }
       ]
     }

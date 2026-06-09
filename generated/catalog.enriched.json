@@ -1,7 +1,7 @@
 {
   "generatedAt": "2026-06-08T07:41:04.475Z",
   "sourceCatalog": "data/catalog.json",
-  "repoCount": 78,
+  "repoCount": 80,
   "tokenUsed": true,
   "repoMetadata": {
     "1nbuc/mcp-integration-suite": {
@@ -1017,6 +1017,32 @@
       "license": "MIT",
       "description": null,
       "htmlUrl": "https://github.com/workskong/mcp-abap-adt"
+    },
+    "Hochfrequenz/aibap.mcp": {
+      "repo": "Hochfrequenz/aibap.mcp",
+      "source": "html",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": 2,
+      "lastChange": "2026-06-02T22:02:00Z",
+      "archived": null,
+      "license": "MIT",
+      "description": null,
+      "htmlUrl": "https://github.com/Hochfrequenz/aibap.mcp"
+    },
+    "marianfoo/sap-api-policy-skill": {
+      "repo": "marianfoo/sap-api-policy-skill",
+      "source": "html",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": 7,
+      "lastChange": "2026-06-02T13:53:39Z",
+      "archived": null,
+      "license": "MIT",
+      "description": null,
+      "htmlUrl": "https://github.com/marianfoo/sap-api-policy-skill"
     }
   }
 }
