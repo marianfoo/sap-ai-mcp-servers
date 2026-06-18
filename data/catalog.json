@@ -679,6 +679,13 @@
     },
     {
       "type": "Community SAP",
+      "name": "arc-mcp-hub",
+      "repo": "arc-mcp/mcp-hub",
+      "purpose": "Thin, deterministic multi-system MCP hub that fronts multiple ARC-1 instances (one SAP system each) behind one BTP front door with one login.",
+      "notes": "Per-environment MCP multiplexer for SAP BTP: an MCP client connects to one `/<env>/mcp` path and the hub routes to that system's ARC-1 with the user's identity preserved (XSUAA login, per-user OAuth2JWTBearer token exchange, SAP principal propagation). No server-side LLM and no merged tool list; connection-scoped routing keeps DEV/QA/PROD isolated. Built on @arc-mcp/xsuaa-auth and the MCP SDK."
+    },
+    {
+      "type": "Community SAP",
       "name": "SAP MCP Config",
       "repo": "Hochfrequenz/sap-mcp-config",
       "purpose": "Provide shared Go and Python models for SAP credentials used by MCP servers.",

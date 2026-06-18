@@ -36,6 +36,9 @@
     },
     "marianfoo/arc-1-lsp": {
       "license": "MIT"
+    },
+    "arc-mcp/mcp-hub": {
+      "license": "MIT"
     }
   }
 }

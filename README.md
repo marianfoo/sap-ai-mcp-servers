@@ -179,7 +179,7 @@ Know a project that belongs here? [Open an issue using the "Add new entry" templ
 
 | Name | Repository | Purpose | License | Stars | Last Change |
 | --- | --- | --- | --- | ---: | --- |
-| SAP Skills for Claude Code | [secondsky/sap-skills](https://github.com/secondsky/sap-skills) | Large SAP skill set for Claude Code across CAP, Fiori, ABAP and BTP. | GPL-3.0 | 342 | 2026-06-18 |
+| SAP Skills for Claude Code | [secondsky/sap-skills](https://github.com/secondsky/sap-skills) | Large SAP skill set for Claude Code across CAP, Fiori, ABAP and BTP. | GPL-3.0 | 343 | 2026-06-18 |
 | ARC-1 SAP Skills | [marianfoo/arc-1/skills](https://github.com/marianfoo/arc-1/tree/main/skills) | ABAP development skills for coding agents: RAP service scaffolding, unit test generation, code explanation, Clean Core audits, and legacy migration. | MIT | 116 | 2026-06-18 |
 | SuperClaude for SAP | [babamba2/superclaude-for-sap](https://github.com/babamba2/superclaude-for-sap) | Provide a Claude Code plugin for SAP ABAP development across ECC, S/4HANA, and ABAP Cloud systems. | MIT | 37 | 2026-06-09 |
 | SAP Datasphere Plugin for Claude | [MarioDeFelipe/sap-datasphere-plugin-for-claude-cowork](https://github.com/MarioDeFelipe/sap-datasphere-plugin-for-claude-cowork) | Provide Claude skills and MCP configuration for SAP Datasphere exploration, modeling, administration, and governance workflows. | MIT | 24 | 2026-05-08 |
@@ -196,7 +196,7 @@ Know a project that belongs here? [Open an issue using the "Add new entry" templ
 | Name | Repository | Purpose | License | Stars | Last Change |
 | --- | --- | --- | --- | ---: | --- |
 | ABAP Remote Filesystem for VS Code | [marcellourbani/vscode_abap_remote_fs](https://github.com/marcellourbani/vscode_abap_remote_fs) | Remote ABAP filesystem access in VS Code. | MIT | 318 | 2026-06-18 |
-| SAP CLI (sapcli) | [jfilak/sapcli](https://github.com/jfilak/sapcli) | Python CLI for SAP ADT and RFC operations: ABAP unit tests, ATC checks, transports, gCTS, abapGit install, and more. | Apache-2.0 | 91 | 2026-06-13 |
+| SAP CLI (sapcli) | [jfilak/sapcli](https://github.com/jfilak/sapcli) | Python CLI for SAP ADT and RFC operations: ABAP unit tests, ATC checks, transports, gCTS, abapGit install, and more. | Apache-2.0 | 91 | 2026-06-18 |
 | CAP MCP Plugin | [gavdilabs/cap-mcp-plugin](https://github.com/gavdilabs/cap-mcp-plugin) | Generates MCP servers from CAP services. | Apache-2.0 | 62 | 2026-06-01 |
 | GitHub Copilot for Eclipse | [eclipse-copilot/eclipse-copilot](https://github.com/eclipse-copilot/eclipse-copilot) | GitHub Copilot integration plugin for Eclipse IDE. | EPL-2.0 | 32 | 2026-04-27 |
 | SAP TechEd 2025 CA261 Sample | [SAP-samples/teched2025-CA261](https://github.com/SAP-samples/teched2025-CA261) | Hands-on sample for AI + Fiori + MCP workflows. | Apache-2.0 | 12 | 2026-06-09 |
@@ -205,6 +205,7 @@ Know a project that belongs here? [Open an issue using the "Add new entry" templ
 | adt-ls TypeScript SDK | [marianfoo/adt-ls](https://github.com/arc-mcp/adt-ls) | Provide a reusable TypeScript SDK for driving SAP's headless adt-ls language server from developer tools and CI. | Apache-2.0 | 4 | 2026-06-17 |
 | SyntaAI SAP Security MCP Server | [SYNTAAI/sap-security-mcp](https://github.com/SYNTAAI/sap-security-mcp) | SAP security analysis and compliance auditing via MCP. 19 read-only tools for user access reviews, SoD violation checks, critical authorization detection, compliance reporting (SOX, GDPR, ISO 27001, NIST), RFC security analysis, password policy audits, and role/authorization review. | Apache-2.0 | 2 | 2026-03-10 |
 | @arc-mcp/xsuaa-auth | [arc-mcp/xsuaa-auth](https://github.com/arc-mcp/xsuaa-auth) | Drop-in XSUAA OAuth authentication and BTP principal propagation for MCP servers built on Express and the MCP SDK. | MIT | 0 | 2026-06-18 |
+| arc-mcp-hub | [arc-mcp/mcp-hub](https://github.com/arc-mcp/mcp-hub) | Thin, deterministic multi-system MCP hub that fronts multiple ARC-1 instances (one SAP system each) behind one BTP front door with one login. | MIT | 0 | 2026-06-18 |
 | SAP MCP Config | [Hochfrequenz/sap-mcp-config](https://github.com/Hochfrequenz/sap-mcp-config) | Provide shared Go and Python models for SAP credentials used by MCP servers. | MIT | 0 | 2026-06-16 |
 | Amazon Q Developer for Eclipse (Official Docs) | [docs.aws.amazon.com/amazon-q-eclipse](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/q-in-IDE_setup.html) | Official setup docs for Amazon Q in Eclipse IDE. | **NO LICENSE FOUND** | - | - |
 | GitHub Copilot in Eclipse (Official Docs) | [docs.github.com/eclipse-copilot](https://docs.github.com/en/copilot/how-tos/set-up/install-copilot-in-the-ide?tool=eclipse) | Official setup and usage docs for Copilot in Eclipse. | **NO LICENSE FOUND** | - | - |

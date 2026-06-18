@@ -7,6 +7,7 @@ Dates use the commit date from `git log` on `data/catalog.json`.
 ## 2026-06-18
 
 - [`arc-mcp/xsuaa-auth`](https://github.com/arc-mcp/xsuaa-auth) — @arc-mcp/xsuaa-auth, the XSUAA/OAuth + BTP principal-propagation auth library for MCP servers (extracted from ARC-1), added under Adjacent Tools
+- [`arc-mcp/mcp-hub`](https://github.com/arc-mcp/mcp-hub) — arc-mcp-hub, a thin deterministic multi-system MCP hub fronting multiple ARC-1 instances (DEV/QA/PROD) behind one BTP login, added under Adjacent Tools
 
 ## 2026-06-12
 

@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-18T19:58:19.882Z",
+  "generatedAt": "2026-06-18T21:09:43.695Z",
   "sourceCatalog": "data/catalog.json",
-  "repoCount": 84,
+  "repoCount": 85,
   "tokenUsed": true,
   "repoMetadata": {
     "1nbuc/mcp-integration-suite": {
@@ -55,6 +55,19 @@
       "license": "MIT",
       "description": "SAP SuccessFactors MCP server — 43 HR tools for Claude Desktop & Cloud Run. Query employees, permissions, time off, hiring, compliance, and more via natural language.",
       "htmlUrl": "https://github.com/aiadiguru2025/sf-mcp"
+    },
+    "arc-mcp/mcp-hub": {
+      "repo": "arc-mcp/mcp-hub",
+      "source": "api",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": 0,
+      "lastChange": "2026-06-18T20:58:08Z",
+      "archived": false,
+      "license": "MIT",
+      "description": "Deterministic multi-system MCP hub for SAP BTP — one login, per-environment routing to ARC-1 backends",
+      "htmlUrl": "https://github.com/arc-mcp/mcp-hub"
     },
     "arc-mcp/xsuaa-auth": {
       "repo": "arc-mcp/xsuaa-auth",
@@ -414,7 +427,7 @@
       "fork": false,
       "parent": null,
       "stars": 91,
-      "lastChange": "2026-06-13T15:20:24Z",
+      "lastChange": "2026-06-18T20:36:07Z",
       "archived": false,
       "license": "Apache-2.0",
       "description": "Command Line Interface for interaction with SAP tools",
@@ -985,7 +998,7 @@
       "exists": true,
       "fork": false,
       "parent": null,
-      "stars": 342,
+      "stars": 343,
       "lastChange": "2026-06-18T04:45:32Z",
       "archived": false,
       "license": "GPL-3.0",
