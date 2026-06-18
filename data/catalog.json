@@ -672,6 +672,13 @@
     },
     {
       "type": "Community SAP",
+      "name": "@arc-mcp/xsuaa-auth",
+      "repo": "arc-mcp/xsuaa-auth",
+      "purpose": "Drop-in XSUAA OAuth authentication and BTP principal propagation for MCP servers built on Express and the MCP SDK.",
+      "notes": "Adjacent library for SAP MCP server authors; provides the MCP-native XSUAA OAuth proxy, stateless dynamic client registration, a chained XSUAA/OIDC/API-key verifier, and a `./btp` principal-propagation layer extracted from ARC-1. Used by ARC-1 and LISA."
+    },
+    {
+      "type": "Community SAP",
       "name": "SAP MCP Config",
       "repo": "Hochfrequenz/sap-mcp-config",
       "purpose": "Provide shared Go and Python models for SAP credentials used by MCP servers.",

@@ -4,6 +4,10 @@ This file lists **only newly added repositories** (or other catalog entries with
 
 Dates use the commit date from `git log` on `data/catalog.json`.
 
+## 2026-06-18
+
+- [`arc-mcp/xsuaa-auth`](https://github.com/arc-mcp/xsuaa-auth) — @arc-mcp/xsuaa-auth, the XSUAA/OAuth + BTP principal-propagation auth library for MCP servers (extracted from ARC-1), added under Adjacent Tools
+
 ## 2026-06-12
 
 - [`marianfoo/arc-1-lsp`](https://github.com/marianfoo/arc-1-lsp) — ARC-1 LSP ABAP MCP Server
