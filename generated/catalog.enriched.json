@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-19T07:07:24.632Z",
+  "generatedAt": "2026-06-19T07:10:47.517Z",
   "sourceCatalog": "data/catalog.json",
-  "repoCount": 85,
+  "repoCount": 86,
   "tokenUsed": true,
   "repoMetadata": {
     "1nbuc/mcp-integration-suite": {
@@ -601,6 +601,19 @@
       "license": "MIT",
       "description": null,
       "htmlUrl": "https://github.com/lemaiwo/odata-mcp-proxy"
+    },
+    "lopezmas/sap-pi-mcp-server": {
+      "repo": "lopezmas/sap-pi-mcp-server",
+      "source": "api",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": 0,
+      "lastChange": "2026-06-12T11:18:22Z",
+      "archived": false,
+      "license": "MIT",
+      "description": null,
+      "htmlUrl": "https://github.com/lopezmas/sap-pi-mcp-server"
     },
     "marcellourbani/vscode_abap_remote_fs": {
       "repo": "marcellourbani/vscode_abap_remote_fs",

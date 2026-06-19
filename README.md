@@ -113,6 +113,7 @@ Know a project that belongs here? [Open an issue using the "Add new entry" templ
 | CPI MCP Server | [vadimklimov/cpi-mcp-server](https://github.com/vadimklimov/cpi-mcp-server) | SAP Cloud Integration operations via MCP. | MIT | 20 | 2026-06-02 |
 | SAP CPI MCP Server (prudvigit) | [prudvigit/mcp-sap-cpi](https://github.com/Keelside/mcp-sap-cpi) | Monitor and manage SAP Cloud Integration messages, iFlows, security artifacts, and runtime status via MCP. | MIT | 4 | 2026-05-16 |
 | MCP Trading Partner Management | [1nbuc/mcp-is-tpm](https://github.com/1nbuc/mcp-is-tpm) | SAP Integration Suite TPM workflows. | **NO LICENSE FOUND** | 2 | 2025-07-04 |
+| SAP PI MCP Server | [lopezmas/sap-pi-mcp-server](https://github.com/lopezmas/sap-pi-mcp-server) | Expose read-only SAP PI/PO monitoring, Integration Directory, ESR mapping, and Value Mapping export tools through MCP for migration planning to SAP Integration Suite / CPI. | MIT | 0 | 2026-06-12 |
 
 ## OData MCP Proxy ecosystem
 

@@ -297,6 +297,13 @@
           "repo": "prudvigit/mcp-sap-cpi",
           "purpose": "Monitor and manage SAP Cloud Integration messages, iFlows, security artifacts, and runtime status via MCP.",
           "notes": "Supports BTP Process Integration Runtime service-key authentication, deploy/undeploy tools, and CPI health checks."
+        },
+        {
+          "type": "Community SAP",
+          "name": "SAP PI MCP Server",
+          "repo": "lopezmas/sap-pi-mcp-server",
+          "purpose": "Expose read-only SAP PI/PO monitoring, Integration Directory, ESR mapping, and Value Mapping export tools through MCP for migration planning to SAP Integration Suite / CPI.",
+          "notes": "Useful for interface inventory reports, end-to-end interface analysis, Message Mapping review, and Value Mapping CSV exports during SAP PI/PO to CPI migration work."
         }
       ]
     },
