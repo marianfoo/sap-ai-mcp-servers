@@ -45,6 +45,21 @@ References:
 - `GET /repos/{owner}/{repo}/license` (repository license endpoint)
 - GitHub REST API docs for licenses (`Licensee` + SPDX behavior)
 
+## Language Detection
+
+The enrich script stores implementation language metadata for GitHub repositories:
+
+1. Primary source: GitHub REST API repository metadata (`/repos/{owner}/{repo}` -> `language` field).
+2. Breakdown source: GitHub REST API language endpoint (`/repos/{owner}/{repo}/languages`) with byte counts per language.
+3. Manual overrides: `data/overrides.json` can set `primaryLanguage` and `languages` when GitHub returns incomplete metadata.
+
+The website renders the raw `primaryLanguage` as the visible language tag on each entry card. The language filter uses grouped language buckets:
+- `TypeScript` and `JavaScript` are combined as `JavaScript / TypeScript`.
+- The primary language bucket always matches.
+- A secondary language bucket matches only when it accounts for at least 20% of the repository language breakdown.
+
+The 20% cutoff was chosen from the current catalog distribution: it keeps meaningful mixed-language repositories while excluding incidental support files such as small shell scripts, generated files, or framework scaffolding.
+
 ## Non-GitHub Entries
 
 Entries hosted outside GitHub (Gitea, GitLab, Bitbucket, documentation pages, etc.) use `url` + `linkLabel` instead of `repo`. The enrichment script only fetches GitHub metadata, so non-GitHub entries are never auto-enriched.

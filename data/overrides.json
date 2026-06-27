@@ -1,5 +1,5 @@
 {
-  "_comment": "Manual overrides for repo metadata. Fields set here are never overwritten by automated enrichment. Use this for repos where GitHub API / HTML parsing cannot detect the correct value (e.g. license declared only in README).",
+  "_comment": "Manual overrides for repo metadata. Fields set here are never overwritten by automated enrichment. Use this for repos where GitHub API / HTML parsing cannot detect the correct value (e.g. license declared only in README or public pages that return incomplete API metadata).",
   "repos": {
     "oisee/vibing-steampunk": {
       "license": "MIT"
@@ -39,6 +39,16 @@
     },
     "arc-mcp/mcp-hub": {
       "license": "MIT"
+    },
+    "jfdurelle/onpremise-sap-odata-to-mcp-server": {
+      "primaryLanguage": "TypeScript"
+    },
+    "one-kash/sap-odata-explorer": {
+      "primaryLanguage": "TypeScript",
+      "languages": {
+        "TypeScript": 529,
+        "JavaScript": 471
+      }
     }
   }
 }

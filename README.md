@@ -46,7 +46,7 @@ Know a project that belongs here? [Open an issue using the "Add new entry" templ
 
 | Name | Repository | Purpose | License | Stars | Last Change |
 | --- | --- | --- | --- | ---: | --- |
-| SAP Fiori MCP Server | [SAP/open-ux-tools/packages/fiori-mcp-server](https://github.com/SAP/open-ux-tools/tree/main/packages/fiori-mcp-server) | Fiori app generation and modification workflows. | Apache-2.0 | 150 | 2026-06-26 |
+| SAP Fiori MCP Server | [SAP/open-ux-tools/packages/fiori-mcp-server](https://github.com/SAP/open-ux-tools/tree/main/packages/fiori-mcp-server) | Fiori app generation and modification workflows. | Apache-2.0 | 150 | 2026-06-27 |
 | CAP MCP Server | [cap-js/mcp-server](https://github.com/cap-js/mcp-server) | AI-assisted CAP development with CDS-aware context. | Apache-2.0 | 99 | 2026-06-25 |
 | UI5 MCP Server | [UI5/mcp-server](https://github.com/UI5/mcp-server) | UI5-aware development support for OpenUI5 and SAPUI5. | Apache-2.0 | 89 | 2026-06-25 |
 | SAP MDK MCP Server | [SAP/mdk-mcp-server](https://github.com/SAP/mdk-mcp-server) | AI-assisted SAP Mobile Development Kit workflows. | Apache-2.0 | 33 | 2026-06-27 |
@@ -95,7 +95,7 @@ Know a project that belongs here? [Open an issue using the "Add new entry" templ
 | ABAP MCP Server SDK | [abap-ai/mcp](https://github.com/abap-ai/mcp) | Build MCP servers directly in ABAP. | MIT | 73 | 2026-06-14 |
 | mcp-abap-adt | [fr0ster/mcp-abap-adt](https://github.com/fr0ster/mcp-abap-adt) | ABAP ADT MCP server with CRUD and cloud/on-prem support. | MIT | 63 | 2026-06-26 |
 | ABAP Accelerator MCP Server | [aws-solutions-library-samples/guidance-for-deploying-sap-abap-accelerator-for-amazon-q-developer](https://github.com/aws-solutions-library-samples/guidance-for-deploying-sap-abap-accelerator-for-amazon-q-developer) | Enterprise-grade MCP server for SAP ABAP: create, test, document, and transform ABAP code via Amazon Q Developer and Kiro. | MIT-0 | 51 | 2026-05-08 |
-| BW Modeling MCP Server | [dnic-dev/bw-modeling-mcp](https://github.com/dnic-dev/bw-modeling-mcp) | Read, create, and modify SAP BW/4HANA objects directly in a live system via the internal BWMT REST API. | MIT | 43 | 2026-06-09 |
+| BW Modeling MCP Server | [dnic-dev/bw-modeling-mcp](https://github.com/dnic-dev/bw-modeling-mcp) | Read, create, and modify SAP BW/4HANA objects directly in a live system via the internal BWMT REST API. | MIT | 43 | 2026-06-27 |
 | MCP server for SAP Cloudification Repository | [ClementRingot/sap-released-objects-mcp-server](https://github.com/ClementRingot/sap-released-objects-server) | Gives AI agents real-time knowledge of which SAP objects are released for ABAP Cloud / Clean Core — and what to use instead when they're not. | MIT | 24 | 2026-03-31 |
 | erpl-adt | [DataZooDE/erpl-adt](https://github.com/DataZooDE/erpl-adt) | CLI plus MCP exposure for ABAP ADT operations. | Apache-2.0 | 13 | 2026-06-27 |
 | Dassian ADT | [DassianInc/dassian-adt](https://github.com/DassianInc/dassian-adt) | MCP server for SAP ABAP development via ADT API — read, write, test, and deploy ABAP code without SAP GUI. | MIT | 5 | 2026-06-22 |
@@ -179,24 +179,29 @@ Know a project that belongs here? [Open an issue using the "Add new entry" templ
 
 | Name | Repository | Purpose | License | Stars | Last Change |
 | --- | --- | --- | --- | ---: | --- |
+| SAP Skills for Claude Code | [secondsky/sap-skills](https://github.com/secondsky/sap-skills) | Large SAP skill set for Claude Code across CAP, Fiori, ABAP and BTP. | GPL-3.0 | 358 | 2026-06-22 |
+| ARC-1 SAP Skills | [arc-mcp/arc-1/skills](https://github.com/arc-mcp/arc-1/tree/main/skills) | ABAP development skills for coding agents: RAP service scaffolding, unit test generation, code explanation, Clean Core audits, and legacy migration. | MIT | 120 | 2026-06-27 |
+| SuperClaude for SAP Skills | [babamba2/superclaude-for-sap](https://github.com/babamba2/superclaude-for-sap) | SAP ABAP workflow skills shipped inside the SuperClaude for SAP plugin bundle. | MIT | 41 | 2026-06-09 |
+| SAP Datasphere Claude Skills | [MarioDeFelipe/sap-datasphere-plugin-for-claude-cowork](https://github.com/MarioDeFelipe/sap-datasphere-plugin-for-claude-cowork) | SAP Datasphere skills for exploration, modeling, administration, and governance workflows. | MIT | 24 | 2026-05-08 |
+| RAP Skills | [weiserman/rap-skills](https://github.com/weiserman/rap-skills) | SAP RAP-focused Claude Code skills. | MIT | 18 | 2026-02-24 |
+| ABAP Skills for Claude Code | [matt1as/claude-abap-skills](https://github.com/matt1as/claude-abap-skills) | Provide opinionated ABAP Cloud rules and slash commands for Claude Code development. | Apache-2.0 | 13 | 2026-06-07 |
+| sapcli ABAP Skills | [jfilak/sapcli-claude-plugin](https://github.com/jfilak/sapcli-claude-plugin) | ABAP system exploration and development skills built on top of sapcli. | Apache-2.0 | 13 | 2026-05-12 |
+| SAP Commerce Skill | [Emenowicz/sap-commerce-skill](https://github.com/Emenowicz/sap-commerce-skill) | Provide SAP Commerce Cloud and Hybris development guidance, templates, and utilities for AI coding agents. | MIT | 11 | 2026-03-19 |
+| SAP API Policy Skill | [marianfoo/sap-api-policy-skill](https://github.com/marianfoo/sap-api-policy-skill) | Assess whether an SAP API usage scenario aligns with the SAP API Policy, using evidence gathered from official SAP sources. | MIT | 8 | 2026-06-02 |
 | SAP Power for Kiro | [mfigueir/sap-power](https://github.com/mfigueir/sap-power) | SAP development knowledge package for Kiro IDE. | GPL-3.0 | 7 | 2026-01-20 |
+| SAP Claude Skills | [KEIDAI-TechTime/sap-claude-skills](https://github.com/KEIDAI-TechTime/sap-claude-skills) | SAP add-on development skill bundles for Claude workflows. | **NO LICENSE FOUND** | 1 | 2026-03-03 |
+| SAP OData Explorer Skill | [one-kash/sap-odata-explorer](https://github.com/one-kash/sap-odata-explorer) | Claude skill for SAP OData endpoint exploration. | **NO LICENSE FOUND** | - | - |
 
 ## SAP Claude Plugins and Skills
 
 | Name | Repository | Purpose | License | Stars | Last Change |
 | --- | --- | --- | --- | ---: | --- |
-| SAP Skills for Claude Code | [secondsky/sap-skills](https://github.com/secondsky/sap-skills) | Large SAP skill set for Claude Code across CAP, Fiori, ABAP and BTP. | GPL-3.0 | 357 | 2026-06-22 |
+| SAP Skills for Claude Code | [secondsky/sap-skills](https://github.com/secondsky/sap-skills) | Large SAP skill set for Claude Code across CAP, Fiori, ABAP and BTP. | GPL-3.0 | 358 | 2026-06-22 |
 | ARC-1 Claude Code Plugin | [arc-mcp/arc-1/.claude-plugin](https://github.com/arc-mcp/arc-1/tree/main/.claude-plugin) | Bundle the ARC-1 MCP server and SAP ABAP development skills as a Claude Code plugin. | MIT | 120 | 2026-06-27 |
-| ARC-1 SAP Skills | [arc-mcp/arc-1/skills](https://github.com/arc-mcp/arc-1/tree/main/skills) | ABAP development skills for coding agents: RAP service scaffolding, unit test generation, code explanation, Clean Core audits, and legacy migration. | MIT | 120 | 2026-06-27 |
 | SuperClaude for SAP | [babamba2/superclaude-for-sap](https://github.com/babamba2/superclaude-for-sap) | Provide a Claude Code plugin for SAP ABAP development across ECC, S/4HANA, and ABAP Cloud systems. | MIT | 41 | 2026-06-09 |
 | SAP Datasphere Plugin for Claude | [MarioDeFelipe/sap-datasphere-plugin-for-claude-cowork](https://github.com/MarioDeFelipe/sap-datasphere-plugin-for-claude-cowork) | Provide Claude skills and MCP configuration for SAP Datasphere exploration, modeling, administration, and governance workflows. | MIT | 24 | 2026-05-08 |
-| RAP Skills | [weiserman/rap-skills](https://github.com/weiserman/rap-skills) | SAP RAP-focused Claude Code skills. | MIT | 18 | 2026-02-24 |
 | ABAP Skills for Claude Code | [matt1as/claude-abap-skills](https://github.com/matt1as/claude-abap-skills) | Provide opinionated ABAP Cloud rules and slash commands for Claude Code development. | Apache-2.0 | 13 | 2026-06-07 |
 | sapcli Claude Code Plugin | [jfilak/sapcli-claude-plugin](https://github.com/jfilak/sapcli-claude-plugin) | Expose ABAP system exploration and development agents for Claude Code on top of sapcli. | Apache-2.0 | 13 | 2026-05-12 |
-| SAP Commerce Skill | [Emenowicz/sap-commerce-skill](https://github.com/Emenowicz/sap-commerce-skill) | Provide SAP Commerce Cloud and Hybris development guidance, templates, and utilities for AI coding agents. | MIT | 11 | 2026-03-19 |
-| SAP API Policy Skill | [marianfoo/sap-api-policy-skill](https://github.com/marianfoo/sap-api-policy-skill) | Assess whether an SAP API usage scenario aligns with the SAP API Policy, using evidence gathered from official SAP sources. | MIT | 8 | 2026-06-02 |
-| SAP Claude Skills | [KEIDAI-TechTime/sap-claude-skills](https://github.com/KEIDAI-TechTime/sap-claude-skills) | SAP add-on development skill bundles for Claude workflows. | **NO LICENSE FOUND** | 1 | 2026-03-03 |
-| SAP OData Explorer Skill | [one-kash/sap-odata-explorer](https://github.com/one-kash/sap-odata-explorer) | Claude skill for SAP OData endpoint exploration. | **NO LICENSE FOUND** | - | - |
 
 ## Adjacent SAP AI Developer Tools
 

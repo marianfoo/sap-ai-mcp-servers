@@ -115,8 +115,27 @@ function emptyMeta(repo, source, htmlUrl) {
     archived: null,
     license: null,
     description: null,
+    primaryLanguage: null,
+    languages: null,
     htmlUrl
   };
+}
+
+function normalizeLanguages(value) {
+  if (!value || typeof value !== 'object' || Array.isArray(value)) return null;
+
+  const entries = Object.entries(value)
+    .map(([language, bytes]) => [String(language).trim(), Number(bytes)])
+    .filter(([language, bytes]) => language && Number.isFinite(bytes) && bytes > 0)
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+
+  return entries.length > 0 ? Object.fromEntries(entries) : null;
+}
+
+function primaryLanguageFromLanguages(languages) {
+  const normalized = normalizeLanguages(languages);
+  if (!normalized) return null;
+  return Object.keys(normalized)[0] || null;
 }
 
 function parseRepoHtml(repo, html) {
@@ -148,8 +167,31 @@ function parseRepoHtml(repo, html) {
     archived: null,
     license,
     description: null,
+    primaryLanguage: null,
+    languages: null,
     htmlUrl: `https://github.com/${repo}`
   };
+}
+
+async function fetchLanguagesFromApi(repo, apiToken) {
+  if (!apiToken) return null;
+
+  try {
+    const res = await fetch(`https://api.github.com/repos/${repo}/languages`, {
+      headers: {
+        Accept: 'application/vnd.github+json',
+        Authorization: `Bearer ${apiToken}`,
+        'User-Agent': USER_AGENT
+      }
+    });
+
+    if (!res.ok) return null;
+
+    const data = await res.json();
+    return normalizeLanguages(data);
+  } catch {
+    return null;
+  }
 }
 
 async function fetchLicenseFromApi(repo, apiToken) {
@@ -257,6 +299,7 @@ async function fetchFromApi(repo, apiToken) {
 
   const data = await res.json();
 
+  const languages = await fetchLanguagesFromApi(repo, apiToken);
   let license = normalizeLicense(data.license?.spdx_id || data.license?.name || null);
   if (!license) {
     license = await fetchLicenseFromApi(repo, apiToken);
@@ -279,6 +322,8 @@ async function fetchFromApi(repo, apiToken) {
       archived: Boolean(data.archived),
       license,
       description: data.description || null,
+      primaryLanguage: data.language || primaryLanguageFromLanguages(languages),
+      languages,
       htmlUrl: data.html_url || `https://github.com/${repo}`
     }
   };

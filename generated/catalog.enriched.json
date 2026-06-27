@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-27T07:59:25.245Z",
+  "generatedAt": "2026-06-27T11:24:38.507Z",
   "sourceCatalog": "data/catalog.json",
   "repoCount": 86,
   "tokenUsed": true,
@@ -15,6 +15,15 @@
       "archived": false,
       "license": null,
       "description": null,
+      "primaryLanguage": "TypeScript",
+      "languages": {
+        "TypeScript": 171215,
+        "Groovy": 17060,
+        "GSC": 6702,
+        "CSS": 5489,
+        "HTML": 4287,
+        "JavaScript": 2279
+      },
       "htmlUrl": "https://github.com/1nbuc/mcp-integration-suite"
     },
     "1nbuc/mcp-is-tpm": {
@@ -28,6 +37,10 @@
       "archived": false,
       "license": null,
       "description": null,
+      "primaryLanguage": "Java",
+      "languages": {
+        "Java": 243540
+      },
       "htmlUrl": "https://github.com/1nbuc/mcp-is-tpm"
     },
     "abap-ai/mcp": {
@@ -41,6 +54,10 @@
       "archived": false,
       "license": "MIT",
       "description": "ABAP MCP - Model Context Protocol - Server SDK",
+      "primaryLanguage": "ABAP",
+      "languages": {
+        "ABAP": 1133328
+      },
       "htmlUrl": "https://github.com/abap-ai/mcp"
     },
     "aiadiguru2025/sf-mcp": {
@@ -54,6 +71,11 @@
       "archived": false,
       "license": "MIT",
       "description": "SAP SuccessFactors MCP server — 43 HR tools for Claude Desktop & Cloud Run. Query employees, permissions, time off, hiring, compliance, and more via natural language.",
+      "primaryLanguage": "Python",
+      "languages": {
+        "Python": 251865,
+        "Dockerfile": 367
+      },
       "htmlUrl": "https://github.com/aiadiguru2025/sf-mcp"
     },
     "arc-mcp/adt-ls": {
@@ -67,6 +89,11 @@
       "archived": false,
       "license": "Apache-2.0",
       "description": "Generic TypeScript SDK over SAP's headless adt-ls (adt-lsc) — one unified client, BYO binary, cross-platform, Apache-2.0.",
+      "primaryLanguage": "TypeScript",
+      "languages": {
+        "TypeScript": 220467,
+        "JavaScript": 2065
+      },
       "htmlUrl": "https://github.com/arc-mcp/adt-ls"
     },
     "arc-mcp/arc-1": {
@@ -76,10 +103,20 @@
       "fork": false,
       "parent": null,
       "stars": 120,
-      "lastChange": "2026-06-27T07:58:02Z",
+      "lastChange": "2026-06-27T10:44:47Z",
       "archived": false,
       "license": "MIT",
       "description": null,
+      "primaryLanguage": "TypeScript",
+      "languages": {
+        "TypeScript": 5006624,
+        "JavaScript": 122107,
+        "Shell": 41170,
+        "CSS": 8700,
+        "Dockerfile": 4919,
+        "Python": 2936,
+        "HTML": 1623
+      },
       "htmlUrl": "https://github.com/arc-mcp/arc-1"
     },
     "arc-mcp/arc-1-lsp": {
@@ -93,6 +130,13 @@
       "archived": false,
       "license": "MIT",
       "description": "MCP server for SAP ABAP that delegates all ADT work to SAP's embedded adt-ls language server (BYO). Sibling to ARC-1.",
+      "primaryLanguage": "TypeScript",
+      "languages": {
+        "TypeScript": 151294,
+        "JavaScript": 2976,
+        "Shell": 2153,
+        "Dockerfile": 1507
+      },
       "htmlUrl": "https://github.com/arc-mcp/arc-1-lsp"
     },
     "arc-mcp/arc1-adt-abap-mcp-ext": {
@@ -106,6 +150,11 @@
       "archived": false,
       "license": "MIT",
       "description": "Eclipse plugin that wakes SAP's dormant ADT MCP server and contributes extra read-only ABAP repository tools (search, metadata, find-definition, system info) for Claude Code / Copilot / Cursor / Claude Desktop.",
+      "primaryLanguage": "Java",
+      "languages": {
+        "Java": 133374,
+        "Shell": 15732
+      },
       "htmlUrl": "https://github.com/arc-mcp/arc1-adt-abap-mcp-ext"
     },
     "arc-mcp/mcp-hub": {
@@ -119,6 +168,10 @@
       "archived": false,
       "license": "MIT",
       "description": "Deterministic multi-system MCP hub for SAP BTP — one login, per-environment routing to ARC-1 backends",
+      "primaryLanguage": "TypeScript",
+      "languages": {
+        "TypeScript": 59745
+      },
       "htmlUrl": "https://github.com/arc-mcp/mcp-hub"
     },
     "arc-mcp/xsuaa-auth": {
@@ -132,6 +185,11 @@
       "archived": false,
       "license": "MIT",
       "description": null,
+      "primaryLanguage": "TypeScript",
+      "languages": {
+        "TypeScript": 287735,
+        "JavaScript": 2231
+      },
       "htmlUrl": "https://github.com/arc-mcp/xsuaa-auth"
     },
     "aws-solutions-library-samples/guidance-for-deploying-sap-abap-accelerator-for-amazon-q-developer": {
@@ -145,6 +203,10 @@
       "archived": false,
       "license": "MIT-0",
       "description": "ABAP Accelerator is an MCP server that helps organizations create, test, document, and transform SAP ABAP code faster and with higher code accuracy.",
+      "primaryLanguage": "Python",
+      "languages": {
+        "Python": 1126649
+      },
       "htmlUrl": "https://github.com/aws-solutions-library-samples/guidance-for-deploying-sap-abap-accelerator-for-amazon-q-developer"
     },
     "babamba2/abap-mcp-adt-powerup": {
@@ -158,6 +220,15 @@
       "archived": false,
       "license": "MIT",
       "description": "Powerup mcp server",
+      "primaryLanguage": "TypeScript",
+      "languages": {
+        "TypeScript": 3085489,
+        "JavaScript": 132930,
+        "ABAP": 33736,
+        "Shell": 4625,
+        "Dockerfile": 1584,
+        "Makefile": 1283
+      },
       "htmlUrl": "https://github.com/babamba2/abap-mcp-adt-powerup"
     },
     "babamba2/superclaude-for-sap": {
@@ -171,6 +242,12 @@
       "archived": false,
       "license": "MIT",
       "description": "SuperClaude for SAP — Claude Code plugin for SAP On-Premise S/4HANA ABAP development (24 agents, 14 skills, 150+ MCP tools)",
+      "primaryLanguage": "JavaScript",
+      "languages": {
+        "JavaScript": 375716,
+        "ABAP": 275349,
+        "TypeScript": 10326
+      },
       "htmlUrl": "https://github.com/babamba2/superclaude-for-sap"
     },
     "buettnerjulian/abap-adt-mcp": {
@@ -184,6 +261,11 @@
       "archived": false,
       "license": "MIT",
       "description": "ABAP ADT (ABAP Development Tools) MCP Server",
+      "primaryLanguage": "TypeScript",
+      "languages": {
+        "TypeScript": 65196,
+        "JavaScript": 4230
+      },
       "htmlUrl": "https://github.com/buettnerjulian/abap-adt-mcp"
     },
     "cap-js/mcp-server": {
@@ -197,6 +279,12 @@
       "archived": false,
       "license": "Apache-2.0",
       "description": "MCP server for AI-assisted development of CAP applications",
+      "primaryLanguage": "JavaScript",
+      "languages": {
+        "JavaScript": 95251,
+        "CAP CDS": 11567,
+        "HTML": 1129
+      },
       "htmlUrl": "https://github.com/cap-js/mcp-server"
     },
     "chandrashekhar-mahajan/abap-mcp-server": {
@@ -210,6 +298,10 @@
       "archived": false,
       "license": "MIT",
       "description": null,
+      "primaryLanguage": "TypeScript",
+      "languages": {
+        "TypeScript": 116436
+      },
       "htmlUrl": "https://github.com/chandrashekhar-mahajan/abap-mcp-server"
     },
     "ClementRingot/sap-released-objects-mcp-server": {
@@ -223,6 +315,11 @@
       "archived": false,
       "license": "MIT",
       "description": "Server for SAP Cloudification Repository - Clean Core Level A/B/C/D filtering",
+      "primaryLanguage": "TypeScript",
+      "languages": {
+        "TypeScript": 192833,
+        "JavaScript": 3261
+      },
       "htmlUrl": "https://github.com/ClementRingot/sap-released-objects-server"
     },
     "CostingGeek/sap-mcp": {
@@ -236,6 +333,10 @@
       "archived": false,
       "license": "MIT",
       "description": "An MCP server to retrieve information like Sales Orders from the SAP Graph API Sandbox",
+      "primaryLanguage": "Python",
+      "languages": {
+        "Python": 2880
+      },
       "htmlUrl": "https://github.com/CostingGeek/sap-mcp"
     },
     "DassianInc/dassian-adt": {
@@ -249,6 +350,13 @@
       "archived": false,
       "license": "MIT",
       "description": "MCP server for SAP ABAP development via ADT API. Connect AI assistants to SAP: read, write, test, and deploy ABAP code without SAP GUI.",
+      "primaryLanguage": "TypeScript",
+      "languages": {
+        "TypeScript": 343495,
+        "JavaScript": 39505,
+        "Shell": 4427,
+        "Dockerfile": 899
+      },
       "htmlUrl": "https://github.com/DassianInc/dassian-adt"
     },
     "DataZooDE/erpl-adt": {
@@ -258,10 +366,19 @@
       "fork": false,
       "parent": null,
       "stars": 13,
-      "lastChange": "2026-06-27T07:42:05Z",
+      "lastChange": "2026-06-27T11:09:45Z",
       "archived": false,
       "license": "Apache-2.0",
       "description": "CLI and MCP server for the SAP ADT REST API — search, read/write ABAP source, run tests, manage transports. No Eclipse, no RFC SDK, no JVM.",
+      "primaryLanguage": "C++",
+      "languages": {
+        "C++": 1955750,
+        "Python": 219959,
+        "Shell": 9053,
+        "CMake": 4400,
+        "Makefile": 1136,
+        "Dockerfile": 901
+      },
       "htmlUrl": "https://github.com/DataZooDE/erpl-adt"
     },
     "derekvincent/mcp-sap-focusedrun": {
@@ -275,6 +392,11 @@
       "archived": false,
       "license": "Apache-2.0",
       "description": "An MCP server for interacting with SAP FocusedRun.",
+      "primaryLanguage": "Python",
+      "languages": {
+        "Python": 44367,
+        "Dockerfile": 397
+      },
       "htmlUrl": "https://github.com/derekvincent/mcp-sap-focusedrun"
     },
     "dnic-dev/bw-modeling-mcp": {
@@ -284,10 +406,15 @@
       "fork": false,
       "parent": null,
       "stars": 43,
-      "lastChange": "2026-06-09T21:07:15Z",
+      "lastChange": "2026-06-27T10:18:56Z",
       "archived": false,
       "license": "MIT",
       "description": "MCP server for agentic AI-assisted development in SAP BW/4HANA",
+      "primaryLanguage": "TypeScript",
+      "languages": {
+        "TypeScript": 477298,
+        "JavaScript": 143333
+      },
       "htmlUrl": "https://github.com/dnic-dev/bw-modeling-mcp"
     },
     "eclipse-copilot/eclipse-copilot": {
@@ -301,6 +428,11 @@
       "archived": false,
       "license": "EPL-2.0",
       "description": null,
+      "primaryLanguage": "Java",
+      "languages": {
+        "Java": 1262410,
+        "CSS": 4362
+      },
       "htmlUrl": "https://github.com/eclipse-copilot/eclipse-copilot"
     },
     "Emenowicz/sap-commerce-skill": {
@@ -314,6 +446,12 @@
       "archived": false,
       "license": "MIT",
       "description": "SAP Commerce Cloud (Hybris) skill for Claude Code - type system, service layer, ImpEx, FlexibleSearch, OCC API, accelerators",
+      "primaryLanguage": "Java",
+      "languages": {
+        "Java": 64179,
+        "Shell": 22577,
+        "TypeScript": 3004
+      },
       "htmlUrl": "https://github.com/Emenowicz/sap-commerce-skill"
     },
     "fgalastri/MCP_ABAP": {
@@ -327,6 +465,12 @@
       "archived": false,
       "license": "MIT",
       "description": "MCP ABAP",
+      "primaryLanguage": "ABAP",
+      "languages": {
+        "ABAP": 340526,
+        "JavaScript": 50608,
+        "ABAP CDS": 13425
+      },
       "htmlUrl": "https://github.com/fgalastri/MCP_ABAP"
     },
     "fr0ster/mcp-abap-adt": {
@@ -340,6 +484,14 @@
       "archived": false,
       "license": "MIT",
       "description": "MCP server for SAP BTP ABAP Cloud and On-Premise ECC/S/4HANA ABAP ADT with full CRUD, JWT/XSUAA, and service-key auth.",
+      "primaryLanguage": "TypeScript",
+      "languages": {
+        "TypeScript": 2803691,
+        "JavaScript": 133047,
+        "Shell": 3436,
+        "Dockerfile": 1619,
+        "Makefile": 1283
+      },
       "htmlUrl": "https://github.com/fr0ster/mcp-abap-adt"
     },
     "gavdilabs/cap-mcp-plugin": {
@@ -353,6 +505,13 @@
       "archived": false,
       "license": "Apache-2.0",
       "description": "MCP (Model Context Protocol) server plugin for CAP NodeJS",
+      "primaryLanguage": "TypeScript",
+      "languages": {
+        "TypeScript": 1015709,
+        "CAP CDS": 7337,
+        "Bru": 6255,
+        "JavaScript": 2821
+      },
       "htmlUrl": "https://github.com/gavdilabs/cap-mcp-plugin"
     },
     "gregorwolf/cloud-alm-itsm-mcp": {
@@ -366,6 +525,10 @@
       "archived": false,
       "license": null,
       "description": "SAP Cloud ALM ITSM API MCP Server",
+      "primaryLanguage": "TypeScript",
+      "languages": {
+        "TypeScript": 25964
+      },
       "htmlUrl": "https://github.com/gregorwolf/cloud-alm-itsm-mcp"
     },
     "GutjahrAI/sap-odata-mcp-py": {
@@ -379,6 +542,10 @@
       "archived": false,
       "license": null,
       "description": "Yet Another Python Based SAP MCP Server",
+      "primaryLanguage": "Python",
+      "languages": {
+        "Python": 41721
+      },
       "htmlUrl": "https://github.com/GutjahrAI/sap-odata-mcp-py"
     },
     "GutjahrAI/sap-odata-mcp-server": {
@@ -392,6 +559,11 @@
       "archived": false,
       "license": "MIT",
       "description": "Yet Another SAP MCP Server",
+      "primaryLanguage": "JavaScript",
+      "languages": {
+        "JavaScript": 72620,
+        "TypeScript": 43326
+      },
       "htmlUrl": "https://github.com/GutjahrAI/sap-odata-mcp-server"
     },
     "HatriGt/hana-mcp-server": {
@@ -405,6 +577,13 @@
       "archived": false,
       "license": "MIT",
       "description": "SAP HANA MCP server — Enterprise Model Context Protocol server for SAP HANA. Use with Claude Code, VS Code. npm: hana-mcp-server",
+      "primaryLanguage": "JavaScript",
+      "languages": {
+        "JavaScript": 599687,
+        "CSS": 11117,
+        "Shell": 2404,
+        "HTML": 597
+      },
       "htmlUrl": "https://github.com/HatriGt/hana-mcp-server"
     },
     "Hochfrequenz/aibap.mcp": {
@@ -418,6 +597,12 @@
       "archived": false,
       "license": "MIT",
       "description": "MCP server for SAP ABAP development via ADT REST API",
+      "primaryLanguage": "Go",
+      "languages": {
+        "Go": 474661,
+        "Makefile": 747,
+        "Dockerfile": 414
+      },
       "htmlUrl": "https://github.com/Hochfrequenz/aibap.mcp"
     },
     "Hochfrequenz/sap-mcp-config": {
@@ -431,6 +616,11 @@
       "archived": false,
       "license": "MIT",
       "description": "Shared Go+Python models for credentials used by MCP servers that connect to SAP",
+      "primaryLanguage": "Python",
+      "languages": {
+        "Python": 17983,
+        "Go": 16890
+      },
       "htmlUrl": "https://github.com/Hochfrequenz/sap-mcp-config"
     },
     "Hochfrequenz/sapgui.mcp": {
@@ -444,6 +634,13 @@
       "archived": false,
       "license": "MIT",
       "description": "an MCP server that interacts with SAP via the Desktop and/or Web GUI",
+      "primaryLanguage": "Python",
+      "languages": {
+        "Python": 2644484,
+        "JavaScript": 89549,
+        "PowerShell": 2155,
+        "Dockerfile": 1965
+      },
       "htmlUrl": "https://github.com/Hochfrequenz/sapgui.mcp"
     },
     "jduncan8142/sap_gui_mcp": {
@@ -457,6 +654,10 @@
       "archived": false,
       "license": "MIT",
       "description": "MCP to allow AI to interact with SAP GUI on Windows.",
+      "primaryLanguage": "Python",
+      "languages": {
+        "Python": 59012
+      },
       "htmlUrl": "https://github.com/jduncan8142/sap_gui_mcp"
     },
     "jfdurelle/onpremise-sap-odata-to-mcp-server": {
@@ -470,6 +671,8 @@
       "archived": null,
       "license": null,
       "description": null,
+      "primaryLanguage": "TypeScript",
+      "languages": null,
       "htmlUrl": "https://github.com/jfdurelle/onpremise-sap-odata-to-mcp-server"
     },
     "jfilak/sapcli": {
@@ -483,6 +686,14 @@
       "archived": false,
       "license": "Apache-2.0",
       "description": "Command Line Interface for interaction with SAP tools",
+      "primaryLanguage": "Python",
+      "languages": {
+        "Python": 3144964,
+        "Shell": 6427,
+        "Makefile": 3971,
+        "Dockerfile": 333,
+        "Batchfile": 273
+      },
       "htmlUrl": "https://github.com/jfilak/sapcli"
     },
     "jfilak/sapcli-claude-plugin": {
@@ -496,6 +707,8 @@
       "archived": false,
       "license": "Apache-2.0",
       "description": "Claude plugin with ABAP and SAP agents and skills using sapcli",
+      "primaryLanguage": null,
+      "languages": null,
       "htmlUrl": "https://github.com/jfilak/sapcli-claude-plugin"
     },
     "JumenEngels/sap_analytics_cloud_mcp": {
@@ -509,6 +722,12 @@
       "archived": false,
       "license": "MIT",
       "description": "An MCP (Model Context Protocol) server for SAP Analytics Cloud. Connects LLMs like Claude and Cursor to SAC for data export, content management, and smart queries.",
+      "primaryLanguage": "TypeScript",
+      "languages": {
+        "TypeScript": 143140,
+        "JavaScript": 4484,
+        "Dockerfile": 520
+      },
       "htmlUrl": "https://github.com/JumenEngels/sap_analytics_cloud_mcp"
     },
     "KEIDAI-TechTime/sap-claude-skills": {
@@ -522,6 +741,10 @@
       "archived": false,
       "license": null,
       "description": "SAP Claude Code Skills for addon development projects",
+      "primaryLanguage": "Shell",
+      "languages": {
+        "Shell": 1254
+      },
       "htmlUrl": "https://github.com/KEIDAI-TechTime/sap-claude-skills"
     },
     "kts982/mcp-sap-gui": {
@@ -535,6 +758,10 @@
       "archived": false,
       "license": "MIT",
       "description": "MCP server for SAP GUI for Windows automation via the SAP GUI Scripting API.",
+      "primaryLanguage": "Python",
+      "languages": {
+        "Python": 501768
+      },
       "htmlUrl": "https://github.com/kts982/mcp-sap-gui"
     },
     "lemaiwo/ai-core-mcp-server": {
@@ -548,6 +775,8 @@
       "archived": false,
       "license": "MIT",
       "description": null,
+      "primaryLanguage": null,
+      "languages": null,
       "htmlUrl": "https://github.com/lemaiwo/ai-core-mcp-server"
     },
     "lemaiwo/btp-mcp-server": {
@@ -561,6 +790,8 @@
       "archived": false,
       "license": "MIT",
       "description": null,
+      "primaryLanguage": null,
+      "languages": null,
       "htmlUrl": "https://github.com/lemaiwo/btp-mcp-server"
     },
     "lemaiwo/btp-sap-odata-to-mcp-server": {
@@ -574,6 +805,10 @@
       "archived": false,
       "license": "MIT",
       "description": "BTP CloudFoundry Node.js MCP server for SAP OData services integration",
+      "primaryLanguage": "TypeScript",
+      "languages": {
+        "TypeScript": 216806
+      },
       "htmlUrl": "https://github.com/lemaiwo/btp-sap-odata-to-mcp-server"
     },
     "lemaiwo/ci-mcp-server": {
@@ -587,6 +822,8 @@
       "archived": false,
       "license": "MIT",
       "description": null,
+      "primaryLanguage": null,
+      "languages": null,
       "htmlUrl": "https://github.com/lemaiwo/ci-mcp-server"
     },
     "lemaiwo/odata-mcp-proxy": {
@@ -600,6 +837,11 @@
       "archived": false,
       "license": "MIT",
       "description": null,
+      "primaryLanguage": "TypeScript",
+      "languages": {
+        "TypeScript": 113117,
+        "JavaScript": 523
+      },
       "htmlUrl": "https://github.com/lemaiwo/odata-mcp-proxy"
     },
     "lopezmas/sap-pi-mcp-server": {
@@ -613,6 +855,10 @@
       "archived": false,
       "license": "MIT",
       "description": null,
+      "primaryLanguage": "Python",
+      "languages": {
+        "Python": 121497
+      },
       "htmlUrl": "https://github.com/lopezmas/sap-pi-mcp-server"
     },
     "marcellourbani/vscode_abap_remote_fs": {
@@ -626,6 +872,16 @@
       "archived": false,
       "license": "MIT",
       "description": "VS Code-based Agentic AI Platform for SAP ABAP Development",
+      "primaryLanguage": "TypeScript",
+      "languages": {
+        "TypeScript": 3626079,
+        "JavaScript": 113294,
+        "HTML": 68158,
+        "ABAP": 11300,
+        "CSS": 7767,
+        "Python": 2701,
+        "Batchfile": 1074
+      },
       "htmlUrl": "https://github.com/marcellourbani/vscode_abap_remote_fs"
     },
     "marianfoo/abap-mcp-server": {
@@ -639,6 +895,14 @@
       "archived": false,
       "license": "Apache-2.0",
       "description": null,
+      "primaryLanguage": "TypeScript",
+      "languages": {
+        "TypeScript": 750296,
+        "JavaScript": 145680,
+        "Shell": 21512,
+        "HTML": 10990,
+        "Dockerfile": 7515
+      },
       "htmlUrl": "https://github.com/marianfoo/abap-mcp-server"
     },
     "marianfoo/mcp-sap-docs": {
@@ -652,6 +916,14 @@
       "archived": false,
       "license": "Apache-2.0",
       "description": null,
+      "primaryLanguage": "TypeScript",
+      "languages": {
+        "TypeScript": 731567,
+        "JavaScript": 145680,
+        "Shell": 21512,
+        "HTML": 10990,
+        "Dockerfile": 7515
+      },
       "htmlUrl": "https://github.com/marianfoo/mcp-sap-docs"
     },
     "marianfoo/mcp-sap-notes": {
@@ -665,6 +937,13 @@
       "archived": true,
       "license": "Apache-2.0",
       "description": "MCP Server to search and retrieve SAP Notes",
+      "primaryLanguage": "TypeScript",
+      "languages": {
+        "TypeScript": 151501,
+        "JavaScript": 43005,
+        "Shell": 9720,
+        "Dockerfile": 941
+      },
       "htmlUrl": "https://github.com/marianfoo/mcp-sap-notes"
     },
     "marianfoo/sap-api-policy-skill": {
@@ -678,6 +957,10 @@
       "archived": false,
       "license": "MIT",
       "description": "Agent skill (npx skills) for evidence-based SAP API Policy alignment assessments — sourced, confidence-rated, never legal advice.",
+      "primaryLanguage": "Python",
+      "languages": {
+        "Python": 4935
+      },
       "htmlUrl": "https://github.com/marianfoo/sap-api-policy-skill"
     },
     "mario-andreschak/mcp-abap-abap-adt-api": {
@@ -691,6 +974,12 @@
       "archived": false,
       "license": "MIT",
       "description": "MCP-Server for SAP ABAP wrapping abap-adt-api",
+      "primaryLanguage": "TypeScript",
+      "languages": {
+        "TypeScript": 221736,
+        "JavaScript": 18037,
+        "Dockerfile": 899
+      },
       "htmlUrl": "https://github.com/mario-andreschak/mcp-abap-abap-adt-api"
     },
     "mario-andreschak/mcp-abap-adt": {
@@ -704,6 +993,12 @@
       "archived": false,
       "license": "MIT",
       "description": null,
+      "primaryLanguage": "TypeScript",
+      "languages": {
+        "TypeScript": 23236,
+        "JavaScript": 11617,
+        "Dockerfile": 457
+      },
       "htmlUrl": "https://github.com/mario-andreschak/mcp-abap-adt"
     },
     "mario-andreschak/mcp-sap-gui": {
@@ -717,6 +1012,12 @@
       "archived": false,
       "license": "MIT",
       "description": "MCP server that allows simple SAP GUI interaction for LLM models using simulated mouse clicks and keyboard input.",
+      "primaryLanguage": "Python",
+      "languages": {
+        "Python": 72057,
+        "Batchfile": 2838,
+        "Dockerfile": 1806
+      },
       "htmlUrl": "https://github.com/mario-andreschak/mcp-sap-gui"
     },
     "MarioDeFelipe/sap-datasphere-mcp": {
@@ -730,6 +1031,12 @@
       "archived": false,
       "license": "MIT",
       "description": "SAP Datasphere MCP Server - AI-powered access to SAP Datasphere APIs",
+      "primaryLanguage": "Python",
+      "languages": {
+        "Python": 845359,
+        "JavaScript": 3208,
+        "Dockerfile": 1392
+      },
       "htmlUrl": "https://github.com/MarioDeFelipe/sap-datasphere-mcp"
     },
     "MarioDeFelipe/sap-datasphere-plugin-for-claude-cowork": {
@@ -743,6 +1050,8 @@
       "archived": false,
       "license": "MIT",
       "description": "SAP Datasphere Plugin for Claude Cowork",
+      "primaryLanguage": null,
+      "languages": null,
       "htmlUrl": "https://github.com/MarioDeFelipe/sap-datasphere-plugin-for-claude-cowork"
     },
     "MarkWuRY168/SAP_MCP": {
@@ -756,6 +1065,13 @@
       "archived": false,
       "license": "MIT",
       "description": "An MCP that can publish SAP system tools",
+      "primaryLanguage": "Python",
+      "languages": {
+        "Python": 59939,
+        "JavaScript": 39130,
+        "HTML": 24496,
+        "CSS": 7842
+      },
       "htmlUrl": "https://github.com/MarkWuRY168/SAP_MCP"
     },
     "matt1as/claude-abap-skills": {
@@ -769,6 +1085,8 @@
       "archived": false,
       "license": "Apache-2.0",
       "description": "Skill library for Claude Code — opinionated rules and slash commands for modern ABAP (BTP ABAP Environment, S/4HANA 2023+ ABAP Cloud development model). Assumes the official SAP ABAP MCP Server provides system access.",
+      "primaryLanguage": null,
+      "languages": null,
       "htmlUrl": "https://github.com/matt1as/claude-abap-skills"
     },
     "mfigueir/sap-power": {
@@ -782,6 +1100,8 @@
       "archived": false,
       "license": "GPL-3.0",
       "description": "Production-ready SAP development knowledge for Kiro IDE",
+      "primaryLanguage": null,
+      "languages": null,
       "htmlUrl": "https://github.com/mfigueir/sap-power"
     },
     "midasol/sap-mcp-server": {
@@ -795,6 +1115,11 @@
       "archived": false,
       "license": "MIT",
       "description": "MCP Server for SAP",
+      "primaryLanguage": "Python",
+      "languages": {
+        "Python": 105864,
+        "Shell": 4779
+      },
       "htmlUrl": "https://github.com/midasol/sap-mcp-server"
     },
     "nickels/sap-ai-docs-mcp": {
@@ -808,6 +1133,11 @@
       "archived": false,
       "license": null,
       "description": null,
+      "primaryLanguage": "TypeScript",
+      "languages": {
+        "TypeScript": 21117,
+        "JavaScript": 364
+      },
       "htmlUrl": "https://github.com/nickels/sap-ai-docs-mcp"
     },
     "nickels/sap-btp-docs-mcp": {
@@ -821,6 +1151,11 @@
       "archived": false,
       "license": null,
       "description": "sap-btp-docs-mcp",
+      "primaryLanguage": "TypeScript",
+      "languages": {
+        "TypeScript": 20783,
+        "JavaScript": 354
+      },
       "htmlUrl": "https://github.com/nickels/sap-btp-docs-mcp"
     },
     "oisee/odata_mcp": {
@@ -834,6 +1169,11 @@
       "archived": false,
       "license": "MIT",
       "description": null,
+      "primaryLanguage": "Python",
+      "languages": {
+        "Python": 351137,
+        "Shell": 3012
+      },
       "htmlUrl": "https://github.com/oisee/odata_mcp"
     },
     "oisee/odata_mcp_go": {
@@ -847,6 +1187,15 @@
       "archived": false,
       "license": "MIT",
       "description": null,
+      "primaryLanguage": "Go",
+      "languages": {
+        "Go": 361166,
+        "Shell": 50511,
+        "Python": 23123,
+        "Makefile": 12389,
+        "Dockerfile": 1351,
+        "JavaScript": 306
+      },
       "htmlUrl": "https://github.com/oisee/odata_mcp_go"
     },
     "oisee/vibing-steampunk": {
@@ -860,6 +1209,16 @@
       "archived": false,
       "license": "MIT",
       "description": "vs-punk: ADT to MCP bridge - Vibe code in ABAP / AMDP",
+      "primaryLanguage": "Go",
+      "languages": {
+        "Go": 3070032,
+        "ABAP": 522394,
+        "JavaScript": 22075,
+        "Makefile": 7204,
+        "Shell": 6969,
+        "C": 6651,
+        "Lua": 1697
+      },
       "htmlUrl": "https://github.com/oisee/vibing-steampunk"
     },
     "one-kash/sap-odata-explorer": {
@@ -873,6 +1232,11 @@
       "archived": null,
       "license": null,
       "description": null,
+      "primaryLanguage": "TypeScript",
+      "languages": {
+        "TypeScript": 529,
+        "JavaScript": 471
+      },
       "htmlUrl": "https://github.com/one-kash/sap-odata-explorer"
     },
     "pmankineni/mcp-datasphere-tools": {
@@ -886,6 +1250,10 @@
       "archived": false,
       "license": "ISC",
       "description": null,
+      "primaryLanguage": "TypeScript",
+      "languages": {
+        "TypeScript": 143722
+      },
       "htmlUrl": "https://github.com/pmankineni/mcp-datasphere-tools"
     },
     "prudvigit/mcp-sap-cpi": {
@@ -899,6 +1267,11 @@
       "archived": false,
       "license": "MIT",
       "description": "MCP server for SAP CPI — operate failed messages, iFlows, packages, and credentials from Claude. Drop-in BTP service-key config.",
+      "primaryLanguage": "TypeScript",
+      "languages": {
+        "TypeScript": 12700,
+        "JavaScript": 2164
+      },
       "htmlUrl": "https://github.com/Keelside/mcp-sap-cpi"
     },
     "rahulsethi/SAPBDCMCP": {
@@ -912,6 +1285,11 @@
       "archived": false,
       "license": "MIT",
       "description": "MCP Server for SAP Business Data Cloud",
+      "primaryLanguage": "Python",
+      "languages": {
+        "Python": 240413,
+        "JavaScript": 2013
+      },
       "htmlUrl": "https://github.com/rahulsethi/SAPBDCMCP"
     },
     "rahulsethi/SAPDatasphereMCP": {
@@ -925,6 +1303,12 @@
       "archived": false,
       "license": "Apache-2.0",
       "description": "MCP Server for SAP Datasphere",
+      "primaryLanguage": "Python",
+      "languages": {
+        "Python": 206730,
+        "JavaScript": 3712,
+        "PowerShell": 2511
+      },
       "htmlUrl": "https://github.com/rahulsethi/SAPDatasphereMCP"
     },
     "SAP-samples/cap-agentic-engineered": {
@@ -938,6 +1322,12 @@
       "archived": false,
       "license": "Apache-2.0",
       "description": "Reference CAP + Fiori Elements application showing how AI coding agents produce higher-quality SAP applications when grounded by SAP MCP servers (CAP, Fiori, UI5). Includes a reusable AGENTS.md, MCP skills, and a working Financial Risk Analyzer built entirely by Claude Code.",
+      "primaryLanguage": "JavaScript",
+      "languages": {
+        "JavaScript": 52856,
+        "CAP CDS": 9052,
+        "HTML": 1719
+      },
       "htmlUrl": "https://github.com/SAP-samples/cap-agentic-engineered"
     },
     "SAP-samples/teched2025-CA261": {
@@ -951,6 +1341,8 @@
       "archived": false,
       "license": "Apache-2.0",
       "description": "Create great UX with AI, SAP Design System, SAP Fiori elements, and SAPUI5",
+      "primaryLanguage": null,
+      "languages": null,
       "htmlUrl": "https://github.com/SAP-samples/teched2025-CA261"
     },
     "SAP/ai-skills-library": {
@@ -964,6 +1356,8 @@
       "archived": false,
       "license": "Apache-2.0",
       "description": "Discover AI skills for SAP — search, filter, and install skills for your digital assistant.",
+      "primaryLanguage": null,
+      "languages": null,
       "htmlUrl": "https://github.com/SAP/ai-skills-library"
     },
     "SAP/mdk-mcp-server": {
@@ -977,6 +1371,11 @@
       "archived": false,
       "license": "Apache-2.0",
       "description": "Model Context Protocol (MCP) server for AI-assisted development (\"vibe coding\") of MDK applications.",
+      "primaryLanguage": "JavaScript",
+      "languages": {
+        "JavaScript": 573606,
+        "TypeScript": 114513
+      },
       "htmlUrl": "https://github.com/SAP/mdk-mcp-server"
     },
     "SAP/open-ux-tools": {
@@ -986,10 +1385,24 @@
       "fork": false,
       "parent": null,
       "stars": 150,
-      "lastChange": "2026-06-26T16:48:57Z",
+      "lastChange": "2026-06-27T09:44:05Z",
       "archived": false,
       "license": "Apache-2.0",
       "description": "Enable community collaboration to jointly promote and facilitate best in class tooling capabilities",
+      "primaryLanguage": "TypeScript",
+      "languages": {
+        "TypeScript": 20515815,
+        "JavaScript": 7065197,
+        "CSS": 259417,
+        "HTML": 257421,
+        "CAP CDS": 150742,
+        "SCSS": 106631,
+        "EJS": 16910,
+        "Less": 4004,
+        "Java": 305,
+        "Go Template": 239,
+        "Shell": 43
+      },
       "htmlUrl": "https://github.com/SAP/open-ux-tools"
     },
     "SaurabhVC/ABAPDocMCP": {
@@ -1003,6 +1416,14 @@
       "archived": false,
       "license": "MIT",
       "description": "AI-Agentic ABAP Development via SAP ADT MCP Bridge (based on vibing-steampunk)",
+      "primaryLanguage": "Go",
+      "languages": {
+        "Go": 1355581,
+        "ABAP": 343084,
+        "Shell": 6969,
+        "Makefile": 5807,
+        "Lua": 1697
+      },
       "htmlUrl": "https://github.com/SaurabhVC/ABAPDocMCP"
     },
     "secondsky/sap-skills": {
@@ -1011,11 +1432,25 @@
       "exists": true,
       "fork": false,
       "parent": null,
-      "stars": 357,
+      "stars": 358,
       "lastChange": "2026-06-22T13:47:30Z",
       "archived": false,
       "license": "GPL-3.0",
       "description": "Production-ready plugins for SAP development with AI coding assistants — BTP, CAP, Fiori, ABAP, HANA, Analytics Cloud, Datasphere, and more",
+      "primaryLanguage": "JavaScript",
+      "languages": {
+        "JavaScript": 411964,
+        "Python": 165766,
+        "Shell": 85532,
+        "Go Template": 23419,
+        "ABAP": 10356,
+        "CAP CDS": 10050,
+        "PLSQL": 9243,
+        "HTML": 8408,
+        "Groovy": 6949,
+        "CSS": 4731,
+        "TypeScript": 4451
+      },
       "htmlUrl": "https://github.com/secondsky/sap-skills"
     },
     "SYNTAAI/sap-security-mcp": {
@@ -1029,6 +1464,10 @@
       "archived": false,
       "license": "Apache-2.0",
       "description": "sap-security-mcp",
+      "primaryLanguage": "Python",
+      "languages": {
+        "Python": 88233
+      },
       "htmlUrl": "https://github.com/SYNTAAI/sap-security-mcp"
     },
     "toni-ramchandani/sapient-mcp": {
@@ -1042,6 +1481,10 @@
       "archived": false,
       "license": null,
       "description": "Intelligent SAP GUI automation for AI agents, MCP server powered by RoboSAPiens",
+      "primaryLanguage": "Python",
+      "languages": {
+        "Python": 100620
+      },
       "htmlUrl": "https://github.com/toni-ramchandani/sapient-mcp"
     },
     "UI5/mcp-server": {
@@ -1055,6 +1498,14 @@
       "archived": false,
       "license": "Apache-2.0",
       "description": "The UI5 MCP server improves the developer experience when working with agentic AI and the UI5 framework.",
+      "primaryLanguage": "TypeScript",
+      "languages": {
+        "TypeScript": 460253,
+        "JavaScript": 42426,
+        "HTML": 24223,
+        "EJS": 6380,
+        "CSS": 3476
+      },
       "htmlUrl": "https://github.com/UI5/mcp-server"
     },
     "UI5/plugins-coding-agents": {
@@ -1068,6 +1519,10 @@
       "archived": false,
       "license": "Apache-2.0",
       "description": "SAPUI5 / OpenUI5 plugins for Coding Agents",
+      "primaryLanguage": "JavaScript",
+      "languages": {
+        "JavaScript": 215419
+      },
       "htmlUrl": "https://github.com/UI5/plugins-coding-agents"
     },
     "UI5/webcomponents-mcp-server": {
@@ -1081,6 +1536,11 @@
       "archived": false,
       "license": "Apache-2.0",
       "description": "The UI5 Web Components MCP Server improves the developer experience when working with agentic AI and the UI5 Web Components framework.",
+      "primaryLanguage": "TypeScript",
+      "languages": {
+        "TypeScript": 39917,
+        "JavaScript": 3122
+      },
       "htmlUrl": "https://github.com/UI5/webcomponents-mcp-server"
     },
     "vadimklimov/cpi-mcp-server": {
@@ -1094,6 +1554,12 @@
       "archived": false,
       "license": "MIT",
       "description": "MCP server for SAP Cloud Integration",
+      "primaryLanguage": "Go",
+      "languages": {
+        "Go": 44624,
+        "HCL": 1930,
+        "Dockerfile": 696
+      },
       "htmlUrl": "https://github.com/vadimklimov/cpi-mcp-server"
     },
     "weiserman/rap-skills": {
@@ -1107,6 +1573,8 @@
       "archived": false,
       "license": "MIT",
       "description": "Claude Code skills for SAP RAP development — branch-per-scenario for BTP, S/4HANA Cloud, and On-Premise",
+      "primaryLanguage": null,
+      "languages": null,
       "htmlUrl": "https://github.com/weiserman/rap-skills"
     },
     "workskong/mcp-abap-adt": {
@@ -1120,6 +1588,12 @@
       "archived": false,
       "license": "MIT",
       "description": null,
+      "primaryLanguage": "TypeScript",
+      "languages": {
+        "TypeScript": 67210,
+        "JavaScript": 3940,
+        "Dockerfile": 3320
+      },
       "htmlUrl": "https://github.com/workskong/mcp-abap-adt"
     }
   }

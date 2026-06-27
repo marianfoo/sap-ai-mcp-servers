@@ -10,16 +10,18 @@ body:
 
         Before submitting, please check the catalog for duplicates. Fill in either the GitHub repository field or the non-GitHub URL field, not both.
         GitHub repositories are auto-enriched with stars, license, and last-change metadata. Non-GitHub entries need manual metadata or clear evidence.
+        If a repository ships both AI skills and a Claude Code plugin, choose the combined placement so it can appear in both package filters.
 
   - type: dropdown
-    id: kind
+    id: placement
     attributes:
-      label: Entry kind *
-      description: What kind of project is this?
+      label: Catalog placement *
+      description: Choose where this project should appear. Use the combined option when one repo contains both skill content and a Claude Code plugin.
       options:
         - MCP server
         - AI skill or prompt pack
-        - Claude plugin or Claude-compatible skill pack
+        - Claude plugin
+        - AI skill + Claude plugin
         - Adjacent developer tool
         - Documentation or official resource page
     validations:
@@ -44,6 +46,7 @@ body:
         - SAP Cloud ALM
         - SAP Skills
         - Claude Plugins
+        - SAP Skills + Claude Plugins
         - Adjacent SAP AI Developer Tools
     validations:
       required: true
@@ -117,8 +120,26 @@ body:
     id: notes
     attributes:
       label: Notes
-      description: Extra context, caveats, setup requirements, supported transports, or notable tool coverage.
-      placeholder: e.g. Requires OAuth client credentials and supports stdio plus HTTP transports.
+      description: Extra context, caveats, setup requirements, supported transports, notable tool coverage, or evidence for multi-placement.
+      placeholder: e.g. Ships a .claude-plugin manifest and a skills/ folder; requires OAuth client credentials and supports stdio plus HTTP transports.
+    validations:
+      required: false
+
+  - type: input
+    id: primary_language
+    attributes:
+      label: Primary implementation language
+      description: Optional. GitHub repositories are auto-detected. Fill this when the language is missing, wrong, or a monorepo subfolder differs from the repository default.
+      placeholder: e.g. TypeScript, Python, Go, ABAP
+    validations:
+      required: false
+
+  - type: input
+    id: secondary_languages
+    attributes:
+      label: Significant secondary languages
+      description: Optional. List only languages that are meaningfully used. The catalog language filter includes secondary languages at about 20% or more of the GitHub language breakdown.
+      placeholder: e.g. ABAP ~40%, Python ~25%
     validations:
       required: false
 
@@ -157,3 +178,5 @@ body:
           required: true
         - label: The project has an open-source license or I provided license evidence above
           required: true
+        - label: If this should appear as both an AI skill and a Claude plugin, I selected the combined placement and explained the evidence in Notes
+          required: false

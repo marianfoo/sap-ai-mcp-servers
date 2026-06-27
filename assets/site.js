@@ -5,6 +5,7 @@ const state = {
     package: new Set(),
     source: new Set(),
     category: new Set(),
+    language: new Set(),
     license: new Set(),
     signals: new Set()
   },
@@ -27,6 +28,8 @@ const signalOptions = [
 ];
 
 const validSignalValues = new Set(signalOptions.map((option) => option.value));
+const SECONDARY_LANGUAGE_MIN_PERCENT = 20;
+const SCRIPT_LANGUAGE_FILTER = 'JavaScript / TypeScript';
 
 const els = {};
 
@@ -49,6 +52,7 @@ function cacheElements() {
   els.sourceFilters = document.querySelector('#sourceFilters');
   els.signalFilters = document.querySelector('#signalFilters');
   els.categoryFilter = document.querySelector('#categoryFilter');
+  els.languageFilter = document.querySelector('#languageFilter');
   els.licenseFilter = document.querySelector('#licenseFilter');
   els.advancedFilters = document.querySelector('#advancedFilters');
   els.themeToggle = document.querySelector('[data-action="theme-toggle"]');
@@ -237,6 +241,8 @@ function flattenCatalog(catalog, enriched) {
         entry.category,
         entry.packageType,
         entry.type,
+        entry.primaryLanguage,
+        ...entry.languageFilters,
         entry.license
       ]
         .filter(Boolean)
@@ -254,6 +260,8 @@ function normalizeEntry(entry, category, categoryId, packageType, metadata) {
   const license = normalizeLicense(repoMeta.license ?? entry.license);
   const lastChange = repoMeta.lastChange ?? entry.lastChange ?? null;
   const stars = typeof repoMeta.stars === 'number' ? repoMeta.stars : typeof entry.stars === 'number' ? entry.stars : null;
+  const primaryLanguage = normalizeLanguage(repoMeta.primaryLanguage ?? entry.primaryLanguage ?? entry.language);
+  const languageFilters = resolveLanguageFilters(repoMeta, primaryLanguage);
 
   return {
     id: `${categoryId}:${entry.repo || entry.url || entry.name}`,
@@ -268,6 +276,8 @@ function normalizeEntry(entry, category, categoryId, packageType, metadata) {
     url,
     purpose: entry.purpose || '',
     notes: entry.notes || '',
+    primaryLanguage,
+    languageFilters,
     license,
     stars,
     lastChange,
@@ -281,6 +291,52 @@ function normalizeEntry(entry, category, categoryId, packageType, metadata) {
 function normalizeLicense(value) {
   const license = value && String(value).trim();
   return license || 'NO LICENSE FOUND';
+}
+
+function normalizeLanguage(value) {
+  const language = value && String(value).trim();
+  return language || '';
+}
+
+function languageFilterLabel(language) {
+  if (language === 'TypeScript' || language === 'JavaScript') return SCRIPT_LANGUAGE_FILTER;
+  return language;
+}
+
+function normalizeLanguageBreakdown(languages) {
+  if (!languages || typeof languages !== 'object' || Array.isArray(languages)) return [];
+
+  const total = Object.values(languages).reduce((sum, bytes) => {
+    const n = Number(bytes);
+    return Number.isFinite(n) && n > 0 ? sum + n : sum;
+  }, 0);
+
+  if (total <= 0) return [];
+
+  const grouped = new Map();
+  for (const [language, bytes] of Object.entries(languages)) {
+    const n = Number(bytes);
+    if (!Number.isFinite(n) || n <= 0) continue;
+    const label = languageFilterLabel(language);
+    grouped.set(label, (grouped.get(label) || 0) + (n / total) * 100);
+  }
+
+  return [...grouped.entries()]
+    .map(([language, percent]) => ({ language, percent }))
+    .sort((a, b) => b.percent - a.percent || a.language.localeCompare(b.language));
+}
+
+function resolveLanguageFilters(repoMeta, primaryLanguage) {
+  const filters = new Set();
+  if (primaryLanguage) filters.add(languageFilterLabel(primaryLanguage));
+
+  for (const item of normalizeLanguageBreakdown(repoMeta.languages)) {
+    if (item.percent >= SECONDARY_LANGUAGE_MIN_PERCENT) {
+      filters.add(item.language);
+    }
+  }
+
+  return [...filters];
 }
 
 function updateStats(enriched) {
@@ -305,6 +361,7 @@ function renderFilterControls() {
   renderOptions(els.sourceFilters, 'source', countValues(state.entries, 'type'), sourceOrder);
   renderSignalOptions();
   renderSelectOptions(els.categoryFilter, countValues(state.entries, 'category'), alphaOrder, 'All categories');
+  renderSelectOptions(els.languageFilter, countListValues(state.entries, 'languageFilters'), languageOrder, 'All languages');
   renderSelectOptions(els.licenseFilter, countValues(state.entries, 'license'), licenseOrder, 'All licenses');
 }
 
@@ -370,6 +427,16 @@ function countValues(entries, key) {
   return counts;
 }
 
+function countListValues(entries, key) {
+  const counts = new Map();
+  for (const entry of entries) {
+    for (const value of entry[key] || []) {
+      counts.set(value, (counts.get(value) || 0) + 1);
+    }
+  }
+  return counts;
+}
+
 function packageOrder(a, b) {
   const order = [packageLabels.mcp, packageLabels.skill, packageLabels.plugin, packageLabels.tool];
   return order.indexOf(a[0]) - order.indexOf(b[0]);
@@ -386,6 +453,16 @@ function licenseOrder(a, b) {
   return b[1] - a[1] || a[0].localeCompare(b[0]);
 }
 
+function languageOrder(a, b) {
+  const order = [SCRIPT_LANGUAGE_FILTER, 'Python', 'Go', 'Java', 'ABAP'];
+  const indexA = order.indexOf(a[0]);
+  const indexB = order.indexOf(b[0]);
+  if (indexA !== -1 || indexB !== -1) {
+    return (indexA === -1 ? Number.POSITIVE_INFINITY : indexA) - (indexB === -1 ? Number.POSITIVE_INFINITY : indexB);
+  }
+  return b[1] - a[1] || a[0].localeCompare(b[0]);
+}
+
 function alphaOrder(a, b) {
   return a[0].localeCompare(b[0]);
 }
@@ -399,6 +476,7 @@ function applyState(options = {}) {
     .filter((entry) => matchesSet(entry.packageType, state.filters.package))
     .filter((entry) => matchesSet(entry.type, state.filters.source))
     .filter((entry) => matchesSet(entry.category, state.filters.category))
+    .filter((entry) => matchesAny(entry.languageFilters, state.filters.language))
     .filter((entry) => matchesSet(entry.license, state.filters.license))
     .filter(matchesSignals)
     .sort(sortEntries);
@@ -410,6 +488,10 @@ function applyState(options = {}) {
 
 function matchesSet(value, selected) {
   return selected.size === 0 || selected.has(value);
+}
+
+function matchesAny(values, selected) {
+  return selected.size === 0 || values.some((value) => selected.has(value));
 }
 
 function matchesSignals(entry) {
@@ -501,6 +583,7 @@ function entryCardMarkup(entry) {
   const repoHref = escapeHtml(entry.url);
   const repoLabel = escapeHtml(entry.linkLabel);
   const notes = entry.notes ? `<p class="entry-notes">${escapeHtml(entry.notes)}</p>` : '';
+  const languageBadge = entry.primaryLanguage ? `<span class="badge badge--language">${escapeHtml(entry.primaryLanguage)}</span>` : '';
 
   return `
     <a class="entry-card" href="${repoHref}" target="_blank" rel="noreferrer" data-package="${escapeHtml(entry.packageType)}">
@@ -518,6 +601,7 @@ function entryCardMarkup(entry) {
         <div class="entry-meta">
           <span class="badge badge--package">${escapeHtml(entry.packageType)}</span>
           <span class="badge ${typeClass}">${escapeHtml(entry.type)}</span>
+          ${languageBadge}
           <span class="badge">${escapeHtml(entry.category)}</span>
           <span class="badge badge--license${licenseClass}">${escapeHtml(entry.license)}</span>
           <span class="metric">${formatStars(entry.stars)}</span>
@@ -601,6 +685,7 @@ function setResponsiveFilterState() {
     state.filters.source.size > 0 ||
     state.filters.signals.size > 0 ||
     state.filters.category.size > 0 ||
+    state.filters.language.size > 0 ||
     state.filters.license.size > 0;
 
   if (window.matchMedia('(max-width: 1100px)').matches) {
