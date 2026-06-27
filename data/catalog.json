@@ -619,6 +619,15 @@
     },
     {
       "type": "Community SAP",
+      "name": "ARC-1 Claude Code Plugin",
+      "repo": "arc-mcp/arc-1",
+      "repoPath": ".claude-plugin",
+      "displayUrl": "https://github.com/arc-mcp/arc-1/tree/main/.claude-plugin",
+      "purpose": "Bundle the ARC-1 MCP server and SAP ABAP development skills as a Claude Code plugin.",
+      "notes": "Plugin manifest lives in .claude-plugin/plugin.json and documents ARC-1 as SAP ABAP development for Claude Code with read-only defaults, opt-in write gates, and docs at docs.arc-1-mcp.com."
+    },
+    {
+      "type": "Community SAP",
       "name": "ARC-1 SAP Skills",
       "repo": "arc-mcp/arc-1",
       "repoPath": "skills",

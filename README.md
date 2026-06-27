@@ -2,6 +2,11 @@
 
 Comprehensive list of SAP-related MCP servers, SAP AI development skills, and Claude plugin repositories.
 
+> [!TIP]
+> **Browse the interactive catalog:** [sap-ai-tools.marianzeis.de](https://sap-ai-tools.marianzeis.de/)
+>
+> Use the web UI for search, filters, sorting, package type colors, repository activity signals, and mobile-friendly browsing.
+
 **New repositories:** [CHANGELOG.md](CHANGELOG.md) — dates when entries were added to this list.
 
 > [!IMPORTANT]
@@ -181,6 +186,7 @@ Know a project that belongs here? [Open an issue using the "Add new entry" templ
 | Name | Repository | Purpose | License | Stars | Last Change |
 | --- | --- | --- | --- | ---: | --- |
 | SAP Skills for Claude Code | [secondsky/sap-skills](https://github.com/secondsky/sap-skills) | Large SAP skill set for Claude Code across CAP, Fiori, ABAP and BTP. | GPL-3.0 | 357 | 2026-06-22 |
+| ARC-1 Claude Code Plugin | [arc-mcp/arc-1/.claude-plugin](https://github.com/arc-mcp/arc-1/tree/main/.claude-plugin) | Bundle the ARC-1 MCP server and SAP ABAP development skills as a Claude Code plugin. | MIT | 120 | 2026-06-27 |
 | ARC-1 SAP Skills | [arc-mcp/arc-1/skills](https://github.com/arc-mcp/arc-1/tree/main/skills) | ABAP development skills for coding agents: RAP service scaffolding, unit test generation, code explanation, Clean Core audits, and legacy migration. | MIT | 120 | 2026-06-27 |
 | SuperClaude for SAP | [babamba2/superclaude-for-sap](https://github.com/babamba2/superclaude-for-sap) | Provide a Claude Code plugin for SAP ABAP development across ECC, S/4HANA, and ABAP Cloud systems. | MIT | 41 | 2026-06-09 |
 | SAP Datasphere Plugin for Claude | [MarioDeFelipe/sap-datasphere-plugin-for-claude-cowork](https://github.com/MarioDeFelipe/sap-datasphere-plugin-for-claude-cowork) | Provide Claude skills and MCP configuration for SAP Datasphere exploration, modeling, administration, and governance workflows. | MIT | 24 | 2026-05-08 |

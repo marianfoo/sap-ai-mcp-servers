@@ -1,39 +1,61 @@
 name: Add new entry
-description: Suggest a new MCP server, skill, Claude plugin, or adjacent tool to be added to the list.
+description: Suggest a new SAP MCP server, AI skill, Claude plugin, or adjacent developer tool.
 title: "[Add] "
 labels: ["new entry"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for suggesting a new entry! Please fill in the details below.
-        All fields marked with * are required.
+        Thanks for suggesting a new entry.
 
-        Fill in **either** the GitHub repository field **or** the non-GitHub URL field — not both.
-        GitHub entries get auto-enriched (stars, license, last change). Non-GitHub entries are listed but not enriched.
+        Before submitting, please check the catalog for duplicates. Fill in either the GitHub repository field or the non-GitHub URL field, not both.
+        GitHub repositories are auto-enriched with stars, license, and last-change metadata. Non-GitHub entries need manual metadata or clear evidence.
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Entry kind *
+      description: What kind of project is this?
+      options:
+        - MCP server
+        - AI skill or prompt pack
+        - Claude plugin or Claude-compatible skill pack
+        - Adjacent developer tool
+        - Documentation or official resource page
+    validations:
+      required: true
 
   - type: dropdown
     id: category
     attributes:
       label: Category *
-      description: Which section of the list does this belong to?
+      description: Choose the closest existing catalog section.
       options:
         - SAP MCP Server
-        - SAP Skills
-        - SAP Claude Plugins
-        - Community SAP MCP Server
         - SAP Docs MCP Server
+        - Community SAP MCP Server
         - ABAP and ADT MCP Server
         - SAP Integration
         - OData MCP Proxy ecosystem
         - SAP Datasphere
-        - SAP OData / Gateway / Graph MCP Server
+        - SAP OData Gateway Graph MCP Server
         - SAP GUI
         - SAP HANA
         - SAP Cloud ALM
-        - SAP AI Skills and Prompt Packs
-        - SAP Claude Plugins and Skills
+        - SAP Skills
+        - Claude Plugins
         - Adjacent SAP AI Developer Tools
+    validations:
+      required: true
+
+  - type: dropdown
+    id: source_type
+    attributes:
+      label: Source *
+      description: Use SAP only for projects maintained by SAP-owned GitHub organizations or official SAP pages.
+      options:
+        - Community SAP
+        - SAP
     validations:
       required: true
 
@@ -41,8 +63,8 @@ body:
     id: name
     attributes:
       label: Display name *
-      description: Short, human-readable name for the entry shown in the table.
-      placeholder: e.g. My SAP MCP Server
+      description: Project or tool name shown in the catalog. Do not use a maintainer/person name unless that is the project name.
+      placeholder: e.g. SAP FocusedRun MCP
     validations:
       required: true
 
@@ -50,8 +72,17 @@ body:
     id: repo
     attributes:
       label: GitHub repository
-      description: Repository in `owner/repo` format. Leave blank if the project lives on a non-GitHub host (use the URL field below instead).
-      placeholder: e.g. myorg/my-sap-mcp-server
+      description: Use owner/repo format only. Do not paste a full https://github.com/... URL. Leave blank for non-GitHub entries.
+      placeholder: e.g. owner/sap-mcp-server
+    validations:
+      required: false
+
+  - type: input
+    id: repo_path
+    attributes:
+      label: Monorepo path
+      description: Optional path if the project lives in a subfolder of the GitHub repository.
+      placeholder: e.g. packages/fiori-mcp-server
     validations:
       required: false
 
@@ -59,26 +90,53 @@ body:
     id: url
     attributes:
       label: Non-GitHub URL
-      description: Full URL for entries hosted outside GitHub (e.g. Gitea, GitLab, Bitbucket, or an official documentation page). Use this OR the GitHub field above, not both.
+      description: Full URL for entries hosted outside GitHub or for official resource pages. Use this only when GitHub repository is blank.
       placeholder: e.g. https://git.example.dev/owner/repo
     validations:
       required: false
 
   - type: input
+    id: display_url
+    attributes:
+      label: Display URL override
+      description: Optional link target when the catalog should link to a specific subfolder, package page, or official page.
+      placeholder: e.g. https://github.com/owner/repo/tree/main/packages/server
+    validations:
+      required: false
+
+  - type: textarea
     id: purpose
     attributes:
       label: Purpose *
-      description: One concise sentence describing what the tool does. No trailing period needed.
-      placeholder: e.g. Exposes SAP BTP services as MCP tools
+      description: One concise sentence describing what the tool does for SAP developers. End with a period.
+      placeholder: e.g. Exposes SAP Focused Run LMDB APIs as MCP tools for host, system, database, and tenant lookup.
     validations:
       required: true
 
-  - type: input
+  - type: textarea
     id: notes
     attributes:
       label: Notes
-      description: Any extra context, caveats, or notable characteristics (optional).
-      placeholder: e.g. Requires BTP destination configuration
+      description: Extra context, caveats, setup requirements, supported transports, or notable tool coverage.
+      placeholder: e.g. Requires OAuth client credentials and supports stdio plus HTTP transports.
+    validations:
+      required: false
+
+  - type: input
+    id: license_evidence
+    attributes:
+      label: License evidence
+      description: Required if GitHub does not show a detected open-source license, or if this is a non-GitHub URL.
+      placeholder: e.g. MIT, Apache-2.0, or link to LICENSE file
+    validations:
+      required: false
+
+  - type: input
+    id: duplicate_check
+    attributes:
+      label: Duplicate check
+      description: Optional link/name if this is related to an existing catalog entry or previous issue.
+      placeholder: e.g. Related to owner/existing-repo, but not a fork because ...
     validations:
       required: false
 
@@ -87,11 +145,15 @@ body:
     attributes:
       label: Checklist
       options:
+        - label: I checked the catalog and did not find this exact project already listed
+          required: true
         - label: The repository or URL is publicly reachable without authentication
           required: true
-        - label: The repository is NOT a fork of an existing entry already in the list
+        - label: If I provided a GitHub repository, it uses owner/repo format and is not a full URL
           required: true
-        - label: The project is SAP-related (MCP server, AI skill, Claude plugin, or adjacent developer tool)
+        - label: I did not fill both GitHub repository and Non-GitHub URL unless the URL is only a display override
           required: true
-        - label: The repository has an open-source license
+        - label: The project is SAP-related and fits one of the catalog sections above
+          required: true
+        - label: The project has an open-source license or I provided license evidence above
           required: true

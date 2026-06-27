@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Search and filter a curated open-source catalog of SAP MCP servers, ABAP and ADT tools, SAP AI skills, Claude plugins, and developer tooling."
+    >
+    <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+    <meta name="author" content="Marian Zeis">
+    <meta name="theme-color" content="#0b6bcb">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="SAP AI Tools">
+    <meta property="og:title" content="SAP MCP Servers, AI Skills & Claude Plugins">
+    <meta
+      property="og:description"
+      content="Search and filter a curated open-source catalog of SAP MCP servers, ABAP and ADT tools, SAP AI skills, Claude plugins, and developer tooling."
+    >
+    <meta property="og:url" content="https://sap-ai-tools.marianzeis.de/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="SAP MCP Servers, AI Skills & Claude Plugins">
+    <meta
+      name="twitter:description"
+      content="Search and filter a curated open-source catalog of SAP MCP servers, ABAP and ADT tools, SAP AI skills, Claude plugins, and developer tooling."
+    >
+    <title>SAP MCP Servers, AI Skills & Claude Plugins | SAP AI Tools</title>
+    <link rel="canonical" href="https://sap-ai-tools.marianzeis.de/">
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://zeis.de/#person",
+            "name": "Marian Zeis",
+            "url": "https://zeis.de/"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://sap-ai-tools.marianzeis.de/#website",
+            "url": "https://sap-ai-tools.marianzeis.de/",
+            "name": "SAP AI Tools",
+            "description": "A curated open-source catalog of SAP MCP servers, SAP AI skills, Claude plugins, and adjacent developer tools.",
+            "creator": {
+              "@id": "https://zeis.de/#person"
+            },
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://sap-ai-tools.marianzeis.de/?q={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          },
+          {
+            "@type": "CollectionPage",
+            "@id": "https://sap-ai-tools.marianzeis.de/#webpage",
+            "url": "https://sap-ai-tools.marianzeis.de/",
+            "name": "SAP MCP Servers, AI Skills, and Claude Plugins",
+            "description": "Search and filter open-source SAP MCP servers, ABAP and ADT tools, SAP documentation servers, SAP AI skills, Claude plugins, and related developer tools.",
+            "isPartOf": {
+              "@id": "https://sap-ai-tools.marianzeis.de/#website"
+            },
+            "creator": {
+              "@id": "https://zeis.de/#person"
+            },
+            "about": [
+              "SAP MCP servers",
+              "ABAP MCP servers",
+              "SAP AI tools",
+              "SAP AI skills",
+              "Claude plugins for SAP",
+              "SAP developer tools"
+            ]
+          }
+        ]
+      }
+    </script>
+    <script>
+      try {
+        const theme = localStorage.getItem('sap-ai-tools-theme');
+        if (theme === 'dark' || theme === 'light') {
+          document.documentElement.dataset.theme = theme;
+        }
+      } catch (error) {
+        // Theme selection is optional; ignore storage errors.
+      }
+    </script>
+    <link rel="stylesheet" href="assets/site.css">
+    <script src="assets/site.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="brand" href="./" aria-label="SAP AI Tools home">
+          <span class="brand__mark" aria-hidden="true">SA</span>
+          <span>
+            <span class="brand__name">SAP AI Tools</span>
+            <span class="brand__tagline">MCP servers, skills, plugins, and developer tools</span>
+          </span>
+        </a>
+
+        <nav class="top-nav" aria-label="Primary links">
+          <a href="https://zeis.de">Marian Zeis</a>
+          <a href="https://github.com/marianfoo/sap-ai-mcp-servers">GitHub</a>
+          <a href="https://github.com/marianfoo/sap-ai-mcp-servers/blob/main/CHANGELOG.md">Changelog</a>
+          <a class="top-nav__cta" href="https://github.com/marianfoo/sap-ai-mcp-servers/issues/new?template=add-entry.yml">
+            Add entry
+          </a>
+          <button class="theme-toggle" type="button" data-action="theme-toggle" aria-label="Switch color theme">
+            <span class="theme-toggle__icon" aria-hidden="true"></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero__copy">
+          <p class="eyebrow">Open-source SAP MCP server catalog</p>
+          <h1 id="page-title">SAP MCP Servers, AI Skills, and Claude Plugins</h1>
+          <p>
+            Search a curated catalog of SAP AI developer tools for ABAP, ADT, CAP,
+            Fiori, UI5, OData, SAP documentation, SAP HANA, and integrations.
+            Filter by package type, category, license, stars, and recent updates.
+          </p>
+        </div>
+
+        <div class="stats-grid" aria-label="Catalog summary">
+          <div class="stat">
+            <span class="stat__label">Catalog</span>
+            <span class="stat__value" data-stat="total">-</span>
+            <span class="stat__hint">curated entries</span>
+          </div>
+          <div class="stat">
+            <span class="stat__label">Repos</span>
+            <span class="stat__value" data-stat="repos">-</span>
+            <span class="stat__hint">unique GitHub repos</span>
+          </div>
+          <div class="stat">
+            <span class="stat__label">Official SAP</span>
+            <span class="stat__value" data-stat="sap">-</span>
+            <span class="stat__hint">entries from SAP orgs</span>
+          </div>
+          <div class="stat">
+            <span class="stat__label">Activity</span>
+            <span class="stat__value" data-stat="recent">-</span>
+            <span class="stat__hint">updated in 90 days</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="package-strip" aria-labelledby="package-title">
+        <div>
+          <p class="section-kicker">Browse by package type</p>
+          <h2 id="package-title">Start with the kind of tool you need.</h2>
+        </div>
+        <div class="package-options" id="packageFilters"></div>
+      </section>
+
+      <section class="toolbar" aria-label="Result controls">
+        <div class="toolbar__summary">
+          <p class="results-count" id="resultsCount">Loading catalog...</p>
+          <div class="active-filters" id="activeFilters" aria-label="Active filters"></div>
+        </div>
+
+        <label class="sort-field">
+          <span>Sort</span>
+          <select id="sort">
+            <option value="recommended">Recommended</option>
+            <option value="stars-desc">Stars</option>
+            <option value="updated-desc">Recently updated</option>
+            <option value="name-asc">Name A-Z</option>
+            <option value="category-asc">Category</option>
+          </select>
+        </label>
+      </section>
+
+      <section class="catalog-shell" aria-label="Catalog browser">
+        <aside class="filters" aria-label="Filters">
+          <div class="filters__header">
+            <h2>Filters</h2>
+            <button class="button button--plain" type="button" data-action="clear">Clear</button>
+          </div>
+
+          <label class="search-field">
+            <span>Search</span>
+            <input
+              id="search"
+              name="search"
+              type="search"
+              autocomplete="off"
+              placeholder="Search catalog"
+            >
+          </label>
+
+          <details class="advanced-filters" id="advancedFilters" open>
+            <summary>More filters</summary>
+
+            <div class="filter-group" data-filter-group="source">
+              <div class="filter-group__title">Source</div>
+              <div class="filter-options" id="sourceFilters"></div>
+            </div>
+
+            <div class="filter-group" data-filter-group="signals">
+              <div class="filter-group__title">Signals</div>
+              <div class="filter-options" id="signalFilters"></div>
+            </div>
+
+            <label class="select-filter">
+              <span>Category</span>
+              <select id="categoryFilter" data-select-filter="category">
+                <option value="">All categories</option>
+              </select>
+            </label>
+
+            <label class="select-filter">
+              <span>License</span>
+              <select id="licenseFilter" data-select-filter="license">
+                <option value="">All licenses</option>
+              </select>
+            </label>
+          </details>
+        </aside>
+
+        <section class="results" aria-live="polite">
+          <div class="result-list" id="results"></div>
+          <div class="empty-state" id="emptyState" hidden>
+            <h2>No matching entries</h2>
+            <p>Try removing a filter or using a broader search term.</p>
+            <button class="button" type="button" data-action="clear">Reset filters</button>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span id="generatedAt">Generated catalog data.</span>
+      <span>
+        Created by <a href="https://zeis.de">Marian Zeis</a>.
+        Open-source SAP MCP server and AI tools metadata is refreshed from GitHub.
+      </span>
+    </footer>
+  </body>
+</html>

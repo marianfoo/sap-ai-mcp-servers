@@ -2,6 +2,11 @@
 
 Comprehensive list of SAP-related MCP servers, SAP AI development skills, and Claude plugin repositories.
 
+> [!TIP]
+> **Browse the interactive catalog:** [sap-ai-tools.marianzeis.de](https://sap-ai-tools.marianzeis.de/)
+>
+> Use the web UI for search, filters, sorting, package type colors, repository activity signals, and mobile-friendly browsing.
+
 **New repositories:** [CHANGELOG.md](CHANGELOG.md) — dates when entries were added to this list.
 
 > [!IMPORTANT]
