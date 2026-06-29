@@ -48,6 +48,14 @@
           "repo": "SAP/mdk-mcp-server",
           "purpose": "AI-assisted SAP Mobile Development Kit workflows.",
           "notes": "MDK-focused MCP server."
+        },
+        {
+          "type": "SAP",
+          "name": "ADT MCP Server",
+          "url": "https://help.sap.com/docs/abap-cloud/abap-development-tools-for-visual-studio-code/enabling-adt-mcp-server?locale=en-US",
+          "linkLabel": "SAP Help Portal",
+          "purpose": "Enables MCP clients to access ADT capabilities from ABAP Development Tools for Visual Studio Code.",
+          "notes": "Official SAP Help Portal setup documentation; no public GitHub repository."
         }
       ]
     },
