@@ -1,0 +1,84 @@
+{
+	"servers": {
+		"io.github.UI5/mcp-server": {
+			"type": "stdio",
+			"command": "npx",
+			"args": [
+				"--registry",
+				"https://registry.npmjs.org",
+				"@ui5/mcp-server@0.2.12"
+			],
+			"env": {
+				"UI5_MCP_SERVER_ALLOWED_DOMAINS": "${input:UI5_MCP_SERVER_ALLOWED_DOMAINS}",
+				"UI5_MCP_SERVER_RESPONSE_NO_STRUCTURED_CONTENT": "${input:UI5_MCP_SERVER_RESPONSE_NO_STRUCTURED_CONTENT}",
+				"UI5_MCP_SERVER_RESPONSE_NO_RESOURCES": "${input:UI5_MCP_SERVER_RESPONSE_NO_RESOURCES}",
+				"UI5_LOG_LVL": "${input:UI5_LOG_LVL}",
+				"UI5_DATA_DIR": "${input:UI5_DATA_DIR}"
+			},
+			"gallery": "https://api.mcp.github.com",
+			"version": "0.2.12"
+		},
+		"io.github.SAP/fiori-mcp-server": {
+			"type": "stdio",
+			"command": "npx",
+			"args": [
+				"--registry",
+				"https://registry.npmjs.org",
+				"@sap-ux/fiori-mcp-server@1.0.2"
+			],
+			"env": {
+				"LOG_LEVEL": "${input:LOG_LEVEL}",
+				"SAP_UX_FIORI_TOOLS_DISABLE_TELEMETRY": "${input:SAP_UX_FIORI_TOOLS_DISABLE_TELEMETRY}"
+			},
+			"gallery": "https://api.mcp.github.com",
+			"version": "1.0.2"
+		}
+	},
+	"inputs": [
+		{
+			"id": "UI5_MCP_SERVER_ALLOWED_DOMAINS",
+			"type": "promptString",
+			"description": "A comma-separated list of domains that are allowed to be used in various tools, for example: 'localhost, example.com, sub.example.com'. Set to an empty string to allow any domains. For wildcard subdomains, prefix the domain with a dot: '.example.com'. This will match 'www.example.com' but not 'example.com'.",
+			"password": false,
+			"default": "localhost, services.odata.org"
+		},
+		{
+			"id": "UI5_MCP_SERVER_RESPONSE_NO_STRUCTURED_CONTENT",
+			"type": "promptString",
+			"description": "Set to any value to disable structured content in the MCP server responses.",
+			"password": false
+		},
+		{
+			"id": "UI5_MCP_SERVER_RESPONSE_NO_RESOURCES",
+			"type": "promptString",
+			"description": "Set to any value to disable resources in the MCP server responses, see https://modelcontextprotocol.io/specification/2025-06-18/server/resource. This is useful for clients that do not support resources, see https://modelcontextprotocol.io/clients, such as Cursor or the Gemini CLI.",
+			"password": false
+		},
+		{
+			"id": "UI5_LOG_LVL",
+			"type": "promptString",
+			"description": "Internal log level (https://ui5.github.io/cli/stable/pages/Troubleshooting/#changing-the-log-level): 'silent', 'error', 'warn', 'info', 'perf', 'verbose' or 'silly'",
+			"password": false,
+			"default": "info"
+		},
+		{
+			"id": "UI5_DATA_DIR",
+			"type": "promptString",
+			"description": "Directory where the MCP server stores its data, such as cached API references. Defaults to the '.ui5' directory in the user's home directory.",
+			"password": false
+		},
+		{
+			"id": "LOG_LEVEL",
+			"type": "promptString",
+			"description": "Sets logger verbosity. Allowed values: 'off', 'error', 'warn', 'info', 'debug', 'verbose', 'silly'.",
+			"password": false,
+			"default": "error"
+		},
+		{
+			"id": "SAP_UX_FIORI_TOOLS_DISABLE_TELEMETRY",
+			"type": "promptString",
+			"description": "Set to 'true' to opt out of SAP Fiori tools usage analytics telemetry.",
+			"password": false
+		}
+	]
+}
