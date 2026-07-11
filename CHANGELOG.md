@@ -4,6 +4,10 @@ This file lists **only newly added repositories** (or other catalog entries with
 
 Dates use the commit date from `git log` on `data/catalog.json`.
 
+## 2026-07-11
+
+- [`Gixsy95/abap_wiki`](https://github.com/Gixsy95/abap_wiki) — abap_wiki, an agent-driven engine turning SAP S/4HANA custom ABAP objects into citable Markdown/Obsidian knowledge for humans and AI agents, added under Adjacent Tools
+
 ## 2026-06-26
 
 - [`arc-mcp/arc-1/.claude-plugin`](https://github.com/arc-mcp/arc-1/tree/main/.claude-plugin) — ARC-1 Claude Code Plugin, bundling the ARC-1 MCP server and SAP ABAP development skills for Claude Code

@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-11T06:45:30.255Z",
+  "generatedAt": "2026-07-11T19:01:37.171Z",
   "sourceCatalog": "data/catalog.json",
-  "repoCount": 86,
+  "repoCount": 87,
   "tokenUsed": true,
   "repoMetadata": {
     "1nbuc/mcp-integration-suite": {
@@ -480,7 +480,7 @@
       "exists": true,
       "fork": false,
       "parent": null,
-      "stars": 66,
+      "stars": 67,
       "lastChange": "2026-07-05T14:21:26Z",
       "archived": false,
       "license": "MIT",
@@ -514,6 +514,25 @@
         "JavaScript": 2821
       },
       "htmlUrl": "https://github.com/gavdilabs/cap-mcp-plugin"
+    },
+    "Gixsy95/abap_wiki": {
+      "repo": "Gixsy95/abap_wiki",
+      "source": "api",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": 28,
+      "lastChange": "2026-07-11T16:10:58Z",
+      "archived": false,
+      "license": "MIT",
+      "description": "Agent-driven SAP/ABAP knowledge base engine that turns S/4HANA custom objects into citable Markdown/Obsidian context for humans and AI agents.",
+      "primaryLanguage": "Python",
+      "languages": {
+        "Python": 812312,
+        "Shell": 7120,
+        "PowerShell": 6013
+      },
+      "htmlUrl": "https://github.com/Gixsy95/abap_wiki"
     },
     "gregorwolf/cloud-alm-itsm-mcp": {
       "repo": "gregorwolf/cloud-alm-itsm-mcp",
@@ -682,7 +701,7 @@
       "exists": true,
       "fork": false,
       "parent": null,
-      "stars": 94,
+      "stars": 95,
       "lastChange": "2026-07-09T22:11:16Z",
       "archived": false,
       "license": "Apache-2.0",
@@ -869,13 +888,13 @@
       "fork": false,
       "parent": null,
       "stars": 333,
-      "lastChange": "2026-07-09T11:37:48Z",
+      "lastChange": "2026-07-11T08:16:33Z",
       "archived": false,
       "license": "MIT",
       "description": "VS Code-based Agentic AI Platform for SAP ABAP Development",
       "primaryLanguage": "TypeScript",
       "languages": {
-        "TypeScript": 3672728,
+        "TypeScript": 3730884,
         "JavaScript": 113267,
         "HTML": 71326,
         "ABAP": 11300,
@@ -1386,7 +1405,7 @@
       "exists": true,
       "fork": false,
       "parent": null,
-      "stars": 151,
+      "stars": 152,
       "lastChange": "2026-07-10T16:53:47Z",
       "archived": false,
       "license": "Apache-2.0",
@@ -1495,7 +1514,7 @@
       "exists": true,
       "fork": false,
       "parent": null,
-      "stars": 89,
+      "stars": 90,
       "lastChange": "2026-07-07T14:34:45Z",
       "archived": false,
       "license": "Apache-2.0",

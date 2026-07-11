@@ -787,6 +787,13 @@
       "repo": "SAP-samples/teched2025-CA261",
       "purpose": "Hands-on sample for AI + Fiori + MCP workflows.",
       "notes": "Reference project, not a generic MCP server."
+    },
+    {
+      "type": "Community SAP",
+      "name": "abap_wiki",
+      "repo": "Gixsy95/abap_wiki",
+      "purpose": "Agent-driven engine that turns SAP S/4HANA custom ABAP objects into citable Markdown/Obsidian knowledge for humans and AI agents.",
+      "notes": "Uses an adversarial verification gate; optional live SAP access via MCP."
     }
   ],
   "referenceLinks": [
