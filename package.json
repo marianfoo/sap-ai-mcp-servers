@@ -5,8 +5,19 @@
   "description": "Generated SAP MCP server, SAP AI skills, and Claude plugins overview",
   "scripts": {
     "validate:catalog": "node scripts/validate-catalog.mjs",
+    "build:site": "esbuild assets/ui5-components.js --bundle --format=esm --target=es2022 --minify --outfile=assets/ui5-components.bundle.js",
     "update:data": "npm run validate:catalog && node scripts/enrich-data.mjs",
     "build:readme": "npm run validate:catalog && node scripts/render-readme.mjs",
-    "build": "npm run validate:catalog && node scripts/enrich-data.mjs && node scripts/render-readme.mjs"
+    "build": "npm run validate:catalog && npm run build:site && node scripts/enrich-data.mjs && node scripts/render-readme.mjs",
+    "preview": "npm run build:site && http-server . -a 127.0.0.1 -p 4173 -c-1"
+  },
+  "dependencies": {
+    "@ui5/webcomponents": "2.24.0",
+    "@ui5/webcomponents-fiori": "2.24.0",
+    "@ui5/webcomponents-icons": "2.24.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.1",
+    "http-server": "14.1.1"
   }
 }

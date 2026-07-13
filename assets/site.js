@@ -10,7 +10,8 @@ const state = {
     signals: new Set()
   },
   search: '',
-  sort: 'recommended'
+  sort: 'recommended',
+  advancedFiltersExpanded: null
 };
 
 const packageLabels = {
@@ -21,13 +22,14 @@ const packageLabels = {
 };
 
 const signalOptions = [
-  { value: 'recent30', label: 'Updated in 30 days' },
-  { value: 'recent90', label: 'Updated in 90 days' },
+  { value: 'recent30', label: 'Active 30 days' },
+  { value: 'recent90', label: 'Active 90 days' },
   { value: 'stars50', label: '50+ stars' },
   { value: 'stars10', label: '10+ stars' }
 ];
 
 const validSignalValues = new Set(signalOptions.map((option) => option.value));
+const validSortValues = new Set(['recommended', 'added-desc', 'stars-desc', 'updated-desc', 'name-asc', 'category-asc']);
 const SECONDARY_LANGUAGE_MIN_PERCENT = 20;
 const SCRIPT_LANGUAGE_FILTER = 'JavaScript / TypeScript';
 
@@ -55,7 +57,12 @@ function cacheElements() {
   els.languageFilter = document.querySelector('#languageFilter');
   els.licenseFilter = document.querySelector('#licenseFilter');
   els.advancedFilters = document.querySelector('#advancedFilters');
+  els.filterToggle = document.querySelector('#filterToggle');
+  els.resetButton = document.querySelector('#resetButton');
   els.themeToggle = document.querySelector('[data-action="theme-toggle"]');
+  els.appShell = document.querySelector('#appShell');
+  els.snappedResultsCount = document.querySelector('#snappedResultsCount');
+  els.resultsRegion = document.querySelector('.results');
 }
 
 function bindEvents() {
@@ -70,20 +77,6 @@ function bindEvents() {
   });
 
   document.addEventListener('change', (event) => {
-    const input = event.target.closest('[data-filter]');
-    if (!input) return;
-
-    const group = input.dataset.filter;
-    const value = input.value;
-    if (input.checked) {
-      state.filters[group].add(value);
-    } else {
-      state.filters[group].delete(value);
-    }
-    applyState();
-  });
-
-  document.addEventListener('change', (event) => {
     const select = event.target.closest('[data-select-filter]');
     if (!select) return;
 
@@ -94,9 +87,41 @@ function bindEvents() {
   });
 
   document.addEventListener('click', (event) => {
+    const navigationItem = event.target.closest('[data-href]');
+    if (navigationItem) {
+      window.open(navigationItem.dataset.href, '_blank', 'noopener,noreferrer');
+      return;
+    }
+
+    const entryHeader = event.target.closest('[data-entry-url]');
+    if (entryHeader) {
+      window.open(entryHeader.dataset.entryUrl, '_blank', 'noopener,noreferrer');
+      return;
+    }
+
     const themeButton = event.target.closest('[data-action="theme-toggle"]');
     if (themeButton) {
       toggleTheme();
+      return;
+    }
+
+    const filterToggle = event.target.closest('[data-action="toggle-filters"]');
+    if (filterToggle) {
+      state.advancedFiltersExpanded = els.advancedFilters.hidden;
+      els.advancedFilters.hidden = !state.advancedFiltersExpanded;
+      updateFilterToggle();
+      return;
+    }
+
+    const toggle = event.target.closest('ui5-toggle-button[data-filter]');
+    if (toggle) {
+      const group = toggle.dataset.filter;
+      if (toggle.pressed) {
+        state.filters[group].add(toggle.getAttribute('value'));
+      } else {
+        state.filters[group].delete(toggle.getAttribute('value'));
+      }
+      applyState();
       return;
     }
 
@@ -116,11 +141,15 @@ function bindEvents() {
     } else {
       state.filters[group].delete(value);
       const input = document.querySelector(`[data-filter="${group}"][value="${cssEscape(value)}"]`);
-      if (input) input.checked = false;
+      if (input) input.pressed = false;
       const select = document.querySelector(`[data-select-filter="${group}"]`);
       if (select) select.value = '';
     }
     applyState();
+  });
+
+  els.appShell.addEventListener('logo-click', () => {
+    window.location.href = './';
   });
 
   window.addEventListener('resize', () => setResponsiveFilterState());
@@ -147,6 +176,7 @@ function initThemeToggle() {
 function toggleTheme() {
   const nextTheme = getResolvedTheme() === 'dark' ? 'light' : 'dark';
   document.documentElement.dataset.theme = nextTheme;
+  document.dispatchEvent(new CustomEvent('catalog-theme-change', { detail: { theme: nextTheme } }));
   try {
     localStorage.setItem('sap-ai-tools-theme', nextTheme);
   } catch (error) {
@@ -167,7 +197,9 @@ function updateThemeToggle() {
   const theme = getResolvedTheme();
   const nextTheme = theme === 'dark' ? 'light' : 'dark';
   els.themeToggle.dataset.themeState = theme;
-  els.themeToggle.setAttribute('aria-label', `Switch to ${nextTheme} mode`);
+  els.themeToggle.icon = theme === 'dark' ? 'lightbulb' : 'dark-mode';
+  els.themeToggle.text = theme === 'dark' ? 'Morning Horizon' : 'Evening Horizon';
+  els.themeToggle.setAttribute('aria-label', `Switch to ${nextTheme === 'dark' ? 'Evening' : 'Morning'} Horizon`);
 }
 
 async function loadCatalog() {
@@ -183,12 +215,12 @@ async function loadCatalog() {
 
     const [catalog, enriched] = await Promise.all([catalogRes.json(), enrichedRes.json()]);
     state.entries = flattenCatalog(catalog, enriched);
-    updateStats(enriched);
     renderFilterControls();
     readUrlState();
     syncControls();
     setResponsiveFilterState();
     applyState({ updateUrl: false });
+    els.resultsRegion.setAttribute('aria-busy', 'false');
   } catch (error) {
     els.resultsCount.textContent = 'Catalog could not be loaded.';
     els.results.innerHTML = `
@@ -342,23 +374,6 @@ function resolveLanguageFilters(repoMeta, primaryLanguage) {
   return [...filters];
 }
 
-function updateStats(enriched) {
-  const total = state.entries.length;
-  const repoCount = new Set(state.entries.map((entry) => entry.repo).filter(Boolean)).size;
-  const sapCount = state.entries.filter((entry) => entry.type === 'SAP').length;
-  const recentCount = state.entries.filter((entry) => isWithinDays(entry.lastChangeMs, 90)).length;
-
-  setStat('total', total);
-  setStat('repos', repoCount || enriched.repoCount || 0);
-  setStat('sap', sapCount);
-  setStat('recent', recentCount);
-}
-
-function setStat(name, value) {
-  const el = document.querySelector(`[data-stat="${name}"]`);
-  if (el) el.textContent = formatNumber(value);
-}
-
 function renderFilterControls() {
   renderPackageOptions(els.packageFilters, countValues(state.entries, 'packageType'));
   renderOptions(els.sourceFilters, 'source', countValues(state.entries, 'type'), sourceOrder);
@@ -394,30 +409,34 @@ function renderPackageOptions(container, counts) {
 function renderSelectOptions(select, counts, sorter, allLabel) {
   const items = [...counts.entries()].sort(sorter);
   select.innerHTML = [
-    `<option value="">${escapeHtml(allLabel)}</option>`,
-    ...items.map(([value, count]) => `<option value="${escapeHtml(value)}">${escapeHtml(value)} (${formatNumber(count)})</option>`)
+    `<ui5-option value="">${escapeHtml(allLabel)}</ui5-option>`,
+    ...items.map(([value, count]) => `<ui5-option value="${escapeHtml(value)}">${escapeHtml(value)} (${formatNumber(count)})</ui5-option>`)
   ].join('');
 }
 
 function optionMarkup(group, value, label, count) {
   const id = `${group}-${slugify(value)}`;
   return `
-    <label class="check-option" for="${id}">
-      <input id="${id}" type="checkbox" data-filter="${group}" value="${escapeHtml(value)}">
-      <span class="check-option__label">${escapeHtml(label)}</span>
-      <span class="check-option__count">${formatNumber(count)}</span>
-    </label>
+    <ui5-toggle-button
+      id="${id}"
+      design="Transparent"
+      data-filter="${group}"
+      value="${escapeHtml(value)}"
+    >${escapeHtml(label)} (${formatNumber(count)})</ui5-toggle-button>
   `;
 }
 
 function packageOptionMarkup(value, count) {
   const id = `package-${slugify(value)}`;
   return `
-    <label class="package-option" for="${id}" data-package="${escapeHtml(value)}">
-      <input id="${id}" type="checkbox" data-filter="package" value="${escapeHtml(value)}">
-      <span class="package-option__label">${escapeHtml(value)}</span>
-      <span class="package-option__count">${formatNumber(count)} entries</span>
-    </label>
+    <ui5-toggle-button
+      id="${id}"
+      class="package-option"
+      design="Transparent"
+      data-package="${escapeHtml(value)}"
+      data-filter="package"
+      value="${escapeHtml(value)}"
+    >${escapeHtml(value)} (${formatNumber(count)})</ui5-toggle-button>
   `;
 }
 
@@ -565,63 +584,77 @@ function renderActiveFilters() {
   }
 
   els.activeFilters.innerHTML = chips.join('');
+  if (els.resetButton) els.resetButton.hidden = chips.length === 0;
 }
 
 function chipMarkup(group, value, label) {
   return `
-    <button class="active-chip" type="button" data-remove-filter="${escapeHtml(`${group}:${value}`)}">
+    <ui5-tag interactive design="Set2" color-scheme="7" hide-state-icon data-remove-filter="${escapeHtml(`${group}:${value}`)}">
+      <ui5-icon slot="icon" name="decline"></ui5-icon>
       ${escapeHtml(label)}
-    </button>
+    </ui5-tag>
   `;
 }
 
 function renderResults() {
   const total = state.entries.length;
   const count = state.filtered.length;
-  els.resultsCount.textContent = `${formatNumber(count)} of ${formatNumber(total)} entries`;
+  const countLabel = `${formatNumber(count)} of ${formatNumber(total)} entries`;
+  els.resultsCount.textContent = countLabel;
+  els.snappedResultsCount.textContent = countLabel;
   els.emptyState.hidden = count > 0;
   els.results.innerHTML = state.filtered.map(entryCardMarkup).join('');
 }
 
 function entryCardMarkup(entry) {
-  const licenseClass = entry.license === 'NO LICENSE FOUND' ? ' badge--license-missing' : '';
-  const typeClass = entry.type === 'SAP' ? 'badge--sap' : 'badge--community';
   const repoHref = escapeHtml(entry.url);
   const repoLabel = escapeHtml(entry.linkLabel);
   const notes = entry.notes ? `<p class="entry-notes">${escapeHtml(entry.notes)}</p>` : '';
-  const languageBadge = entry.primaryLanguage ? `<span class="badge badge--language">${escapeHtml(entry.primaryLanguage)}</span>` : '';
+  const packageStyle = {
+    'MCP Server': { icon: 'source-code', color: '6' },
+    'AI Skill': { icon: 'lightbulb', color: '8' },
+    'Claude Plugin': { icon: 'palette', color: '9' },
+    'Adjacent Tool': { icon: 'world', color: '10' }
+  }[entry.packageType] || { icon: 'source-code', color: '6' };
+  const languageTag = entry.primaryLanguage
+    ? `<ui5-tag design="Set2" color-scheme="5" hide-state-icon>${escapeHtml(entry.primaryLanguage)}</ui5-tag>`
+    : '';
+  const licenseDesign = entry.license === 'NO LICENSE FOUND' ? 'Negative' : 'Neutral';
 
   return `
-    <a class="entry-card" href="${repoHref}" target="_blank" rel="noreferrer" data-package="${escapeHtml(entry.packageType)}">
-      <div class="entry-card__body">
-        <div class="entry-card__top">
-          <div class="entry-title">
-            <h2>${escapeHtml(entry.name)}</h2>
-            <span class="entry-repo">${repoLabel}</span>
-          </div>
-        </div>
-
+    <ui5-card class="entry-card" data-package="${escapeHtml(entry.packageType)}">
+      <ui5-card-header
+        slot="header"
+        title-text="${escapeHtml(entry.name)}"
+        subtitle-text="${repoLabel}"
+        additional-text="${escapeHtml(formatStars(entry.stars))}"
+        interactive
+        data-entry-url="${repoHref}"
+      >
+        <ui5-avatar slot="avatar" icon="${packageStyle.icon}" shape="Square" color-scheme="Accent${packageStyle.color}"></ui5-avatar>
+      </ui5-card-header>
+      <div class="entry-card__content">
         <p class="entry-purpose">${escapeHtml(entry.purpose)}</p>
         ${notes}
-
-        <div class="entry-meta">
-          <span class="badge badge--package">${escapeHtml(entry.packageType)}</span>
-          <span class="badge ${typeClass}">${escapeHtml(entry.type)}</span>
-          ${languageBadge}
-          <span class="badge">${escapeHtml(entry.category)}</span>
-          <span class="badge badge--license${licenseClass}">${escapeHtml(entry.license)}</span>
-          <span class="metric">${formatStars(entry.stars)}</span>
-          <span class="metric">Added ${formatDate(entry.addedAt)}</span>
-          <span class="metric">Updated ${formatDate(entry.lastChange)}</span>
+        <div class="entry-tags">
+          <ui5-tag design="Set2" color-scheme="${packageStyle.color}" hide-state-icon>${escapeHtml(entry.packageType)}</ui5-tag>
+          <ui5-tag design="Set2" color-scheme="7" hide-state-icon>${escapeHtml(entry.type)}</ui5-tag>
+          ${languageTag}
+          <ui5-tag design="${licenseDesign}" hide-state-icon>${escapeHtml(entry.license)}</ui5-tag>
+        </div>
+        <div class="entry-metrics">
+          <span class="entry-metric"><ui5-icon name="calendar"></ui5-icon><span>Added ${formatDate(entry.addedAt)}</span></span>
+          <span class="entry-metric"><ui5-icon name="activities"></ui5-icon><span>Updated ${formatDate(entry.lastChange)}</span></span>
         </div>
       </div>
-    </a>
+    </ui5-card>
   `;
 }
 
 function resetFilters() {
   state.search = '';
   state.sort = 'recommended';
+  state.advancedFiltersExpanded = null;
   for (const values of Object.values(state.filters)) {
     values.clear();
   }
@@ -634,7 +667,7 @@ function syncControls() {
   els.search.value = state.search;
   els.sort.value = state.sort;
   for (const input of document.querySelectorAll('[data-filter]')) {
-    input.checked = state.filters[input.dataset.filter].has(input.value);
+    input.pressed = state.filters[input.dataset.filter].has(input.getAttribute('value'));
   }
   for (const select of document.querySelectorAll('[data-select-filter]')) {
     const group = select.dataset.selectFilter;
@@ -645,7 +678,7 @@ function syncControls() {
 function readUrlState() {
   const params = new URLSearchParams(window.location.search);
   state.search = params.get('q') || '';
-  state.sort = params.get('sort') || 'recommended';
+  state.sort = validSortValues.has(params.get('sort')) ? params.get('sort') : 'recommended';
   for (const values of Object.values(state.filters)) {
     values.clear();
   }
@@ -695,11 +728,19 @@ function setResponsiveFilterState() {
     state.filters.language.size > 0 ||
     state.filters.license.size > 0;
 
-  if (window.matchMedia('(max-width: 1100px)').matches) {
-    els.advancedFilters.open = hasAdvancedFilters;
-  } else {
-    els.advancedFilters.open = true;
-  }
+  const expanded = state.advancedFiltersExpanded ?? hasAdvancedFilters;
+  els.advancedFilters.hidden = !expanded;
+  updateFilterToggle();
+}
+
+function updateFilterToggle() {
+  if (!els.filterToggle) return;
+  const expanded = !els.advancedFilters.hidden;
+  const activeAdvancedCount = ['source', 'signals', 'category', 'language', 'license']
+    .reduce((count, group) => count + state.filters[group].size, 0);
+  const activeSuffix = activeAdvancedCount > 0 ? ` (${activeAdvancedCount})` : '';
+  els.filterToggle.textContent = expanded ? 'Hide filters' : `More filters${activeSuffix}`;
+  els.filterToggle.setAttribute('aria-expanded', String(expanded));
 }
 
 function isWithinDays(timestamp, days) {

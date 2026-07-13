@@ -87,6 +87,7 @@
       }
     </script>
     <link rel="stylesheet" href="assets/site.css">
+    <script type="module" src="assets/ui5-components.bundle.js"></script>
     <script src="assets/site.js" defer></script>
     <script>
       !function(t,e){var o,n,p,r;e.__SV||(window.posthog&&window.posthog.__loaded)||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="xi Si init Ni ji pr qi Ui $i capture calculateEventProperties Zi register register_once register_for_session unregister unregister_for_session Yi getFeatureFlag getFeatureFlagPayload getFeatureFlagResult isFeatureEnabled reloadFeatureFlags updateFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey displaySurvey cancelPendingSurvey canRenderSurvey canRenderSurveyAsync Ki identify setPersonProperties unsetPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags reset reset setIdentity clearIdentity get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException addExceptionStep captureLog startExceptionAutocapture stopExceptionAutocapture loadToolbar get_property getSessionProperty Qi Wi createPersonProfile setInternalOrTestUser Ji Fi tn opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing get_explicit_consent_status is_capturing clear_opt_in_out_capturing zi debug mr it getPageViewId captureTraceFeedback captureTraceMetric Ri".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
@@ -98,164 +99,140 @@
     </script>
   </head>
   <body>
-    <header class="site-header">
-      <div class="site-header__inner">
-        <a class="brand" href="./" aria-label="SAP AI Tools home">
-          <span class="brand__mark" aria-hidden="true">SA</span>
-          <span>
-            <span class="brand__name">SAP AI Tools</span>
-            <span class="brand__tagline">MCP servers, skills, plugins, and developer tools</span>
-          </span>
-        </a>
+    <ui5-shellbar
+      id="appShell"
+      primary-title="SAP AI Tools"
+      secondary-title="MCP servers, skills, plugins, and developer tools"
+      aria-label="SAP AI Tools navigation"
+    >
+      <ui5-avatar slot="logo" initials="SA" shape="Square" color-scheme="Accent6"></ui5-avatar>
+      <ui5-shellbar-item
+        icon="source-code"
+        text="GitHub"
+        data-href="https://github.com/marianfoo/sap-ai-mcp-servers"
+      ></ui5-shellbar-item>
+      <ui5-shellbar-item
+        icon="activities"
+        text="Changelog"
+        data-href="https://github.com/marianfoo/sap-ai-mcp-servers/blob/main/CHANGELOG.md"
+      ></ui5-shellbar-item>
+      <ui5-shellbar-item
+        icon="add"
+        text="Suggest a tool"
+        data-href="https://github.com/marianfoo/sap-ai-mcp-servers/issues/new?template=add-entry.yml"
+      ></ui5-shellbar-item>
+      <ui5-shellbar-item
+        id="themeToggle"
+        icon="dark-mode"
+        text="Evening Horizon"
+        data-action="theme-toggle"
+      ></ui5-shellbar-item>
+    </ui5-shellbar>
 
-        <nav class="top-nav" aria-label="Primary links">
-          <a href="https://zeis.de">Marian Zeis</a>
-          <a href="https://github.com/marianfoo/sap-ai-mcp-servers">GitHub</a>
-          <a href="https://github.com/marianfoo/sap-ai-mcp-servers/blob/main/CHANGELOG.md">Changelog</a>
-          <a class="top-nav__cta" href="https://github.com/marianfoo/sap-ai-mcp-servers/issues/new?template=add-entry.yml">
-            Add entry
-          </a>
-          <button class="theme-toggle" type="button" data-action="theme-toggle" aria-label="Switch color theme">
-            <span class="theme-toggle__icon" aria-hidden="true"></span>
-          </button>
-        </nav>
-      </div>
-    </header>
-
-    <main>
-      <section class="hero" aria-labelledby="page-title">
-        <div class="hero__copy">
-          <p class="eyebrow">Open-source SAP MCP server catalog</p>
-          <h1 id="page-title">SAP MCP Servers, AI Skills, and Claude Plugins</h1>
-          <p>
-            Search a curated catalog of SAP AI developer tools for ABAP, ADT, CAP,
-            Fiori, UI5, OData, SAP documentation, SAP HANA, and integrations.
-            Filter by package type, category, language, license, stars, and recent updates.
-          </p>
+    <ui5-dynamic-page id="catalogPage" hide-pin-button>
+      <ui5-dynamic-page-title slot="titleArea">
+        <div class="page-heading" slot="heading">
+          <ui5-title id="page-title" level="H1" size="H2">SAP AI Tool Catalog</ui5-title>
         </div>
+        <ui5-title slot="snappedHeading" level="H1" size="H4">SAP AI Tool Catalog</ui5-title>
+        <ui5-title slot="snappedTitleOnMobile" level="H1" size="H5">SAP AI Tools</ui5-title>
+        <ui5-text class="page-subtitle" slot="subheading">
+          Open-source MCP servers, AI skills, plugins, and developer tools for the SAP ecosystem.
+        </ui5-text>
+        <ui5-text id="snappedResultsCount" slot="snappedSubheading">Loading catalog...</ui5-text>
+      </ui5-dynamic-page-title>
 
-        <div class="stats-grid" aria-label="Catalog summary">
-          <div class="stat">
-            <span class="stat__label">Catalog</span>
-            <span class="stat__value" data-stat="total">-</span>
-            <span class="stat__hint">curated entries</span>
+      <ui5-dynamic-page-header slot="headerArea" accessible-name="Catalog filters">
+        <section class="filter-bar" aria-label="Search and filter the catalog">
+          <div class="primary-filters">
+            <div class="filter-field filter-field--search">
+              <ui5-label for="search">Search</ui5-label>
+              <ui5-input
+                id="search"
+                name="search"
+                type="Text"
+                placeholder="Search tools, repositories, and capabilities"
+                show-clear-icon
+              ></ui5-input>
+            </div>
+            <div class="filter-field filter-field--packages">
+              <ui5-label>Package type</ui5-label>
+              <div class="package-options" id="packageFilters"></div>
+            </div>
           </div>
-          <div class="stat">
-            <span class="stat__label">Repos</span>
-            <span class="stat__value" data-stat="repos">-</span>
-            <span class="stat__hint">unique GitHub repos</span>
-          </div>
-          <div class="stat">
-            <span class="stat__label">Official SAP</span>
-            <span class="stat__value" data-stat="sap">-</span>
-            <span class="stat__hint">entries from SAP orgs</span>
-          </div>
-          <div class="stat">
-            <span class="stat__label">Activity</span>
-            <span class="stat__value" data-stat="recent">-</span>
-            <span class="stat__hint">updated in 90 days</span>
-          </div>
-        </div>
-      </section>
 
-      <section class="package-strip" aria-labelledby="package-title">
-        <div>
-          <p class="section-kicker">Browse by package type</p>
-          <h2 id="package-title">Start with the kind of tool you need.</h2>
-        </div>
-        <div class="package-options" id="packageFilters"></div>
-      </section>
+          <div class="filter-bar__actions">
+            <ui5-button id="filterToggle" icon="filter" design="Transparent" data-action="toggle-filters">
+              More filters
+            </ui5-button>
+            <ui5-button id="resetButton" icon="reset" design="Transparent" data-action="clear" hidden>Reset</ui5-button>
+          </div>
 
-      <section class="toolbar" aria-label="Result controls">
-        <div class="toolbar__summary">
-          <p class="results-count" id="resultsCount">Loading catalog...</p>
+          <div class="advanced-filter-panel" id="advancedFilters" hidden>
+            <div class="advanced-filters">
+              <div class="filter-field">
+                <ui5-label>Source</ui5-label>
+                <div class="filter-options" id="sourceFilters"></div>
+              </div>
+              <div class="filter-field filter-field--signals">
+                <ui5-label>Signals</ui5-label>
+                <div class="filter-options" id="signalFilters"></div>
+              </div>
+              <div class="filter-field">
+                <ui5-label for="categoryFilter">Category</ui5-label>
+                <ui5-select id="categoryFilter" data-select-filter="category" value=""></ui5-select>
+              </div>
+              <div class="filter-field">
+                <ui5-label for="languageFilter">Language</ui5-label>
+                <ui5-select id="languageFilter" data-select-filter="language" value=""></ui5-select>
+              </div>
+              <div class="filter-field">
+                <ui5-label for="licenseFilter">License</ui5-label>
+                <ui5-select id="licenseFilter" data-select-filter="license" value=""></ui5-select>
+              </div>
+            </div>
+          </div>
+
           <div class="active-filters" id="activeFilters" aria-label="Active filters"></div>
-        </div>
-
-        <label class="sort-field">
-          <span>Sort</span>
-          <select id="sort">
-            <option value="recommended">Recommended</option>
-            <option value="added-desc">Recently added</option>
-            <option value="stars-desc">Stars</option>
-            <option value="updated-desc">Recently updated</option>
-            <option value="name-asc">Name A-Z</option>
-            <option value="category-asc">Category</option>
-          </select>
-        </label>
-      </section>
-
-      <section class="catalog-shell" aria-label="Catalog browser">
-        <aside class="filters" aria-label="Filters">
-          <div class="filters__header">
-            <h2>Filters</h2>
-            <button class="button button--plain" type="button" data-action="clear">Clear</button>
-          </div>
-
-          <label class="search-field">
-            <span>Search</span>
-            <input
-              id="search"
-              name="search"
-              type="search"
-              autocomplete="off"
-              placeholder="Search catalog"
-            >
-          </label>
-
-          <details class="advanced-filters" id="advancedFilters" open>
-            <summary>More filters</summary>
-
-            <div class="filter-group" data-filter-group="source">
-              <div class="filter-group__title">Source</div>
-              <div class="filter-options" id="sourceFilters"></div>
-            </div>
-
-            <div class="filter-group" data-filter-group="signals">
-              <div class="filter-group__title">Signals</div>
-              <div class="filter-options" id="signalFilters"></div>
-            </div>
-
-            <label class="select-filter">
-              <span>Category</span>
-              <select id="categoryFilter" data-select-filter="category">
-                <option value="">All categories</option>
-              </select>
-            </label>
-
-            <label class="select-filter">
-              <span>Language</span>
-              <select id="languageFilter" data-select-filter="language">
-                <option value="">All languages</option>
-              </select>
-            </label>
-
-            <label class="select-filter">
-              <span>License</span>
-              <select id="licenseFilter" data-select-filter="license">
-                <option value="">All licenses</option>
-              </select>
-            </label>
-          </details>
-        </aside>
-
-        <section class="results" aria-live="polite">
-          <div class="result-list" id="results"></div>
-          <div class="empty-state" id="emptyState" hidden>
-            <h2>No matching entries</h2>
-            <p>Try removing a filter or using a broader search term.</p>
-            <button class="button" type="button" data-action="clear">Reset filters</button>
-          </div>
         </section>
-      </section>
-    </main>
+      </ui5-dynamic-page-header>
 
-    <footer class="site-footer">
-      <span id="generatedAt">Generated catalog data.</span>
-      <span>
-        Created by <a href="https://zeis.de">Marian Zeis</a>.
-        Open-source SAP MCP server and AI tools metadata is refreshed from GitHub.
-      </span>
-    </footer>
+      <main class="catalog-content" aria-labelledby="results-title">
+        <ui5-toolbar class="results-toolbar" align-content="Center">
+          <ui5-title id="results-title" level="H2" size="H4">Tools</ui5-title>
+          <ui5-text id="resultsCount">Loading catalog...</ui5-text>
+          <ui5-toolbar-spacer></ui5-toolbar-spacer>
+          <ui5-label for="sort">Sort by</ui5-label>
+          <ui5-select id="sort" value="recommended" accessible-name="Sort catalog">
+            <ui5-option value="recommended">Recommended</ui5-option>
+            <ui5-option value="added-desc">Recently added</ui5-option>
+            <ui5-option value="stars-desc">Stars</ui5-option>
+            <ui5-option value="updated-desc">Recently updated</ui5-option>
+            <ui5-option value="name-asc">Name A–Z</ui5-option>
+            <ui5-option value="category-asc">Category</ui5-option>
+          </ui5-select>
+        </ui5-toolbar>
+
+        <section class="results" aria-live="polite" aria-busy="true">
+          <div class="result-grid" id="results"></div>
+          <ui5-illustrated-message
+            id="emptyState"
+            name="NoData"
+            title-text="No matching tools"
+            subtitle-text="Try removing a filter or using a broader search term."
+            hidden
+          >
+            <ui5-button icon="reset" data-action="clear">Reset filters</ui5-button>
+          </ui5-illustrated-message>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <span id="generatedAt">Generated catalog data.</span>
+        <span>
+          Curated by <a href="https://zeis.de">Marian Zeis</a> · Metadata refreshed from GitHub.
+        </span>
+      </footer>
+    </ui5-dynamic-page>
   </body>
 </html>

@@ -107,7 +107,11 @@ The overrides are applied as the **final step** of `enrich-data.mjs`, after all 
 - `npm run build:readme`
   - Validates the catalog, then renders README from template + JSON.
 - `npm run build`
-  - Full refresh (`update:data` + `build:readme`).
+  - Full refresh (`build:site` + `update:data` + `build:readme`).
+- `npm run build:site`
+  - Bundles the UI5 Web Components used by the catalog website into `assets/ui5-components.bundle.js`.
+- `npm run preview`
+  - Rebuilds the website bundle and serves the repository locally at `http://127.0.0.1:4173`.
 
 ## Local Setup
 
