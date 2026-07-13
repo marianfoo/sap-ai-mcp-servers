@@ -24,86 +24,88 @@ Know a project that belongs here? [Open an issue using the "Add new entry" templ
 
 ## Navigation
 
-- [SAP MCP Server](#sap-mcp-server)
-- [SAP Skills](#sap-skills)
-- [SAP Claude Plugins](#sap-claude-plugins)
-- [SAP Community MCP Servers](#sap-community-mcp-servers)
-  - [Community SAP MCP Server](#community-sap-mcp-server)
-  - [SAP Docs MCP Server](#sap-docs-mcp-server)
-  - [ABAP and ADT MCP Server](#abap-and-adt-mcp-server)
-  - [SAP Integration](#sap-integration)
-  - [OData MCP Proxy ecosystem](#odata-mcp-proxy-ecosystem)
-  - [SAP Datasphere](#sap-datasphere)
-  - [SAP OData Gateway Graph MCP Server](#sap-odata-gateway-graph-mcp-server)
-  - [SAP GUI](#sap-gui)
-  - [SAP HANA](#sap-hana)
-  - [SAP Cloud ALM](#sap-cloud-alm)
-  - [SAP AI Skills and Prompt Packs](#sap-ai-skills-and-prompt-packs)
-  - [SAP Claude Plugins and Skills](#sap-claude-plugins-and-skills)
-  - [Adjacent SAP AI Developer Tools](#adjacent-sap-ai-developer-tools)
+- **Official SAP**
+  - [Official SAP MCP Servers](#official-sap-mcp-servers)
+  - [Official SAP AI Skills](#official-sap-ai-skills)
+  - [Official SAP Claude Plugins](#official-sap-claude-plugins)
+- **Community MCP Servers**
+  - [ABAP and ADT](#abap-and-adt)
+  - [SAP Docs and Knowledge](#sap-docs-and-knowledge)
+  - [OData, Gateway and Graph](#odata-gateway-and-graph)
+  - [SAP Integration (CPI / PI)](#sap-integration-cpi--pi)
+  - [Data, Analytics and HANA](#data-analytics-and-hana)
+  - [SAP GUI Automation](#sap-gui-automation)
+  - [Operations, Monitoring and Lifecycle](#operations-monitoring-and-lifecycle)
+  - [Security, HR and Other SAP MCP Servers](#security-hr-and-other-sap-mcp-servers)
+- **Community AI Skills and Plugins**
+  - [Community SAP AI Skills](#community-sap-ai-skills)
+  - [Community SAP Claude Plugins and Skills](#community-sap-claude-plugins-and-skills)
+- **[Libraries, SDKs and Adjacent Tools](#libraries-sdks-and-adjacent-tools)**
 
-# SAP MCP Server
+# Official SAP
+
+Repositories published under official SAP GitHub organizations.
+
+## Official SAP MCP Servers
 
 {{CATEGORY:sap-mcp-server}}
 
-# SAP Skills
+## Official SAP AI Skills
 
 {{CATEGORY:sap-skills}}
 
-# SAP Claude Plugins
+## Official SAP Claude Plugins
 
 {{SAP_CLAUDE_PLUGINS_TABLE}}
 
-# SAP Community MCP Servers
+# Community MCP Servers
 
-## Community SAP MCP Server
+Community-built MCP servers, grouped by the SAP domain they target.
 
-{{CATEGORY:community-sap-mcp-server}}
-
-## SAP Docs MCP Server
-
-{{CATEGORY:sap-docs-mcp-server}}
-
-## ABAP and ADT MCP Server
+## ABAP and ADT
 
 {{CATEGORY:abap-and-adt-mcp-server}}
 
-## SAP Integration
+## SAP Docs and Knowledge
+
+{{CATEGORY:sap-docs-mcp-server}}
+
+## OData, Gateway and Graph
+
+{{CATEGORY:odata-gateway-graph}}
+
+## SAP Integration (CPI / PI)
 
 {{CATEGORY:sap-integration}}
 
-## OData MCP Proxy ecosystem
+## Data, Analytics and HANA
 
-{{CATEGORY:odata-mcp-proxy-ecosystem}}
+{{CATEGORY:sap-data-analytics}}
 
-## SAP Datasphere
-
-{{CATEGORY:sap-datasphere}}
-
-## SAP OData Gateway Graph MCP Server
-
-{{CATEGORY:sap-odata-gateway-graph-mcp-server}}
-
-## SAP GUI
+## SAP GUI Automation
 
 {{CATEGORY:sap-gui}}
 
-## SAP HANA
+## Operations, Monitoring and Lifecycle
 
-{{CATEGORY:sap-hana}}
+{{CATEGORY:sap-operations-lifecycle}}
 
-## SAP Cloud ALM
+## Security, HR and Other SAP MCP Servers
 
-{{CATEGORY:sap-cloud-alm}}
+{{CATEGORY:sap-business-security}}
 
-## SAP AI Skills and Prompt Packs
+# Community AI Skills and Plugins
+
+## Community SAP AI Skills
 
 {{SKILLS_TABLE}}
 
-## SAP Claude Plugins and Skills
+## Community SAP Claude Plugins and Skills
 
 {{COMMUNITY_CLAUDE_PLUGINS_TABLE}}
 
-## Adjacent SAP AI Developer Tools
+# Libraries, SDKs and Adjacent Tools
+
+Non-MCP-server projects that support the SAP AI developer ecosystem — SDKs and auth libraries for building MCP servers, IDE and CLI tooling, and reference material.
 
 {{ADJACENT_TABLE}}

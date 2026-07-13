@@ -220,7 +220,7 @@ function flattenCatalog(catalog, enriched) {
   }
 
   for (const entry of catalog.adjacentTools || []) {
-    entries.push(normalizeEntry(entry, 'Adjacent SAP AI Developer Tools', 'adjacent-tools', packageLabels.tool, meta));
+    entries.push(normalizeEntry(entry, 'Libraries, SDKs & Adjacent Tools', 'adjacent-tools', packageLabels.tool, meta));
   }
 
   const generatedAt = formatDate(enriched.generatedAt);

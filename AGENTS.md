@@ -47,19 +47,20 @@ Run `npm run build` to execute the full pipeline locally.
 | `claudePlugins` | Claude Code plugins and Claude-compatible SAP skill packs |
 | `adjacentTools` | Useful non-MCP tools adjacent to the SAP AI dev ecosystem |
 
-Each `categories` entry has an `id` and `title`. Current category IDs:
+Each `categories` entry has an `id` and `title`. Categories are grouped by SAP domain so the README and the web catalog stay easy to scan. Current category IDs:
 
-- `sap-mcp-server` — Official SAP MCP servers
-- `community-sap-mcp-server` — Community general SAP MCP servers
-- `sap-docs-mcp-server` — SAP documentation MCP servers
-- `abap-and-adt-mcp-server` — ABAP/ADT MCP servers
-- `sap-integration` — SAP Integration Suite / CPI
-- `sap-datasphere` — SAP Datasphere / BDC
-- `sap-odata-gateway-graph-mcp-server` — OData / Gateway / SAP Graph bridges
+- `sap-mcp-server` — Official SAP MCP servers (SAP GitHub orgs)
+- `sap-skills` — Official SAP AI skills (SAP GitHub orgs)
+- `abap-and-adt-mcp-server` — ABAP / ADT MCP servers (the largest group)
+- `sap-docs-mcp-server` — SAP documentation and knowledge MCP servers
+- `odata-gateway-graph` — OData, Gateway, and SAP Graph bridges, incl. the odata-mcp-proxy config-driven family (BTP, CI, AI Core)
+- `sap-integration` — SAP Integration Suite / CPI / PI
+- `sap-data-analytics` — Data, analytics, and HANA: Datasphere, BDC, BW modeling, HANA, SAP Analytics Cloud
 - `sap-gui` — SAP GUI automation
-- `sap-hana` — SAP HANA
-- `odata-mcp-proxy-ecosystem` — OData MCP Proxy and config-driven consumers (BTP, CI, AI Core)
-- `sap-cloud-alm` — SAP Cloud ALM
+- `sap-operations-lifecycle` — Operations, monitoring, and lifecycle: Cloud ALM, Focused Run
+- `sap-business-security` — Security, HR, and other/general SAP MCP servers
+
+When adding an MCP server, place it in the closest domain category above. Only create a new category when several entries share a domain that none of the existing categories cover; a single new entry usually fits an existing group (`sap-business-security` is the catch-all). If you add or rename a category, also update `templates/README.template.md` (section heading, navigation list, and the `{{CATEGORY:<id>}}` placeholder) so the render picks it up.
 
 ### Step 2 — Add the entry object
 
