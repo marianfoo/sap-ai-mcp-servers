@@ -259,6 +259,7 @@ function normalizeEntry(entry, category, categoryId, packageType, metadata) {
   const linkLabel = entry.repoPath && entry.repo ? `${entry.repo}/${entry.repoPath}` : entry.repo || entry.linkLabel || entry.url || entry.name;
   const license = normalizeLicense(repoMeta.license ?? entry.license);
   const lastChange = repoMeta.lastChange ?? entry.lastChange ?? null;
+  const addedAt = entry.addedAt ?? null;
   const stars = typeof repoMeta.stars === 'number' ? repoMeta.stars : typeof entry.stars === 'number' ? entry.stars : null;
   const primaryLanguage = normalizeLanguage(repoMeta.primaryLanguage ?? entry.primaryLanguage ?? entry.language);
   const languageFilters = resolveLanguageFilters(repoMeta, primaryLanguage);
@@ -280,6 +281,8 @@ function normalizeEntry(entry, category, categoryId, packageType, metadata) {
     languageFilters,
     license,
     stars,
+    addedAt,
+    addedAtMs: addedAt ? Date.parse(addedAt) : 0,
     lastChange,
     lastChangeMs: lastChange ? Date.parse(lastChange) : 0,
     fork: Boolean(repoMeta.fork),
@@ -511,6 +514,9 @@ function sortEntries(a, b) {
   if (state.sort === 'updated-desc') {
     return b.lastChangeMs - a.lastChangeMs || a.name.localeCompare(b.name);
   }
+  if (state.sort === 'added-desc') {
+    return b.addedAtMs - a.addedAtMs || a.name.localeCompare(b.name);
+  }
   if (state.sort === 'name-asc') {
     return a.name.localeCompare(b.name);
   }
@@ -605,6 +611,7 @@ function entryCardMarkup(entry) {
           <span class="badge">${escapeHtml(entry.category)}</span>
           <span class="badge badge--license${licenseClass}">${escapeHtml(entry.license)}</span>
           <span class="metric">${formatStars(entry.stars)}</span>
+          <span class="metric">Added ${formatDate(entry.addedAt)}</span>
           <span class="metric">Updated ${formatDate(entry.lastChange)}</span>
         </div>
       </div>

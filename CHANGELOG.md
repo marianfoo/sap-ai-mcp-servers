@@ -8,7 +8,7 @@ Dates use the commit date from `git log` on `data/catalog.json`.
 
 - [`Gixsy95/abap_wiki`](https://github.com/Gixsy95/abap_wiki) — abap_wiki, an agent-driven engine turning SAP S/4HANA custom ABAP objects into citable Markdown/Obsidian knowledge for humans and AI agents, added under Adjacent Tools
 
-## 2026-06-26
+## 2026-06-27
 
 - [`arc-mcp/arc-1/.claude-plugin`](https://github.com/arc-mcp/arc-1/tree/main/.claude-plugin) — ARC-1 Claude Code Plugin, bundling the ARC-1 MCP server and SAP ABAP development skills for Claude Code
 
@@ -56,10 +56,10 @@ Dates use the commit date from `git log` on `data/catalog.json`.
 - [`MarkWuRY168/SAP_MCP`](https://github.com/MarkWuRY168/SAP_MCP) — SAP MCP Server
 - [`derekvincent/mcp-sap-focusedrun`](https://github.com/derekvincent/mcp-sap-focusedrun) — SAP FocusedRun MCP
 - [`Hochfrequenz/sap-mcp-config`](https://github.com/Hochfrequenz/sap-mcp-config) — SAP MCP Config
+- [`git.epod.dev/erhan/epod-adt-mcp-updatesite`](https://git.epod.dev/erhan/epod-adt-mcp-updatesite) — Erhan Keseli Eclipse MCP (Eclipse ADT MCP server with SSO; first non-GitHub git host in this list).
 
 ## 2026-05-11
 
-- [`git.epod.dev/erhan/epod-adt-mcp-updatesite`](https://git.epod.dev/erhan/epod-adt-mcp-updatesite) — Erhan Keseli Eclipse MCP (Eclipse ADT MCP server with SSO; first non-GitHub git host in this list).
 - New category **SAP Skills** with [`SAP/ai-skills-library`](https://github.com/SAP/ai-skills-library) — SAP-maintained AI skills library installable via a skills CLI (Claude Code, Codex, Cursor, OpenCode).
 
 ## 2026-04-21

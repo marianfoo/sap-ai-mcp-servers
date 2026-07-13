@@ -71,6 +71,7 @@ Append a new object to the `entries` array of the correct category (or to `skill
 {
   "type": "Community SAP",
   "name": "My SAP MCP Server",
+  "addedAt": "2026-07-13",
   "repo": "owner/repo-name",
   "purpose": "One sentence describing what it does.",
   "notes": "Optional extra context or caveats."
@@ -83,6 +84,7 @@ Append a new object to the `entries` array of the correct category (or to `skill
 {
   "type": "SAP",
   "name": "SAP Fiori MCP Server",
+  "addedAt": "2026-07-13",
   "repo": "SAP/open-ux-tools",
   "repoPath": "packages/fiori-mcp-server",
   "displayUrl": "https://github.com/SAP/open-ux-tools/tree/main/packages/fiori-mcp-server",
@@ -97,6 +99,7 @@ Append a new object to the `entries` array of the correct category (or to `skill
 {
   "type": "SAP",
   "name": "SAP Build Code and Joule",
+  "addedAt": "2026-07-13",
   "url": "https://pages.community.sap.com/topics/build-code",
   "linkLabel": "SAP Build Code Topic",
   "purpose": "Entry point for SAP Build Code and Joule-related resources.",
@@ -110,6 +113,7 @@ Append a new object to the `entries` array of the correct category (or to `skill
 {
   "type": "Community SAP",
   "name": "Example Non-GitHub MCP",
+  "addedAt": "2026-07-13",
   "url": "https://git.example.dev/owner/repo",
   "linkLabel": "git.example.dev/owner/repo",
   "purpose": "What it does.",
@@ -128,6 +132,7 @@ For non-GitHub entries you can optionally include inline `license`, `lastChange`
 |---|---|---|
 | `type` | yes | `"SAP"` for official SAP org repos, `"Community SAP"` for everything else |
 | `name` | yes | Display name shown in the README table |
+| `addedAt` | yes | Date the item was first added to the catalog (`YYYY-MM-DD`); use the commit date or today when preparing the commit |
 | `repo` | yes* | `owner/repo` — omit only for non-GitHub URLs |
 | `purpose` | yes | One concise sentence. End with a period. |
 | `notes` | no | Extra context, caveats, setup requirements |
@@ -157,9 +162,10 @@ npm run build
 ```
 
 This will:
-1. Fetch live metadata for all repos (requires `GH_TOKEN` in `.env` for best results)
-2. Apply any manual overrides from `data/overrides.json`
-3. Regenerate `README.md`
+1. Validate that every entry has a valid `addedAt` date
+2. Fetch live metadata for all repos (requires `GH_TOKEN` in `.env` for best results)
+3. Apply any manual overrides from `data/overrides.json`
+4. Regenerate `README.md`
 
 ### Step 5 — Commit the changed files
 
@@ -190,6 +196,7 @@ Overrides are applied as the last step of `enrich-data.mjs` and are **never over
 - **Never edit `README.md` directly.** It is overwritten on every build.
 - **Never edit `generated/catalog.enriched.json` directly.** It is overwritten on every build.
 - **Update `CHANGELOG.md`** when adding a new entry with a GitHub `repo` (see Step 3 above). The daily workflow does not maintain it.
+- Every catalog entry must have an `addedAt` date in `YYYY-MM-DD` format. Preserve it when moving, renaming, or recategorizing an existing item.
 - Forks are automatically excluded from all rendered tables — do not add fork repos to the catalog.
 - The `type` field must be either `"SAP"` or `"Community SAP"`. No other values are used.
 - `purpose` should be one sentence, ending with a period, describing what the tool does for a developer — not marketing language.

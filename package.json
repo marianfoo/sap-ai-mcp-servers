@@ -4,8 +4,9 @@
   "private": true,
   "description": "Generated SAP MCP server, SAP AI skills, and Claude plugins overview",
   "scripts": {
-    "update:data": "node scripts/enrich-data.mjs",
-    "build:readme": "node scripts/render-readme.mjs",
-    "build": "npm run update:data && npm run build:readme"
+    "validate:catalog": "node scripts/validate-catalog.mjs",
+    "update:data": "npm run validate:catalog && node scripts/enrich-data.mjs",
+    "build:readme": "npm run validate:catalog && node scripts/render-readme.mjs",
+    "build": "npm run validate:catalog && node scripts/enrich-data.mjs && node scripts/render-readme.mjs"
   }
 }

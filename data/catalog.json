@@ -15,6 +15,7 @@
         {
           "type": "SAP",
           "name": "CAP MCP Server",
+          "addedAt": "2026-03-05",
           "repo": "cap-js/mcp-server",
           "purpose": "AI-assisted CAP development with CDS-aware context.",
           "notes": "CAP-focused MCP server."
@@ -22,6 +23,7 @@
         {
           "type": "SAP",
           "name": "SAP Fiori MCP Server",
+          "addedAt": "2026-03-05",
           "repo": "SAP/open-ux-tools",
           "repoPath": "packages/fiori-mcp-server",
           "displayUrl": "https://github.com/SAP/open-ux-tools/tree/main/packages/fiori-mcp-server",
@@ -31,6 +33,7 @@
         {
           "type": "SAP",
           "name": "UI5 MCP Server",
+          "addedAt": "2026-03-05",
           "repo": "UI5/mcp-server",
           "purpose": "UI5-aware development support for OpenUI5 and SAPUI5.",
           "notes": "Framework-specific MCP tooling."
@@ -38,6 +41,7 @@
         {
           "type": "SAP",
           "name": "UI5 Web Components MCP Server",
+          "addedAt": "2026-03-06",
           "repo": "UI5/webcomponents-mcp-server",
           "purpose": "AI-assisted development with UI5 Web Components (component API, guidelines, docs).",
           "notes": "Tools: get_component_api, get_guidelines, list_docs, get_doc. Supports @ui5/webcomponents, @ui5/webcomponents-fiori, @ui5/webcomponents-ai."
@@ -45,6 +49,7 @@
         {
           "type": "SAP",
           "name": "SAP MDK MCP Server",
+          "addedAt": "2026-03-05",
           "repo": "SAP/mdk-mcp-server",
           "purpose": "AI-assisted SAP Mobile Development Kit workflows.",
           "notes": "MDK-focused MCP server."
@@ -52,6 +57,7 @@
         {
           "type": "SAP",
           "name": "ADT MCP Server",
+          "addedAt": "2026-06-29",
           "url": "https://help.sap.com/docs/abap-cloud/abap-development-tools-for-visual-studio-code/enabling-adt-mcp-server?locale=en-US",
           "linkLabel": "SAP Help Portal",
           "purpose": "Enables MCP clients to access ADT capabilities from ABAP Development Tools for Visual Studio Code.",
@@ -66,6 +72,7 @@
         {
           "type": "Community SAP",
           "name": "MCP SAP Docs (Upstream)",
+          "addedAt": "2026-03-05",
           "repo": "marianfoo/mcp-sap-docs",
           "purpose": "Unified SAP developer docs search over curated sources.",
           "notes": "Upstream source for SAP docs and ABAP variants."
@@ -73,6 +80,7 @@
         {
           "type": "Community SAP",
           "name": "ABAP MCP Server (Downstream Variant)",
+          "addedAt": "2026-03-05",
           "repo": "marianfoo/abap-mcp-server",
           "purpose": "ABAP-focused doc and knowledge variant.",
           "notes": "Derived from mcp-sap-docs upstream."
@@ -80,6 +88,7 @@
         {
           "type": "Community SAP",
           "name": "SAP Notes MCP Server",
+          "addedAt": "2026-03-05",
           "repo": "marianfoo/mcp-sap-notes",
           "purpose": "Search and retrieve SAP Notes and KB content.",
           "notes": "Requires SAP support credentials/certificate setup."
@@ -87,6 +96,7 @@
         {
           "type": "Community SAP",
           "name": "SAP BTP Docs MCP",
+          "addedAt": "2026-03-05",
           "repo": "nickels/sap-btp-docs-mcp",
           "purpose": "Semantic search across SAP BTP documentation.",
           "notes": "Documentation-focused MCP server."
@@ -94,6 +104,7 @@
         {
           "type": "Community SAP",
           "name": "SAP AI Core Docs MCP",
+          "addedAt": "2026-03-05",
           "repo": "nickels/sap-ai-docs-mcp",
           "purpose": "Semantic search across SAP AI Core docs.",
           "notes": "Documentation-focused MCP server."
@@ -107,6 +118,7 @@
         {
           "type": "Community SAP",
           "name": "SAP MCP Server (MarkWuRY168)",
+          "addedAt": "2026-05-12",
           "repo": "MarkWuRY168/SAP_MCP",
           "purpose": "Publish configurable SAP system tools through MCP services and a web management interface.",
           "notes": "Python/FastAPI implementation with tool discovery, execution, service status, logging, and SAP connection configuration."
@@ -114,6 +126,7 @@
         {
           "type": "Community SAP",
           "name": "SAP FocusedRun MCP",
+          "addedAt": "2026-05-12",
           "repo": "derekvincent/mcp-sap-focusedrun",
           "purpose": "Expose SAP Focused Run LMDB API endpoints with search and filtering via MCP.",
           "notes": "FastMCP Python server for Focused Run hosts, systems, databases, cloud tenants, technical instances, ABAP clients, software components, and product versions."
@@ -127,6 +140,7 @@
         {
           "type": "Community SAP",
           "name": "ARC-1 SAP ADT MCP Server",
+          "addedAt": "2026-04-15",
           "repo": "arc-mcp/arc-1",
           "purpose": "Secure-by-default, enterprise-ready SAP ABAP MCP server for developer IDEs, Microsoft Copilot, and any MCP client via BTP OAuth and the ADT REST API.",
           "notes": "Built for real-world SAP AI workflows: token-efficient tool design, safety profiles and allowlists, per-user principal propagation, OIDC/XSUAA/API key auth, BTP Cloud Foundry and on-prem deployment, npm + Docker distribution, and 1,367+ unit tests plus integration and E2E coverage."
@@ -134,6 +148,7 @@
         {
           "type": "Community SAP",
           "name": "ARC-1 LSP ABAP MCP Server",
+          "addedAt": "2026-06-12",
           "repo": "arc-mcp/arc-1-lsp",
           "purpose": "Expose SAP ABAP MCP tools by delegating ADT operations to SAP's headless adt-ls language server.",
           "notes": "Sibling to ARC-1. Bring your own SAP adt-ls binary from ABAP Development Tools for VS Code; focuses on modern ABAP Cloud object coverage with write gates."
@@ -141,6 +156,7 @@
         {
           "type": "Community SAP",
           "name": "ARC-1 ADT ABAP MCP Extension",
+          "addedAt": "2026-06-12",
           "repo": "arc-mcp/arc1-adt-abap-mcp-ext",
           "purpose": "Extend SAP's Eclipse ADT MCP server with read-only ABAP repository tools and optional auto-login for AI clients.",
           "notes": "Eclipse plugin for ADT 3.60+; contributes tools through SAP's documented extension point and relies on SAP's built-in MCP server."
@@ -148,6 +164,7 @@
         {
           "type": "Community SAP",
           "name": "ABAP MCP Server SDK",
+          "addedAt": "2026-03-05",
           "repo": "abap-ai/mcp",
           "purpose": "Build MCP servers directly in ABAP.",
           "notes": "SDK/framework (not a ready-to-run business server by itself)."
@@ -155,6 +172,7 @@
         {
           "type": "Community SAP",
           "name": "mcp-abap-adt",
+          "addedAt": "2026-03-05",
           "repo": "fr0ster/mcp-abap-adt",
           "purpose": "ABAP ADT MCP server with CRUD and cloud/on-prem support.",
           "notes": "Supports stdio, HTTP and SSE transports."
@@ -162,6 +180,7 @@
         {
           "type": "Community SAP",
           "name": "ABAP MCP Server (chandrashekhar-mahajan)",
+          "addedAt": "2026-03-05",
           "repo": "chandrashekhar-mahajan/abap-mcp-server",
           "purpose": "ABAP ADT REST based MCP tooling for development operations.",
           "notes": "Community implementation with multiple auth options."
@@ -169,6 +188,7 @@
         {
           "type": "Community SAP",
           "name": "erpl-adt",
+          "addedAt": "2026-03-05",
           "repo": "DataZooDE/erpl-adt",
           "purpose": "CLI plus MCP exposure for ABAP ADT operations.",
           "notes": "Single-binary approach with tests/transports workflows."
@@ -176,6 +196,7 @@
         {
           "type": "Community SAP",
           "name": "MCP ABAP ADT Server",
+          "addedAt": "2026-03-05",
           "repo": "mario-andreschak/mcp-abap-adt",
           "purpose": "ABAP system interaction via ADT APIs.",
           "notes": "Early ABAP ADT MCP bridge project."
@@ -183,6 +204,7 @@
         {
           "type": "Community SAP",
           "name": "MCP ABAP (abap-adt-api wrapper)",
+          "addedAt": "2026-03-05",
           "repo": "mario-andreschak/mcp-abap-abap-adt-api",
           "purpose": "ABAP operations through wrapped ADT API layer.",
           "notes": "Community wrapper implementation."
@@ -190,6 +212,7 @@
         {
           "type": "Community SAP",
           "name": "ABAP ADT MCP Server (buettnerjulian)",
+          "addedAt": "2026-03-05",
           "repo": "buettnerjulian/abap-adt-mcp",
           "purpose": "ABAP ADT MCP with object, metadata and analysis tools.",
           "notes": "Community ABAP ADT server."
@@ -197,6 +220,7 @@
         {
           "type": "Community SAP",
           "name": "mcp-abap-adt (workskong)",
+          "addedAt": "2026-03-05",
           "repo": "workskong/mcp-abap-adt",
           "purpose": "Lightweight ADT adapter for ABAP metadata and source.",
           "notes": "Supports stdio and HTTP/SSE modes."
@@ -204,6 +228,7 @@
         {
           "type": "Community SAP",
           "name": "MCP ABAP ADT Powerup",
+          "addedAt": "2026-05-12",
           "repo": "babamba2/abap-mcp-adt-powerup",
           "purpose": "Expose comprehensive ABAP ADT development, diagnostics, and object management workflows through MCP.",
           "notes": "Powerup MCP server used by SuperClaude for SAP; supports ABAP Cloud, S/4HANA, ECC, stdio, HTTP/SSE, and hundreds of tools."
@@ -211,6 +236,7 @@
         {
           "type": "Community SAP",
           "name": "Vibing Steampunk",
+          "addedAt": "2026-03-05",
           "repo": "oisee/vibing-steampunk",
           "purpose": "ADT-to-MCP bridge for ABAP and AMDP workflows.",
           "notes": "ABAP coding and repo navigation focus."
@@ -218,6 +244,7 @@
         {
           "type": "Community SAP",
           "name": "ABAP Accelerator MCP Server",
+          "addedAt": "2026-03-05",
           "repo": "aws-solutions-library-samples/guidance-for-deploying-sap-abap-accelerator-for-amazon-q-developer",
           "purpose": "Enterprise-grade MCP server for SAP ABAP: create, test, document, and transform ABAP code via Amazon Q Developer and Kiro.",
           "notes": "15 tools: connection status, object CRUD, syntax check, activation, ATC, unit tests, transports, migration analysis. Local (Docker) or ECS Fargate deployment. Principal propagation + OAuth for multi-user."
@@ -225,6 +252,7 @@
         {
           "type": "Community SAP",
           "name": "MCP ABAP (Validation + Metadata)",
+          "addedAt": "2026-03-05",
           "repo": "fgalastri/MCP_ABAP",
           "purpose": "ABAP validation and metadata tool surface.",
           "notes": "Community implementation."
@@ -232,6 +260,7 @@
         {
           "type": "Community SAP",
           "name": "ABAPDocMCP",
+          "addedAt": "2026-03-05",
           "repo": "SaurabhVC/ABAPDocMCP",
           "purpose": "Generate WRICEF technical specs from transport content.",
           "notes": "Specialized ADT-based documentation flow."
@@ -239,6 +268,7 @@
         {
           "type": "Community SAP",
           "name": "MCP server for SAP Cloudification Repository",
+          "addedAt": "2026-03-18",
           "repo": "ClementRingot/sap-released-objects-mcp-server",
           "purpose": "Gives AI agents real-time knowledge of which SAP objects are released for ABAP Cloud / Clean Core — and what to use instead when they're not.",
           "notes": "Live server at sap-released-objects-mcp-server-production.up.railway.app/mcp."
@@ -246,6 +276,7 @@
         {
           "type": "Community SAP",
           "name": "Dassian ADT",
+          "addedAt": "2026-03-28",
           "repo": "DassianInc/dassian-adt",
           "purpose": "MCP server for SAP ABAP development via ADT API — read, write, test, and deploy ABAP code without SAP GUI.",
           "notes": "TypeScript/Node.js. Supports S/4HANA with automatic SAP release detection."
@@ -253,6 +284,7 @@
         {
           "type": "Community SAP",
           "name": "BW Modeling MCP Server",
+          "addedAt": "2026-04-21",
           "repo": "dnic-dev/bw-modeling-mcp",
           "purpose": "Read, create, and modify SAP BW/4HANA objects directly in a live system via the internal BWMT REST API.",
           "notes": "First MCP server targeting SAP BW/4HANA modeling. Works with all BW/4HANA versions; partial support for BW 7.5 on HANA planned. Combines well with ADT MCP servers for ABAP/AMDP routine development."
@@ -260,6 +292,7 @@
         {
           "type": "Community SAP",
           "name": "aibap.mcp",
+          "addedAt": "2026-06-09",
           "repo": "Hochfrequenz/aibap.mcp",
           "purpose": "Expose the SAP ABAP ADT REST API as an MCP server for on-prem ECC and S/4HANA, covering source editing, debugging, transports, ATC, and customizing/package export.",
           "notes": "Go binary with no runtime dependencies; 68 tools across 13 groups; OAuth2/SAML/Basic auth; exports packages in abapGit format and customizing tables as SQLite; BYO hook for SAP-GUI-only operations."
@@ -267,6 +300,7 @@
         {
           "type": "Community SAP",
           "name": "Erhan Keseli Eclipse MCP",
+          "addedAt": "2026-05-12",
           "url": "https://git.epod.dev/erhan/epod-adt-mcp-updatesite",
           "linkLabel": "git.epod.dev/erhan/epod-adt-mcp-updatesite",
           "purpose": "Lets Claude or Codex use Eclipse ADT as an MCP server with SSO-based authentication.",
@@ -281,6 +315,7 @@
         {
           "type": "Community SAP",
           "name": "MCP Integration Suite",
+          "addedAt": "2026-03-05",
           "repo": "1nbuc/mcp-integration-suite",
           "purpose": "General SAP Integration Suite/CPI operations.",
           "notes": "Integration package and artifact workflows."
@@ -288,6 +323,7 @@
         {
           "type": "Community SAP",
           "name": "MCP Trading Partner Management",
+          "addedAt": "2026-03-05",
           "repo": "1nbuc/mcp-is-tpm",
           "purpose": "SAP Integration Suite TPM workflows.",
           "notes": "Focused on B2B TPM scenarios."
@@ -295,6 +331,7 @@
         {
           "type": "Community SAP",
           "name": "CPI MCP Server",
+          "addedAt": "2026-03-05",
           "repo": "vadimklimov/cpi-mcp-server",
           "purpose": "SAP Cloud Integration operations via MCP.",
           "notes": "Go-based implementation with binary releases."
@@ -302,6 +339,7 @@
         {
           "type": "Community SAP",
           "name": "SAP CPI MCP Server (prudvigit)",
+          "addedAt": "2026-05-12",
           "repo": "prudvigit/mcp-sap-cpi",
           "purpose": "Monitor and manage SAP Cloud Integration messages, iFlows, security artifacts, and runtime status via MCP.",
           "notes": "Supports BTP Process Integration Runtime service-key authentication, deploy/undeploy tools, and CPI health checks."
@@ -309,6 +347,7 @@
         {
           "type": "Community SAP",
           "name": "SAP PI MCP Server",
+          "addedAt": "2026-06-19",
           "repo": "lopezmas/sap-pi-mcp-server",
           "purpose": "Expose read-only SAP PI/PO monitoring, Integration Directory, ESR mapping, and Value Mapping export tools through MCP for migration planning to SAP Integration Suite / CPI.",
           "notes": "Useful for interface inventory reports, end-to-end interface analysis, Message Mapping review, and Value Mapping CSV exports during SAP PI/PO to CPI migration work."
@@ -323,6 +362,7 @@
         {
           "type": "Community SAP",
           "name": "OData MCP Proxy",
+          "addedAt": "2026-03-05",
           "repo": "lemaiwo/odata-mcp-proxy",
           "purpose": "Config-driven MCP server exposing OData/REST APIs as MCP tools; BTP destinations, dual transport (stdio/HTTP).",
           "notes": "Foundation; consumable as npm package."
@@ -330,6 +370,7 @@
         {
           "type": "Community SAP",
           "name": "BTP MCP Server",
+          "addedAt": "2026-03-11",
           "repo": "lemaiwo/btp-mcp-server",
           "purpose": "BTP Core Services (accounts, entitlements, provisioning) as MCP tools.",
           "notes": "Config: btp-admin-api-config.json; uses odata-mcp-proxy."
@@ -337,6 +378,7 @@
         {
           "type": "Community SAP",
           "name": "CI MCP Server",
+          "addedAt": "2026-03-11",
           "repo": "lemaiwo/ci-mcp-server",
           "purpose": "SAP Cloud Integration (CPI) OData API as MCP tools.",
           "notes": "Config: ci-api-config.json; uses odata-mcp-proxy."
@@ -344,6 +386,7 @@
         {
           "type": "Community SAP",
           "name": "AI Core MCP Server",
+          "addedAt": "2026-03-11",
           "repo": "lemaiwo/ai-core-mcp-server",
           "purpose": "SAP AI Core lifecycle and admin APIs as MCP tools.",
           "notes": "Config: ai-core-api-config.json; uses odata-mcp-proxy."
@@ -357,6 +400,7 @@
         {
           "type": "Community SAP",
           "name": "SAP Datasphere MCP (MarioDeFelipe)",
+          "addedAt": "2026-03-05",
           "repo": "MarioDeFelipe/sap-datasphere-mcp",
           "purpose": "Feature-rich Datasphere API interaction via MCP.",
           "notes": "Broad tool surface, tenant-focused operations."
@@ -364,6 +408,7 @@
         {
           "type": "Community SAP",
           "name": "SAP Datasphere MCP Tools",
+          "addedAt": "2026-05-12",
           "repo": "pmankineni/mcp-datasphere-tools",
           "purpose": "Expose SAP Datasphere exploration, querying, modeling, administration, and audit workflows via MCP.",
           "notes": "TypeScript implementation with 49 tools, mock data mode, OAuth client credentials, and handler-based architecture."
@@ -371,6 +416,7 @@
         {
           "type": "Community SAP",
           "name": "SAP Datasphere MCP (rahulsethi)",
+          "addedAt": "2026-03-05",
           "repo": "rahulsethi/SAPDatasphereMCP",
           "purpose": "Datasphere read-only and analytics operations via MCP.",
           "notes": "Alternative community implementation."
@@ -378,6 +424,7 @@
         {
           "type": "Community SAP",
           "name": "SAP Business Data Cloud MCP",
+          "addedAt": "2026-03-05",
           "repo": "rahulsethi/SAPBDCMCP",
           "purpose": "MCP tooling for SAP Business Data Cloud workflows.",
           "notes": "Read-only and contract-first focus in current scope."
@@ -391,6 +438,7 @@
         {
           "type": "Community SAP",
           "name": "SAP OData to MCP Server for BTP",
+          "addedAt": "2026-03-05",
           "repo": "lemaiwo/btp-sap-odata-to-mcp-server",
           "purpose": "Expose SAP OData services as MCP tools.",
           "notes": "BTP destination-based integration pattern."
@@ -398,6 +446,7 @@
         {
           "type": "Community SAP",
           "name": "SAP OData to MCP Server (On-Prem)",
+          "addedAt": "2026-03-05",
           "repo": "jfdurelle/onpremise-sap-odata-to-mcp-server",
           "purpose": "On-prem adaptation of OData-to-MCP model.",
           "notes": "Community variant for direct connectivity."
@@ -405,6 +454,7 @@
         {
           "type": "Community SAP",
           "name": "SAP OData MCP Server (TypeScript)",
+          "addedAt": "2026-03-05",
           "repo": "GutjahrAI/sap-odata-mcp-server",
           "purpose": "TypeScript OData MCP implementation.",
           "notes": "CRUD plus service discovery support."
@@ -412,6 +462,7 @@
         {
           "type": "Community SAP",
           "name": "SAP OData MCP Server (Python)",
+          "addedAt": "2026-03-05",
           "repo": "GutjahrAI/sap-odata-mcp-py",
           "purpose": "Python OData MCP implementation.",
           "notes": "Alternative implementation and packaging model."
@@ -419,6 +470,7 @@
         {
           "type": "Community SAP",
           "name": "SAP MCP Gateway Server",
+          "addedAt": "2026-03-05",
           "repo": "midasol/sap-mcp-server",
           "purpose": "SAP Gateway/OData interaction via MCP.",
           "notes": "Gateway-centric server architecture."
@@ -426,6 +478,7 @@
         {
           "type": "Community SAP",
           "name": "SAP Graph API Sandbox MCP",
+          "addedAt": "2026-03-05",
           "repo": "CostingGeek/sap-mcp",
           "purpose": "MCP wrapper for SAP Graph sandbox scenarios.",
           "notes": "Sandbox-first usage pattern."
@@ -433,6 +486,7 @@
         {
           "type": "Community SAP",
           "name": "OData MCP Wrapper (Python)",
+          "addedAt": "2026-03-05",
           "repo": "oisee/odata_mcp",
           "purpose": "Bridge OData v2 services into MCP tools.",
           "notes": "Dynamic tool generation from OData metadata."
@@ -440,6 +494,7 @@
         {
           "type": "Community SAP",
           "name": "OData MCP Bridge (Go)",
+          "addedAt": "2026-03-05",
           "repo": "oisee/odata_mcp_go",
           "purpose": "Go OData-to-MCP bridge with v2/v4 support.",
           "notes": "Includes universal tool mode for large SAP OData services."
@@ -453,6 +508,7 @@
         {
           "type": "Community SAP",
           "name": "MCP SAP GUI Server",
+          "addedAt": "2026-03-05",
           "repo": "mario-andreschak/mcp-sap-gui",
           "purpose": "Coordinate and input automation for SAP GUI.",
           "notes": "GUI scripting and automation workflow."
@@ -460,6 +516,7 @@
         {
           "type": "Community SAP",
           "name": "sap_gui_mcp",
+          "addedAt": "2026-03-05",
           "repo": "jduncan8142/sap_gui_mcp",
           "purpose": "SAP GUI Scripting API exposed via FastMCP.",
           "notes": "Windows and SAP GUI scripting setup required."
@@ -467,6 +524,7 @@
         {
           "type": "Community SAP",
           "name": "SAPient MCP",
+          "addedAt": "2026-03-05",
           "repo": "toni-ramchandani/sapient-mcp",
           "purpose": "RoboSAPiens-based SAP GUI automation server.",
           "notes": "Focused on intelligent SAP GUI automation."
@@ -474,6 +532,7 @@
         {
           "type": "Community SAP",
           "name": "MCP SAP GUI (Scripting API)",
+          "addedAt": "2026-03-28",
           "repo": "kts982/mcp-sap-gui",
           "purpose": "Full SAP GUI for Windows automation via Scripting API — 52 MCP tools for screen discovery, navigation, field I/O, table and tree operations, and screenshot capture.",
           "notes": "Read-only by default with MCP tool annotations, transaction allowlist for safe automation, COM retry for transient errors."
@@ -481,6 +540,7 @@
         {
           "type": "Community SAP",
           "name": "sapgui.mcp",
+          "addedAt": "2026-06-02",
           "repo": "Hochfrequenz/sapgui.mcp",
           "purpose": "Expose SAP GUI Scripting API and SAP Web GUI interactions via FastMCP.",
           "notes": "Provides executable, Python, and Docker-based runtime options."
@@ -494,6 +554,7 @@
         {
           "type": "Community SAP",
           "name": "HANA MCP Server",
+          "addedAt": "2026-03-05",
           "repo": "HatriGt/hana-mcp-server",
           "purpose": "MCP integration for SAP HANA and HANA Cloud.",
           "notes": "Direct HANA-focused MCP server."
@@ -507,6 +568,7 @@
         {
           "type": "Community SAP",
           "name": "SAP Cloud ALM ITSM MCP Server",
+          "addedAt": "2026-03-20",
           "repo": "gregorwolf/cloud-alm-itsm-mcp",
           "purpose": "Query installations within SAP Cloud ALM ITSM API with filtering and search.",
           "notes": "OAuth 2.0 client credentials auth. Tools: get_installations, filter by system type/customer/product, full-text search."
@@ -520,6 +582,7 @@
         {
           "type": "SAP",
           "name": "SAP AI Skills Library",
+          "addedAt": "2026-05-11",
           "repo": "SAP/ai-skills-library",
           "purpose": "SAP-maintained library of AI skills for digital assistants — discover, search, filter, and install via a skills CLI.",
           "notes": "Supports Claude Code, Codex, Cursor, OpenCode, and other agents. Initial skill: sap-fiori-guidelines."
@@ -527,6 +590,7 @@
         {
           "type": "SAP",
           "name": "CAP Agentic Engineered Skills",
+          "addedAt": "2026-05-12",
           "repo": "SAP-samples/cap-agentic-engineered",
           "purpose": "Provide reusable MCP-routing AGENTS.md and SAP skills for CAP and Fiori Elements agentic development.",
           "notes": "Reference Financial Risk Analyzer app built with Claude Code; skills route agents to CAP, Fiori, and UI5 MCP servers."
@@ -542,6 +606,7 @@
     {
       "type": "Community SAP",
       "name": "SAP Power for Kiro",
+      "addedAt": "2026-03-05",
       "repo": "mfigueir/sap-power",
       "purpose": "SAP development knowledge package for Kiro IDE.",
       "notes": "Similar scope to sap-skills-power, check overlap before adoption."
@@ -549,6 +614,7 @@
     {
       "type": "Community SAP",
       "name": "SAP Skills for Claude Code",
+      "addedAt": "2026-03-05",
       "repo": "secondsky/sap-skills",
       "purpose": "Large SAP skill set for Claude Code across CAP, Fiori, ABAP and BTP.",
       "notes": "Packaged for the Claude marketplace and also installable through the cross-agent skills CLI."
@@ -556,6 +622,7 @@
     {
       "type": "Community SAP",
       "name": "SAP API Policy Skill",
+      "addedAt": "2026-06-09",
       "repo": "marianfoo/sap-api-policy-skill",
       "purpose": "Assess whether an SAP API usage scenario aligns with the SAP API Policy, using evidence gathered from official SAP sources.",
       "notes": "Cross-agent skill (Claude, Cursor, Codex, and others) installable via the skills CLI; returns confidence-rated, sourced verdicts and is explicitly not legal advice."
@@ -563,6 +630,7 @@
     {
       "type": "Community SAP",
       "name": "RAP Skills",
+      "addedAt": "2026-03-05",
       "repo": "weiserman/rap-skills",
       "purpose": "SAP RAP-focused Claude Code skills.",
       "notes": "RAP-centric specialization."
@@ -570,6 +638,7 @@
     {
       "type": "Community SAP",
       "name": "ABAP Skills for Claude Code",
+      "addedAt": "2026-06-02",
       "repo": "matt1as/claude-abap-skills",
       "purpose": "Provide opinionated ABAP Cloud rules and slash commands for Claude Code development.",
       "notes": "Repository also ships Claude Code plugins; skill content focuses on BTP ABAP Environment and S/4HANA 2023+ ABAP Cloud."
@@ -577,6 +646,7 @@
     {
       "type": "Community SAP",
       "name": "SAP Claude Skills",
+      "addedAt": "2026-03-05",
       "repo": "KEIDAI-TechTime/sap-claude-skills",
       "purpose": "SAP add-on development skill bundles for Claude workflows.",
       "notes": "Repository and docs are primarily Japanese."
@@ -584,6 +654,7 @@
     {
       "type": "Community SAP",
       "name": "SAP OData Explorer Skill",
+      "addedAt": "2026-03-05",
       "repo": "one-kash/sap-odata-explorer",
       "purpose": "Claude skill for SAP OData endpoint exploration.",
       "notes": "Skill-style tooling, not an MCP server."
@@ -591,6 +662,7 @@
     {
       "type": "Community SAP",
       "name": "SuperClaude for SAP Skills",
+      "addedAt": "2026-05-12",
       "repo": "babamba2/superclaude-for-sap",
       "purpose": "SAP ABAP workflow skills shipped inside the SuperClaude for SAP plugin bundle.",
       "notes": "Skill set covers SAP ABAP development workflows and is bundled with agents, hooks, and MCP setup."
@@ -598,6 +670,7 @@
     {
       "type": "Community SAP",
       "name": "SAP Datasphere Claude Skills",
+      "addedAt": "2026-05-12",
       "repo": "MarioDeFelipe/sap-datasphere-plugin-for-claude-cowork",
       "purpose": "SAP Datasphere skills for exploration, modeling, administration, and governance workflows.",
       "notes": "Skill content is bundled with the SAP Datasphere Claude plugin and a Datasphere MCP configuration."
@@ -605,6 +678,7 @@
     {
       "type": "Community SAP",
       "name": "sapcli ABAP Skills",
+      "addedAt": "2026-05-12",
       "repo": "jfilak/sapcli-claude-plugin",
       "purpose": "ABAP system exploration and development skills built on top of sapcli.",
       "notes": "Skill content is bundled with the sapcli Claude Code plugin and ABAP-focused agents."
@@ -612,6 +686,7 @@
     {
       "type": "Community SAP",
       "name": "SAP Commerce Skill",
+      "addedAt": "2026-05-12",
       "repo": "Emenowicz/sap-commerce-skill",
       "purpose": "Provide SAP Commerce Cloud and Hybris development guidance, templates, and utilities for AI coding agents.",
       "notes": "Cross-agent skill pack covering type system, service layer, ImpEx, FlexibleSearch, OCC APIs, accelerators, and Backoffice."
@@ -619,6 +694,7 @@
     {
       "type": "Community SAP",
       "name": "ARC-1 SAP Skills",
+      "addedAt": "2026-05-23",
       "repo": "arc-mcp/arc-1",
       "repoPath": "skills",
       "displayUrl": "https://github.com/arc-mcp/arc-1/tree/main/skills",
@@ -630,6 +706,7 @@
     {
       "type": "Community SAP",
       "name": "SAP Skills for Claude Code",
+      "addedAt": "2026-03-05",
       "repo": "secondsky/sap-skills",
       "purpose": "Large SAP skill set for Claude Code across CAP, Fiori, ABAP and BTP.",
       "notes": "Most visible SAP skill marketplace style repository."
@@ -637,6 +714,7 @@
     {
       "type": "Community SAP",
       "name": "ABAP Skills for Claude Code",
+      "addedAt": "2026-06-02",
       "repo": "matt1as/claude-abap-skills",
       "purpose": "Provide opinionated ABAP Cloud rules and slash commands for Claude Code development.",
       "notes": "Two Claude Code plugins for Clean ABAP and ABAP Cloud/RAP workflows; assumes SAP ABAP MCP Server access."
@@ -644,6 +722,7 @@
     {
       "type": "Community SAP",
       "name": "SuperClaude for SAP",
+      "addedAt": "2026-05-12",
       "repo": "babamba2/superclaude-for-sap",
       "purpose": "Provide a Claude Code plugin for SAP ABAP development across ECC, S/4HANA, and ABAP Cloud systems.",
       "notes": "Ships specialized SAP agents, workflow skills, hooks, model routing, and MCP setup around abap-mcp-adt-powerup."
@@ -651,6 +730,7 @@
     {
       "type": "SAP",
       "name": "UI5 Plugins for Coding Agents",
+      "addedAt": "2026-05-12",
       "repo": "UI5/plugins-coding-agents",
       "purpose": "Provide UI5-specific plugins for coding agents — project creation, UI5 error fixing, and framework guidance.",
       "notes": "Official UI5 plugin repository for coding agents (Claude Code, etc.) with UI5 and UI5 TypeScript conversion plugins."
@@ -658,6 +738,7 @@
     {
       "type": "Community SAP",
       "name": "SAP Datasphere Plugin for Claude",
+      "addedAt": "2026-05-12",
       "repo": "MarioDeFelipe/sap-datasphere-plugin-for-claude-cowork",
       "purpose": "Provide Claude skills and MCP configuration for SAP Datasphere exploration, modeling, administration, and governance workflows.",
       "notes": "Claude plugin/skill pack powered by a Datasphere MCP server and extensive reference content."
@@ -665,6 +746,7 @@
     {
       "type": "Community SAP",
       "name": "sapcli Claude Code Plugin",
+      "addedAt": "2026-05-12",
       "repo": "jfilak/sapcli-claude-plugin",
       "purpose": "Expose ABAP system exploration and development agents for Claude Code on top of sapcli.",
       "notes": "Claude Code plugin with ABAP explorer/developer agents and an ABAP system-info skill."
@@ -672,6 +754,7 @@
     {
       "type": "Community SAP",
       "name": "ARC-1 Claude Code Plugin",
+      "addedAt": "2026-06-27",
       "repo": "arc-mcp/arc-1",
       "repoPath": ".claude-plugin",
       "displayUrl": "https://github.com/arc-mcp/arc-1/tree/main/.claude-plugin",
@@ -683,6 +766,7 @@
     {
       "type": "Community SAP",
       "name": "CAP MCP Plugin",
+      "addedAt": "2026-03-05",
       "repo": "gavdilabs/cap-mcp-plugin",
       "purpose": "Generates MCP servers from CAP services.",
       "notes": "Community plugin, not an SAP-delivered MCP server."
@@ -690,6 +774,7 @@
     {
       "type": "Community SAP",
       "name": "SAP Analytics Cloud MCP Server",
+      "addedAt": "2026-03-05",
       "repo": "JumenEngels/sap_analytics_cloud_mcp",
       "purpose": "Exposes SAP Analytics Cloud APIs as MCP tools.",
       "notes": "Community project, not an SAP-delivered MCP server."
@@ -697,6 +782,7 @@
     {
       "type": "Community SAP",
       "name": "SyntaAI SAP Security MCP Server",
+      "addedAt": "2026-03-11",
       "repo": "SYNTAAI/sap-security-mcp",
       "purpose": "SAP security analysis and compliance auditing via MCP. 19 read-only tools for user access reviews, SoD violation checks, critical authorization detection, compliance reporting (SOX, GDPR, ISO 27001, NIST), RFC security analysis, password policy audits, and role/authorization review.",
       "notes": "First SAP security-focused MCP server. OAuth 2.0 with PKCE. Connects to SAP via OData APIs. Live server at https://mcp.syntaai.com/mcp."
@@ -704,6 +790,7 @@
     {
       "type": "Community SAP",
       "name": "SAP SuccessFactors MCP Server",
+      "addedAt": "2026-03-05",
       "repo": "aiadiguru2025/sf-mcp",
       "purpose": "SuccessFactors HR operations via MCP tools.",
       "notes": "Community project, not an SAP-delivered MCP server."
@@ -711,6 +798,7 @@
     {
       "type": "Community SAP",
       "name": "ABAP Remote Filesystem for VS Code",
+      "addedAt": "2026-03-05",
       "repo": "marcellourbani/vscode_abap_remote_fs",
       "purpose": "Remote ABAP filesystem access in VS Code.",
       "notes": "Useful companion to ABAP MCP workflows."
@@ -718,6 +806,7 @@
     {
       "type": "Community SAP",
       "name": "SAP CLI (sapcli)",
+      "addedAt": "2026-03-23",
       "repo": "jfilak/sapcli",
       "purpose": "Python CLI for SAP ADT and RFC operations: ABAP unit tests, ATC checks, transports, gCTS, abapGit install, and more.",
       "notes": "Useful companion to ABAP MCP workflows for CI automation."
@@ -725,6 +814,7 @@
     {
       "type": "Community SAP",
       "name": "adt-ls TypeScript SDK",
+      "addedAt": "2026-06-12",
       "repo": "arc-mcp/adt-ls",
       "purpose": "Provide a reusable TypeScript SDK for driving SAP's headless adt-ls language server from developer tools and CI.",
       "notes": "Bring your own SAP adt-ls binary; used by arc-1-lsp and other ADT/MCP tooling, not an MCP server by itself."
@@ -732,6 +822,7 @@
     {
       "type": "Community SAP",
       "name": "@arc-mcp/xsuaa-auth",
+      "addedAt": "2026-06-18",
       "repo": "arc-mcp/xsuaa-auth",
       "purpose": "Drop-in XSUAA OAuth authentication and BTP principal propagation for MCP servers built on Express and the MCP SDK.",
       "notes": "Adjacent library for SAP MCP server authors; provides the MCP-native XSUAA OAuth proxy, stateless dynamic client registration, a chained XSUAA/OIDC/API-key verifier, and a `./btp` principal-propagation layer extracted from ARC-1. Used by ARC-1 and LISA."
@@ -739,6 +830,7 @@
     {
       "type": "Community SAP",
       "name": "arc-mcp-hub",
+      "addedAt": "2026-06-18",
       "repo": "arc-mcp/mcp-hub",
       "purpose": "Thin, deterministic multi-system MCP hub that fronts multiple ARC-1 instances (one SAP system each) behind one BTP front door with one login.",
       "notes": "Per-environment MCP multiplexer for SAP BTP: an MCP client connects to one `/<env>/mcp` path and the hub routes to that system's ARC-1 with the user's identity preserved (XSUAA login, per-user OAuth2JWTBearer token exchange, SAP principal propagation). No server-side LLM and no merged tool list; connection-scoped routing keeps DEV/QA/PROD isolated. Built on @arc-mcp/xsuaa-auth and the MCP SDK."
@@ -746,6 +838,7 @@
     {
       "type": "Community SAP",
       "name": "SAP MCP Config",
+      "addedAt": "2026-05-12",
       "repo": "Hochfrequenz/sap-mcp-config",
       "purpose": "Provide shared Go and Python models for SAP credentials used by MCP servers.",
       "notes": "Adjacent library for SAP MCP server authors; centralizes credential file parsing, validation, and masking."
@@ -753,6 +846,7 @@
     {
       "type": "Community SAP",
       "name": "GitHub Copilot for Eclipse",
+      "addedAt": "2026-03-05",
       "repo": "eclipse-copilot/eclipse-copilot",
       "purpose": "GitHub Copilot integration plugin for Eclipse IDE.",
       "notes": "Adjacently relevant for ABAP/Eclipse-centric teams."
@@ -760,6 +854,7 @@
     {
       "type": "Community SAP",
       "name": "GitHub Copilot in Eclipse (Official Docs)",
+      "addedAt": "2026-03-05",
       "url": "https://docs.github.com/en/copilot/how-tos/set-up/install-copilot-in-the-ide?tool=eclipse",
       "linkLabel": "docs.github.com/eclipse-copilot",
       "purpose": "Official setup and usage docs for Copilot in Eclipse.",
@@ -768,6 +863,7 @@
     {
       "type": "Community SAP",
       "name": "Amazon Q Developer for Eclipse (Official Docs)",
+      "addedAt": "2026-03-05",
       "url": "https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/q-in-IDE_setup.html",
       "linkLabel": "docs.aws.amazon.com/amazon-q-eclipse",
       "purpose": "Official setup docs for Amazon Q in Eclipse IDE.",
@@ -776,6 +872,7 @@
     {
       "type": "SAP",
       "name": "SAP Build Code and Joule (Official Topic Page)",
+      "addedAt": "2026-03-05",
       "url": "https://pages.community.sap.com/topics/build-code",
       "linkLabel": "SAP Build Code Topic",
       "purpose": "Entry point for SAP Build Code and Joule-related resources.",
@@ -784,6 +881,7 @@
     {
       "type": "SAP",
       "name": "SAP TechEd 2025 CA261 Sample",
+      "addedAt": "2026-03-05",
       "repo": "SAP-samples/teched2025-CA261",
       "purpose": "Hands-on sample for AI + Fiori + MCP workflows.",
       "notes": "Reference project, not a generic MCP server."
@@ -791,6 +889,7 @@
     {
       "type": "Community SAP",
       "name": "abap_wiki",
+      "addedAt": "2026-07-11",
       "repo": "Gixsy95/abap_wiki",
       "purpose": "Agent-driven engine that turns SAP S/4HANA custom ABAP objects into citable Markdown/Obsidian knowledge for humans and AI agents.",
       "notes": "Uses an adversarial verification gate; optional live SAP access via MCP."
