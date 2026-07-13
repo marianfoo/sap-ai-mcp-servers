@@ -111,7 +111,7 @@ Community-built MCP servers, grouped by the SAP domain they target.
 
 ## OData, Gateway and Graph
 
-[odata-mcp-proxy](https://github.com/lemaiwo/odata-mcp-proxy) is the foundation: a config-driven MCP server exposing OData/REST APIs as MCP tools. BTP MCP Server, CI MCP Server, and AI Core MCP Server are config-only consumers (single JSON + BTP destinations). No custom code required.
+Bridges that expose SAP OData, Gateway, and SAP Graph services as MCP tools. This category also contains the [odata-mcp-proxy](https://github.com/lemaiwo/odata-mcp-proxy) family: odata-mcp-proxy is the config-driven foundation, and BTP MCP Server, CI MCP Server, and AI Core MCP Server are config-only consumers of it (single JSON + BTP destinations, no custom code).
 
 | Name | Repository | Purpose | License | Stars | Last Change |
 | --- | --- | --- | --- | ---: | --- |

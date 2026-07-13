@@ -42,10 +42,10 @@ Run `npm run build` to execute the full pipeline locally.
 
 | Key | What goes here |
 |---|---|
-| `categories` | MCP servers, grouped by topic (ABAP/ADT, OData, Docs, etc.) |
-| `skills` | Non-Claude AI skill files / prompt packs (Kiro packs, etc.) |
-| `claudePlugins` | Claude Code plugins and Claude-compatible SAP skill packs |
-| `adjacentTools` | Useful non-MCP tools adjacent to the SAP AI dev ecosystem |
+| `categories` | MCP servers, grouped by SAP domain (ABAP/ADT, OData, Docs, etc.), plus the two official SAP categories |
+| `skills` | AI skill packs / prompt packs for coding agents (Claude Code, Cursor, Kiro, etc.) |
+| `claudePlugins` | Claude Code plugins — repos that ship both skills and a plugin appear in `skills` *and* here |
+| `adjacentTools` | Non-MCP-server projects: SDKs and auth libraries for MCP authors, IDE/CLI tooling, reference material |
 
 Each `categories` entry has an `id` and `title`. Categories are grouped by SAP domain so the README and the web catalog stay easy to scan. Current category IDs:
 
