@@ -1,7 +1,7 @@
 {
   "generatedAt": "2026-07-13T07:08:49.420Z",
   "sourceCatalog": "data/catalog.json",
-  "repoCount": 87,
+  "repoCount": 85,
   "tokenUsed": true,
   "repoMetadata": {
     "1nbuc/mcp-integration-suite": {
@@ -303,25 +303,6 @@
         "TypeScript": 116436
       },
       "htmlUrl": "https://github.com/chandrashekhar-mahajan/abap-mcp-server"
-    },
-    "ClementRingot/sap-released-objects-mcp-server": {
-      "repo": "ClementRingot/sap-released-objects-mcp-server",
-      "source": "api",
-      "exists": true,
-      "fork": false,
-      "parent": null,
-      "stars": 24,
-      "lastChange": "2026-07-06T08:28:26Z",
-      "archived": false,
-      "license": "MIT",
-      "description": "ROSA (Released Objects Search Assistant) - MCP server and REST API giving AI agents real-time knowledge of SAP objects released for ABAP Cloud / Clean Core",
-      "primaryLanguage": "TypeScript",
-      "languages": {
-        "TypeScript": 205288,
-        "JavaScript": 8720,
-        "Dockerfile": 1344
-      },
-      "htmlUrl": "https://github.com/ClementRingot/ROSA"
     },
     "CostingGeek/sap-mcp": {
       "repo": "CostingGeek/sap-mcp",
@@ -679,21 +660,6 @@
         "Python": 59012
       },
       "htmlUrl": "https://github.com/jduncan8142/sap_gui_mcp"
-    },
-    "jfdurelle/onpremise-sap-odata-to-mcp-server": {
-      "repo": "jfdurelle/onpremise-sap-odata-to-mcp-server",
-      "source": "api",
-      "exists": false,
-      "fork": null,
-      "parent": null,
-      "stars": null,
-      "lastChange": null,
-      "archived": null,
-      "license": null,
-      "description": null,
-      "primaryLanguage": "TypeScript",
-      "languages": null,
-      "htmlUrl": "https://github.com/jfdurelle/onpremise-sap-odata-to-mcp-server"
     },
     "jfilak/sapcli": {
       "repo": "jfilak/sapcli",
@@ -1242,24 +1208,6 @@
       },
       "htmlUrl": "https://github.com/oisee/vibing-steampunk"
     },
-    "one-kash/sap-odata-explorer": {
-      "repo": "one-kash/sap-odata-explorer",
-      "source": "api",
-      "exists": false,
-      "fork": null,
-      "parent": null,
-      "stars": null,
-      "lastChange": null,
-      "archived": null,
-      "license": null,
-      "description": null,
-      "primaryLanguage": "TypeScript",
-      "languages": {
-        "TypeScript": 529,
-        "JavaScript": 471
-      },
-      "htmlUrl": "https://github.com/one-kash/sap-odata-explorer"
-    },
     "pmankineni/mcp-datasphere-tools": {
       "repo": "pmankineni/mcp-datasphere-tools",
       "source": "api",
@@ -1276,24 +1224,6 @@
         "TypeScript": 143722
       },
       "htmlUrl": "https://github.com/pmankineni/mcp-datasphere-tools"
-    },
-    "prudvigit/mcp-sap-cpi": {
-      "repo": "prudvigit/mcp-sap-cpi",
-      "source": "api",
-      "exists": true,
-      "fork": false,
-      "parent": null,
-      "stars": 5,
-      "lastChange": "2026-05-16T08:54:46Z",
-      "archived": false,
-      "license": "MIT",
-      "description": "MCP server for SAP CPI — operate failed messages, iFlows, packages, and credentials from Claude. Drop-in BTP service-key config.",
-      "primaryLanguage": "TypeScript",
-      "languages": {
-        "TypeScript": 12700,
-        "JavaScript": 2164
-      },
-      "htmlUrl": "https://github.com/Keelside/mcp-sap-cpi"
     },
     "rahulsethi/SAPBDCMCP": {
       "repo": "rahulsethi/SAPBDCMCP",
@@ -1616,6 +1546,43 @@
         "Dockerfile": 3320
       },
       "htmlUrl": "https://github.com/workskong/mcp-abap-adt"
+    },
+    "ClementRingot/ROSA": {
+      "repo": "ClementRingot/ROSA",
+      "source": "api",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": 24,
+      "lastChange": "2026-07-06T08:28:26Z",
+      "archived": false,
+      "license": "MIT",
+      "description": "ROSA (Released Objects Search Assistant) - MCP server and REST API giving AI agents real-time knowledge of SAP objects released for ABAP Cloud / Clean Core",
+      "primaryLanguage": "TypeScript",
+      "languages": {
+        "TypeScript": 205288,
+        "JavaScript": 8720,
+        "Dockerfile": 1344
+      },
+      "htmlUrl": "https://github.com/ClementRingot/ROSA"
+    },
+    "Keelside/mcp-sap-cpi": {
+      "repo": "Keelside/mcp-sap-cpi",
+      "source": "api",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": 5,
+      "lastChange": "2026-05-16T08:54:46Z",
+      "archived": false,
+      "license": "MIT",
+      "description": "MCP server for SAP CPI — operate failed messages, iFlows, packages, and credentials from Claude. Drop-in BTP service-key config.",
+      "primaryLanguage": "TypeScript",
+      "languages": {
+        "TypeScript": 12700,
+        "JavaScript": 2164
+      },
+      "htmlUrl": "https://github.com/Keelside/mcp-sap-cpi"
     }
   }
 }

@@ -26,21 +26,18 @@ Know a project that belongs here? [Open an issue using the "Add new entry" templ
 
 - **Official SAP**
   - [Official SAP MCP Servers](#official-sap-mcp-servers)
-  - [Official SAP AI Skills](#official-sap-ai-skills)
-  - [Official SAP Claude Plugins](#official-sap-claude-plugins)
+  - [Official SAP AI Skills & Claude Plugins](#official-sap-ai-skills--claude-plugins)
 - **Community MCP Servers**
-  - [ABAP and ADT](#abap-and-adt)
-  - [SAP Docs and Knowledge](#sap-docs-and-knowledge)
-  - [OData, Gateway and Graph](#odata-gateway-and-graph)
+  - [ABAP & ADT](#abap--adt)
+  - [SAP Docs & Knowledge](#sap-docs--knowledge)
+  - [OData, Gateway & Graph](#odata-gateway--graph)
   - [SAP Integration (CPI / PI)](#sap-integration-cpi--pi)
-  - [Data, Analytics and HANA](#data-analytics-and-hana)
+  - [Data, Analytics & HANA](#data-analytics--hana)
   - [SAP GUI Automation](#sap-gui-automation)
-  - [Operations, Monitoring and Lifecycle](#operations-monitoring-and-lifecycle)
-  - [Security, HR and Other SAP MCP Servers](#security-hr-and-other-sap-mcp-servers)
-- **Community AI Skills and Plugins**
-  - [Community SAP AI Skills](#community-sap-ai-skills)
-  - [Community SAP Claude Plugins and Skills](#community-sap-claude-plugins-and-skills)
-- **[Libraries, SDKs and Adjacent Tools](#libraries-sdks-and-adjacent-tools)**
+  - [Operations, Monitoring & Lifecycle](#operations-monitoring--lifecycle)
+  - [Business Apps, Security & Governance](#business-apps-security--governance)
+- **[Community SAP AI Skills & Claude Plugins](#community-sap-ai-skills--claude-plugins)**
+- **[Libraries, SDKs & Adjacent Tools](#libraries-sdks--adjacent-tools)**
 
 # Official SAP
 
@@ -50,27 +47,25 @@ Repositories published under official SAP GitHub organizations.
 
 {{CATEGORY:sap-mcp-server}}
 
-## Official SAP AI Skills
+## Official SAP AI Skills & Claude Plugins
 
-{{CATEGORY:sap-skills}}
+AI skills and Claude Code plugins maintained by SAP. The **Packages** column shows what each repository ships: a skill pack, a Claude Code plugin, or both.
 
-## Official SAP Claude Plugins
-
-{{SAP_CLAUDE_PLUGINS_TABLE}}
+{{OFFICIAL_SKILLS_PLUGINS_TABLE}}
 
 # Community MCP Servers
 
 Community-built MCP servers, grouped by the SAP domain they target.
 
-## ABAP and ADT
+## ABAP & ADT
 
 {{CATEGORY:abap-and-adt-mcp-server}}
 
-## SAP Docs and Knowledge
+## SAP Docs & Knowledge
 
 {{CATEGORY:sap-docs-mcp-server}}
 
-## OData, Gateway and Graph
+## OData, Gateway & Graph
 
 {{CATEGORY:odata-gateway-graph}}
 
@@ -78,7 +73,7 @@ Community-built MCP servers, grouped by the SAP domain they target.
 
 {{CATEGORY:sap-integration}}
 
-## Data, Analytics and HANA
+## Data, Analytics & HANA
 
 {{CATEGORY:sap-data-analytics}}
 
@@ -86,25 +81,21 @@ Community-built MCP servers, grouped by the SAP domain they target.
 
 {{CATEGORY:sap-gui}}
 
-## Operations, Monitoring and Lifecycle
+## Operations, Monitoring & Lifecycle
 
 {{CATEGORY:sap-operations-lifecycle}}
 
-## Security, HR and Other SAP MCP Servers
+## Business Apps, Security & Governance
 
 {{CATEGORY:sap-business-security}}
 
-# Community AI Skills and Plugins
+# Community SAP AI Skills & Claude Plugins
 
-## Community SAP AI Skills
+Community-built AI skills, prompt packs, and Claude Code plugins for SAP development. Each repository is listed once — the **Packages** column shows whether it ships a skill pack, a Claude Code plugin, or both.
 
-{{SKILLS_TABLE}}
+{{COMMUNITY_SKILLS_PLUGINS_TABLE}}
 
-## Community SAP Claude Plugins and Skills
-
-{{COMMUNITY_CLAUDE_PLUGINS_TABLE}}
-
-# Libraries, SDKs and Adjacent Tools
+# Libraries, SDKs & Adjacent Tools
 
 Non-MCP-server projects that support the SAP AI developer ecosystem — SDKs and auth libraries for building MCP servers, IDE and CLI tooling, and reference material.
 

@@ -34,18 +34,16 @@ body:
       description: Choose the closest existing catalog section.
       options:
         - Official SAP MCP Servers
-        - ABAP and ADT
-        - SAP Docs and Knowledge
-        - OData, Gateway and Graph
+        - ABAP & ADT
+        - SAP Docs & Knowledge
+        - OData, Gateway & Graph
         - SAP Integration (CPI / PI)
-        - Data, Analytics and HANA
+        - Data, Analytics & HANA
         - SAP GUI Automation
-        - Operations, Monitoring and Lifecycle
-        - Security, HR and Other SAP MCP Servers
-        - SAP AI Skills
-        - Claude Plugins
-        - SAP Skills + Claude Plugins
-        - Libraries, SDKs and Adjacent Tools
+        - Operations, Monitoring & Lifecycle
+        - Business Apps, Security & Governance
+        - AI Skills & Claude Plugins
+        - Libraries, SDKs & Adjacent Tools
     validations:
       required: true
 
