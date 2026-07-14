@@ -63,9 +63,18 @@
           "linkLabel": "SAP Help Portal",
           "purpose": "Enables MCP clients to access ADT capabilities from ABAP Development Tools for Visual Studio Code.",
           "notes": "Official SAP Help Portal setup documentation; no public GitHub repository."
+        },
+        {
+          "type": "SAP",
+          "name": "SAP LeanIX MCP Server",
+          "addedAt": "2026-07-14",
+          "url": "https://help.sap.com/docs/leanix/ea/mcp-server",
+          "linkLabel": "help.sap.com/leanix-mcp-server",
+          "purpose": "Hosted MCP server that connects AI agents to SAP LeanIX enterprise architecture data — inventory, automations, calculations, and custom reports.",
+          "notes": "First-party SAP-certified hosted HTTP MCP endpoint at mcp.leanix.net; listed on skills.cloud.sap. Companion Claude plugin and agent skills live in SAP/leanix-ai-plugins."
         }
       ],
-      "description": "MCP servers built and maintained by SAP — Fiori app generation, CAP, UI5 and UI5 Web Components, the Mobile Development Kit, and ADT access from ABAP Development Tools for VS Code."
+      "description": "MCP servers built and maintained by SAP — Fiori app generation, CAP, UI5 and UI5 Web Components, the Mobile Development Kit, ADT access from ABAP Development Tools for VS Code, and SAP LeanIX enterprise architecture."
     },
     {
       "id": "abap-and-adt-mcp-server",
@@ -562,15 +571,6 @@
       "title": "Business Apps, Security & Governance",
       "entries": [
         {
-          "type": "SAP",
-          "name": "SAP LeanIX MCP Server",
-          "addedAt": "2026-07-14",
-          "url": "https://help.sap.com/docs/leanix/ea/mcp-server",
-          "linkLabel": "help.sap.com/leanix-mcp-server",
-          "purpose": "Hosted MCP server that connects AI agents to SAP LeanIX enterprise architecture data — inventory, automations, calculations, and custom reports.",
-          "notes": "First-party SAP-certified hosted HTTP MCP endpoint at mcp.leanix.net; listed on skills.cloud.sap. Companion Claude plugin and agent skills live in SAP/leanix-ai-plugins."
-        },
-        {
           "type": "Community SAP",
           "name": "SyntaAI SAP Security MCP Server",
           "addedAt": "2026-03-11",
@@ -595,19 +595,10 @@
           "notes": "Python/FastAPI implementation with tool discovery, execution, service status, logging, and SAP connection configuration."
         }
       ],
-      "description": "MCP servers for SAP line-of-business applications and cross-cutting concerns — security and compliance auditing, SuccessFactors HR, SAP LeanIX enterprise architecture, and general-purpose SAP system access."
+      "description": "MCP servers for SAP line-of-business applications and cross-cutting concerns — security and compliance auditing, SuccessFactors HR, and general-purpose SAP system access."
     }
   ],
   "adjacentTools": [
-    {
-      "type": "SAP",
-      "name": "SAP AI Skills Library (skills.cloud.sap)",
-      "addedAt": "2026-07-14",
-      "url": "https://skills.cloud.sap/",
-      "linkLabel": "skills.cloud.sap",
-      "purpose": "Official SAP portal to discover and install AI skills, plugins, marketplaces, and MCP servers for SAP Joule and coding agents, each installable with a single command.",
-      "notes": "Web front end of the SAP AI Skills Library (SAP/ai-skills-library); skills install via Joule or the cross-agent skills CLI."
-    },
     {
       "type": "Community SAP",
       "name": "CAP MCP Plugin",
@@ -952,6 +943,19 @@
       "notes": "Listed on skills.cloud.sap; skills live under skills/ in the official UI5 Web Components repository.",
       "packages": [
         "skill"
+      ]
+    },
+    {
+      "type": "SAP",
+      "name": "SAP AI Skills Library (skills.cloud.sap)",
+      "addedAt": "2026-07-14",
+      "url": "https://skills.cloud.sap/",
+      "linkLabel": "skills.cloud.sap",
+      "purpose": "Official SAP portal to discover and install AI skills, plugins, marketplaces, and MCP servers for SAP Joule and coding agents, each installable with a single command.",
+      "notes": "Web front end of the SAP AI Skills Library (SAP/ai-skills-library); skills install via Joule or the cross-agent skills CLI. Portal/catalog rather than a single skill or plugin package.",
+      "packages": [
+        "skill",
+        "claude-plugin"
       ]
     }
   ]

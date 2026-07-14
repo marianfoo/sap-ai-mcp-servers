@@ -11,7 +11,7 @@ Dates use the commit date from `git log` on `data/catalog.json`.
 - [`SAP/leanix-ai-plugins`](https://github.com/SAP/leanix-ai-plugins) — SAP LeanIX AI Plugins (Claude plugin + skills powered by the LeanIX MCP server), added under Official SAP AI Skills & Claude Plugins
 - [`SAP/ui-theme-designer-plugins-for-coding-agents`](https://github.com/SAP/ui-theme-designer-plugins-for-coding-agents) — SAP UI Theme Designer Plugins for Coding Agents (design tokens + help skills), added under Official SAP AI Skills & Claude Plugins
 - [`UI5/webcomponents`](https://github.com/UI5/webcomponents) — UI5 Web Components Agent Skills (accessibility + styling), added under Official SAP AI Skills & Claude Plugins
-- Also added non-repo entries sourced from [skills.cloud.sap](https://skills.cloud.sap/): the SAP AI Skills Library portal (Adjacent Tools) and the hosted SAP LeanIX MCP Server (Business Apps, Security & Governance)
+- Also added non-repo entries sourced from [skills.cloud.sap](https://skills.cloud.sap/): the SAP AI Skills Library portal (Official SAP AI Skills & Claude Plugins) and the hosted SAP LeanIX MCP Server (Official SAP MCP Servers)
 
 ## 2026-07-11
 

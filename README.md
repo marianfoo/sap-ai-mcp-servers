@@ -45,7 +45,7 @@ Repositories published under official SAP GitHub organizations.
 
 ## Official SAP MCP Servers
 
-MCP servers built and maintained by SAP — Fiori app generation, CAP, UI5 and UI5 Web Components, the Mobile Development Kit, and ADT access from ABAP Development Tools for VS Code.
+MCP servers built and maintained by SAP — Fiori app generation, CAP, UI5 and UI5 Web Components, the Mobile Development Kit, ADT access from ABAP Development Tools for VS Code, and SAP LeanIX enterprise architecture.
 
 | Name | Repository | Purpose | License | Stars | Last Change |
 | --- | --- | --- | --- | ---: | --- |
@@ -55,6 +55,7 @@ MCP servers built and maintained by SAP — Fiori app generation, CAP, UI5 and U
 | SAP MDK MCP Server | [SAP/mdk-mcp-server](https://github.com/SAP/mdk-mcp-server) | AI-assisted SAP Mobile Development Kit workflows. | Apache-2.0 | 33 | 2026-07-14 |
 | UI5 Web Components MCP Server | [UI5/webcomponents-mcp-server](https://github.com/UI5/webcomponents-mcp-server) | AI-assisted development with UI5 Web Components (component API, guidelines, docs). | Apache-2.0 | 19 | 2026-06-22 |
 | ADT MCP Server | [SAP Help Portal](https://help.sap.com/docs/abap-cloud/abap-development-tools-for-visual-studio-code/enabling-adt-mcp-server?locale=en-US) | Enables MCP clients to access ADT capabilities from ABAP Development Tools for Visual Studio Code. | **NO LICENSE FOUND** | - | - |
+| SAP LeanIX MCP Server | [help.sap.com/leanix-mcp-server](https://help.sap.com/docs/leanix/ea/mcp-server) | Hosted MCP server that connects AI agents to SAP LeanIX enterprise architecture data — inventory, automations, calculations, and custom reports. | **NO LICENSE FOUND** | - | - |
 
 ## Official SAP AI Skills & Claude Plugins
 
@@ -65,6 +66,7 @@ AI skills and Claude Code plugins maintained by SAP. The **Packages** column sho
 | UI5 Plugins for Coding Agents | [UI5/plugins-coding-agents](https://github.com/UI5/plugins-coding-agents) | Provide UI5-specific plugins for coding agents — project creation, UI5 error fixing, and framework guidance. | Claude Plugin | Apache-2.0 | 25 | 2026-07-09 |
 | SAP AI Skills Library | [SAP/ai-skills-library](https://github.com/SAP/ai-skills-library) | SAP-maintained library of AI skills for digital assistants — discover, search, filter, and install via a skills CLI. | Skill | Apache-2.0 | 22 | 2026-06-25 |
 | CAP Agentic Engineered Skills | [SAP-samples/cap-agentic-engineered](https://github.com/SAP-samples/cap-agentic-engineered) | Provide reusable MCP-routing AGENTS.md and SAP skills for CAP and Fiori Elements agentic development. | Skill | Apache-2.0 | 9 | 2026-05-27 |
+| SAP AI Skills Library (skills.cloud.sap) | [skills.cloud.sap](https://skills.cloud.sap/) | Official SAP portal to discover and install AI skills, plugins, marketplaces, and MCP servers for SAP Joule and coding agents, each installable with a single command. | Skill + Claude Plugin | **NO LICENSE FOUND** | - | - |
 | SAP Automation Pilot Agent Skills | [SAP/automation-pilot-agent-skills](https://github.com/SAP/automation-pilot-agent-skills) | Skills for generating, reviewing, debugging, and managing SAP Automation Pilot commands, executors, schedules, and MCP servers through the Automation Pilot Content and Executions APIs. | Skill | Apache-2.0 | - | - |
 | SAP Joule A2A Agent Toolkit Skills | [SAP-samples/joule-a2a-agent-toolkit](https://github.com/SAP-samples/joule-a2a-agent-toolkit) | Skills for the SAP BTP, Cloud Foundry, and Joule command-line tools and for building and deploying custom Joule A2A (agent-to-agent) agents on SAP BTP. | Skill | Apache-2.0 | - | - |
 | SAP LeanIX AI Plugins | [SAP/leanix-ai-plugins](https://github.com/SAP/leanix-ai-plugins) | Claude plugin and agent skills that extend coding agents with SAP LeanIX enterprise architecture workflows — building and debugging LeanIX automations and calculations — via the LeanIX MCP server. | Skill + Claude Plugin | Apache-2.0 | - | - |
@@ -181,14 +183,13 @@ Landscape operations and lifecycle management — query SAP Cloud ALM ITSM and S
 
 ## Business Apps, Security & Governance
 
-MCP servers for SAP line-of-business applications and cross-cutting concerns — security and compliance auditing, SuccessFactors HR, SAP LeanIX enterprise architecture, and general-purpose SAP system access.
+MCP servers for SAP line-of-business applications and cross-cutting concerns — security and compliance auditing, SuccessFactors HR, and general-purpose SAP system access.
 
 | Name | Repository | Purpose | License | Stars | Last Change |
 | --- | --- | --- | --- | ---: | --- |
 | SAP SuccessFactors MCP Server | [aiadiguru2025/sf-mcp](https://github.com/aiadiguru2025/sf-mcp) | SuccessFactors HR operations via MCP tools. | MIT | 9 | 2026-07-04 |
 | SAP MCP Server (MarkWuRY168) | [MarkWuRY168/SAP_MCP](https://github.com/MarkWuRY168/SAP_MCP) | Publish configurable SAP system tools through MCP services and a web management interface. | MIT | 2 | 2026-03-11 |
 | SyntaAI SAP Security MCP Server | [SYNTAAI/sap-security-mcp](https://github.com/SYNTAAI/sap-security-mcp) | SAP security analysis and compliance auditing via MCP. 19 read-only tools for user access reviews, SoD violation checks, critical authorization detection, compliance reporting (SOX, GDPR, ISO 27001, NIST), RFC security analysis, password policy audits, and role/authorization review. | Apache-2.0 | 2 | 2026-03-10 |
-| SAP LeanIX MCP Server | [help.sap.com/leanix-mcp-server](https://help.sap.com/docs/leanix/ea/mcp-server) | Hosted MCP server that connects AI agents to SAP LeanIX enterprise architecture data — inventory, automations, calculations, and custom reports. | **NO LICENSE FOUND** | - | - |
 
 # Community SAP AI Skills & Claude Plugins
 
@@ -226,5 +227,4 @@ Non-MCP-server projects that support the SAP AI developer ecosystem — SDKs and
 | SAP MCP Config | [Hochfrequenz/sap-mcp-config](https://github.com/Hochfrequenz/sap-mcp-config) | Provide shared Go and Python models for SAP credentials used by MCP servers. | MIT | 0 | 2026-07-14 |
 | Amazon Q Developer for Eclipse (Official Docs) | [docs.aws.amazon.com/amazon-q-eclipse](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/q-in-IDE_setup.html) | Official setup docs for Amazon Q in Eclipse IDE. | **NO LICENSE FOUND** | - | - |
 | GitHub Copilot in Eclipse (Official Docs) | [docs.github.com/eclipse-copilot](https://docs.github.com/en/copilot/how-tos/set-up/install-copilot-in-the-ide?tool=eclipse) | Official setup and usage docs for Copilot in Eclipse. | **NO LICENSE FOUND** | - | - |
-| SAP AI Skills Library (skills.cloud.sap) | [skills.cloud.sap](https://skills.cloud.sap/) | Official SAP portal to discover and install AI skills, plugins, marketplaces, and MCP servers for SAP Joule and coding agents, each installable with a single command. | **NO LICENSE FOUND** | - | - |
 | SAP Build Code and Joule (Official Topic Page) | [SAP Build Code Topic](https://pages.community.sap.com/topics/build-code) | Entry point for SAP Build Code and Joule-related resources. | **NO LICENSE FOUND** | - | - |
