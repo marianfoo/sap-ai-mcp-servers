@@ -1,7 +1,7 @@
 {
   "generatedAt": "2026-07-14T06:44:37.470Z",
   "sourceCatalog": "data/catalog.json",
-  "repoCount": 85,
+  "repoCount": 90,
   "tokenUsed": true,
   "repoMetadata": {
     "1nbuc/mcp-integration-suite": {
@@ -1583,6 +1583,81 @@
         "Dockerfile": 3320
       },
       "htmlUrl": "https://github.com/workskong/mcp-abap-adt"
+    },
+    "SAP-samples/joule-a2a-agent-toolkit": {
+      "repo": "SAP-samples/joule-a2a-agent-toolkit",
+      "source": "manual",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": null,
+      "lastChange": null,
+      "archived": false,
+      "license": "Apache-2.0",
+      "description": null,
+      "primaryLanguage": null,
+      "languages": null,
+      "htmlUrl": "https://github.com/SAP-samples/joule-a2a-agent-toolkit"
+    },
+    "SAP/automation-pilot-agent-skills": {
+      "repo": "SAP/automation-pilot-agent-skills",
+      "source": "manual",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": null,
+      "lastChange": null,
+      "archived": false,
+      "license": "Apache-2.0",
+      "description": null,
+      "primaryLanguage": null,
+      "languages": null,
+      "htmlUrl": "https://github.com/SAP/automation-pilot-agent-skills"
+    },
+    "SAP/leanix-ai-plugins": {
+      "repo": "SAP/leanix-ai-plugins",
+      "source": "manual",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": null,
+      "lastChange": null,
+      "archived": false,
+      "license": "Apache-2.0",
+      "description": null,
+      "primaryLanguage": null,
+      "languages": null,
+      "htmlUrl": "https://github.com/SAP/leanix-ai-plugins"
+    },
+    "SAP/ui-theme-designer-plugins-for-coding-agents": {
+      "repo": "SAP/ui-theme-designer-plugins-for-coding-agents",
+      "source": "manual",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": null,
+      "lastChange": null,
+      "archived": false,
+      "license": "Apache-2.0",
+      "description": null,
+      "primaryLanguage": null,
+      "languages": null,
+      "htmlUrl": "https://github.com/SAP/ui-theme-designer-plugins-for-coding-agents"
+    },
+    "UI5/webcomponents": {
+      "repo": "UI5/webcomponents",
+      "source": "manual",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": null,
+      "lastChange": null,
+      "archived": false,
+      "license": "Apache-2.0",
+      "description": null,
+      "primaryLanguage": null,
+      "languages": null,
+      "htmlUrl": "https://github.com/UI5/webcomponents"
     }
   }
 }

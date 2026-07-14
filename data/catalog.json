@@ -562,6 +562,15 @@
       "title": "Business Apps, Security & Governance",
       "entries": [
         {
+          "type": "SAP",
+          "name": "SAP LeanIX MCP Server",
+          "addedAt": "2026-07-14",
+          "url": "https://help.sap.com/docs/leanix/ea/mcp-server",
+          "linkLabel": "help.sap.com/leanix-mcp-server",
+          "purpose": "Hosted MCP server that connects AI agents to SAP LeanIX enterprise architecture data — inventory, automations, calculations, and custom reports.",
+          "notes": "First-party SAP-certified hosted HTTP MCP endpoint at mcp.leanix.net; listed on skills.cloud.sap. Companion Claude plugin and agent skills live in SAP/leanix-ai-plugins."
+        },
+        {
           "type": "Community SAP",
           "name": "SyntaAI SAP Security MCP Server",
           "addedAt": "2026-03-11",
@@ -586,10 +595,19 @@
           "notes": "Python/FastAPI implementation with tool discovery, execution, service status, logging, and SAP connection configuration."
         }
       ],
-      "description": "MCP servers for SAP line-of-business applications and cross-cutting concerns — security and compliance auditing, SuccessFactors HR, and general-purpose SAP system access."
+      "description": "MCP servers for SAP line-of-business applications and cross-cutting concerns — security and compliance auditing, SuccessFactors HR, SAP LeanIX enterprise architecture, and general-purpose SAP system access."
     }
   ],
   "adjacentTools": [
+    {
+      "type": "SAP",
+      "name": "SAP AI Skills Library (skills.cloud.sap)",
+      "addedAt": "2026-07-14",
+      "url": "https://skills.cloud.sap/",
+      "linkLabel": "skills.cloud.sap",
+      "purpose": "Official SAP portal to discover and install AI skills, plugins, marketplaces, and MCP servers for SAP Joule and coding agents, each installable with a single command.",
+      "notes": "Web front end of the SAP AI Skills Library (SAP/ai-skills-library); skills install via Joule or the cross-agent skills CLI."
+    },
     {
       "type": "Community SAP",
       "name": "CAP MCP Plugin",
@@ -877,6 +895,63 @@
       "notes": "Official UI5 plugin repository for coding agents (Claude Code, etc.) with UI5 and UI5 TypeScript conversion plugins.",
       "packages": [
         "claude-plugin"
+      ]
+    },
+    {
+      "type": "SAP",
+      "name": "SAP Joule A2A Agent Toolkit Skills",
+      "addedAt": "2026-07-14",
+      "repo": "SAP-samples/joule-a2a-agent-toolkit",
+      "purpose": "Skills for the SAP BTP, Cloud Foundry, and Joule command-line tools and for building and deploying custom Joule A2A (agent-to-agent) agents on SAP BTP.",
+      "notes": "Listed on skills.cloud.sap; ships the btp-cli, cf-cli, joule-cli, and joule-a2a-agent skills installable via Joule or the cross-agent skills CLI.",
+      "packages": [
+        "skill"
+      ]
+    },
+    {
+      "type": "SAP",
+      "name": "SAP Automation Pilot Agent Skills",
+      "addedAt": "2026-07-14",
+      "repo": "SAP/automation-pilot-agent-skills",
+      "purpose": "Skills for generating, reviewing, debugging, and managing SAP Automation Pilot commands, executors, schedules, and MCP servers through the Automation Pilot Content and Executions APIs.",
+      "notes": "Listed on skills.cloud.sap; covers command generation, HTTP and ExecuteScript executors, catalog exploration, and MCP server generation.",
+      "packages": [
+        "skill"
+      ]
+    },
+    {
+      "type": "SAP",
+      "name": "SAP LeanIX AI Plugins",
+      "addedAt": "2026-07-14",
+      "repo": "SAP/leanix-ai-plugins",
+      "purpose": "Claude plugin and agent skills that extend coding agents with SAP LeanIX enterprise architecture workflows — building and debugging LeanIX automations and calculations — via the LeanIX MCP server.",
+      "notes": "Listed on skills.cloud.sap as the sap-leanix plugin and marketplace; uses the hosted SAP LeanIX MCP server at mcp.leanix.net.",
+      "packages": [
+        "skill",
+        "claude-plugin"
+      ]
+    },
+    {
+      "type": "SAP",
+      "name": "SAP UI Theme Designer Plugins for Coding Agents",
+      "addedAt": "2026-07-14",
+      "repo": "SAP/ui-theme-designer-plugins-for-coding-agents",
+      "purpose": "Equip coding agents with knowledge and tooling for the SAP Design System, SAP Fiori design tokens, and UI theme designer, via the design-tokens and help skills.",
+      "notes": "Listed on skills.cloud.sap; Claude Code plugin under plugins/ui-theme-designer bundling the design-tokens and help skills.",
+      "packages": [
+        "skill",
+        "claude-plugin"
+      ]
+    },
+    {
+      "type": "SAP",
+      "name": "UI5 Web Components Agent Skills",
+      "addedAt": "2026-07-14",
+      "repo": "UI5/webcomponents",
+      "purpose": "Agent skills shipped with the UI5 Web Components library covering accessibility (ARIA, keyboard, screen readers) and styling (CSS shadow parts, custom states, and variables).",
+      "notes": "Listed on skills.cloud.sap; skills live under skills/ in the official UI5 Web Components repository.",
+      "packages": [
+        "skill"
       ]
     }
   ]
