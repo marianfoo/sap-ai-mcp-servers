@@ -38,32 +38,35 @@ Run `npm run build` to execute the full pipeline locally.
 
 ### Step 1 — Choose the right section
 
-`catalog.json` has four top-level arrays:
+`catalog.json` has three top-level arrays:
 
 | Key | What goes here |
 |---|---|
-| `categories` | MCP servers, grouped by topic (ABAP/ADT, OData, Docs, etc.) |
-| `skills` | Non-Claude AI skill files / prompt packs (Kiro packs, etc.) |
-| `claudePlugins` | Claude Code plugins and Claude-compatible SAP skill packs |
-| `adjacentTools` | Useful non-MCP tools adjacent to the SAP AI dev ecosystem |
+| `categories` | MCP servers only (official SAP + community), grouped by SAP domain (ABAP/ADT, OData, Docs, etc.) |
+| `skillsAndPlugins` | AI skill packs and Claude Code plugins — official and community. One entry per repo; the `packages` field says what it ships |
+| `adjacentTools` | Non-MCP-server projects: SDKs and auth libraries for MCP authors, IDE/CLI tooling, reference material |
 
-Each `categories` entry has an `id` and `title`. Current category IDs:
+Each `skillsAndPlugins` entry must carry a `packages` array with `"skill"`, `"claude-plugin"`, or both. A repo that ships both a skill pack and a Claude Code plugin gets **one** entry with `"packages": ["skill", "claude-plugin"]` — never two entries. The README renders a "Packages" column from this field, and the website turns it into package-type badges and filters.
 
-- `sap-mcp-server` — Official SAP MCP servers
-- `community-sap-mcp-server` — Community general SAP MCP servers
-- `sap-docs-mcp-server` — SAP documentation MCP servers
-- `abap-and-adt-mcp-server` — ABAP/ADT MCP servers
-- `sap-integration` — SAP Integration Suite / CPI
-- `sap-datasphere` — SAP Datasphere / BDC
-- `sap-odata-gateway-graph-mcp-server` — OData / Gateway / SAP Graph bridges
+Each `categories` entry has an `id` and `title`. Categories are grouped by SAP domain so the README and the web catalog stay easy to scan. Current category IDs:
+
+- `sap-mcp-server` — Official SAP MCP servers (SAP GitHub orgs)
+- `abap-and-adt-mcp-server` — ABAP / ADT MCP servers (the largest group)
+- `sap-docs-mcp-server` — SAP documentation and knowledge MCP servers
+- `odata-gateway-graph` — OData, Gateway, and SAP Graph bridges, incl. the odata-mcp-proxy config-driven family (BTP, CI, AI Core)
+- `sap-integration` — SAP Integration Suite / CPI / PI
+- `sap-data-analytics` — Data, analytics, and HANA: Datasphere, BDC, BW modeling, HANA, SAP Analytics Cloud
 - `sap-gui` — SAP GUI automation
-- `sap-hana` — SAP HANA
-- `odata-mcp-proxy-ecosystem` — OData MCP Proxy and config-driven consumers (BTP, CI, AI Core)
-- `sap-cloud-alm` — SAP Cloud ALM
+- `sap-operations-lifecycle` — Operations, monitoring, and lifecycle: Cloud ALM, Focused Run
+- `sap-business-security` — Business apps, security, and governance: security auditing, SuccessFactors HR, general SAP system access (the catch-all)
+
+Each category can carry an optional `description` — one or two sentences rendered under the README section heading. Keep it focused on what the tools in the category do for a developer.
+
+When adding an MCP server, place it in the closest domain category above. Only create a new category when several entries share a domain that none of the existing categories cover; a single new entry usually fits an existing group (`sap-business-security` is the catch-all). If you add or rename a category, also update `templates/README.template.md` (section heading, navigation list, and the `{{CATEGORY:<id>}}` placeholder) and the category dropdown in `.github/ISSUE_TEMPLATE/add-entry.yml` so both stay in sync.
 
 ### Step 2 — Add the entry object
 
-Append a new object to the `entries` array of the correct category (or to `skills` / `claudePlugins` / `adjacentTools`).
+Append a new object to the `entries` array of the correct category (or to `skillsAndPlugins` / `adjacentTools`).
 
 **Standard GitHub repo entry:**
 
@@ -73,6 +76,20 @@ Append a new object to the `entries` array of the correct category (or to `skill
   "name": "My SAP MCP Server",
   "addedAt": "2026-07-13",
   "repo": "owner/repo-name",
+  "purpose": "One sentence describing what it does.",
+  "notes": "Optional extra context or caveats."
+}
+```
+
+**Skill and/or Claude plugin entry** (`skillsAndPlugins` array only):
+
+```json
+{
+  "type": "Community SAP",
+  "name": "My SAP Skills & Plugin",
+  "addedAt": "2026-07-13",
+  "repo": "owner/repo-name",
+  "packages": ["skill", "claude-plugin"],
   "purpose": "One sentence describing what it does.",
   "notes": "Optional extra context or caveats."
 }
@@ -134,6 +151,7 @@ For non-GitHub entries you can optionally include inline `license`, `lastChange`
 | `name` | yes | Display name shown in the README table |
 | `addedAt` | yes | Date the item was first added to the catalog (`YYYY-MM-DD`); use the commit date or today when preparing the commit |
 | `repo` | yes* | `owner/repo` — omit only for non-GitHub URLs |
+| `packages` | yes** | `skillsAndPlugins` entries only: `["skill"]`, `["claude-plugin"]`, or both |
 | `purpose` | yes | One concise sentence. End with a period. |
 | `notes` | no | Extra context, caveats, setup requirements |
 | `repoPath` | no | Sub-path inside a monorepo (shown in the link label) |
@@ -146,7 +164,7 @@ For non-GitHub entries you can optionally include inline `license`, `lastChange`
 
 ### Step 3 — Update CHANGELOG.md (new GitHub repos only)
 
-The README links to [`CHANGELOG.md`](CHANGELOG.md) at the top so readers can see **when new repositories were added**. Whenever you add a catalog entry that includes a `repo` field (including `skills` / `claudePlugins` / `adjacentTools` entries that point at GitHub), append a line to `CHANGELOG.md`:
+The README links to [`CHANGELOG.md`](CHANGELOG.md) at the top so readers can see **when new repositories were added**. Whenever you add a catalog entry that includes a `repo` field (including `skillsAndPlugins` / `adjacentTools` entries that point at GitHub), append a line to `CHANGELOG.md`:
 
 1. Use the **commit date** (or today’s date if you are about to commit) as the section heading: `## YYYY-MM-DD`.
 2. If that date already has a section, add a bullet under it; otherwise create a new `## YYYY-MM-DD` section **above** older dates (newest first).

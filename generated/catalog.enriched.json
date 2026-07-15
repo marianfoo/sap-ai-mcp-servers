@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-15T09:40:00.360Z",
+  "generatedAt": "2026-07-15T09:47:25.626Z",
   "sourceCatalog": "data/catalog.json",
-  "repoCount": 88,
+  "repoCount": 91,
   "tokenUsed": true,
   "repoMetadata": {
     "1nbuc/mcp-integration-suite": {
@@ -293,7 +293,7 @@
       "exists": true,
       "fork": false,
       "parent": null,
-      "stars": 0,
+      "stars": 2,
       "lastChange": "2026-07-14T11:37:12Z",
       "archived": false,
       "license": "Apache-2.0",
@@ -322,8 +322,8 @@
       },
       "htmlUrl": "https://github.com/chandrashekhar-mahajan/abap-mcp-server"
     },
-    "ClementRingot/sap-released-objects-mcp-server": {
-      "repo": "ClementRingot/sap-released-objects-mcp-server",
+    "ClementRingot/ROSA": {
+      "repo": "ClementRingot/ROSA",
       "source": "api",
       "exists": true,
       "fork": false,
@@ -698,21 +698,6 @@
       },
       "htmlUrl": "https://github.com/jduncan8142/sap_gui_mcp"
     },
-    "jfdurelle/onpremise-sap-odata-to-mcp-server": {
-      "repo": "jfdurelle/onpremise-sap-odata-to-mcp-server",
-      "source": "api",
-      "exists": false,
-      "fork": null,
-      "parent": null,
-      "stars": null,
-      "lastChange": null,
-      "archived": null,
-      "license": null,
-      "description": null,
-      "primaryLanguage": "TypeScript",
-      "languages": null,
-      "htmlUrl": "https://github.com/jfdurelle/onpremise-sap-odata-to-mcp-server"
-    },
     "jfilak/sapcli": {
       "repo": "jfilak/sapcli",
       "source": "api",
@@ -767,6 +752,24 @@
         "Dockerfile": 520
       },
       "htmlUrl": "https://github.com/JumenEngels/sap_analytics_cloud_mcp"
+    },
+    "Keelside/mcp-sap-cpi": {
+      "repo": "Keelside/mcp-sap-cpi",
+      "source": "api",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": 5,
+      "lastChange": "2026-05-16T08:54:46Z",
+      "archived": false,
+      "license": "MIT",
+      "description": "MCP server for SAP CPI — operate failed messages, iFlows, packages, and credentials from Claude. Drop-in BTP service-key config.",
+      "primaryLanguage": "TypeScript",
+      "languages": {
+        "TypeScript": 12700,
+        "JavaScript": 2164
+      },
+      "htmlUrl": "https://github.com/Keelside/mcp-sap-cpi"
     },
     "KEIDAI-TechTime/sap-claude-skills": {
       "repo": "KEIDAI-TechTime/sap-claude-skills",
@@ -929,7 +932,7 @@
       "exists": true,
       "fork": false,
       "parent": null,
-      "stars": 82,
+      "stars": 83,
       "lastChange": "2026-07-10T08:25:17Z",
       "archived": false,
       "license": "Apache-2.0",
@@ -1260,24 +1263,6 @@
       },
       "htmlUrl": "https://github.com/oisee/vibing-steampunk"
     },
-    "one-kash/sap-odata-explorer": {
-      "repo": "one-kash/sap-odata-explorer",
-      "source": "api",
-      "exists": false,
-      "fork": null,
-      "parent": null,
-      "stars": null,
-      "lastChange": null,
-      "archived": null,
-      "license": null,
-      "description": null,
-      "primaryLanguage": "TypeScript",
-      "languages": {
-        "TypeScript": 529,
-        "JavaScript": 471
-      },
-      "htmlUrl": "https://github.com/one-kash/sap-odata-explorer"
-    },
     "pmankineni/mcp-datasphere-tools": {
       "repo": "pmankineni/mcp-datasphere-tools",
       "source": "api",
@@ -1294,24 +1279,6 @@
         "TypeScript": 143722
       },
       "htmlUrl": "https://github.com/pmankineni/mcp-datasphere-tools"
-    },
-    "prudvigit/mcp-sap-cpi": {
-      "repo": "prudvigit/mcp-sap-cpi",
-      "source": "api",
-      "exists": true,
-      "fork": false,
-      "parent": null,
-      "stars": 5,
-      "lastChange": "2026-05-16T08:54:46Z",
-      "archived": false,
-      "license": "MIT",
-      "description": "MCP server for SAP CPI — operate failed messages, iFlows, packages, and credentials from Claude. Drop-in BTP service-key config.",
-      "primaryLanguage": "TypeScript",
-      "languages": {
-        "TypeScript": 12700,
-        "JavaScript": 2164
-      },
-      "htmlUrl": "https://github.com/Keelside/mcp-sap-cpi"
     },
     "rahulsethi/SAPBDCMCP": {
       "repo": "rahulsethi/SAPBDCMCP",
@@ -1369,6 +1336,24 @@
       },
       "htmlUrl": "https://github.com/SAP-samples/cap-agentic-engineered"
     },
+    "SAP-samples/joule-a2a-agent-toolkit": {
+      "repo": "SAP-samples/joule-a2a-agent-toolkit",
+      "source": "api",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": 27,
+      "lastChange": "2026-04-21T06:33:19Z",
+      "archived": false,
+      "license": "Apache-2.0",
+      "description": "Build, deploy, and connect AI agents to SAP Joule via the A2A protocol on BTP Cloud Foundry — directly from Claude Code. Supports TypeScript (Express or CAP) and Python agents with LangGraph and SAP GenAI Hub.",
+      "primaryLanguage": "Shell",
+      "languages": {
+        "Shell": 47512,
+        "Python": 22386
+      },
+      "htmlUrl": "https://github.com/SAP-samples/joule-a2a-agent-toolkit"
+    },
     "SAP-samples/teched2025-CA261": {
       "repo": "SAP-samples/teched2025-CA261",
       "source": "api",
@@ -1399,6 +1384,38 @@
       "languages": null,
       "htmlUrl": "https://github.com/SAP/ai-skills-library"
     },
+    "SAP/automation-pilot-agent-skills": {
+      "repo": "SAP/automation-pilot-agent-skills",
+      "source": "api",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": 2,
+      "lastChange": "2026-07-07T17:52:53Z",
+      "archived": false,
+      "license": "Apache-2.0",
+      "description": "AI agent skills for SAP Automation Pilot content development, enabling automated code generation and review workflows.",
+      "primaryLanguage": null,
+      "languages": null,
+      "htmlUrl": "https://github.com/SAP/automation-pilot-agent-skills"
+    },
+    "SAP/leanix-ai-plugins": {
+      "repo": "SAP/leanix-ai-plugins",
+      "source": "api",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": 0,
+      "lastChange": "2026-06-18T08:54:38Z",
+      "archived": false,
+      "license": "Apache-2.0",
+      "description": "AI plugins and integrations that enable SAP LeanIX customers to interact with SAP LeanIX through natural language using MCP (Model Context Protocol).",
+      "primaryLanguage": "JavaScript",
+      "languages": {
+        "JavaScript": 165689
+      },
+      "htmlUrl": "https://github.com/SAP/leanix-ai-plugins"
+    },
     "SAP/mdk-mcp-server": {
       "repo": "SAP/mdk-mcp-server",
       "source": "api",
@@ -1424,7 +1441,7 @@
       "fork": false,
       "parent": null,
       "stars": 154,
-      "lastChange": "2026-07-15T09:33:20Z",
+      "lastChange": "2026-07-15T09:44:23Z",
       "archived": false,
       "license": "Apache-2.0",
       "description": "Enable community collaboration to jointly promote and facilitate best in class tooling capabilities",
@@ -1443,6 +1460,21 @@
         "Shell": 43
       },
       "htmlUrl": "https://github.com/SAP/open-ux-tools"
+    },
+    "SAP/ui-theme-designer-plugins-for-coding-agents": {
+      "repo": "SAP/ui-theme-designer-plugins-for-coding-agents",
+      "source": "api",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": 1,
+      "lastChange": "2026-07-10T08:27:36Z",
+      "archived": false,
+      "license": "Apache-2.0",
+      "description": "Equips AI coding agents with knowledge and tooling for working with UI theme designer, the SAP Design System, and SAP Fiori design tokens.",
+      "primaryLanguage": null,
+      "languages": null,
+      "htmlUrl": "https://github.com/SAP/ui-theme-designer-plugins-for-coding-agents"
     },
     "SaurabhVC/ABAPDocMCP": {
       "repo": "SaurabhVC/ABAPDocMCP",
@@ -1563,6 +1595,29 @@
         "JavaScript": 215419
       },
       "htmlUrl": "https://github.com/UI5/plugins-coding-agents"
+    },
+    "UI5/webcomponents": {
+      "repo": "UI5/webcomponents",
+      "source": "api",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": 1759,
+      "lastChange": "2026-07-15T08:53:31Z",
+      "archived": false,
+      "license": "Apache-2.0",
+      "description": "UI5 Web Components - the enterprise-flavored sugar on top of native APIs! Build SAP Fiori user interfaces with the technology of your choice.",
+      "primaryLanguage": "TypeScript",
+      "languages": {
+        "TypeScript": 8084828,
+        "HTML": 3471514,
+        "JavaScript": 1272975,
+        "CSS": 1209179,
+        "MDX": 151061,
+        "Handlebars": 699,
+        "Shell": 597
+      },
+      "htmlUrl": "https://github.com/UI5/webcomponents"
     },
     "UI5/webcomponents-mcp-server": {
       "repo": "UI5/webcomponents-mcp-server",

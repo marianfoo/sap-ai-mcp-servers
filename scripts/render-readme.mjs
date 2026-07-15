@@ -50,6 +50,12 @@ function resolveMeta(entry, repoMetadata) {
   return { license, stars, lastChange, fork: false, htmlUrl: entry.url || null };
 }
 
+function formatPackages(packages) {
+  const labels = { skill: 'Skill', 'claude-plugin': 'Claude Plugin' };
+  const names = (packages || ['skill']).map((pkg) => labels[pkg] || pkg);
+  return names.join(' + ');
+}
+
 function renderTable(entries, repoMetadata, opts = {}) {
   const lines = [];
   const rows = [];
@@ -82,13 +88,19 @@ function renderTable(entries, repoMetadata, opts = {}) {
     return lines.join('\n');
   }
 
-  lines.push('| Name | Repository | Purpose | License | Stars | Last Change |');
-  lines.push('| --- | --- | --- | --- | ---: | --- |');
+  const packagesColumn = Boolean(opts.packagesColumn);
+  lines.push(
+    packagesColumn
+      ? '| Name | Repository | Purpose | Packages | License | Stars | Last Change |'
+      : '| Name | Repository | Purpose | License | Stars | Last Change |'
+  );
+  lines.push(packagesColumn ? '| --- | --- | --- | --- | --- | ---: | --- |' : '| --- | --- | --- | --- | ---: | --- |');
 
   for (const row of rows) {
     const { entry, meta } = row;
+    const packagesCell = packagesColumn ? ` ${formatPackages(entry.packages)} |` : '';
     lines.push(
-      `| ${entry.name} | ${repositoryLink(entry, meta)} | ${entry.purpose} | ${formatLicense(meta?.license)} | ${formatStars(meta?.stars)} | ${formatDate(meta?.lastChange)} |`
+      `| ${entry.name} | ${repositoryLink(entry, meta)} | ${entry.purpose} |${packagesCell} ${formatLicense(meta?.license)} | ${formatStars(meta?.stars)} | ${formatDate(meta?.lastChange)} |`
     );
   }
 
@@ -132,14 +144,13 @@ async function renderReadme() {
     process.stdout.write(`  Rendered category: ${category.id}\n`);
   }
 
-  rendered = rendered.replaceAll('{{SKILLS_TABLE}}', renderTable(catalog.skills || [], repoMetadata));
   rendered = rendered.replaceAll(
-    '{{SAP_CLAUDE_PLUGINS_TABLE}}',
-    renderTable(entriesByType(catalog.claudePlugins, 'SAP'), repoMetadata)
+    '{{OFFICIAL_SKILLS_PLUGINS_TABLE}}',
+    renderTable(entriesByType(catalog.skillsAndPlugins, 'SAP'), repoMetadata, { packagesColumn: true })
   );
   rendered = rendered.replaceAll(
-    '{{COMMUNITY_CLAUDE_PLUGINS_TABLE}}',
-    renderTable(entriesByType(catalog.claudePlugins, 'Community SAP'), repoMetadata)
+    '{{COMMUNITY_SKILLS_PLUGINS_TABLE}}',
+    renderTable(entriesByType(catalog.skillsAndPlugins, 'Community SAP'), repoMetadata, { packagesColumn: true })
   );
   rendered = rendered.replaceAll('{{ADJACENT_TABLE}}', renderTable(catalog.adjacentTools || [], repoMetadata));
 

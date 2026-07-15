@@ -205,22 +205,20 @@ function flattenCatalog(catalog, enriched) {
   const entries = [];
 
   for (const category of catalog.categories || []) {
-    const packageType = category.id === 'sap-skills' ? packageLabels.skill : packageLabels.mcp;
     for (const entry of category.entries || []) {
-      entries.push(normalizeEntry(entry, category.title, category.id, packageType, meta));
+      entries.push(normalizeEntry(entry, category.title, category.id, [packageLabels.mcp], meta));
     }
   }
 
-  for (const entry of catalog.skills || []) {
-    entries.push(normalizeEntry(entry, 'AI Skills', 'skills', packageLabels.skill, meta));
-  }
-
-  for (const entry of catalog.claudePlugins || []) {
-    entries.push(normalizeEntry(entry, 'Claude Plugins', 'claude-plugins', packageLabels.plugin, meta));
+  for (const entry of catalog.skillsAndPlugins || []) {
+    const packageTypes = (entry.packages || ['skill']).map((pkg) =>
+      pkg === 'claude-plugin' ? packageLabels.plugin : packageLabels.skill
+    );
+    entries.push(normalizeEntry(entry, 'AI Skills & Claude Plugins', 'skills-and-plugins', packageTypes, meta));
   }
 
   for (const entry of catalog.adjacentTools || []) {
-    entries.push(normalizeEntry(entry, 'Adjacent SAP AI Developer Tools', 'adjacent-tools', packageLabels.tool, meta));
+    entries.push(normalizeEntry(entry, 'Libraries, SDKs & Adjacent Tools', 'adjacent-tools', [packageLabels.tool], meta));
   }
 
   const generatedAt = formatDate(enriched.generatedAt);
@@ -239,7 +237,7 @@ function flattenCatalog(catalog, enriched) {
         entry.purpose,
         entry.notes,
         entry.category,
-        entry.packageType,
+        ...entry.packageTypes,
         entry.type,
         entry.primaryLanguage,
         ...entry.languageFilters,
@@ -251,7 +249,7 @@ function flattenCatalog(catalog, enriched) {
     }));
 }
 
-function normalizeEntry(entry, category, categoryId, packageType, metadata) {
+function normalizeEntry(entry, category, categoryId, packageTypes, metadata) {
   const repoMeta = entry.repo ? metadata[entry.repo] || {} : {};
   const url = entry.repo
     ? entry.displayUrl || repoMeta.htmlUrl || `https://github.com/${entry.repo}`
@@ -268,7 +266,8 @@ function normalizeEntry(entry, category, categoryId, packageType, metadata) {
     id: `${categoryId}:${entry.repo || entry.url || entry.name}`,
     name: entry.name,
     type: entry.type || 'Community SAP',
-    packageType,
+    packageTypes,
+    packageType: packageTypes[0],
     category,
     categoryId,
     repo: entry.repo || '',
@@ -360,7 +359,7 @@ function setStat(name, value) {
 }
 
 function renderFilterControls() {
-  renderPackageOptions(els.packageFilters, countValues(state.entries, 'packageType'));
+  renderPackageOptions(els.packageFilters, countListValues(state.entries, 'packageTypes'));
   renderOptions(els.sourceFilters, 'source', countValues(state.entries, 'type'), sourceOrder);
   renderSignalOptions();
   renderSelectOptions(els.categoryFilter, countValues(state.entries, 'category'), alphaOrder, 'All categories');
@@ -476,7 +475,7 @@ function applyState(options = {}) {
 
   state.filtered = state.entries
     .filter((entry) => !search || entry.searchText.includes(search))
-    .filter((entry) => matchesSet(entry.packageType, state.filters.package))
+    .filter((entry) => matchesAny(entry.packageTypes, state.filters.package))
     .filter((entry) => matchesSet(entry.type, state.filters.source))
     .filter((entry) => matchesSet(entry.category, state.filters.category))
     .filter((entry) => matchesAny(entry.languageFilters, state.filters.language))
@@ -528,12 +527,13 @@ function sortEntries(a, b) {
 }
 
 function recommendedScore(entry) {
-  const packageScore = {
+  const packageScores = {
     'MCP Server': 50,
     'AI Skill': 22,
     'Claude Plugin': 18,
     'Adjacent Tool': 8
-  }[entry.packageType] || 0;
+  };
+  const packageScore = Math.max(...entry.packageTypes.map((type) => packageScores[type] || 0), 0);
 
   const age = daysSince(entry.lastChangeMs);
   const recencyScore = age <= 14 ? 24 : age <= 45 ? 16 : age <= 90 ? 9 : age <= 180 ? 3 : 0;
@@ -605,7 +605,7 @@ function entryCardMarkup(entry) {
         ${notes}
 
         <div class="entry-meta">
-          <span class="badge badge--package">${escapeHtml(entry.packageType)}</span>
+          ${entry.packageTypes.map((type) => `<span class="badge badge--package">${escapeHtml(type)}</span>`).join('')}
           <span class="badge ${typeClass}">${escapeHtml(entry.type)}</span>
           ${languageBadge}
           <span class="badge">${escapeHtml(entry.category)}</span>

@@ -24,86 +24,79 @@ Know a project that belongs here? [Open an issue using the "Add new entry" templ
 
 ## Navigation
 
-- [SAP MCP Server](#sap-mcp-server)
-- [SAP Skills](#sap-skills)
-- [SAP Claude Plugins](#sap-claude-plugins)
-- [SAP Community MCP Servers](#sap-community-mcp-servers)
-  - [Community SAP MCP Server](#community-sap-mcp-server)
-  - [SAP Docs MCP Server](#sap-docs-mcp-server)
-  - [ABAP and ADT MCP Server](#abap-and-adt-mcp-server)
-  - [SAP Integration](#sap-integration)
-  - [OData MCP Proxy ecosystem](#odata-mcp-proxy-ecosystem)
-  - [SAP Datasphere](#sap-datasphere)
-  - [SAP OData Gateway Graph MCP Server](#sap-odata-gateway-graph-mcp-server)
-  - [SAP GUI](#sap-gui)
-  - [SAP HANA](#sap-hana)
-  - [SAP Cloud ALM](#sap-cloud-alm)
-  - [SAP AI Skills and Prompt Packs](#sap-ai-skills-and-prompt-packs)
-  - [SAP Claude Plugins and Skills](#sap-claude-plugins-and-skills)
-  - [Adjacent SAP AI Developer Tools](#adjacent-sap-ai-developer-tools)
+- **Official SAP**
+  - [Official SAP MCP Servers](#official-sap-mcp-servers)
+  - [Official SAP AI Skills & Claude Plugins](#official-sap-ai-skills--claude-plugins)
+- **Community MCP Servers**
+  - [ABAP & ADT](#abap--adt)
+  - [SAP Docs & Knowledge](#sap-docs--knowledge)
+  - [OData, Gateway & Graph](#odata-gateway--graph)
+  - [SAP Integration (CPI / PI)](#sap-integration-cpi--pi)
+  - [Data, Analytics & HANA](#data-analytics--hana)
+  - [SAP GUI Automation](#sap-gui-automation)
+  - [Operations, Monitoring & Lifecycle](#operations-monitoring--lifecycle)
+  - [Business Apps, Security & Governance](#business-apps-security--governance)
+- **[Community SAP AI Skills & Claude Plugins](#community-sap-ai-skills--claude-plugins)**
+- **[Libraries, SDKs & Adjacent Tools](#libraries-sdks--adjacent-tools)**
 
-# SAP MCP Server
+# Official SAP
+
+Repositories published under official SAP GitHub organizations.
+
+## Official SAP MCP Servers
 
 {{CATEGORY:sap-mcp-server}}
 
-# SAP Skills
+## Official SAP AI Skills & Claude Plugins
 
-{{CATEGORY:sap-skills}}
+AI skills and Claude Code plugins maintained by SAP. The **Packages** column shows what each repository ships: a skill pack, a Claude Code plugin, or both.
 
-# SAP Claude Plugins
+{{OFFICIAL_SKILLS_PLUGINS_TABLE}}
 
-{{SAP_CLAUDE_PLUGINS_TABLE}}
+# Community MCP Servers
 
-# SAP Community MCP Servers
+Community-built MCP servers, grouped by the SAP domain they target.
 
-## Community SAP MCP Server
-
-{{CATEGORY:community-sap-mcp-server}}
-
-## SAP Docs MCP Server
-
-{{CATEGORY:sap-docs-mcp-server}}
-
-## ABAP and ADT MCP Server
+## ABAP & ADT
 
 {{CATEGORY:abap-and-adt-mcp-server}}
 
-## SAP Integration
+## SAP Docs & Knowledge
+
+{{CATEGORY:sap-docs-mcp-server}}
+
+## OData, Gateway & Graph
+
+{{CATEGORY:odata-gateway-graph}}
+
+## SAP Integration (CPI / PI)
 
 {{CATEGORY:sap-integration}}
 
-## OData MCP Proxy ecosystem
+## Data, Analytics & HANA
 
-{{CATEGORY:odata-mcp-proxy-ecosystem}}
+{{CATEGORY:sap-data-analytics}}
 
-## SAP Datasphere
-
-{{CATEGORY:sap-datasphere}}
-
-## SAP OData Gateway Graph MCP Server
-
-{{CATEGORY:sap-odata-gateway-graph-mcp-server}}
-
-## SAP GUI
+## SAP GUI Automation
 
 {{CATEGORY:sap-gui}}
 
-## SAP HANA
+## Operations, Monitoring & Lifecycle
 
-{{CATEGORY:sap-hana}}
+{{CATEGORY:sap-operations-lifecycle}}
 
-## SAP Cloud ALM
+## Business Apps, Security & Governance
 
-{{CATEGORY:sap-cloud-alm}}
+{{CATEGORY:sap-business-security}}
 
-## SAP AI Skills and Prompt Packs
+# Community SAP AI Skills & Claude Plugins
 
-{{SKILLS_TABLE}}
+Community-built AI skills, prompt packs, and Claude Code plugins for SAP development. Each repository is listed once — the **Packages** column shows whether it ships a skill pack, a Claude Code plugin, or both.
 
-## SAP Claude Plugins and Skills
+{{COMMUNITY_SKILLS_PLUGINS_TABLE}}
 
-{{COMMUNITY_CLAUDE_PLUGINS_TABLE}}
+# Libraries, SDKs & Adjacent Tools
 
-## Adjacent SAP AI Developer Tools
+Non-MCP-server projects that support the SAP AI developer ecosystem — SDKs and auth libraries for building MCP servers, IDE and CLI tooling, and reference material.
 
 {{ADJACENT_TABLE}}

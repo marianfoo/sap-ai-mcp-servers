@@ -6,7 +6,16 @@ Dates use the commit date from `git log` on `data/catalog.json`.
 
 ## 2026-07-15
 
-- [`capire/skills`](https://github.com/capire/skills) — CAP Skills, a curated set of skills for AI coding agents building and maintaining SAP Cloud Application Programming Model applications.
+- [`capire/skills`](https://github.com/capire/skills) — CAP Skills, a curated set of skills and Claude Code plugin for AI coding agents building and maintaining SAP Cloud Application Programming Model applications, added under Official SAP AI Skills & Claude Plugins
+
+## 2026-07-14
+
+- [`SAP-samples/joule-a2a-agent-toolkit`](https://github.com/SAP-samples/joule-a2a-agent-toolkit) — SAP Joule A2A Agent Toolkit Skills (BTP/CF/Joule CLIs and Joule A2A agent development), added under Official SAP AI Skills & Claude Plugins
+- [`SAP/automation-pilot-agent-skills`](https://github.com/SAP/automation-pilot-agent-skills) — SAP Automation Pilot Agent Skills for generating, reviewing, debugging, and managing Automation Pilot content, added under Official SAP AI Skills & Claude Plugins
+- [`SAP/leanix-ai-plugins`](https://github.com/SAP/leanix-ai-plugins) — SAP LeanIX AI Plugins (Claude plugin + skills powered by the LeanIX MCP server), added under Official SAP AI Skills & Claude Plugins
+- [`SAP/ui-theme-designer-plugins-for-coding-agents`](https://github.com/SAP/ui-theme-designer-plugins-for-coding-agents) — SAP UI Theme Designer Plugins for Coding Agents (design tokens + help skills), added under Official SAP AI Skills & Claude Plugins
+- [`UI5/webcomponents`](https://github.com/UI5/webcomponents) — UI5 Web Components Agent Skills (accessibility + styling), added under Official SAP AI Skills & Claude Plugins
+- Also added non-repo entries sourced from [skills.cloud.sap](https://skills.cloud.sap/): the SAP AI Skills Library portal (Official SAP AI Skills & Claude Plugins) and the hosted SAP LeanIX MCP Server (Official SAP MCP Servers)
 
 ## 2026-07-11
 

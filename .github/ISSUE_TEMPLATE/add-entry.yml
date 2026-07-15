@@ -33,21 +33,17 @@ body:
       label: Category *
       description: Choose the closest existing catalog section.
       options:
-        - SAP MCP Server
-        - SAP Docs MCP Server
-        - Community SAP MCP Server
-        - ABAP and ADT MCP Server
-        - SAP Integration
-        - OData MCP Proxy ecosystem
-        - SAP Datasphere
-        - SAP OData Gateway Graph MCP Server
-        - SAP GUI
-        - SAP HANA
-        - SAP Cloud ALM
-        - SAP Skills
-        - Claude Plugins
-        - SAP Skills + Claude Plugins
-        - Adjacent SAP AI Developer Tools
+        - Official SAP MCP Servers
+        - ABAP & ADT
+        - SAP Docs & Knowledge
+        - OData, Gateway & Graph
+        - SAP Integration (CPI / PI)
+        - Data, Analytics & HANA
+        - SAP GUI Automation
+        - Operations, Monitoring & Lifecycle
+        - Business Apps, Security & Governance
+        - AI Skills & Claude Plugins
+        - Libraries, SDKs & Adjacent Tools
     validations:
       required: true
 
