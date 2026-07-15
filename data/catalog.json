@@ -594,6 +594,14 @@
           "repo": "SAP-samples/cap-agentic-engineered",
           "purpose": "Provide reusable MCP-routing AGENTS.md and SAP skills for CAP and Fiori Elements agentic development.",
           "notes": "Reference Financial Risk Analyzer app built with Claude Code; skills route agents to CAP, Fiori, and UI5 MCP servers."
+        },
+        {
+          "type": "SAP",
+          "name": "CAP Skills",
+          "addedAt": "2026-07-15",
+          "repo": "capire/skills",
+          "purpose": "Provide curated skills that help AI coding agents build and maintain SAP Cloud Application Programming Model applications.",
+          "notes": "Supports the open skill standard and installation through the skills CLI, Claude Code plugins, VS Code Copilot plugins, or manual symlinks."
         }
       ]
     }

@@ -4,6 +4,10 @@ This file lists **only newly added repositories** (or other catalog entries with
 
 Dates use the commit date from `git log` on `data/catalog.json`.
 
+## 2026-07-15
+
+- [`capire/skills`](https://github.com/capire/skills) — CAP Skills, a curated set of skills for AI coding agents building and maintaining SAP Cloud Application Programming Model applications.
+
 ## 2026-07-11
 
 - [`Gixsy95/abap_wiki`](https://github.com/Gixsy95/abap_wiki) — abap_wiki, an agent-driven engine turning SAP S/4HANA custom ABAP objects into citable Markdown/Obsidian knowledge for humans and AI agents, added under Adjacent Tools
