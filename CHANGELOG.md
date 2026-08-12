@@ -4,6 +4,10 @@ This file lists **only newly added repositories** (or other catalog entries with
 
 Dates use the commit date from `git log` on `data/catalog.json`.
 
+## 2026-08-12
+
+- [`kts982/sap-odata-explorer`](https://github.com/kts982/sap-odata-explorer) — SAP OData Explorer, a read-only desktop app and CLI for SAP Gateway OData service discovery, metadata, annotations, and Fiori-readiness lint, added under Libraries, SDKs & Adjacent Tools; its in-repo agent skill (`skills/sap-odata-cli`) added under Community AI Skills & Claude Plugins
+
 ## 2026-07-15
 
 - [`capire/skills`](https://github.com/capire/skills) — CAP Skills, a curated set of skills and Claude Code plugin for AI coding agents building and maintaining SAP Cloud Application Programming Model applications, added under Official SAP AI Skills & Claude Plugins
