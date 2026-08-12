@@ -705,6 +705,14 @@
       "repo": "Gixsy95/abap_wiki",
       "purpose": "Agent-driven engine that turns SAP S/4HANA custom ABAP objects into citable Markdown/Obsidian knowledge for humans and AI agents.",
       "notes": "Uses an adversarial verification gate; optional live SAP access via MCP."
+    },
+    {
+      "type": "Community SAP",
+      "name": "SAP OData Explorer",
+      "addedAt": "2026-08-12",
+      "repo": "kts982/sap-odata-explorer",
+      "purpose": "Desktop app and CLI for exploring SAP Gateway OData services — catalog discovery, entity metadata with decoded SAP/UI5 annotations, test queries, Fiori-readiness lint, and an offline EDMX library.",
+      "notes": "Read-only against SAP by design (all SAP-facing calls are GETs); credentials stored in the OS keyring. Installable via winget (kts982.SAPODataExplorer), Scoop, and crates.io (sap-odata-cli). Ships the sap-odata CLI agent skill under skills/sap-odata-cli."
     }
   ],
   "referenceLinks": [
@@ -887,6 +895,19 @@
       "packages": [
         "skill",
         "claude-plugin"
+      ]
+    },
+    {
+      "type": "Community SAP",
+      "name": "sap-odata CLI Agent Skill",
+      "addedAt": "2026-08-12",
+      "repo": "kts982/sap-odata-explorer",
+      "repoPath": "skills/sap-odata-cli",
+      "displayUrl": "https://github.com/kts982/sap-odata-explorer/tree/main/skills/sap-odata-cli",
+      "purpose": "Agent skill for the sap-odata CLI that lets coding agents discover SAP Gateway/OData services, inspect $metadata and SAP/UI5 annotations, run test queries, lint Fiori readiness, and browse offline EDMX snapshots.",
+      "notes": "Read-only against SAP (every SAP-facing call is a GET); credentials stay in the OS keyring or env vars, and all commands support --json for machine-parseable output. Covers the V2 and V4 service catalogs plus offline EDMX browsing without a live system. Companion tool entry: SAP OData Explorer.",
+      "packages": [
+        "skill"
       ]
     },
     {
