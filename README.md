@@ -10,7 +10,7 @@ Comprehensive list of SAP-related MCP servers, SAP AI development skills, and Cl
 **New repositories:** [CHANGELOG.md](CHANGELOG.md) — dates when entries were added to this list.
 
 > [!IMPORTANT]
-> Last generated: **2026-08-15**
+> Last generated: **2026-08-16**
 >
 > Scope:
 > - Open source or source-available repositories — primarily GitHub, with non-GitHub git hosts (Gitea, GitLab, etc.) also accepted
@@ -63,8 +63,8 @@ AI skills and Claude Code plugins maintained by SAP. The **Packages** column sho
 
 | Name | Repository | Purpose | Packages | License | Stars | Last Change |
 | --- | --- | --- | --- | --- | ---: | --- |
-| UI5 Web Components Agent Skills | [UI5/webcomponents](https://github.com/UI5/webcomponents) | Agent skills shipped with the UI5 Web Components library covering accessibility (ARIA, keyboard, screen readers) and styling (CSS shadow parts, custom states, and variables). | Skill | Apache-2.0 | 1,770 | 2026-08-15 |
-| SAP AI Skills Library | [SAP/ai-skills-library](https://github.com/SAP/ai-skills-library) | SAP-maintained library of AI skills for digital assistants — discover, search, filter, and install via a skills CLI. | Skill | Apache-2.0 | 41 | 2026-07-30 |
+| UI5 Web Components Agent Skills | [UI5/webcomponents](https://github.com/UI5/webcomponents) | Agent skills shipped with the UI5 Web Components library covering accessibility (ARIA, keyboard, screen readers) and styling (CSS shadow parts, custom states, and variables). | Skill | Apache-2.0 | 1,770 | 2026-08-16 |
+| SAP AI Skills Library | [SAP/ai-skills-library](https://github.com/SAP/ai-skills-library) | SAP-maintained library of AI skills for digital assistants — discover, search, filter, and install via a skills CLI. | Skill | Apache-2.0 | 42 | 2026-07-30 |
 | UI5 Plugins for Coding Agents | [UI5/plugins-coding-agents](https://github.com/UI5/plugins-coding-agents) | Provide UI5-specific plugins for coding agents — project creation, UI5 error fixing, and framework guidance. | Claude Plugin | Apache-2.0 | 33 | 2026-08-11 |
 | SAP Joule A2A Agent Toolkit Skills | [SAP-samples/joule-a2a-agent-toolkit](https://github.com/SAP-samples/joule-a2a-agent-toolkit) | Skills for the SAP BTP, Cloud Foundry, and Joule command-line tools and for building and deploying custom Joule A2A (agent-to-agent) agents on SAP BTP. | Skill | Apache-2.0 | 30 | 2026-04-21 |
 | CAP Agentic Engineered Skills | [SAP-samples/cap-agentic-engineered](https://github.com/SAP-samples/cap-agentic-engineered) | Provide reusable MCP-routing AGENTS.md and SAP skills for CAP and Fiori Elements agentic development. | Skill | Apache-2.0 | 11 | 2026-05-27 |
@@ -86,7 +86,7 @@ Connect AI agents to ABAP systems, mostly through the ADT REST APIs — read, wr
 | --- | --- | --- | --- | ---: | --- |
 | Vibing Steampunk | [oisee/vibing-steampunk](https://github.com/oisee/vibing-steampunk) | ADT-to-MCP bridge for ABAP and AMDP workflows. | MIT | 440 | 2026-06-15 |
 | MCP ABAP (abap-adt-api wrapper) | [mario-andreschak/mcp-abap-abap-adt-api](https://github.com/mario-andreschak/mcp-abap-abap-adt-api) | ABAP operations through wrapped ADT API layer. | MIT | 179 | 2026-07-10 |
-| MCP ABAP ADT Server | [mario-andreschak/mcp-abap-adt](https://github.com/mario-andreschak/mcp-abap-adt) | ABAP system interaction via ADT APIs. | MIT | 170 | 2026-07-21 |
+| MCP ABAP ADT Server | [mario-andreschak/mcp-abap-adt](https://github.com/mario-andreschak/mcp-abap-adt) | ABAP system interaction via ADT APIs. | MIT | 170 | 2026-08-16 |
 | ARC-1 SAP ADT MCP Server | [arc-mcp/arc-1](https://github.com/arc-mcp/arc-1) | Secure-by-default, enterprise-ready SAP ABAP MCP server for developer IDEs, Microsoft Copilot, and any MCP client via BTP OAuth and the ADT REST API. | MIT | 160 | 2026-08-13 |
 | ABAP MCP Server SDK | [abap-ai/mcp](https://github.com/abap-ai/mcp) | Build MCP servers directly in ABAP. | MIT | 79 | 2026-07-19 |
 | mcp-abap-adt | [fr0ster/mcp-abap-adt](https://github.com/fr0ster/mcp-abap-adt) | ABAP ADT MCP server with CRUD and cloud/on-prem support. | MIT | 78 | 2026-08-11 |
@@ -217,7 +217,7 @@ Non-MCP-server projects that support the SAP AI developer ecosystem — SDKs and
 
 | Name | Repository | Purpose | License | Stars | Last Change |
 | --- | --- | --- | --- | ---: | --- |
-| ABAP Remote Filesystem for VS Code | [marcellourbani/vscode_abap_remote_fs](https://github.com/marcellourbani/vscode_abap_remote_fs) | Remote ABAP filesystem access in VS Code. | MIT | 371 | 2026-08-14 |
+| ABAP Remote Filesystem for VS Code | [marcellourbani/vscode_abap_remote_fs](https://github.com/marcellourbani/vscode_abap_remote_fs) | Remote ABAP filesystem access in VS Code. | MIT | 372 | 2026-08-14 |
 | SAP CLI (sapcli) | [jfilak/sapcli](https://github.com/jfilak/sapcli) | Python CLI for SAP ADT and RFC operations: ABAP unit tests, ATC checks, transports, gCTS, abapGit install, and more. | Apache-2.0 | 99 | 2026-08-13 |
 | CAP MCP Plugin | [gavdilabs/cap-mcp-plugin](https://github.com/gavdilabs/cap-mcp-plugin) | Generates MCP servers from CAP services. | Apache-2.0 | 61 | 2026-07-17 |
 | abap_wiki | [Gixsy95/abap_wiki](https://github.com/Gixsy95/abap_wiki) | Agent-driven engine that turns SAP S/4HANA custom ABAP objects into citable Markdown/Obsidian knowledge for humans and AI agents. | MIT | 42 | 2026-08-10 |
