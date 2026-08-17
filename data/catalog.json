@@ -492,6 +492,15 @@
           "repo": "JumenEngels/sap_analytics_cloud_mcp",
           "purpose": "Exposes SAP Analytics Cloud APIs as MCP tools.",
           "notes": "Community project, not an SAP-delivered MCP server."
+        },
+        {
+          "type": "Community SAP",
+          "name": "Analytics Legends — SAP Analytics Intelligence",
+          "addedAt": "2026-08-17",
+          "url": "https://analyticslegends.ai/mcp-server/",
+          "linkLabel": "analyticslegends.ai/mcp-server",
+          "purpose": "Read-only MCP server over a curated SAP analytics market corpus — consulting and recruitment firms by country, freelance day-rate bands, market studies, concept definitions, and news for Datasphere, Business Data Cloud, SAP Analytics Cloud, BW/4HANA and Databricks.",
+          "notes": "Hosted streamable-HTTP endpoint at https://analyticslegends.ai/mcp; the public tranche answers with no authentication, a paid tier opens firm intelligence and the SAP end-customer corpus. Published on the official MCP registry as ai.analyticslegends/sap-analytics. Market-intelligence source rather than a system connector — it reads no customer SAP system; no public repository, so license, stars and last-change are not fetchable."
         }
       ],
       "description": "MCP servers for SAP's data and analytics products: Datasphere, Business Data Cloud, BW/4HANA modeling, HANA, and SAP Analytics Cloud."
