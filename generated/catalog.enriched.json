@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-28T09:08:34.073Z",
+  "generatedAt": "2026-08-28T10:51:34.376Z",
   "sourceCatalog": "data/catalog.json",
-  "repoCount": 92,
+  "repoCount": 94,
   "tokenUsed": true,
   "repoMetadata": {
     "1nbuc/mcp-integration-suite": {
@@ -59,6 +59,21 @@
         "ABAP": 1133328
       },
       "htmlUrl": "https://github.com/abap-ai/mcp"
+    },
+    "adam0thman/sap-basis-ops": {
+      "repo": "adam0thman/sap-basis-ops",
+      "source": "api",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": 0,
+      "lastChange": "2026-08-25T09:38:00Z",
+      "archived": false,
+      "license": "MIT",
+      "description": "Claude Code skills for SAP Basis / technical operations at the OS & DB layer — start/stop, housekeeping, health triage, transport, kernel patch, backup/recovery, logs, security patch, and DB-specific commands (HANA/Oracle/ASE/Db2/MaxDB/SQL Server) for NetWeaver/S4 on Linux, Windows, AIX. Cited to help.sap.com.",
+      "primaryLanguage": "Markdown",
+      "languages": null,
+      "htmlUrl": "https://github.com/adam0thman/sap-basis-ops"
     },
     "aiadiguru2025/sf-mcp": {
       "repo": "aiadiguru2025/sf-mcp",
@@ -384,7 +399,7 @@
       "exists": true,
       "fork": false,
       "parent": null,
-      "stars": 18,
+      "stars": 19,
       "lastChange": "2026-08-11T08:08:13Z",
       "archived": false,
       "license": "Apache-2.0",
@@ -1230,6 +1245,24 @@
       },
       "htmlUrl": "https://github.com/nickels/sap-btp-docs-mcp"
     },
+    "NicoHern/abapilot-mcp": {
+      "repo": "NicoHern/abapilot-mcp",
+      "source": "api",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": 3,
+      "lastChange": "2026-08-19T19:29:55Z",
+      "archived": false,
+      "license": "MIT",
+      "description": "AI & MCP server for SAP ECC and on-premise S/4HANA — in-system ABAP, no BTP, no ADT, no RISE.",
+      "primaryLanguage": "JavaScript",
+      "languages": {
+        "JavaScript": 10865,
+        "Dockerfile": 264
+      },
+      "htmlUrl": "https://github.com/NicoHern/abapilot-mcp"
+    },
     "oisee/odata_mcp": {
       "repo": "oisee/odata_mcp",
       "source": "api",
@@ -1469,7 +1502,7 @@
       "fork": false,
       "parent": null,
       "stars": 155,
-      "lastChange": "2026-08-28T08:29:09Z",
+      "lastChange": "2026-08-28T10:49:47Z",
       "archived": false,
       "license": "Apache-2.0",
       "description": "Enable community collaboration to jointly promote and facilitate best in class tooling capabilities",
@@ -1633,7 +1666,7 @@
       "fork": false,
       "parent": null,
       "stars": 1771,
-      "lastChange": "2026-08-28T08:25:47Z",
+      "lastChange": "2026-08-28T10:41:06Z",
       "archived": false,
       "license": "Apache-2.0",
       "description": "UI5 Web Components - the enterprise-flavored sugar on top of native APIs! Build SAP Fiori user interfaces with the technology of your choice.",

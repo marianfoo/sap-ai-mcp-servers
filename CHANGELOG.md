@@ -7,6 +7,8 @@ Dates use the commit date from `git log` on `data/catalog.json`.
 ## 2026-08-28
 
 - [MCP Server for SAP BTP Administration](https://help.sap.com/docs/btp/sap-business-technology-platform/account-administration-using-mcp-servers?locale=en-US&version=Cloud) — SAP-hosted remote MCP service for account, security, service, and connectivity administration, added under Official SAP MCP Servers
+- [`adam0thman/sap-basis-ops`](https://github.com/adam0thman/sap-basis-ops) — SAP Basis Operations Skills, a 30-skill source-cited runbook and Claude plugin suite for technical operations, added under Community SAP AI Skills & Claude Plugins
+- [`NicoHern/abapilot-mcp`](https://github.com/NicoHern/abapilot-mcp) — ABAPilot MCP Connector, an MIT-licensed stdio bridge to the commercial in-system ABAPilot backend for ECC and on-premise S/4HANA, added under ABAP & ADT
 
 ## 2026-08-12
 

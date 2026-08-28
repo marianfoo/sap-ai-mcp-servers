@@ -40,6 +40,9 @@
     "arc-mcp/mcp-hub": {
       "license": "MIT"
     },
+    "adam0thman/sap-basis-ops": {
+      "primaryLanguage": "Markdown"
+    },
     "jfdurelle/onpremise-sap-odata-to-mcp-server": {
       "primaryLanguage": "TypeScript"
     },

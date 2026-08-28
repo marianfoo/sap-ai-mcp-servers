@@ -93,11 +93,12 @@ Connect AI agents to ABAP systems, mostly through the ADT REST APIs — read, wr
 | ABAP MCP Server SDK | [abap-ai/mcp](https://github.com/abap-ai/mcp) | Build MCP servers directly in ABAP. | MIT | 83 | 2026-07-19 |
 | ABAP Accelerator MCP Server | [aws-solutions-library-samples/guidance-for-deploying-sap-abap-accelerator-for-amazon-q-developer](https://github.com/aws-solutions-library-samples/guidance-for-deploying-sap-abap-accelerator-for-amazon-q-developer) | Enterprise-grade MCP server for SAP ABAP: create, test, document, and transform ABAP code via Amazon Q Developer and Kiro. | MIT-0 | 56 | 2026-08-11 |
 | MCP server for SAP Cloudification Repository | [ClementRingot/ROSA](https://github.com/ClementRingot/ROSA) | Gives AI agents real-time knowledge of which SAP objects are released for ABAP Cloud / Clean Core — and what to use instead when they're not. | MIT | 25 | 2026-08-03 |
-| erpl-adt | [DataZooDE/erpl-adt](https://github.com/DataZooDE/erpl-adt) | CLI plus MCP exposure for ABAP ADT operations. | Apache-2.0 | 18 | 2026-08-11 |
+| erpl-adt | [DataZooDE/erpl-adt](https://github.com/DataZooDE/erpl-adt) | CLI plus MCP exposure for ABAP ADT operations. | Apache-2.0 | 19 | 2026-08-11 |
 | ARC-1 ADT ABAP MCP Extension | [arc-mcp/arc1-adt-abap-mcp-ext](https://github.com/arc-mcp/arc1-adt-abap-mcp-ext) | Extend SAP's Eclipse ADT MCP server with read-only ABAP repository tools and optional auto-login for AI clients. | MIT | 8 | 2026-06-12 |
 | Dassian ADT | [DassianInc/dassian-adt](https://github.com/DassianInc/dassian-adt) | MCP server for SAP ABAP development via ADT API — read, write, test, and deploy ABAP code without SAP GUI. | MIT | 7 | 2026-07-03 |
 | MCP ABAP ADT Powerup | [babamba2/abap-mcp-adt-powerup](https://github.com/babamba2/abap-mcp-adt-powerup) | Expose comprehensive ABAP ADT development, diagnostics, and object management workflows through MCP. | MIT | 6 | 2026-08-23 |
 | aibap.mcp | [Hochfrequenz/aibap.mcp](https://github.com/Hochfrequenz/aibap.mcp) | Expose the SAP ABAP ADT REST API as an MCP server for on-prem ECC and S/4HANA, covering source editing, debugging, transports, ATC, and customizing/package export. | MIT | 5 | 2026-08-14 |
+| ABAPilot MCP Connector | [NicoHern/abapilot-mcp](https://github.com/NicoHern/abapilot-mcp) | Connect MCP clients to SAP ECC 6.0 and on-premise S/4HANA through the ABAPilot in-system backend without requiring ADT or SAP BTP. | MIT | 3 | 2026-08-19 |
 | mcp-abap-adt (workskong) | [workskong/mcp-abap-adt](https://github.com/workskong/mcp-abap-adt) | Lightweight ADT adapter for ABAP metadata and source. | MIT | 3 | 2026-07-29 |
 | ARC-1 LSP ABAP MCP Server | [arc-mcp/arc-1-lsp](https://github.com/arc-mcp/arc-1-lsp) | Expose SAP ABAP MCP tools by delegating ADT operations to SAP's headless adt-ls language server. | MIT | 2 | 2026-06-17 |
 | MCP ABAP (Validation + Metadata) | [fgalastri/MCP_ABAP](https://github.com/fgalastri/MCP_ABAP) | ABAP validation and metadata tool surface. | MIT | 2 | 2025-08-24 |
@@ -211,6 +212,7 @@ Community-built AI skills, prompt packs, and Claude Code plugins for SAP develop
 | SAP Power for Kiro | [mfigueir/sap-power](https://github.com/mfigueir/sap-power) | SAP development knowledge package for Kiro IDE. | Skill | GPL-3.0 | 9 | 2026-01-20 |
 | sap-odata CLI Agent Skill | [kts982/sap-odata-explorer/skills/sap-odata-cli](https://github.com/kts982/sap-odata-explorer/tree/main/skills/sap-odata-cli) | Agent skill for the sap-odata CLI that lets coding agents discover SAP Gateway/OData services, inspect $metadata and SAP/UI5 annotations, run test queries, lint Fiori readiness, and browse offline EDMX snapshots. | Skill | MIT | 7 | 2026-08-25 |
 | SAP Claude Skills | [KEIDAI-TechTime/sap-claude-skills](https://github.com/KEIDAI-TechTime/sap-claude-skills) | SAP add-on development skill bundles for Claude workflows. | Skill | **NO LICENSE FOUND** | 1 | 2026-03-03 |
+| SAP Basis Operations Skills | [adam0thman/sap-basis-ops](https://github.com/adam0thman/sap-basis-ops) | Provide source-cited runbook skills for SAP Basis and technical operations across system lifecycle, transports, patching, troubleshooting, backup and recovery, databases, and security. | Skill + Claude Plugin | MIT | 0 | 2026-08-25 |
 
 # Libraries, SDKs & Adjacent Tools
 
