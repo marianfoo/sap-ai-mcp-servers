@@ -249,6 +249,14 @@
           "linkLabel": "git.epod.dev/erhan/epod-adt-mcp-updatesite",
           "purpose": "Lets Claude or Codex use Eclipse ADT as an MCP server with SSO-based authentication.",
           "notes": "Hosted on a non-GitHub git server (git.epod.dev). Metadata (license, stars, last change) is not auto-fetched; submitter confirmed an open-source license on submission."
+        },
+        {
+          "type": "Community SAP",
+          "name": "ABAPilot MCP Connector",
+          "addedAt": "2026-08-28",
+          "repo": "NicoHern/abapilot-mcp",
+          "purpose": "Connect MCP clients to SAP ECC 6.0 and on-premise S/4HANA through the ABAPilot in-system backend without requiring ADT or SAP BTP.",
+          "notes": "MIT-licensed stdio connector with eight read-oriented MCP tools and whitelist-controlled exposure; requires the commercial ABAPilot ABAP backend installed in SAP."
         }
       ],
       "description": "Connect AI agents to ABAP systems, mostly through the ADT REST APIs — read, write, test, transport, and document ABAP code on ECC, S/4HANA, and ABAP Cloud. Also includes an SDK for building MCP servers in ABAP itself."
@@ -795,6 +803,18 @@
       "repo": "secondsky/sap-skills",
       "purpose": "Large SAP skill set for Claude Code across CAP, Fiori, ABAP and BTP.",
       "notes": "Packaged for the Claude marketplace and also installable through the cross-agent skills CLI.",
+      "packages": [
+        "skill",
+        "claude-plugin"
+      ]
+    },
+    {
+      "type": "Community SAP",
+      "name": "SAP Basis Operations Skills",
+      "addedAt": "2026-08-28",
+      "repo": "adam0thman/sap-basis-ops",
+      "purpose": "Provide source-cited runbook skills for SAP Basis and technical operations across system lifecycle, transports, patching, troubleshooting, backup and recovery, databases, and security.",
+      "notes": "Ships 30 skills plus Claude Code plugin and marketplace manifests; covers NetWeaver and S/4HANA on Linux, Windows, and AIX with Identify → Preview → Confirm → Verify safety guardrails.",
       "packages": [
         "skill",
         "claude-plugin"

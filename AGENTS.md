@@ -32,6 +32,43 @@ Run `npm run build` to execute the full pipeline locally.
 
 ---
 
+## Admission and review policy
+
+Review submissions from the evidence in the linked project, not from the style or presumed authorship of the issue or pull request.
+
+### LLM-assisted submissions
+
+- Assume that many issues, pull requests, READMEs, and project descriptions may be LLM-assisted. LLM use is neither a positive nor a negative admission signal.
+- Do not reject a submission because its text looks generated, polished, generic, or unusually detailed. Conversely, do not accept claims merely because the submission is comprehensive.
+- Independently verify material claims against the live repository: project contents, implementation code, manifests, licensing, fork status, current package count/version, and relationship to existing catalog entries.
+
+### Public-source requirement for community entries
+
+- A `Community SAP` entry must link to public implementation source for the component being catalogued and that source must carry an applicable open-source license.
+- A documentation/showcase repository containing only a README, changelog, issue tracker, manifests, Dockerfile, or instructions for installing a closed binary does **not** satisfy this requirement. A license attached only to a compiled npm/container artifact does not substitute for public implementation source.
+- Being free to use, published on npm/GHCR, or listed in the MCP Registry is useful distribution evidence, but it is not source-code evidence.
+- Inspect the repository tree and representative implementation files; do not rely only on GitHub's detected license or the submitter's checklist.
+
+### Official SAP hosted-service exception
+
+- First-party, SAP-hosted MCP services and official SAP resource pages may be admitted as `type: "SAP"` URL entries even when SAP publishes no source repository or open-source license.
+- This is a narrow exception for services verified through official SAP documentation or another first-party SAP source. Record the hosted/no-public-repository status in `notes`.
+- The exception does not extend to community or commercial vendors merely because their service integrates with SAP or has a public documentation repository.
+
+### Open-source connectors with proprietary dependencies
+
+- An open-source connector or MCP server may be admitted even when it requires a commercial/proprietary SAP product or backend, provided the linked repository contains the working connector/server implementation under an open-source license.
+- Name and describe the public component accurately. Do not imply that a proprietary backend is included or open source.
+- Disclose the required commercial/proprietary dependency prominently in `notes`.
+
+### Review and decline workflow
+
+Before accepting an entry, verify that it is public, non-fork, SAP-related, correctly categorized, non-duplicative, and licensed; confirm package manifests for skills/plugins and distinguish actual implementation source from distribution or marketing artifacts.
+
+When declining a submission, leave a concise and friendly explanation identifying the unmet rule, clarify any relevant exception boundary, and invite a new submission if the project later satisfies the policy.
+
+---
+
 ## How to add a new entry
 
 **New list entries go into `data/catalog.json`.** For any new GitHub **`repo`**, also update **`CHANGELOG.md`** (see Step 3) so the “new repositories” link in the README stays accurate.
@@ -218,7 +255,7 @@ Overrides are applied as the last step of `enrich-data.mjs` and are **never over
 - Forks are automatically excluded from all rendered tables — do not add fork repos to the catalog.
 - The `type` field must be either `"SAP"` or `"Community SAP"`. No other values are used.
 - `purpose` should be one sentence, ending with a period, describing what the tool does for a developer — not marketing language.
-- Do not add entries without an open-source license (check `data/overrides.json` if the license is only declared informally).
+- Do not add `Community SAP` entries without public implementation source and an applicable open-source license (check `data/overrides.json` if the license is only declared informally). The only no-source exception is the first-party SAP hosted-service policy above.
 
 ---
 
