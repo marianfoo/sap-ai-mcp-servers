@@ -256,7 +256,7 @@
           "addedAt": "2026-08-28",
           "repo": "NicoHern/abapilot-mcp",
           "purpose": "Connect MCP clients to SAP ECC 6.0 and on-premise S/4HANA through the ABAPilot in-system backend without requiring ADT or SAP BTP.",
-          "notes": "MIT-licensed stdio connector with eight read-oriented MCP tools and whitelist-controlled exposure; requires the commercial ABAPilot ABAP backend installed in SAP."
+          "notes": "MIT-licensed stdio connector exposing 49 tools across business data, Data Dictionary, ABAP source, operations and audit, each mapping to one endpoint of the in-system dispatcher; exposure is gated by a per-endpoint registry inside SAP and a client-side ABAPILOT_TOOLS allowlist. Requires the commercial ABAPilot ABAP backend installed in SAP."
         }
       ],
       "description": "Connect AI agents to ABAP systems, mostly through the ADT REST APIs — read, write, test, transport, and document ABAP code on ECC, S/4HANA, and ABAP Cloud. Also includes an SDK for building MCP servers in ABAP itself."
