@@ -45,7 +45,7 @@ Repositories published under official SAP GitHub organizations.
 
 ## Official SAP MCP Servers
 
-MCP servers built and maintained by SAP — Fiori app generation, CAP, UI5 and UI5 Web Components, the Mobile Development Kit, ADT access from ABAP Development Tools for VS Code, and SAP LeanIX enterprise architecture.
+MCP servers built and maintained by SAP — Fiori app generation, CAP, UI5 and UI5 Web Components, the Mobile Development Kit, ADT access from ABAP Development Tools for VS Code, SAP LeanIX enterprise architecture, and SAP BTP administration.
 
 | Name | Repository | Purpose | License | Stars | Last Change |
 | --- | --- | --- | --- | ---: | --- |
@@ -55,6 +55,7 @@ MCP servers built and maintained by SAP — Fiori app generation, CAP, UI5 and U
 | SAP MDK MCP Server | [SAP/mdk-mcp-server](https://github.com/SAP/mdk-mcp-server) | AI-assisted SAP Mobile Development Kit workflows. | Apache-2.0 | 36 | 2026-08-27 |
 | UI5 Web Components MCP Server | [UI5/webcomponents-mcp-server](https://github.com/UI5/webcomponents-mcp-server) | AI-assisted development with UI5 Web Components (component API, guidelines, docs). | Apache-2.0 | 19 | 2026-08-17 |
 | ADT MCP Server | [SAP Help Portal](https://help.sap.com/docs/abap-cloud/abap-development-tools-for-visual-studio-code/enabling-adt-mcp-server?locale=en-US) | Enables MCP clients to access ADT capabilities from ABAP Development Tools for Visual Studio Code. | **NO LICENSE FOUND** | - | - |
+| MCP Server for SAP BTP Administration | [SAP Help Portal](https://help.sap.com/docs/btp/sap-business-technology-platform/account-administration-using-mcp-servers?locale=en-US&version=Cloud) | Manage SAP BTP accounts, security, services, and connectivity through natural-language requests from compatible AI assistants. | **NO LICENSE FOUND** | - | - |
 | SAP LeanIX MCP Server | [help.sap.com/leanix-mcp-server](https://help.sap.com/docs/leanix/ea/mcp-server) | Hosted MCP server that connects AI agents to SAP LeanIX enterprise architecture data — inventory, automations, calculations, and custom reports. | **NO LICENSE FOUND** | - | - |
 
 ## Official SAP AI Skills & Claude Plugins
