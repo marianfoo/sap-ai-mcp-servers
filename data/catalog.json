@@ -72,9 +72,18 @@
           "linkLabel": "help.sap.com/leanix-mcp-server",
           "purpose": "Hosted MCP server that connects AI agents to SAP LeanIX enterprise architecture data — inventory, automations, calculations, and custom reports.",
           "notes": "First-party SAP-certified hosted HTTP MCP endpoint at mcp.leanix.net; listed on skills.cloud.sap. Companion Claude plugin and agent skills live in SAP/leanix-ai-plugins."
+        },
+        {
+          "type": "SAP",
+          "name": "MCP Server for SAP BTP Administration",
+          "addedAt": "2026-08-28",
+          "url": "https://help.sap.com/docs/btp/sap-business-technology-platform/account-administration-using-mcp-servers?locale=en-US&version=Cloud",
+          "linkLabel": "SAP Help Portal",
+          "purpose": "Manage SAP BTP accounts, security, services, and connectivity through natural-language requests from compatible AI assistants.",
+          "notes": "SAP-hosted remote MCP service with SSO through the SAP Default Identity Provider and user-principal authorization across the global accounts available to that identity; no public source repository."
         }
       ],
-      "description": "MCP servers built and maintained by SAP — Fiori app generation, CAP, UI5 and UI5 Web Components, the Mobile Development Kit, ADT access from ABAP Development Tools for VS Code, and SAP LeanIX enterprise architecture."
+      "description": "MCP servers built and maintained by SAP — Fiori app generation, CAP, UI5 and UI5 Web Components, the Mobile Development Kit, ADT access from ABAP Development Tools for VS Code, SAP LeanIX enterprise architecture, and SAP BTP administration."
     },
     {
       "id": "abap-and-adt-mcp-server",

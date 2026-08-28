@@ -4,6 +4,10 @@ This file lists **only newly added repositories** (or other catalog entries with
 
 Dates use the commit date from `git log` on `data/catalog.json`.
 
+## 2026-08-28
+
+- [MCP Server for SAP BTP Administration](https://help.sap.com/docs/btp/sap-business-technology-platform/account-administration-using-mcp-servers?locale=en-US&version=Cloud) — SAP-hosted remote MCP service for account, security, service, and connectivity administration, added under Official SAP MCP Servers
+
 ## 2026-08-12
 
 - [`kts982/sap-odata-explorer`](https://github.com/kts982/sap-odata-explorer) — SAP OData Explorer, a read-only desktop app and CLI for SAP Gateway OData service discovery, metadata, annotations, and Fiori-readiness lint, added under Libraries, SDKs & Adjacent Tools; its in-repo agent skill (`skills/sap-odata-cli`) added under Community AI Skills & Claude Plugins
