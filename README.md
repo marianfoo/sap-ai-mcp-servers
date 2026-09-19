@@ -10,7 +10,7 @@ Comprehensive list of SAP-related MCP servers, SAP AI development skills, and Cl
 **New repositories:** [CHANGELOG.md](CHANGELOG.md) — dates when entries were added to this list.
 
 > [!IMPORTANT]
-> Last generated: **2026-09-18**
+> Last generated: **2026-09-19**
 >
 > Scope:
 > - Open source or source-available repositories — primarily GitHub, with non-GitHub git hosts (Gitea, GitLab, etc.) also accepted
@@ -49,10 +49,10 @@ MCP servers built and maintained by SAP — Fiori app generation, CAP, UI5 and U
 
 | Name | Repository | Purpose | License | Stars | Last Change |
 | --- | --- | --- | --- | ---: | --- |
-| SAP Fiori MCP Server | [SAP/open-ux-tools/packages/fiori-mcp-server](https://github.com/SAP/open-ux-tools/tree/main/packages/fiori-mcp-server) | Fiori app generation and modification workflows. | Apache-2.0 | 155 | 2026-09-18 |
-| CAP MCP Server | [cap-js/mcp-server](https://github.com/cap-js/mcp-server) | AI-assisted CAP development with CDS-aware context. | Apache-2.0 | 112 | 2026-09-17 |
-| UI5 MCP Server | [UI5/mcp-server](https://github.com/UI5/mcp-server) | UI5-aware development support for OpenUI5 and SAPUI5. | Apache-2.0 | 99 | 2026-09-15 |
-| SAP MDK MCP Server | [SAP/mdk-mcp-server](https://github.com/SAP/mdk-mcp-server) | AI-assisted SAP Mobile Development Kit workflows. | Apache-2.0 | 37 | 2026-09-18 |
+| SAP Fiori MCP Server | [SAP/open-ux-tools/packages/fiori-mcp-server](https://github.com/SAP/open-ux-tools/tree/main/packages/fiori-mcp-server) | Fiori app generation and modification workflows. | Apache-2.0 | 156 | 2026-09-18 |
+| CAP MCP Server | [cap-js/mcp-server](https://github.com/cap-js/mcp-server) | AI-assisted CAP development with CDS-aware context. | Apache-2.0 | 112 | 2026-09-18 |
+| UI5 MCP Server | [UI5/mcp-server](https://github.com/UI5/mcp-server) | UI5-aware development support for OpenUI5 and SAPUI5. | Apache-2.0 | 100 | 2026-09-18 |
+| SAP MDK MCP Server | [SAP/mdk-mcp-server](https://github.com/SAP/mdk-mcp-server) | AI-assisted SAP Mobile Development Kit workflows. | Apache-2.0 | 37 | 2026-09-19 |
 | UI5 Web Components MCP Server | [UI5/webcomponents-mcp-server](https://github.com/UI5/webcomponents-mcp-server) | AI-assisted development with UI5 Web Components (component API, guidelines, docs). | Apache-2.0 | 19 | 2026-08-31 |
 | ADT MCP Server | [SAP Help Portal](https://help.sap.com/docs/abap-cloud/abap-development-tools-for-visual-studio-code/enabling-adt-mcp-server?locale=en-US) | Enables MCP clients to access ADT capabilities from ABAP Development Tools for Visual Studio Code. | **NO LICENSE FOUND** | - | - |
 | MCP Server for SAP BTP Administration | [SAP Help Portal](https://help.sap.com/docs/btp/sap-business-technology-platform/account-administration-using-mcp-servers?locale=en-US&version=Cloud) | Manage SAP BTP accounts, security, services, and connectivity through natural-language requests from compatible AI assistants. | **NO LICENSE FOUND** | - | - |
@@ -64,15 +64,15 @@ AI skills and Claude Code plugins maintained by SAP. The **Packages** column sho
 
 | Name | Repository | Purpose | Packages | License | Stars | Last Change |
 | --- | --- | --- | --- | --- | ---: | --- |
-| UI5 Web Components Agent Skills | [UI5/webcomponents](https://github.com/UI5/webcomponents) | Agent skills shipped with the UI5 Web Components library covering accessibility (ARIA, keyboard, screen readers) and styling (CSS shadow parts, custom states, and variables). | Skill | Apache-2.0 | 1,777 | 2026-09-18 |
+| UI5 Web Components Agent Skills | [UI5/webcomponents](https://github.com/UI5/webcomponents) | Agent skills shipped with the UI5 Web Components library covering accessibility (ARIA, keyboard, screen readers) and styling (CSS shadow parts, custom states, and variables). | Skill | Apache-2.0 | 1,779 | 2026-09-19 |
 | SAP AI Skills Library | [SAP/ai-skills-library](https://github.com/SAP/ai-skills-library) | SAP-maintained library of AI skills for digital assistants — discover, search, filter, and install via a skills CLI. | Skill | Apache-2.0 | 52 | 2026-07-30 |
 | UI5 Plugins for Coding Agents | [UI5/plugins-coding-agents](https://github.com/UI5/plugins-coding-agents) | Provide UI5-specific plugins for coding agents — project creation, UI5 error fixing, and framework guidance. | Claude Plugin | Apache-2.0 | 35 | 2026-09-15 |
 | SAP Joule A2A Agent Toolkit Skills | [SAP-samples/joule-a2a-agent-toolkit](https://github.com/SAP-samples/joule-a2a-agent-toolkit) | Skills for the SAP BTP, Cloud Foundry, and Joule command-line tools and for building and deploying custom Joule A2A (agent-to-agent) agents on SAP BTP. | Skill | Apache-2.0 | 33 | 2026-04-21 |
 | CAP Agentic Engineered Skills | [SAP-samples/cap-agentic-engineered](https://github.com/SAP-samples/cap-agentic-engineered) | Provide reusable MCP-routing AGENTS.md and SAP skills for CAP and Fiori Elements agentic development. | Skill | Apache-2.0 | 12 | 2026-05-27 |
 | SAP Automation Pilot Agent Skills | [SAP/automation-pilot-agent-skills](https://github.com/SAP/automation-pilot-agent-skills) | Skills for generating, reviewing, debugging, and managing SAP Automation Pilot commands, executors, schedules, and MCP servers through the Automation Pilot Content and Executions APIs. | Skill | Apache-2.0 | 11 | 2026-09-14 |
 | CAP Skills | [capire/skills](https://github.com/capire/skills) | Provide curated skills that help AI coding agents build and maintain SAP Cloud Application Programming Model applications. | Skill + Claude Plugin | Apache-2.0 | 9 | 2026-09-17 |
-| SAP LeanIX AI Plugins | [SAP/leanix-ai-plugins](https://github.com/SAP/leanix-ai-plugins) | Claude plugin and agent skills that extend coding agents with SAP LeanIX enterprise architecture workflows — building and debugging LeanIX automations and calculations — via the LeanIX MCP server. | Skill + Claude Plugin | Apache-2.0 | 2 | 2026-09-17 |
-| SAP UI Theme Designer Plugins for Coding Agents | [SAP/ui-theme-designer-plugins-for-coding-agents](https://github.com/SAP/ui-theme-designer-plugins-for-coding-agents) | Equip coding agents with knowledge and tooling for the SAP Design System, SAP Fiori design tokens, and UI theme designer, via the design-tokens and help skills. | Skill + Claude Plugin | Apache-2.0 | 2 | 2026-09-16 |
+| SAP LeanIX AI Plugins | [SAP/leanix-ai-plugins](https://github.com/SAP/leanix-ai-plugins) | Claude plugin and agent skills that extend coding agents with SAP LeanIX enterprise architecture workflows — building and debugging LeanIX automations and calculations — via the LeanIX MCP server. | Skill + Claude Plugin | Apache-2.0 | 2 | 2026-09-18 |
+| SAP UI Theme Designer Plugins for Coding Agents | [SAP/ui-theme-designer-plugins-for-coding-agents](https://github.com/SAP/ui-theme-designer-plugins-for-coding-agents) | Equip coding agents with knowledge and tooling for the SAP Design System, SAP Fiori design tokens, and UI theme designer, via the design-tokens and help skills. | Skill + Claude Plugin | Apache-2.0 | 2 | 2026-09-18 |
 | SAP AI Skills Library (skills.cloud.sap) | [skills.cloud.sap](https://skills.cloud.sap/) | Official SAP portal to discover and install AI skills, plugins, marketplaces, and MCP servers for SAP Joule and coding agents, each installable with a single command. | Skill + Claude Plugin | **NO LICENSE FOUND** | - | - |
 
 # Community MCP Servers
@@ -85,8 +85,8 @@ Connect AI agents to ABAP systems, mostly through the ADT REST APIs — read, wr
 
 | Name | Repository | Purpose | License | Stars | Last Change |
 | --- | --- | --- | --- | ---: | --- |
-| Vibing Steampunk | [oisee/vibing-steampunk](https://github.com/oisee/vibing-steampunk) | ADT-to-MCP bridge for ABAP and AMDP workflows. | MIT | 478 | 2026-09-14 |
-| ARC-1 SAP ADT MCP Server | [arc-mcp/arc-1](https://github.com/arc-mcp/arc-1) | Secure-by-default, enterprise-ready SAP ABAP MCP server for developer IDEs, Microsoft Copilot, and any MCP client via BTP OAuth and the ADT REST API. | MIT | 198 | 2026-09-17 |
+| Vibing Steampunk | [oisee/vibing-steampunk](https://github.com/oisee/vibing-steampunk) | ADT-to-MCP bridge for ABAP and AMDP workflows. | MIT | 481 | 2026-09-18 |
+| ARC-1 SAP ADT MCP Server | [arc-mcp/arc-1](https://github.com/arc-mcp/arc-1) | Secure-by-default, enterprise-ready SAP ABAP MCP server for developer IDEs, Microsoft Copilot, and any MCP client via BTP OAuth and the ADT REST API. | MIT | 199 | 2026-09-19 |
 | MCP ABAP (abap-adt-api wrapper) | [mario-andreschak/mcp-abap-abap-adt-api](https://github.com/mario-andreschak/mcp-abap-abap-adt-api) | ABAP operations through wrapped ADT API layer. | MIT | 196 | 2026-09-16 |
 | MCP ABAP ADT Server | [mario-andreschak/mcp-abap-adt](https://github.com/mario-andreschak/mcp-abap-adt) | ABAP system interaction via ADT APIs. | MIT | 189 | 2026-09-16 |
 | mcp-abap-adt | [fr0ster/mcp-abap-adt](https://github.com/fr0ster/mcp-abap-adt) | ABAP ADT MCP server with CRUD and cloud/on-prem support. | Apache-2.0 | 92 | 2026-09-17 |
@@ -97,7 +97,7 @@ Connect AI agents to ABAP systems, mostly through the ADT REST APIs — read, wr
 | ARC-1 ADT ABAP MCP Extension | [arc-mcp/arc1-adt-abap-mcp-ext](https://github.com/arc-mcp/arc1-adt-abap-mcp-ext) | Extend SAP's Eclipse ADT MCP server with read-only ABAP repository tools and optional auto-login for AI clients. | MIT | 11 | 2026-06-12 |
 | Dassian ADT | [DassianInc/dassian-adt](https://github.com/DassianInc/dassian-adt) | MCP server for SAP ABAP development via ADT API — read, write, test, and deploy ABAP code without SAP GUI. | MIT | 9 | 2026-09-04 |
 | MCP ABAP ADT Powerup | [babamba2/abap-mcp-adt-powerup](https://github.com/babamba2/abap-mcp-adt-powerup) | Expose comprehensive ABAP ADT development, diagnostics, and object management workflows through MCP. | MIT | 8 | 2026-08-23 |
-| aibap.mcp | [Hochfrequenz/aibap.mcp](https://github.com/Hochfrequenz/aibap.mcp) | Expose the SAP ABAP ADT REST API as an MCP server for on-prem ECC and S/4HANA, covering source editing, debugging, transports, ATC, and customizing/package export. | MIT | 7 | 2026-09-17 |
+| aibap.mcp | [Hochfrequenz/aibap.mcp](https://github.com/Hochfrequenz/aibap.mcp) | Expose the SAP ABAP ADT REST API as an MCP server for on-prem ECC and S/4HANA, covering source editing, debugging, transports, ATC, and customizing/package export. | MIT | 7 | 2026-09-18 |
 | ABAPilot MCP Connector | [NicoHern/abapilot-mcp](https://github.com/NicoHern/abapilot-mcp) | Connect MCP clients to SAP ECC 6.0 and on-premise S/4HANA through the ABAPilot in-system backend without requiring ADT or SAP BTP. | MIT | 3 | 2026-09-10 |
 | mcp-abap-adt (workskong) | [workskong/mcp-abap-adt](https://github.com/workskong/mcp-abap-adt) | Lightweight ADT adapter for ABAP metadata and source. | MIT | 3 | 2026-07-29 |
 | ARC-1 LSP ABAP MCP Server | [arc-mcp/arc-1-lsp](https://github.com/arc-mcp/arc-1-lsp) | Expose SAP ABAP MCP tools by delegating ADT operations to SAP's headless adt-ls language server. | MIT | 2 | 2026-06-17 |
@@ -128,7 +128,7 @@ Bridges that expose SAP OData, Gateway, and SAP Graph services as MCP tools. Thi
 | OData MCP Bridge (Go) | [oisee/odata_mcp_go](https://github.com/oisee/odata_mcp_go) | Go OData-to-MCP bridge with v2/v4 support. | MIT | 141 | 2026-02-19 |
 | SAP OData to MCP Server for BTP | [lemaiwo/btp-sap-odata-to-mcp-server](https://github.com/lemaiwo/btp-sap-odata-to-mcp-server) | Expose SAP OData services as MCP tools. | MIT | 132 | 2026-05-22 |
 | OData MCP Wrapper (Python) | [oisee/odata_mcp](https://github.com/oisee/odata_mcp) | Bridge OData v2 services into MCP tools. | MIT | 38 | 2025-08-24 |
-| OData MCP Proxy | [lemaiwo/odata-mcp-proxy](https://github.com/lemaiwo/odata-mcp-proxy) | Config-driven MCP server exposing OData/REST APIs as MCP tools; BTP destinations, dual transport (stdio/HTTP). | MIT | 30 | 2026-08-12 |
+| OData MCP Proxy | [lemaiwo/odata-mcp-proxy](https://github.com/lemaiwo/odata-mcp-proxy) | Config-driven MCP server exposing OData/REST APIs as MCP tools; BTP destinations, dual transport (stdio/HTTP). | MIT | 31 | 2026-08-12 |
 | CI MCP Server | [lemaiwo/ci-mcp-server](https://github.com/lemaiwo/ci-mcp-server) | SAP Cloud Integration (CPI) OData API as MCP tools. | MIT | 12 | 2026-05-16 |
 | SAP OData MCP Server (TypeScript) | [GutjahrAI/sap-odata-mcp-server](https://github.com/GutjahrAI/sap-odata-mcp-server) | TypeScript OData MCP implementation. | MIT | 12 | 2025-06-26 |
 | SAP OData MCP Server (Python) | [GutjahrAI/sap-odata-mcp-py](https://github.com/GutjahrAI/sap-odata-mcp-py) | Python OData MCP implementation. | **NO LICENSE FOUND** | 9 | 2025-07-09 |
@@ -190,7 +190,7 @@ MCP servers for SAP line-of-business applications and cross-cutting concerns —
 
 | Name | Repository | Purpose | License | Stars | Last Change |
 | --- | --- | --- | --- | ---: | --- |
-| SAP SuccessFactors MCP Server | [aiadiguru2025/sf-mcp](https://github.com/aiadiguru2025/sf-mcp) | SuccessFactors HR operations via MCP tools. | MIT | 11 | 2026-07-04 |
+| SAP SuccessFactors MCP Server | [aiadiguru2025/sf-mcp](https://github.com/aiadiguru2025/sf-mcp) | SuccessFactors HR operations via MCP tools. | MIT | 12 | 2026-07-04 |
 | SyntaAI SAP Security MCP Server | [SYNTAAI/sap-security-mcp](https://github.com/SYNTAAI/sap-security-mcp) | SAP security analysis and compliance auditing via MCP. 19 read-only tools for user access reviews, SoD violation checks, critical authorization detection, compliance reporting (SOX, GDPR, ISO 27001, NIST), RFC security analysis, password policy audits, and role/authorization review. | Apache-2.0 | 2 | 2026-08-21 |
 | SAP MCP Server (MarkWuRY168) | [MarkWuRY168/SAP_MCP](https://github.com/MarkWuRY168/SAP_MCP) | Publish configurable SAP system tools through MCP services and a web management interface. | **NO LICENSE FOUND** | - | - |
 
@@ -201,7 +201,7 @@ Community-built AI skills, prompt packs, and Claude Code plugins for SAP develop
 | Name | Repository | Purpose | Packages | License | Stars | Last Change |
 | --- | --- | --- | --- | --- | ---: | --- |
 | SAP Skills for Claude Code | [secondsky/sap-skills](https://github.com/secondsky/sap-skills) | Large SAP skill set for Claude Code across CAP, Fiori, ABAP and BTP. | Skill + Claude Plugin | GPL-3.0 | 445 | 2026-09-17 |
-| ARC-1 SAP Skills & Claude Plugin | [arc-mcp/arc-1/skills](https://github.com/arc-mcp/arc-1/tree/main/skills) | ABAP development skills for coding agents — RAP service scaffolding, unit test generation, Clean Core audits, and legacy migration — also installable as a Claude Code plugin bundled with the ARC-1 MCP server. | Skill + Claude Plugin | MIT | 198 | 2026-09-17 |
+| ARC-1 SAP Skills & Claude Plugin | [arc-mcp/arc-1/skills](https://github.com/arc-mcp/arc-1/tree/main/skills) | ABAP development skills for coding agents — RAP service scaffolding, unit test generation, Clean Core audits, and legacy migration — also installable as a Claude Code plugin bundled with the ARC-1 MCP server. | Skill + Claude Plugin | MIT | 199 | 2026-09-19 |
 | SuperClaude for SAP | [babamba2/superclaude-for-sap](https://github.com/babamba2/superclaude-for-sap) | Claude Code plugin and skill set for SAP ABAP development across ECC, S/4HANA, and ABAP Cloud systems. | Skill + Claude Plugin | MIT | 60 | 2026-09-17 |
 | ABAP Skills for Claude Code | [matt1as/claude-abap-skills](https://github.com/matt1as/claude-abap-skills) | Provide opinionated ABAP Cloud rules and slash commands for Claude Code development. | Skill + Claude Plugin | Apache-2.0 | 28 | 2026-08-12 |
 | SAP Datasphere Plugin for Claude | [MarioDeFelipe/sap-datasphere-plugin-for-claude-cowork](https://github.com/MarioDeFelipe/sap-datasphere-plugin-for-claude-cowork) | Claude skills and MCP configuration for SAP Datasphere exploration, modeling, administration, and governance workflows. | Skill + Claude Plugin | MIT | 27 | 2026-05-08 |
@@ -220,7 +220,7 @@ Non-MCP-server projects that support the SAP AI developer ecosystem — SDKs and
 
 | Name | Repository | Purpose | License | Stars | Last Change |
 | --- | --- | --- | --- | ---: | --- |
-| ABAP Remote Filesystem for VS Code | [marcellourbani/vscode_abap_remote_fs](https://github.com/marcellourbani/vscode_abap_remote_fs) | Remote ABAP filesystem access in VS Code. | MIT | 391 | 2026-09-14 |
+| ABAP Remote Filesystem for VS Code | [marcellourbani/vscode_abap_remote_fs](https://github.com/marcellourbani/vscode_abap_remote_fs) | Remote ABAP filesystem access in VS Code. | MIT | 391 | 2026-09-18 |
 | SAP CLI (sapcli) | [jfilak/sapcli](https://github.com/jfilak/sapcli) | Python CLI for SAP ADT and RFC operations: ABAP unit tests, ATC checks, transports, gCTS, abapGit install, and more. | Apache-2.0 | 101 | 2026-08-13 |
 | CAP MCP Plugin | [gavdilabs/cap-mcp-plugin](https://github.com/gavdilabs/cap-mcp-plugin) | Generates MCP servers from CAP services. | Apache-2.0 | 61 | 2026-07-17 |
 | abap_wiki | [Gixsy95/abap_wiki](https://github.com/Gixsy95/abap_wiki) | Agent-driven engine that turns SAP S/4HANA custom ABAP objects into citable Markdown/Obsidian knowledge for humans and AI agents. | MIT | 46 | 2026-09-14 |
