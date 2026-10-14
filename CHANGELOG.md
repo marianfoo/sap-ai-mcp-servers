@@ -4,6 +4,11 @@ This file lists **only newly added repositories** (or other catalog entries with
 
 Dates use the commit date from `git log` on `data/catalog.json`.
 
+## 2026-10-14
+
+- [`romankorim/sap-mcp-server`](https://github.com/romankorim/sap-mcp-server) — OData and RFC/BAPI read access for SAP ECC and S/4HANA, added under OData, Gateway & Graph; the write tool remains a placeholder.
+- [`silvius1996/claude-sap-kit`](https://github.com/silvius1996/claude-sap-kit) — Three skills, a Claude plugin, and an ARC-1 extension for reports, NAST PDF previews, and SmartForms, added under Community SAP AI Skills & Claude Plugins.
+
 ## 2026-08-28
 
 - [MCP Server for SAP BTP Administration](https://help.sap.com/docs/btp/sap-business-technology-platform/account-administration-using-mcp-servers?locale=en-US&version=Cloud) — SAP-hosted remote MCP service for account, security, service, and connectivity administration, added under Official SAP MCP Servers

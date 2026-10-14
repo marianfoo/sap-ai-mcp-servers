@@ -400,6 +400,14 @@
           "repo": "lemaiwo/ai-core-mcp-server",
           "purpose": "SAP AI Core lifecycle and admin APIs as MCP tools.",
           "notes": "Config: ai-core-api-config.json; uses odata-mcp-proxy."
+        },
+        {
+          "type": "Community SAP",
+          "name": "sap-mcp-server (OData + RFC/BAPI)",
+          "addedAt": "2026-10-14",
+          "repo": "romankorim/sap-mcp-server",
+          "purpose": "Reads SAP ECC and S/4HANA data through OData and an open-rfc bridge.",
+          "notes": "Python 3.10+; RFC tools require Node.js 22.14+. The purchase-requisition write tool is a placeholder and does not execute SAP writes."
         }
       ]
     },
@@ -1019,6 +1027,18 @@
         "skill",
         "claude-plugin"
       ]
+    },
+    {
+      "type": "Community SAP",
+      "name": "claude-sap-kit",
+      "addedAt": "2026-10-14",
+      "repo": "silvius1996/claude-sap-kit",
+      "packages": [
+        "skill",
+        "claude-plugin"
+      ],
+      "purpose": "Runs ABAP reports, previews NAST output as PDF, and edits SmartForms as XML through an ARC-1 extension.",
+      "notes": "Three skills plus ABAP sources and five extension tools. Requires ARC-1 1.4.0+ with writes enabled and SAP_BASIS 7.50+ on-premise or private cloud; not for S/4HANA Public Cloud or BTP ABAP Environment."
     }
   ]
 }
