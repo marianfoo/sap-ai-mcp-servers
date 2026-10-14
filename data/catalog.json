@@ -1038,7 +1038,7 @@
         "claude-plugin"
       ],
       "purpose": "Runs ABAP reports, previews NAST output as PDF, and edits SmartForms as XML through an ARC-1 extension.",
-      "notes": "Three skills plus ABAP sources and five extension tools. Requires ARC-1 1.4.0+ and SAP_BASIS 7.50+ on-premise or private cloud; not for S/4HANA Public Cloud or BTP ABAP Environment."
+      "notes": "Three skills plus ABAP sources and five extension tools. Requires ARC-1 1.4.0+ with writes enabled and SAP_BASIS 7.50+ on-premise or private cloud; not for S/4HANA Public Cloud or BTP ABAP Environment."
     }
   ]
 }
