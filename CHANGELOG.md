@@ -4,6 +4,10 @@ This file lists **only newly added repositories** (or other catalog entries with
 
 Dates use the commit date from `git log` on `data/catalog.json`.
 
+## 2026-10-28
+
+- [`schaeberleerwin-bit/sap-mail-agent`](https://github.com/schaeberleerwin-bit/sap-mail-agent) — Python MCP server for SAP Gateway OData sales orders, delivery status and products, plus an email agent that drafts replies, added under OData, Gateway & Graph.
+
 ## 2026-10-14
 
 - [`romankorim/sap-mcp-server`](https://github.com/romankorim/sap-mcp-server) — OData and RFC/BAPI read access for SAP ECC and S/4HANA, added under OData, Gateway & Graph; the write tool remains a placeholder.
