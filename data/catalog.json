@@ -408,6 +408,14 @@
           "repo": "romankorim/sap-mcp-server",
           "purpose": "Reads SAP ECC and S/4HANA data through OData and an open-rfc bridge.",
           "notes": "Python 3.10+; RFC tools require Node.js 22.14+. The purchase-requisition write tool is a placeholder and does not execute SAP writes."
+        },
+        {
+          "type": "Community SAP",
+          "name": "sap-mail-agent",
+          "addedAt": "2026-10-28",
+          "repo": "schaeberleerwin-bit/sap-mail-agent",
+          "purpose": "Python MCP server exposing SAP Gateway OData sales order, delivery status, product lookup and sales order creation as tools, plus an email agent that drafts customer replies from SAP data.",
+          "notes": "Tested against the GWSAMPLE_BASIC demo service; create_sales_order writes to SAP. The email agent only creates Outlook drafts, it never sends."
         }
       ]
     },
