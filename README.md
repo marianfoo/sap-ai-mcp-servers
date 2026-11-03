@@ -214,7 +214,7 @@ Community-built AI skills, prompt packs, and Claude Code plugins for SAP develop
 | SAP Power for Kiro | [mfigueir/sap-power](https://github.com/mfigueir/sap-power) | SAP development knowledge package for Kiro IDE. | Skill | GPL-3.0 | 9 | 2026-01-20 |
 | sap-odata CLI Agent Skill | [kts982/sap-odata-explorer/skills/sap-odata-cli](https://github.com/kts982/sap-odata-explorer/tree/main/skills/sap-odata-cli) | Agent skill for the sap-odata CLI that lets coding agents discover SAP Gateway/OData services, inspect $metadata and SAP/UI5 annotations, run test queries, lint Fiori readiness, and browse offline EDMX snapshots. | Skill | MIT | 7 | 2026-11-01 |
 | SAP Claude Skills | [KEIDAI-TechTime/sap-claude-skills](https://github.com/KEIDAI-TechTime/sap-claude-skills) | SAP add-on development skill bundles for Claude workflows. | Skill | **NO LICENSE FOUND** | 1 | 2026-03-03 |
-| SAP Basis Operations Skills | [adam0thman/sap-basis-ops](https://github.com/adam0thman/sap-basis-ops) | Provide source-cited runbook skills for SAP Basis and technical operations across system lifecycle, transports, patching, troubleshooting, backup and recovery, databases, and security. | Skill + Claude Plugin | MIT | 0 | 2026-10-26 |
+| SAP Basis Operations Skills | [adam0thman/sap-basis-ops](https://github.com/adam0thman/sap-basis-ops) | Provide source-cited runbook skills for SAP Basis and technical operations across system lifecycle, provisioning, transports, kernel and security patching, troubleshooting, backup and recovery, database HA/DR, networking edge components, CLI tooling, and SAP support cases. | Skill + Claude Plugin | MIT | 0 | 2026-10-26 |
 
 # Libraries, SDKs & Adjacent Tools
 

@@ -821,8 +821,8 @@
       "name": "SAP Basis Operations Skills",
       "addedAt": "2026-08-28",
       "repo": "adam0thman/sap-basis-ops",
-      "purpose": "Provide source-cited runbook skills for SAP Basis and technical operations across system lifecycle, transports, patching, troubleshooting, backup and recovery, databases, and security.",
-      "notes": "Ships 30 skills plus Claude Code plugin and marketplace manifests; covers NetWeaver and S/4HANA on Linux, Windows, and AIX with Identify → Preview → Confirm → Verify safety guardrails.",
+      "purpose": "Provide source-cited runbook skills for SAP Basis and technical operations across system lifecycle, provisioning, transports, kernel and security patching, troubleshooting, backup and recovery, database HA/DR, networking edge components, CLI tooling, and SAP support cases.",
+      "notes": "Ships 34 skills plus Claude Code plugin and marketplace manifests; covers NetWeaver and S/4HANA on Linux, Windows, and AIX with Identify → Preview → Confirm → Verify safety guardrails.",
       "packages": [
         "skill",
         "claude-plugin"
