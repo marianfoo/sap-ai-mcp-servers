@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-20T06:08:16.386Z",
+  "generatedAt": "2026-11-20T09:32:30.176Z",
   "sourceCatalog": "data/catalog.json",
-  "repoCount": 96,
+  "repoCount": 97,
   "tokenUsed": true,
   "repoMetadata": {
     "1nbuc/mcp-integration-suite": {
@@ -686,7 +686,7 @@
       "fork": false,
       "parent": null,
       "stars": 22,
-      "lastChange": "2026-11-19T21:00:54Z",
+      "lastChange": "2026-11-20T09:04:44Z",
       "archived": false,
       "license": "MIT",
       "description": "an MCP server that interacts with SAP Desktop GUI (COM Scripting API, windows only)",
@@ -695,6 +695,26 @@
         "Python": 2694693
       },
       "htmlUrl": "https://github.com/Hochfrequenz/sapgui.mcp"
+    },
+    "Hochfrequenz/sapwebgui.mcp": {
+      "repo": "Hochfrequenz/sapwebgui.mcp",
+      "source": "api",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": 0,
+      "lastChange": "2026-11-19T17:39:44Z",
+      "archived": false,
+      "license": "MIT",
+      "description": "MCP server for SAP GUI for HTML (WebGUI), driven by a browser. Looking for a maintainer.",
+      "primaryLanguage": "Python",
+      "languages": {
+        "Python": 2665759,
+        "JavaScript": 86238,
+        "Dockerfile": 2428,
+        "PowerShell": 2155
+      },
+      "htmlUrl": "https://github.com/Hochfrequenz/sapwebgui.mcp"
     },
     "jduncan8142/sap_gui_mcp": {
       "repo": "jduncan8142/sap_gui_mcp",

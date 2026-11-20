@@ -4,6 +4,10 @@ This file lists **only newly added repositories** (or other catalog entries with
 
 Dates use the commit date from `git log` on `data/catalog.json`.
 
+## 2026-11-20
+
+- [`Hochfrequenz/sapwebgui.mcp`](https://github.com/Hochfrequenz/sapwebgui.mcp) — SAP GUI for HTML automation through Playwright, added under SAP GUI Automation.
+
 ## 2026-10-14
 
 - [`romankorim/sap-mcp-server`](https://github.com/romankorim/sap-mcp-server) — OData and RFC/BAPI read access for SAP ECC and S/4HANA, added under OData, Gateway & Graph; the write tool remains a placeholder.

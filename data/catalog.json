@@ -562,11 +562,19 @@
           "name": "sapgui.mcp",
           "addedAt": "2026-06-02",
           "repo": "Hochfrequenz/sapgui.mcp",
-          "purpose": "Expose SAP GUI Scripting API and SAP Web GUI interactions via FastMCP.",
-          "notes": "Provides executable, Python, and Docker-based runtime options."
+          "purpose": "Control SAP GUI for Windows through its COM scripting API via FastMCP.",
+          "notes": "Requires SAP GUI for Windows with scripting enabled."
+        },
+        {
+          "type": "Community SAP",
+          "name": "SAP Web GUI MCP",
+          "addedAt": "2026-11-20",
+          "repo": "Hochfrequenz/sapwebgui.mcp",
+          "purpose": "Automate SAP GUI for HTML in a Chromium browser using Playwright.",
+          "notes": "Requires access to an SAP system with Web GUI enabled."
         }
       ],
-      "description": "Drive the classic SAP GUI through the Windows Scripting API — screen navigation, field input, table operations, and screenshots for workflows that have no API."
+      "description": "Automate SAP GUI for Windows through its scripting API or SAP GUI for HTML in a browser."
     },
     {
       "id": "sap-operations-lifecycle",
