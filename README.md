@@ -166,15 +166,16 @@ MCP servers for SAP's data and analytics products: Datasphere, Business Data Clo
 
 ## SAP GUI Automation
 
-Drive the classic SAP GUI through the Windows Scripting API — screen navigation, field input, table operations, and screenshots for workflows that have no API.
+Automate SAP GUI for Windows through its scripting API or SAP GUI for HTML in a browser.
 
 | Name | Repository | Purpose | License | Stars | Last Change |
 | --- | --- | --- | --- | ---: | --- |
 | MCP SAP GUI Server | [mario-andreschak/mcp-sap-gui](https://github.com/mario-andreschak/mcp-sap-gui) | Coordinate and input automation for SAP GUI. | MIT | 147 | 2026-09-24 |
 | MCP SAP GUI (Scripting API) | [kts982/mcp-sap-gui](https://github.com/kts982/mcp-sap-gui) | Full SAP GUI for Windows automation via Scripting API — 52 MCP tools for screen discovery, navigation, field I/O, table and tree operations, and screenshot capture. | MIT | 53 | 2026-11-16 |
-| sapgui.mcp | [Hochfrequenz/sapgui.mcp](https://github.com/Hochfrequenz/sapgui.mcp) | Expose SAP GUI Scripting API and SAP Web GUI interactions via FastMCP. | MIT | 22 | 2026-11-19 |
+| sapgui.mcp | [Hochfrequenz/sapgui.mcp](https://github.com/Hochfrequenz/sapgui.mcp) | Control SAP GUI for Windows through its COM scripting API via FastMCP. | MIT | 22 | 2026-11-20 |
 | SAPient MCP | [toni-ramchandani/sapient-mcp](https://github.com/toni-ramchandani/sapient-mcp) | RoboSAPiens-based SAP GUI automation server. | **NO LICENSE FOUND** | 14 | 2026-02-24 |
 | sap_gui_mcp | [jduncan8142/sap_gui_mcp](https://github.com/jduncan8142/sap_gui_mcp) | SAP GUI Scripting API exposed via FastMCP. | MIT | 1 | 2025-12-01 |
+| SAP Web GUI MCP | [Hochfrequenz/sapwebgui.mcp](https://github.com/Hochfrequenz/sapwebgui.mcp) | Automate SAP GUI for HTML in a Chromium browser using Playwright. | MIT | 0 | 2026-11-19 |
 
 ## Operations, Monitoring & Lifecycle
 
