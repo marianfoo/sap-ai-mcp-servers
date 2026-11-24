@@ -137,6 +137,7 @@ Bridges that expose SAP OData, Gateway, and SAP Graph services as MCP tools. Thi
 | BTP MCP Server | [lemaiwo/btp-mcp-server](https://github.com/lemaiwo/btp-mcp-server) | BTP Core Services (accounts, entitlements, provisioning) as MCP tools. | MIT | 7 | 2026-08-12 |
 | SAP Graph API Sandbox MCP | [CostingGeek/sap-mcp](https://github.com/CostingGeek/sap-mcp) | MCP wrapper for SAP Graph sandbox scenarios. | MIT | 6 | 2025-04-28 |
 | sap-mcp-server (OData + RFC/BAPI) | [romankorim/sap-mcp-server](https://github.com/romankorim/sap-mcp-server) | Reads SAP ECC and S/4HANA data through OData and an open-rfc bridge. | MIT | 5 | 2026-10-24 |
+| sap-mail-agent | [schaeberleerwin-bit/sap-mail-agent](https://github.com/schaeberleerwin-bit/sap-mail-agent) | Look up open sales orders, delivery status, and products, and create sales orders through SAP Gateway OData. | **NO LICENSE FOUND** | - | - |
 
 ## SAP Integration (CPI / PI)
 
@@ -216,7 +217,7 @@ Community-built AI skills, prompt packs, and Claude Code plugins for SAP develop
 | SAP Power for Kiro | [mfigueir/sap-power](https://github.com/mfigueir/sap-power) | SAP development knowledge package for Kiro IDE. | Skill | GPL-3.0 | 9 | 2026-01-20 |
 | sap-odata CLI Agent Skill | [kts982/sap-odata-explorer/skills/sap-odata-cli](https://github.com/kts982/sap-odata-explorer/tree/main/skills/sap-odata-cli) | Agent skill for the sap-odata CLI that lets coding agents discover SAP Gateway/OData services, inspect $metadata and SAP/UI5 annotations, run test queries, lint Fiori readiness, and browse offline EDMX snapshots. | Skill | MIT | 9 | 2026-11-23 |
 | SAP Claude Skills | [KEIDAI-TechTime/sap-claude-skills](https://github.com/KEIDAI-TechTime/sap-claude-skills) | SAP add-on development skill bundles for Claude workflows. | Skill | **NO LICENSE FOUND** | 1 | 2026-03-03 |
-| SAP Basis Operations Skills | [adam0thman/sap-basis-ops](https://github.com/adam0thman/sap-basis-ops) | Provide source-cited runbook skills for SAP Basis and technical operations across system lifecycle, transports, patching, troubleshooting, backup and recovery, databases, and security. | Skill + Claude Plugin | MIT | 0 | 2026-11-03 |
+| SAP Basis Operations Skills | [adam0thman/sap-basis-ops](https://github.com/adam0thman/sap-basis-ops) | Provide source-cited runbook skills for SAP Basis and technical operations across system lifecycle, provisioning, transports, kernel and security patching, troubleshooting, backup and recovery, database HA/DR, networking edge components, CLI tooling, and SAP support cases. | Skill + Claude Plugin | MIT | 0 | 2026-11-03 |
 
 # Libraries, SDKs & Adjacent Tools
 
