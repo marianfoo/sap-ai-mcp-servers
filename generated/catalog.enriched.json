@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-24T06:08:34.513Z",
+  "generatedAt": "2026-11-24T08:23:58.457Z",
   "sourceCatalog": "data/catalog.json",
-  "repoCount": 97,
+  "repoCount": 98,
   "tokenUsed": true,
   "repoMetadata": {
     "1nbuc/mcp-integration-suite": {
@@ -439,6 +439,24 @@
         "Dockerfile": 397
       },
       "htmlUrl": "https://github.com/derekvincent/mcp-sap-focusedrun"
+    },
+    "dnic-dev/afo-mcp": {
+      "repo": "dnic-dev/afo-mcp",
+      "source": "api",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": 3,
+      "lastChange": "2026-11-08T18:50:48Z",
+      "archived": false,
+      "license": "MIT",
+      "description": "MCP server for SAP Analysis for Office workbooks",
+      "primaryLanguage": "TypeScript",
+      "languages": {
+        "TypeScript": 357160,
+        "JavaScript": 94072
+      },
+      "htmlUrl": "https://github.com/dnic-dev/afo-mcp"
     },
     "dnic-dev/bw-modeling-mcp": {
       "repo": "dnic-dev/bw-modeling-mcp",
