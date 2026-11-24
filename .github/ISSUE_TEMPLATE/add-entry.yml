@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for suggesting a new entry.
+        See the [submission guide](https://github.com/marianfoo/sap-ai-mcp-servers/blob/main/AGENTS.md#before-you-submit) for examples of what fits and what to include.
 
         Before submitting, please check the catalog for duplicates. Fill in either the GitHub repository field or the non-GitHub URL field, not both.
         For a community entry, link the open-source code or content that provides its main capability. Use Notes to identify any required commercial product, engine, or dataset.

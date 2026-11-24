@@ -1,12 +1,30 @@
-# AGENTS.md — LLM Guide for mcp-sap-list
+# SAP AI tools catalog contributor guide
 
-This file explains how the repository works and how to make changes to it correctly. Read this before editing any files.
+## Before you submit
+
+The catalog lists SAP-related MCP servers, AI skills and prompt packs, Claude plugins, and adjacent developer tools. **For community projects, the main SAP capability must be open source.** Point reviewers to the code, rules, or other content that delivers it.
+
+| Example | Does it fit? |
+|---|---|
+| An MIT-licensed server reads SAP Analysis for Office workbooks offline and can refresh them in Excel. | Yes. The public code implements workbook handling. Mention that live refresh requires Windows, Excel, and the SAP add-in. |
+| A repository publishes ABAP review rules and a Claude plugin manifest that loads them. | Yes. Submit one entry and select **AI skill + Claude plugin**. |
+| An MIT-licensed client sends requests to a proprietary engine that generates the advertised SAP test datasets. | Decline. The engine supplies the main capability. This could qualify if the generator were released under an open-source license. |
+
+Official SAP-hosted MCP services and official SAP resource pages have a separate admission path. Link the official SAP documentation and choose **SAP** as the source.
+
+### What to put in the issue
+
+1. Describe one concrete SAP task the project performs. Pick the matching catalog section. If a similar tool is already listed, explain what this one adds.
+2. Link the public repository and its license. In **Notes**, point to the relevant tool handler, skill file, plugin manifest, or package directory so a reviewer can verify your description.
+3. Mention any required SAP product, operating system, account, or hosted service. If the tool can write to an SAP system, say what it can change.
+
+Search for your repository first, then use the submission form. An issue is enough to propose an entry. [Search the catalog](https://sap-ai-tools.marianzeis.de/) · [Open the Add new entry form](https://github.com/marianfoo/sap-ai-mcp-servers/issues/new?template=add-entry.yml)
 
 ---
 
 ## What this repo does
 
-This is a **curated, auto-generated list** of SAP-related MCP servers, AI skills, Claude plugins, and adjacent developer tools hosted on GitHub.
+This is a **curated, auto-generated list** of SAP-related MCP servers, AI skills, Claude plugins, and adjacent developer tools. Projects can be hosted on any public Git host.
 
 The `README.md` is **never edited by hand**. It is always generated from structured data via scripts. The pipeline is:
 
