@@ -512,6 +512,14 @@
         },
         {
           "type": "Community SAP",
+          "name": "Analysis for Office MCP Server",
+          "addedAt": "2026-11-24",
+          "repo": "dnic-dev/afo-mcp",
+          "purpose": "Read, build, and update SAP Analysis for Office workbooks offline.",
+          "notes": "Offline operations require neither Excel nor an SAP login. Opening or refreshing live reports requires Windows with Excel and the SAP Analysis for Microsoft Office add-in."
+        },
+        {
+          "type": "Community SAP",
           "name": "SAP Analytics Cloud MCP Server",
           "addedAt": "2026-03-05",
           "repo": "JumenEngels/sap_analytics_cloud_mcp",

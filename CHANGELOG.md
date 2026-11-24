@@ -4,6 +4,10 @@ This file lists **only newly added repositories** (or other catalog entries with
 
 Dates use the commit date from `git log` on `data/catalog.json`.
 
+## 2026-11-24
+
+- [`dnic-dev/afo-mcp`](https://github.com/dnic-dev/afo-mcp) — Read, build, and update SAP Analysis for Office workbooks offline, added under Data, Analytics & HANA.
+
 ## 2026-11-20
 
 - [`Hochfrequenz/sapwebgui.mcp`](https://github.com/Hochfrequenz/sapwebgui.mcp) — SAP GUI for HTML automation through Playwright, added under SAP GUI Automation.

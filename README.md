@@ -162,6 +162,7 @@ MCP servers for SAP's data and analytics products: Datasphere, Business Data Clo
 | SAP Analytics Cloud MCP Server | [JumenEngels/sap_analytics_cloud_mcp](https://github.com/JumenEngels/sap_analytics_cloud_mcp) | Exposes SAP Analytics Cloud APIs as MCP tools. | MIT | 22 | 2026-03-02 |
 | SAP Datasphere MCP (rahulsethi) | [rahulsethi/SAPDatasphereMCP](https://github.com/rahulsethi/SAPDatasphereMCP) | Datasphere read-only and analytics operations via MCP. | Apache-2.0 | 11 | 2026-07-01 |
 | SAP Business Data Cloud MCP | [rahulsethi/SAPBDCMCP](https://github.com/rahulsethi/SAPBDCMCP) | MCP tooling for SAP Business Data Cloud workflows. | Apache-2.0 | 4 | 2026-09-10 |
+| Analysis for Office MCP Server | [dnic-dev/afo-mcp](https://github.com/dnic-dev/afo-mcp) | Read, build, and update SAP Analysis for Office workbooks offline. | MIT | 3 | 2026-11-08 |
 | SAP Datasphere MCP Tools | [pmankineni/mcp-datasphere-tools](https://github.com/pmankineni/mcp-datasphere-tools) | Expose SAP Datasphere exploration, querying, modeling, administration, and audit workflows via MCP. | ISC | - | - |
 
 ## SAP GUI Automation
