@@ -52,6 +52,9 @@
         "TypeScript": 529,
         "JavaScript": 471
       }
+    },
+    "abapforagents/abap-for-agents-lite": {
+      "primaryLanguage": "Markdown"
     }
   }
 }

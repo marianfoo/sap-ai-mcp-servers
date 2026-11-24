@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-24T08:23:58.457Z",
+  "generatedAt": "2026-11-24T09:20:27.586Z",
   "sourceCatalog": "data/catalog.json",
-  "repoCount": 98,
+  "repoCount": 104,
   "tokenUsed": true,
   "repoMetadata": {
     "1nbuc/mcp-integration-suite": {
@@ -59,6 +59,21 @@
         "ABAP": 1133328
       },
       "htmlUrl": "https://github.com/abap-ai/mcp"
+    },
+    "abapforagents/abap-for-agents-lite": {
+      "repo": "abapforagents/abap-for-agents-lite",
+      "source": "api",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": 0,
+      "lastChange": "2026-11-09T09:36:13Z",
+      "archived": false,
+      "license": "MIT",
+      "description": "Free MIT rules that stop Cursor, Claude Code, Copilot, Windsurf and Codex from writing wrong ABAP. EN + PT.",
+      "primaryLanguage": "Markdown",
+      "languages": null,
+      "htmlUrl": "https://github.com/abapforagents/abap-for-agents-lite"
     },
     "adam0thman/sap-basis-ops": {
       "repo": "adam0thman/sap-basis-ops",
@@ -337,6 +352,45 @@
       },
       "htmlUrl": "https://github.com/chandrashekhar-mahajan/abap-mcp-server"
     },
+    "ClementRingot/ADAM": {
+      "repo": "ClementRingot/ADAM",
+      "source": "api",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": 7,
+      "lastChange": "2026-11-06T08:07:57Z",
+      "archived": false,
+      "license": "MIT",
+      "description": "ADAM (ABAP Debugger And Monitor) - MCP server that lets an AI agent debug ABAP code on a connected SAP system: set breakpoints, run the code, read the call stack and variables.",
+      "primaryLanguage": "TypeScript",
+      "languages": {
+        "TypeScript": 682593,
+        "JavaScript": 3311
+      },
+      "htmlUrl": "https://github.com/ClementRingot/ADAM"
+    },
+    "ClementRingot/LISA": {
+      "repo": "ClementRingot/LISA",
+      "source": "api",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": 9,
+      "lastChange": "2026-11-23T11:23:19Z",
+      "archived": false,
+      "license": "MIT",
+      "description": "Localization & Internationalization Service for ABAP — an MCP server for translating ABAP objects",
+      "primaryLanguage": "ABAP",
+      "languages": {
+        "ABAP": 280383,
+        "TypeScript": 134778,
+        "JavaScript": 41569,
+        "Shell": 3658,
+        "Dockerfile": 2118
+      },
+      "htmlUrl": "https://github.com/ClementRingot/LISA"
+    },
     "ClementRingot/ROSA": {
       "repo": "ClementRingot/ROSA",
       "source": "api",
@@ -439,6 +493,25 @@
         "Dockerfile": 397
       },
       "htmlUrl": "https://github.com/derekvincent/mcp-sap-focusedrun"
+    },
+    "DimiDR/MCP-Datasphere-InteractiveUser": {
+      "repo": "DimiDR/MCP-Datasphere-InteractiveUser",
+      "source": "api",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": 2,
+      "lastChange": "2026-11-13T14:14:29Z",
+      "archived": false,
+      "license": "MIT",
+      "description": "SAP Datasphere Interactive Usage MCP — OAuth, catalog, analytical and relational OData",
+      "primaryLanguage": "TypeScript",
+      "languages": {
+        "TypeScript": 175993,
+        "JavaScript": 63620,
+        "Python": 51387
+      },
+      "htmlUrl": "https://github.com/DimiDR/MCP-Datasphere-InteractiveUser"
     },
     "dnic-dev/afo-mcp": {
       "repo": "dnic-dev/afo-mcp",
@@ -1365,6 +1438,26 @@
       "languages": null,
       "htmlUrl": "https://github.com/pmankineni/mcp-datasphere-tools"
     },
+    "RafaelSachsNL/sac-workbench-mcp": {
+      "repo": "RafaelSachsNL/sac-workbench-mcp",
+      "source": "api",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": 10,
+      "lastChange": "2026-11-13T16:14:07Z",
+      "archived": false,
+      "license": "MIT",
+      "description": "Unofficial MCP server for SAP Analytics Cloud — stories, charts, themes, planning models and data for AI assistants. Not affiliated with or supported by SAP.",
+      "primaryLanguage": "TypeScript",
+      "languages": {
+        "TypeScript": 681165,
+        "JavaScript": 27662,
+        "Python": 16093,
+        "Shell": 1094
+      },
+      "htmlUrl": "https://github.com/RafaelSachsNL/sac-workbench-mcp"
+    },
     "rahulsethi/SAPBDCMCP": {
       "repo": "rahulsethi/SAPBDCMCP",
       "source": "api",
@@ -1610,6 +1703,23 @@
         "Lua": 1697
       },
       "htmlUrl": "https://github.com/SaurabhVC/ABAPDocMCP"
+    },
+    "schaeberleerwin-bit/sap-mail-agent": {
+      "repo": "schaeberleerwin-bit/sap-mail-agent",
+      "source": "api",
+      "exists": true,
+      "fork": false,
+      "parent": null,
+      "stars": 0,
+      "lastChange": "2026-10-28T14:50:51Z",
+      "archived": false,
+      "license": "MIT",
+      "description": "KI-Agent: beantwortet Kundenanfragen per Mail mit SAP-Daten (OData, nur lesend) und legt die Antwort als Entwurf in Outlook ab. Plus MCP-Server.",
+      "primaryLanguage": "Python",
+      "languages": {
+        "Python": 53190
+      },
+      "htmlUrl": "https://github.com/schaeberleerwin-bit/sap-mail-agent"
     },
     "secondsky/sap-skills": {
       "repo": "secondsky/sap-skills",

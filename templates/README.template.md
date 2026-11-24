@@ -13,7 +13,8 @@ Comprehensive list of SAP-related MCP servers, SAP AI development skills, and Cl
 > Last generated: **{{LAST_UPDATED}}**
 >
 > Scope:
-> - Open source or source-available repositories — primarily GitHub, with non-GitHub git hosts (Gitea, GitLab, etc.) also accepted
+> - Community projects must publish the code or content behind their main capability under an open-source license. Any public Git host is welcome.
+> - Tools can integrate with commercial SAP systems. A connector whose main value comes from a proprietary engine or dataset is outside the community catalog. See the [admission policy](AGENTS.md#admission-and-review-policy) for the official SAP hosted-service exception.
 > - SAP-related MCP servers, MCP SDKs, Claude plugins/skills, and adjacent SAP AI developer assets
 > - Forks are excluded automatically from rendered tables
 > - Non-GitHub entries are listed without auto-fetched metadata (stars, license, last change)

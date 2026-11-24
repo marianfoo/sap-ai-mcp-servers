@@ -44,7 +44,7 @@ Review submissions from the evidence in the linked project, not from the style o
 
 ### Public-source requirement for community entries
 
-- A `Community SAP` entry must link to public implementation source for the component being catalogued and that source must carry an applicable open-source license.
+- For a `Community SAP` entry, the main capability described in `purpose` must be implemented in public code or content under an open-source license. For skills and plugins, inspect the published rules, workflows, or tools.
 - A documentation/showcase repository containing only a README, changelog, issue tracker, manifests, Dockerfile, or instructions for installing a closed binary does **not** satisfy this requirement. A license attached only to a compiled npm/container artifact does not substitute for public implementation source.
 - Being free to use, published on npm/GHCR, or listed in the MCP Registry is useful distribution evidence, but it is not source-code evidence.
 - Inspect the repository tree and representative implementation files; do not rely only on GitHub's detected license or the submitter's checklist.
@@ -57,9 +57,8 @@ Review submissions from the evidence in the linked project, not from the style o
 
 ### Open-source connectors with proprietary dependencies
 
-- An open-source connector or MCP server may be admitted even when it requires a commercial/proprietary SAP product or backend, provided the linked repository contains the working connector/server implementation under an open-source license.
-- Name and describe the public component accurately. Do not imply that a proprietary backend is included or open source.
-- Disclose the required commercial/proprietary dependency prominently in `notes`.
+- A project can integrate with a commercial SAP system when its public implementation provides the listed capability, such as workbook editing or ABAP debugging. Name any required product or service in `notes`.
+- Decline a submission when its main contribution comes from a proprietary engine, dataset, or content and the public repository mainly provides access to it.
 
 ### Review and decline workflow
 

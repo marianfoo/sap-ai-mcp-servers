@@ -257,6 +257,21 @@
           "repo": "NicoHern/abapilot-mcp",
           "purpose": "Connect MCP clients to SAP ECC 6.0 and on-premise S/4HANA through the ABAPilot in-system backend without requiring ADT or SAP BTP.",
           "notes": "MIT-licensed stdio connector exposing 49 tools across business data, Data Dictionary, ABAP source, operations and audit, each mapping to one endpoint of the in-system dispatcher; exposure is gated by a per-endpoint registry inside SAP and a client-side ABAPILOT_TOOLS allowlist. Requires the commercial ABAPilot ABAP backend installed in SAP."
+        },
+        {
+          "type": "Community SAP",
+          "name": "LISA – SAP Translation MCP Server",
+          "addedAt": "2026-11-24",
+          "repo": "ClementRingot/LISA",
+          "purpose": "Read and translate ABAP object texts using the SAP XCO internationalization APIs.",
+          "notes": "Deploy the included ABAP translation service on the target system."
+        },
+        {
+          "type": "Community SAP",
+          "name": "ADAM – ABAP Debugger",
+          "addedAt": "2026-11-24",
+          "repo": "ClementRingot/ADAM",
+          "purpose": "Debug ABAP code through ADT by setting breakpoints, stepping through execution, and inspecting variables."
         }
       ],
       "description": "Connect AI agents to ABAP systems, mostly through the ADT REST APIs — read, write, test, transport, and document ABAP code on ECC, S/4HANA, and ABAP Cloud. Also includes an SDK for building MCP servers in ABAP itself."
@@ -408,6 +423,14 @@
           "repo": "romankorim/sap-mcp-server",
           "purpose": "Reads SAP ECC and S/4HANA data through OData and an open-rfc bridge.",
           "notes": "Python 3.10+; RFC tools require Node.js 22.14+. The purchase-requisition write tool is a placeholder and does not execute SAP writes."
+        },
+        {
+          "type": "Community SAP",
+          "name": "sap-mail-agent",
+          "addedAt": "2026-11-24",
+          "repo": "schaeberleerwin-bit/sap-mail-agent",
+          "purpose": "Look up open sales orders, delivery status, and products, and create sales orders through SAP Gateway OData.",
+          "notes": "The create_sales_order tool writes to SAP. The separate email assistant saves replies as Outlook drafts."
         }
       ]
     },
@@ -525,6 +548,22 @@
           "repo": "JumenEngels/sap_analytics_cloud_mcp",
           "purpose": "Exposes SAP Analytics Cloud APIs as MCP tools.",
           "notes": "Community project, not an SAP-delivered MCP server."
+        },
+        {
+          "type": "Community SAP",
+          "name": "Datasphere MCP with CLI",
+          "addedAt": "2026-11-24",
+          "repo": "DimiDR/MCP-Datasphere-InteractiveUser",
+          "purpose": "Query SAP Datasphere consumption data through OData and manage objects through the official Datasphere CLI.",
+          "notes": "Uses interactive-user OAuth. CLI operations require the SAP Datasphere CLI."
+        },
+        {
+          "type": "Community SAP",
+          "name": "SAC Workbench MCP",
+          "addedAt": "2026-11-24",
+          "repo": "RafaelSachsNL/sac-workbench-mcp",
+          "purpose": "Build and edit SAP Analytics Cloud stories, charts, and planning models through public and undocumented tenant interfaces.",
+          "notes": "Unofficial community server. Its tools can write to a connected tenant. Undocumented interfaces may change with SAP updates."
         }
       ],
       "description": "MCP servers for SAP's data and analytics products: Datasphere, Business Data Cloud, BW/4HANA modeling, HANA, and SAP Analytics Cloud."
@@ -837,8 +876,8 @@
       "name": "SAP Basis Operations Skills",
       "addedAt": "2026-08-28",
       "repo": "adam0thman/sap-basis-ops",
-      "purpose": "Provide source-cited runbook skills for SAP Basis and technical operations across system lifecycle, transports, patching, troubleshooting, backup and recovery, databases, and security.",
-      "notes": "Ships 30 skills plus Claude Code plugin and marketplace manifests; covers NetWeaver and S/4HANA on Linux, Windows, and AIX with Identify → Preview → Confirm → Verify safety guardrails.",
+      "purpose": "Provide source-cited runbook skills for SAP Basis and technical operations across system lifecycle, provisioning, transports, kernel and security patching, troubleshooting, backup and recovery, database HA/DR, networking edge components, CLI tooling, and SAP support cases.",
+      "notes": "Ships 34 skills plus Claude Code plugin and marketplace manifests; covers NetWeaver and S/4HANA on Linux, Windows, and AIX with Identify → Preview → Confirm → Verify safety guardrails.",
       "packages": [
         "skill",
         "claude-plugin"
@@ -1055,6 +1094,18 @@
       ],
       "purpose": "Runs ABAP reports, previews NAST output as PDF, and edits SmartForms as XML through an ARC-1 extension.",
       "notes": "Three skills plus ABAP sources and five extension tools. Requires ARC-1 1.4.0+ with writes enabled and SAP_BASIS 7.50+ on-premise or private cloud; not for S/4HANA Public Cloud or BTP ABAP Environment."
+    },
+    {
+      "type": "Community SAP",
+      "name": "ABAP for Agents Lite",
+      "addedAt": "2026-11-24",
+      "repo": "abapforagents/abap-for-agents-lite",
+      "purpose": "Guide AI coding agents on release-specific ABAP syntax and review ABAP code for Clean ABAP and clean core.",
+      "notes": "The Lite edition includes English and Portuguese rules.",
+      "packages": [
+        "skill",
+        "claude-plugin"
+      ]
     }
   ]
 }
