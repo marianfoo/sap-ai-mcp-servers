@@ -21,7 +21,7 @@ Comprehensive list of SAP-related MCP servers, SAP AI development skills, and Cl
 
 ## Add a missing entry
 
-Know a project that belongs here? [Open an issue using the "Add new entry" template](../../issues/new?template=add-entry.yml) — fill in the category, repo, purpose, and a short note. That's it.
+Check the examples and suggested evidence in the [submission guide](AGENTS.md#before-you-submit), then [open an Add new entry issue](https://github.com/marianfoo/sap-ai-mcp-servers/issues/new?template=add-entry.yml).
 
 ## Navigation
 
