@@ -6,6 +6,7 @@ Dates use the commit date from `git log` on `data/catalog.json`.
 
 ## 2026-11-24
 
+- [`schaeberleerwin-bit/sap-mail-agent`](https://github.com/schaeberleerwin-bit/sap-mail-agent) — Look up SAP Gateway data and create sales orders through OData.
 - [`dnic-dev/afo-mcp`](https://github.com/dnic-dev/afo-mcp) — Read, build, and update SAP Analysis for Office workbooks offline, added under Data, Analytics & HANA.
 
 ## 2026-11-20
