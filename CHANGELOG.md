@@ -6,6 +6,11 @@ Dates use the commit date from `git log` on `data/catalog.json`.
 
 ## 2026-11-24
 
+- [`DimiDR/MCP-Datasphere-InteractiveUser`](https://github.com/DimiDR/MCP-Datasphere-InteractiveUser) — Query SAP Datasphere consumption data through OData and manage objects through the official Datasphere CLI.
+- [`RafaelSachsNL/sac-workbench-mcp`](https://github.com/RafaelSachsNL/sac-workbench-mcp) — Build and edit SAP Analytics Cloud stories, charts, and planning models through public and undocumented tenant interfaces.
+- [`ClementRingot/LISA`](https://github.com/ClementRingot/LISA) — Read and translate ABAP object texts using the SAP XCO internationalization APIs.
+- [`ClementRingot/ADAM`](https://github.com/ClementRingot/ADAM) — Debug ABAP code through ADT by setting breakpoints, stepping through execution, and inspecting variables.
+- [`abapforagents/abap-for-agents-lite`](https://github.com/abapforagents/abap-for-agents-lite) — Guide AI coding agents on release-specific ABAP syntax and review ABAP code for Clean ABAP and clean core.
 - [`schaeberleerwin-bit/sap-mail-agent`](https://github.com/schaeberleerwin-bit/sap-mail-agent) — Look up SAP Gateway data and create sales orders through OData.
 - [`dnic-dev/afo-mcp`](https://github.com/dnic-dev/afo-mcp) — Read, build, and update SAP Analysis for Office workbooks offline, added under Data, Analytics & HANA.
 

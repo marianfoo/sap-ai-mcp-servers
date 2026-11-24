@@ -9,6 +9,7 @@ body:
         Thanks for suggesting a new entry.
 
         Before submitting, please check the catalog for duplicates. Fill in either the GitHub repository field or the non-GitHub URL field, not both.
+        For a community entry, link the open-source code or content that provides its main capability. Use Notes to identify any required commercial product, engine, or dataset.
         GitHub repositories are auto-enriched with stars, license, and last-change metadata. Non-GitHub entries need manual metadata or clear evidence.
         If a repository ships both AI skills and a Claude Code plugin, choose the combined placement so it can appear in both package filters.
 
@@ -172,7 +173,7 @@ body:
           required: true
         - label: The project is SAP-related and fits one of the catalog sections above
           required: true
-        - label: The project has an open-source license or I provided license evidence above
+        - label: The main capability is open source, or this submission qualifies as an official SAP hosted service or resource
           required: true
         - label: If this should appear as both an AI skill and a Claude plugin, I selected the combined placement and explained the evidence in Notes
           required: false

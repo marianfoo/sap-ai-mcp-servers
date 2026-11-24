@@ -13,7 +13,8 @@ Comprehensive list of SAP-related MCP servers, SAP AI development skills, and Cl
 > Last generated: **2026-11-24**
 >
 > Scope:
-> - Open source or source-available repositories — primarily GitHub, with non-GitHub git hosts (Gitea, GitLab, etc.) also accepted
+> - Community projects must publish the code or content behind their main capability under an open-source license. Any public Git host is welcome.
+> - Tools can integrate with commercial SAP systems. A connector whose main value comes from a proprietary engine or dataset is outside the community catalog. See the [admission policy](AGENTS.md#admission-and-review-policy) for the official SAP hosted-service exception.
 > - SAP-related MCP servers, MCP SDKs, Claude plugins/skills, and adjacent SAP AI developer assets
 > - Forks are excluded automatically from rendered tables
 > - Non-GitHub entries are listed without auto-fetched metadata (stars, license, last change)
@@ -98,7 +99,9 @@ Connect AI agents to ABAP systems, mostly through the ADT REST APIs — read, wr
 | ARC-1 ADT ABAP MCP Extension | [arc-mcp/arc1-adt-abap-mcp-ext](https://github.com/arc-mcp/arc1-adt-abap-mcp-ext) | Extend SAP's Eclipse ADT MCP server with read-only ABAP repository tools and optional auto-login for AI clients. | MIT | 15 | 2026-06-12 |
 | aibap.mcp | [Hochfrequenz/aibap.mcp](https://github.com/Hochfrequenz/aibap.mcp) | Expose the SAP ABAP ADT REST API as an MCP server for on-prem ECC and S/4HANA, covering source editing, debugging, transports, ATC, and customizing/package export. | MIT | 11 | 2026-11-23 |
 | MCP ABAP ADT Powerup | [babamba2/abap-mcp-adt-powerup](https://github.com/babamba2/abap-mcp-adt-powerup) | Expose comprehensive ABAP ADT development, diagnostics, and object management workflows through MCP. | MIT | 11 | 2026-11-23 |
+| LISA – SAP Translation MCP Server | [ClementRingot/LISA](https://github.com/ClementRingot/LISA) | Read and translate ABAP object texts using the SAP XCO internationalization APIs. | MIT | 9 | 2026-11-23 |
 | ABAPilot MCP Connector | [NicoHern/abapilot-mcp](https://github.com/NicoHern/abapilot-mcp) | Connect MCP clients to SAP ECC 6.0 and on-premise S/4HANA through the ABAPilot in-system backend without requiring ADT or SAP BTP. | MIT | 7 | 2026-11-23 |
+| ADAM – ABAP Debugger | [ClementRingot/ADAM](https://github.com/ClementRingot/ADAM) | Debug ABAP code through ADT by setting breakpoints, stepping through execution, and inspecting variables. | MIT | 7 | 2026-11-06 |
 | mcp-abap-adt (workskong) | [workskong/mcp-abap-adt](https://github.com/workskong/mcp-abap-adt) | Lightweight ADT adapter for ABAP metadata and source. | MIT | 3 | 2026-07-29 |
 | ABAP ADT MCP Server (buettnerjulian) | [buettnerjulian/abap-adt-mcp](https://github.com/buettnerjulian/abap-adt-mcp) | ABAP ADT MCP with object, metadata and analysis tools. | MIT | 2 | 2025-08-11 |
 | ABAP MCP Server (chandrashekhar-mahajan) | [chandrashekhar-mahajan/abap-mcp-server](https://github.com/chandrashekhar-mahajan/abap-mcp-server) | ABAP ADT REST based MCP tooling for development operations. | MIT | 2 | 2026-03-05 |
@@ -137,7 +140,7 @@ Bridges that expose SAP OData, Gateway, and SAP Graph services as MCP tools. Thi
 | BTP MCP Server | [lemaiwo/btp-mcp-server](https://github.com/lemaiwo/btp-mcp-server) | BTP Core Services (accounts, entitlements, provisioning) as MCP tools. | MIT | 7 | 2026-08-12 |
 | SAP Graph API Sandbox MCP | [CostingGeek/sap-mcp](https://github.com/CostingGeek/sap-mcp) | MCP wrapper for SAP Graph sandbox scenarios. | MIT | 6 | 2025-04-28 |
 | sap-mcp-server (OData + RFC/BAPI) | [romankorim/sap-mcp-server](https://github.com/romankorim/sap-mcp-server) | Reads SAP ECC and S/4HANA data through OData and an open-rfc bridge. | MIT | 5 | 2026-10-24 |
-| sap-mail-agent | [schaeberleerwin-bit/sap-mail-agent](https://github.com/schaeberleerwin-bit/sap-mail-agent) | Look up open sales orders, delivery status, and products, and create sales orders through SAP Gateway OData. | **NO LICENSE FOUND** | - | - |
+| sap-mail-agent | [schaeberleerwin-bit/sap-mail-agent](https://github.com/schaeberleerwin-bit/sap-mail-agent) | Look up open sales orders, delivery status, and products, and create sales orders through SAP Gateway OData. | MIT | 0 | 2026-10-28 |
 
 ## SAP Integration (CPI / PI)
 
@@ -162,8 +165,10 @@ MCP servers for SAP's data and analytics products: Datasphere, Business Data Clo
 | SAP Datasphere MCP (MarioDeFelipe) | [MarioDeFelipe/sap-datasphere-mcp](https://github.com/MarioDeFelipe/sap-datasphere-mcp) | Feature-rich Datasphere API interaction via MCP. | MIT | 51 | 2026-11-09 |
 | SAP Analytics Cloud MCP Server | [JumenEngels/sap_analytics_cloud_mcp](https://github.com/JumenEngels/sap_analytics_cloud_mcp) | Exposes SAP Analytics Cloud APIs as MCP tools. | MIT | 22 | 2026-03-02 |
 | SAP Datasphere MCP (rahulsethi) | [rahulsethi/SAPDatasphereMCP](https://github.com/rahulsethi/SAPDatasphereMCP) | Datasphere read-only and analytics operations via MCP. | Apache-2.0 | 11 | 2026-07-01 |
+| SAC Workbench MCP | [RafaelSachsNL/sac-workbench-mcp](https://github.com/RafaelSachsNL/sac-workbench-mcp) | Build and edit SAP Analytics Cloud stories, charts, and planning models through public and undocumented tenant interfaces. | MIT | 10 | 2026-11-13 |
 | SAP Business Data Cloud MCP | [rahulsethi/SAPBDCMCP](https://github.com/rahulsethi/SAPBDCMCP) | MCP tooling for SAP Business Data Cloud workflows. | Apache-2.0 | 4 | 2026-09-10 |
 | Analysis for Office MCP Server | [dnic-dev/afo-mcp](https://github.com/dnic-dev/afo-mcp) | Read, build, and update SAP Analysis for Office workbooks offline. | MIT | 3 | 2026-11-08 |
+| Datasphere MCP with CLI | [DimiDR/MCP-Datasphere-InteractiveUser](https://github.com/DimiDR/MCP-Datasphere-InteractiveUser) | Query SAP Datasphere consumption data through OData and manage objects through the official Datasphere CLI. | MIT | 2 | 2026-11-13 |
 | SAP Datasphere MCP Tools | [pmankineni/mcp-datasphere-tools](https://github.com/pmankineni/mcp-datasphere-tools) | Expose SAP Datasphere exploration, querying, modeling, administration, and audit workflows via MCP. | ISC | - | - |
 
 ## SAP GUI Automation
@@ -217,6 +222,7 @@ Community-built AI skills, prompt packs, and Claude Code plugins for SAP develop
 | SAP Power for Kiro | [mfigueir/sap-power](https://github.com/mfigueir/sap-power) | SAP development knowledge package for Kiro IDE. | Skill | GPL-3.0 | 9 | 2026-01-20 |
 | sap-odata CLI Agent Skill | [kts982/sap-odata-explorer/skills/sap-odata-cli](https://github.com/kts982/sap-odata-explorer/tree/main/skills/sap-odata-cli) | Agent skill for the sap-odata CLI that lets coding agents discover SAP Gateway/OData services, inspect $metadata and SAP/UI5 annotations, run test queries, lint Fiori readiness, and browse offline EDMX snapshots. | Skill | MIT | 9 | 2026-11-23 |
 | SAP Claude Skills | [KEIDAI-TechTime/sap-claude-skills](https://github.com/KEIDAI-TechTime/sap-claude-skills) | SAP add-on development skill bundles for Claude workflows. | Skill | **NO LICENSE FOUND** | 1 | 2026-03-03 |
+| ABAP for Agents Lite | [abapforagents/abap-for-agents-lite](https://github.com/abapforagents/abap-for-agents-lite) | Guide AI coding agents on release-specific ABAP syntax and review ABAP code for Clean ABAP and clean core. | Skill + Claude Plugin | MIT | 0 | 2026-11-09 |
 | SAP Basis Operations Skills | [adam0thman/sap-basis-ops](https://github.com/adam0thman/sap-basis-ops) | Provide source-cited runbook skills for SAP Basis and technical operations across system lifecycle, provisioning, transports, kernel and security patching, troubleshooting, backup and recovery, database HA/DR, networking edge components, CLI tooling, and SAP support cases. | Skill + Claude Plugin | MIT | 0 | 2026-11-03 |
 
 # Libraries, SDKs & Adjacent Tools
